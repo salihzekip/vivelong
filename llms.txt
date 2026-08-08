@@ -1,0 +1,35 @@
+# Vivelong
+
+> Vivelong, bilimsel kaynaklara (NCBI/PubMed, Harvard, Blue Zones araştırmaları) dayalı Türkçe bir longevity (uzun yaşam) ve biyolojik yaş platformudur. 16 faktörlü biyolojik yaş hesaplayıcı, günlük longevity alışkanlık takibi, Mavi Bölge araştırmaları ve hücresel yaşlanma biyobelirteçleri (telomer, epigenetik, otofaji, inflammaging, mitokondri) hakkında derinlemesine, kaynak gösterilmiş içerik sunar. İçerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye yerine geçmez.
+
+## Araç
+- [Biyolojik Yaş Testi](https://vivelong.com/#hesaplama): Yaş, cinsiyet, BMI ve 11 yaşam tarzı sorusuna dayalı ücretsiz biyolojik yaş hesaplayıcı.
+
+## Mavi Bölgeler — Dünyanın En Uzun Yaşayan Toplulukları
+- [Sardunya, İtalya](https://vivelong.com/mavi-bolgeler/sardunya/): Barbagia Vadisi'nde erkek-kadın yüzyıllık oranının eşit olduğu bölge.
+- [Okinawa, Japonya](https://vivelong.com/mavi-bolgeler/okinawa/): Hara hachi bu, moai toplulukları ve ikigai felsefesi.
+- [Nicoya, Kosta Rika](https://vivelong.com/mavi-bolgeler/nicoya/): Plan de vida ve Üç Kız Kardeş beslenmesi.
+- [Ikaria, Yunanistan](https://vivelong.com/mavi-bolgeler/ikaria/): Öğle şekerlemesi, yabani yeşillikler, düşük demans oranı.
+- [Loma Linda, California](https://vivelong.com/mavi-bolgeler/loma-linda/): Adventist topluluğu, Şabat ve vejetaryen beslenme.
+
+## Longevity Rehberleri
+- [Longevity Beslenmesi](https://vivelong.com/rehber/longevity-beslenmesi/): Mavi Bölge beslenmesinin 5 temel ilkesi, aralıklı oruç, mikrobiyom.
+- [Sosyal Bağ ve Amaç](https://vivelong.com/rehber/sosyal-bag-ve-amac/): Sosyal izolasyonun sağlık etkisi, ikigai, moai.
+- [Hareket ve Egzersiz](https://vivelong.com/rehber/hareket-ve-egzersiz/): Bölge 2 kardiyo, güç egzersizi, sarkopeni önleme.
+- [Uyku ve Zihin Sağlığı](https://vivelong.com/rehber/uyku-ve-zihin-sagligi/): Sirkadiyen ritim, uyku hijyeni, kronik stres yönetimi.
+- [Cinsiyet ve Uzun Yaşam Paradoksu](https://vivelong.com/cinsiyet-ve-uzun-yasam/): Kadın/erkek lifespan-healthspan farkı ve cinsiyete özel stratejiler.
+
+## Blog — Bilimsel Derinlemesine İncelemeler
+- [Telomerler: Yaşam Sürenizin Biyolojik Saati](https://vivelong.com/blog/telomerler-nedir/)
+- [Otofaji: Hücrenin Öz-Temizleme Mucizesi](https://vivelong.com/blog/otofaji-nedir/)
+- [Epigenetik: Genleriniz Kaderiniz Değil](https://vivelong.com/blog/epigenetik-nedir/)
+- [Inflammaging: Sizi Sessizce Yaşlandıran İltihap](https://vivelong.com/blog/inflammaging-nedir/)
+- [100 Yaşında Sağlıklı: Süper Yaşlılardan Dersler](https://vivelong.com/blog/yuz-yasinda-saglikli/)
+- [NAD+ ve Sirtuin Genleri: Uzun Yaşamın Moleküler Sırrı](https://vivelong.com/blog/nad-sirtuin-genleri/)
+- [Alkali Beslenme: pH Dengesi ve Uzun Yaşam](https://vivelong.com/blog/alkali-beslenme/)
+- [Sirkadiyen Beslenme: Ne Zaman Yediğin de Önemli](https://vivelong.com/blog/sirkadiyen-beslenme/)
+- [Mitokondri: Uzun Yaşamın Enerji Merkezi](https://vivelong.com/blog/mitokondri/)
+
+## Notlar
+- Site dili: Türkçe.
+- Sağlık ve longevity bilgileri araştırma literatürüne dayalı tahmin/özetlerdir; klinik tanı veya tedavi yerine geçmez.
