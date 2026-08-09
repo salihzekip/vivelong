@@ -1,6 +1,6 @@
 # Vivelong SEO/GEO Çalışması — Yapılanlar & Yapılacaklar
 
-**Son güncelleme:** 9 Ağustos 2026, 00:26
+**Son güncelleme:** 9 Ağustos 2026 (Search Console doğrulandı + rapor/kod çapraz kontrolüyle Hafta 1 açık maddeleri eklendi)
 **Kapsam:** vivelong.com SEO + GEO denetimi ve uygulanan hızlı aksiyonlar
 
 ---
@@ -71,7 +71,16 @@ Tam SEO/GEO denetim raporu (bulgular + öncelik sıralı aksiyon takvimi):
   - **Rakip biyolojik yaş hesaplayıcıları (backlink değil, rakip/konumlandırma referansı):** hesaplama.lol, hesapratik.com, engelli.com, SuperAge (App Store uygulaması)
   - Sıradaki adım: kullanıcı hangi isimlerle iletişime geçmek istediğine karar vermeli — bu bir öneri listesi, otomatik outreach yapılmadı
 
-### Öncelik 3 — Doğrulama / temizlik
+### Öncelik 3 — Raporun "Hafta 1: Güven sinyalleri" maddesi (HİÇ BAŞLANMADI)
+Rapor + kod karşılaştırmasıyla 9 Ağustos'ta doğrulandı, bunlardan hiçbiri yapılmamış:
+- [ ] Dış kaynak referanslarını (metinde geçen "NCBI", "Harvard" gibi isimler) gerçek tıklanabilir linke bağla — kodda hâlâ sadece 2 dış link var (denetimdeki durumla birebir aynı, hiç değişmemiş)
+- [ ] "Hakkımızda" bölümü ekle — kim yazıyor, editoryal/kaynak süreci nedir bilgisi hâlâ yok (YMYL/sağlık içeriği için önemli, rapor bunu özellikle vurguluyor)
+- [ ] H1 hiyerarşisi düzelt — ana sayfada hâlâ **22 adet `<h1>`** var (`grep -c "<h1" index.html` ile 9 Ağustos'ta doğrulandı); panel başlıkları H2'ye çevrilmeli, sadece ana sayfa başlığı H1 kalmalı
+- [ ] Sosyal medya hesabı bağla — sitede Instagram/Facebook/LinkedIn linki hiç yok (`grep` 0 eşleşme verdi); önce hesap var mı yok mu netleşmeli, yoksa açılması değerlendirilmeli
+
+*Not: H1 düzeltmesi ve dış kaynak linkleri düşük efor/yüksek etki — sadece `index.html` düzenlemesi, yapısal değişiklik gerektirmiyor.*
+
+### Öncelik 4 — Doğrulama / temizlik
 - [ ] Kart tıklama davranışını (Mavi Bölgeler/Blog kartına tıklayınca JS panelinin sayfadan çıkmadan açılması) kullanıcı kendi tarayıcısında bir kez elle test etmeli — Chrome uzantısı bu ağır sayfada otomatik test edemedi (tekrarlayan zaman aşımı)
 - [ ] İsteğe bağlı: sirkadiyen-beslenme ve mitokondri makalelerine soru-cevap formatlı bölüm eklenirse FAQPage şeması onlara da eklenebilir
 - [ ] İsteğe bağlı: Pro sayfası (`zp-pro`) ve Forum (`zp-forum`) şu an ayrı URL'ye taşınmadı — SEO değeri düşük görüldüğü için kapsam dışı bırakıldı
