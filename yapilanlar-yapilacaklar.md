@@ -1,6 +1,6 @@
 # Vivelong SEO/GEO Çalışması — Yapılanlar & Yapılacaklar
 
-**Son güncelleme:** 9 Ağustos 2026 (H1 hiyerarşisi + dış kaynak linkleri tamamlandı ve deploy edildi)
+**Son güncelleme:** 9 Ağustos 2026 (kalan 16 sayfaya dış link + 2 yeni popüler blog yazısı + site 22 sayfaya çıktı)
 **Kapsam:** vivelong.com SEO + GEO denetimi ve uygulanan hızlı aksiyonlar
 
 ---
@@ -102,7 +102,17 @@ Google/GEO'da sağlıklı yaşam, longevity ve alkali yaşam konusunda gerçekte
 - [x] Yeni FAQ'ler hem JSON-LD (Google rich snippet) hem de görünür `<details>/<summary>` HTML olarak eklendi — önceki 7 FAQPage'in hepsi SADECE gizli şemaydı, kullanıcı hiç göremiyordu. Bu GEO için önemli: AI motorları çoğunlukla görünür metni okuyor, gizli şemayı değil.
 - [x] Bu 3 sayfada eskiden beri eksik olan zp-src/zp-quote dış kaynak linkleri de eklendi (kök index.html'deki 9 Ağustos linkleme çalışması standalone sayfalara hiç yansımamıştı — bu genel bir bulgu, aşağıya not edildi)
 
-**Yan bulgu — TÜM standalone sayfalar linksizdi:** kök `index.html`'e eklenen 30 dış link, ayrı blog/rehber/mavi-bölge sayfalarına (aynı içeriğin kopyaları) hiç işlenmemişti. Bugün dokunulan 3 sayfada düzeltildi; kalan ~16 sayfada hâlâ link yok — ileride toplu bir tur gerekebilir.
+**Yan bulgu — TÜM standalone sayfalar linksizdi, ÇÖZÜLDÜ:** kök `index.html`'e eklenen 30 dış link, ayrı blog/rehber/mavi-bölge sayfalarına (aynı içeriğin kopyaları) hiç işlenmemişti. Aynı gün içinde kalan 16 sayfaya da (51 link, Node script ile toplu, aynı doğrulanmış kaynaklar) taşındı. Artık tüm 19 standalone sayfa + kök index.html dış link içeriyor.
+
+## Yeni blog yazıları (9 Ağustos 2026, aynı gün deploy edildi)
+
+Kullanıcı "100 Yaşında Sağlıklı" tarzına benzer popüler konular istedi. WebSearch ile doğrulanan 2 yüksek talepli konu eklendi:
+
+- [x] **"Power 9: Mavi Bölgelerin Ortak 9 Uzun Yaşam İlkesi"** (`/blog/power-9-mavi-bolgeler/`) — Dan Buettner'ın resmi Power 9 çerçevesi (bluezones.com kaynaklı), 9 ilkenin her biri 5 Mavi Bölge'den somut örnekle + "hangi ilke hangi bölgede en belirgin" hızlı bakış tablosuyla anlatılıyor. 5 mavi-bölge sayfasına ve rehberlere iç link veriyor.
+- [x] **"Biyolojik Yaşınızı Düşürmek Mümkün mü? 10 Kanıtlanmış Yöntem"** (`/blog/biyolojik-yasi-dusurmek/`) — sitenin mevcut biyolojik yaş testine (`/#hesaplama`) ve 8 farklı iç sayfaya bağlanan, yüksek arama hacimli bir "pratik rehber" makalesi.
+- [x] İkisi de FAQPage şeması + görünür FAQ + zp-disclaimer ile tam şablona uyumlu, ana sayfa blog gridine kart eklendi, `sitemap.xml` 22 URL'e çıktı.
+- Site artık 22 sayfa (5 mavi bölge + 4 rehber + 11 blog + cinsiyet sayfası + ana sayfa).
+- **Not:** Yeni 2 yazı, diğer 9 blog yazısından farklı olarak ana sayfada JS panel olarak yok — sadece standalone sayfa + gerçek `<a href>` linki var (SPA tekrarı yapılmadı, efor/kalite dengesi için). İstenirse ileride ana sayfaya panel olarak da eklenebilir.
 
 **Tıbbi bilgilendirme uyarısı — TÜM 20 sayfaya eklendi (kullanıcı talebiyle, 9 Ağustos):** Daha önce sadece biyolojik yaş hesaplayıcısında "bilgilendirme amaçlıdır, tedavi değildir" uyarısı vardı; 19 makale/rehber sayfasının hiçbirinde yoktu. `.zp-disclaimer` bileşeni (assets/site.css + index.html embedded style) ile her sayfanın sonuna eklendi. NMN dozu, aralıklı oruç uygunluğu gibi eyleme geçirilebilir tavsiyeler artık hekime danışma uyarısıyla birlikte.
 
