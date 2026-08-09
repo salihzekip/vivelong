@@ -72,6 +72,9 @@
     html { scroll-behavior: smooth; }
     body { font-family:'Raleway',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; overflow-x:hidden; }
     h1,h2,h3,h4 { font-family:'Lora',serif; line-height:1.25; }
+    a { color:inherit; }
+    .zp-p a, .zp-src a, .hero-badge a, .sccard a { color:var(--accent); text-decoration:underline; text-underline-offset:2px; }
+    .zp-p a:hover, .zp-src a:hover, .hero-badge a:hover, .sccard a:hover { color:var(--gold); }
 
     /* ── NAV ── */
     nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(242,245,240,.92); backdrop-filter:blur(16px); border-bottom:1px solid var(--border-light); padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between; }
@@ -238,7 +241,7 @@
     .zp-hero::before { content:''; position:absolute; inset:0; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='1.2' fill='rgba(255,255,255,0.07)'/%3E%3C/svg%3E"); }
     .zp-hero-inner { position:relative; z-index:1; max-width:680px; margin:0 auto; }
     .zp-emoji { font-size:60px; display:block; margin-bottom:14px; }
-    .zp-hero h1 { font-size:clamp(26px,5vw,44px); color:#fff; margin-bottom:6px; }
+    .zp-hero h2 { font-size:clamp(26px,5vw,44px); color:#fff; margin-bottom:6px; }
     .zp-hero .zp-tag { font-size:12px; color:rgba(255,255,255,.75); font-weight:500; margin-bottom:28px; display:block; }
     .zp-stats { display:flex; justify-content:center; gap:32px; flex-wrap:wrap; padding-top:24px; border-top:1px solid rgba(255,255,255,.15); }
     .zp-st { text-align:center; }
@@ -905,7 +908,7 @@
   <div class="orb orb1"></div>
   <div class="orb orb2"></div>
   <div class="hero-inner">
-    <div class="hero-badge"><div class="pdot"></div>Longevity Bilimi · Türkçe · NCBI Destekli</div>
+    <div class="hero-badge"><div class="pdot"></div>Longevity Bilimi · Türkçe · <a href="https://www.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">NCBI</a> Destekli</div>
     <h1>Daha Uzun,<br><em>Daha Sağlıklı</em> Yaşayın</h1>
     <p>16 faktörlü biyolojik yaş hesaplayıcı, günlük alışkanlık takibi ve longevity bilimini Türkçe keşfedin.</p>
     <div class="ha">
@@ -1190,7 +1193,7 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
           Biyolojik Yaşımı Hesapla
         </button>
-        <p style="font-size:11px;color:var(--text-muted);text-align:center;line-height:1.6;">Tahmin amaçlıdır. Klinik tanı değildir. NCBI ve klinik araştırmalara dayalı model.</p>
+        <p style="font-size:11px;color:var(--text-muted);text-align:center;line-height:1.6;">Tahmin amaçlıdır. Klinik tanı değildir. <a href="https://www.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">NCBI</a> ve klinik araştırmalara dayalı model.</p>
       </div>
 
       <!-- RESULT -->
@@ -1270,7 +1273,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#1A5C38 0%,#2D7D4F 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🇮🇹</span>
-      <h1>Sardunya, İtalya</h1>
+      <h2>Sardunya, İtalya</h2>
       <span class="zp-tag">Barbagia Vadisi · Dünyanın En Uzun Yaşayan Erkeklerinin Yurdu</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">22</div><div class="zp-st-l">10.000'de yüzyıllık kişi</div></div>
@@ -1333,7 +1336,7 @@
         <span class="zp-p9-tag">Doğru Topluluk</span>
       </div>
     </div>
-    <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> (National Geographic Press) · bluezones.com · Pes & Poulain, Experimental Gerontology 2004</div>
+    <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> (National Geographic Press) · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">bluezones.com</a> · Pes & Poulain, Experimental Gerontology 2004</div>
     <div class="zp-zones-nav">
       <button onclick="switchZone('sardunya','okinawa')">🇯🇵 Okinawa</button>
       <button onclick="switchZone('sardunya','nicoya')">🇨🇷 Nicoya</button>
@@ -1355,7 +1358,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#7B1A1A 0%,#B03030 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🇯🇵</span>
-      <h1>Okinawa, Japonya</h1>
+      <h2>Okinawa, Japonya</h2>
       <span class="zp-tag">Ryukyu Adaları · Tarihin En Uzun Yaşayan Kadınlarının Yurdu</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">68</div><div class="zp-st-l">100.000'de yüzyıllık (kadın, tarihi zirve)</div></div>
@@ -1409,7 +1412,7 @@
         <span class="zp-p9-tag">Stres Azaltma</span>
       </div>
     </div>
-    <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> · bluezones.com · Willcox BJ et al., "Caloric restriction, the traditional Okinawan diet", 2007</div>
+    <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">bluezones.com</a> · Willcox BJ et al., "Caloric restriction, the traditional Okinawan diet", 2007</div>
     <div class="zp-zones-nav">
       <button onclick="switchZone('okinawa','sardunya')">🇮🇹 Sardunya</button>
       <button onclick="switchZone('okinawa','nicoya')">🇨🇷 Nicoya</button>
@@ -1431,7 +1434,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#1A5540 0%,#2E8B57 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🇨🇷</span>
-      <h1>Nicoya, Kosta Rika</h1>
+      <h2>Nicoya, Kosta Rika</h2>
       <span class="zp-tag">Guanacaste Yarımadası · Orta Yaşta Hayatta Kalmanın Dünya Rekoru</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">2×</div><div class="zp-st-l">60'lık bir Nicoyan'ın 90'a ulaşma olasılığı (ABD'ye kıyasla)</div></div>
@@ -1486,7 +1489,7 @@
         <span class="zp-p9-tag">Stres Azaltma</span>
       </div>
     </div>
-    <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> · bluezones.com · Rosero-Bixby L., "High longevity in Nicoya Peninsula", 2013</div>
+    <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">bluezones.com</a> · Rosero-Bixby L., "High longevity in Nicoya Peninsula", 2013</div>
     <div class="zp-zones-nav">
       <button onclick="switchZone('nicoya','sardunya')">🇮🇹 Sardunya</button>
       <button onclick="switchZone('nicoya','okinawa')">🇯🇵 Okinawa</button>
@@ -1508,7 +1511,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#0D3480 0%,#1E5FBF 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🇬🇷</span>
-      <h1>Ikaria, Yunanistan</h1>
+      <h2>Ikaria, Yunanistan</h2>
       <span class="zp-tag">Ege'nin Saklı Adası · "İnsanların Ölmeyi Unuttuğu Ada"</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">1/3</div><div class="zp-st-l">Her 3 kişiden biri 90 yaşına ulaşıyor</div></div>
@@ -1562,7 +1565,7 @@
         <span class="zp-p9-tag">İnanç (Ortodoks)</span>
       </div>
     </div>
-    <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> · bluezones.com · Panagiotakos DB et al., "Ikaria Study", 2011</div>
+    <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">bluezones.com</a> · Panagiotakos DB et al., "Ikaria Study", 2011</div>
     <div class="zp-zones-nav">
       <button onclick="switchZone('ikaria','sardunya')">🇮🇹 Sardunya</button>
       <button onclick="switchZone('ikaria','okinawa')">🇯🇵 Okinawa</button>
@@ -1584,7 +1587,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#4A1A8C 0%,#7C3AED 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🇺🇸</span>
-      <h1>Loma Linda, California</h1>
+      <h2>Loma Linda, California</h2>
       <span class="zp-tag">Yedinci Gün Adventistleri · Kuzey Amerika'nın Tek Mavi Bölgesi</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">10 yıl</div><div class="zp-st-l">ABD ortalamasından fazla yaşam süresi</div></div>
@@ -1638,7 +1641,7 @@
         <span class="zp-p9-tag">Doğal Hareket</span>
       </div>
     </div>
-    <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> · bluezones.com · Fraser GE, "Vegetarian diets: what do we know of their effects on common chronic diseases?", 2009</div>
+    <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">bluezones.com</a> · Fraser GE, "Vegetarian diets: what do we know of their effects on common chronic diseases?", 2009</div>
     <div class="zp-zones-nav">
       <button onclick="switchZone('loma','sardunya')">🇮🇹 Sardunya</button>
       <button onclick="switchZone('loma','okinawa')">🇯🇵 Okinawa</button>
@@ -1653,7 +1656,7 @@
   <div class="si">
     <div class="stag">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-      NCBI · PubMed Central 2024
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11688636/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;">NCBI · PubMed Central 2024</a>
     </div>
     <h2 class="stit">Hücresel Yaş Göstergeleri</h2>
     <p class="ssub">Araştırmalar, biyolojik yaşımızı belirleyen 6 temel hücresel ölçütü ortaya koyuyor. Her kartın altındaki "Devamını Oku" ile detaylı yazıya ulaşın.</p>
@@ -1748,7 +1751,7 @@
         <p>Uzun yaşayanlarda Bifidobacterium, Faecalibacterium ve Prevotella baskın. Yaşlanmayla zararlı türler artar. Fermente gıdalar ve bitkisel çeşitlilik sağlıklı mikrobiyom için temel.</p>
         <div class="bm-full">
           <p>Bağırsağınızda yaklaşık 39 trilyon mikroorganizma yaşıyor — vücudunuzdaki toplam insan hücresi sayısından fazla. Bu ekosistem bağışıklık sisteminden beyin sağlığına, kardiyovasküler riske kadar her şeyi etkiliyor.</p>
-          <p><strong>Uzun yaşayanlarda ne farklı?</strong> NCBI'ın 2024 derlemesine göre 100 yaş üzeri kişilerin mikrobiyomunda Bifidobacterium, Faecalibacterium prausnitzii, Prevotella ve Coprococcus baskın. Bu bakteriler bütirat ve propiyonat üretiyor — bağırsak duvarını güçlendiren, iltihabı azaltan bileşikler.</p>
+          <p><strong>Uzun yaşayanlarda ne farklı?</strong> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11688636/" target="_blank" rel="noopener noreferrer">NCBI'ın</a> 2024 derlemesine göre 100 yaş üzeri kişilerin mikrobiyomunda Bifidobacterium, Faecalibacterium prausnitzii, Prevotella ve Coprococcus baskın. Bu bakteriler bütirat ve propiyonat üretiyor — bağırsak duvarını güçlendiren, iltihabı azaltan bileşikler.</p>
           <p><strong>Yaşlanmayla ne değişiyor?</strong> Mikrobiyom çeşitliliği yaşla azalıyor. Eggerthella ve Bilophila gibi "patobiyontlar" artıyor. Bu değişim, düşük dereceli kronik iltihaplanmaya ("inflammaging") katkıda bulunuyor.</p>
           <p><strong>Mikrobiyomu nasıl beslersiniz?</strong> Haftada 30'dan fazla farklı bitki tüketmek çeşitliliği artırıyor. Fermente gıdalar — yoğurt, kefir, kimchi — canlı bakteri kaynakları. Lif, faydalı bakterilerin ana yakıtı. Gereksiz antibiyotik kullanımından kaçınmak da kritik.</p>
         </div>
@@ -1841,7 +1844,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#1A3A5C 0%,#2E6495 60%,#3A7FC1 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji" style="font-size:48px;">♀ ♂</span>
-      <h1>Cinsiyet & Uzun Yaşam</h1>
+      <h2>Cinsiyet & Uzun Yaşam</h2>
       <span class="zp-tag">Lifespan mı, Healthspan mı? Biyoloji, Hormonlar ve Yaşam Tarzının Kesişimi</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">5–7 yıl</div><div class="zp-st-l">Kadın-erkek ömür farkı (küresel)</div></div>
@@ -1972,7 +1975,7 @@
       </ul>
     </div>
 
-    <div class="zp-src">Kaynak: Mayo Clinic Healthy Aging Research · WHO Global Health Observatory · Journal of the American Heart Association · Nature Aging · Longevity Consortium 2023</div>
+    <div class="zp-src">Kaynak: <a href="https://www.mayoclinic.org/" target="_blank" rel="noopener noreferrer">Mayo Clinic</a> Healthy Aging Research · <a href="https://www.who.int/data/gho" target="_blank" rel="noopener noreferrer">WHO Global Health Observatory</a> · <a href="https://www.ahajournals.org/journal/jaha" target="_blank" rel="noopener noreferrer">Journal of the American Heart Association</a> · <a href="https://www.nature.com/nataging/" target="_blank" rel="noopener noreferrer">Nature Aging</a> · Longevity Consortium 2023</div>
   </div>
 </div>
 
@@ -2027,7 +2030,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#14532D 0%,#166534 55%,#16A34A 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🌿</span>
-      <h1>Longevity Beslenmesi</h1>
+      <h2>Longevity Beslenmesi</h2>
       <span class="zp-tag">Neyi, Ne Kadar, Ne Zaman Yediğiniz — Her Üçü de Önemli</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">%80</div><div class="zp-st-l">Mavi Bölge diyetinin bitki kaynaklı olma oranı</div></div>
@@ -2100,7 +2103,7 @@
       <p>"Hiçbir tek bir gıda sizi öldürmez, hiçbir tek bir gıda sizi kurtarmaz. Ama yıllar ve on yıllar içinde örüntü her şeyi değiştirir."</p>
       <cite>— Dr. David Katz, True Health Initiative</cite>
     </div>
-    <div class="zp-src">Kaynak: PREDIMED Çalışması · Blue Zones Araştırmaları (Dan Buettner) · Stanford Mikrobiyom Çalışması 2021 · Journal of the Academy of Nutrition and Dietetics · Nature Medicine</div>
+    <div class="zp-src">Kaynak: <a href="https://predimed.es/" target="_blank" rel="noopener noreferrer">PREDIMED Çalışması</a> · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">Blue Zones Araştırmaları</a> (Dan Buettner) · Stanford Mikrobiyom Çalışması 2021 · <a href="https://www.jandonline.org/" target="_blank" rel="noopener noreferrer">Journal of the Academy of Nutrition and Dietetics</a> · <a href="https://www.nature.com/nm/" target="_blank" rel="noopener noreferrer">Nature Medicine</a></div>
   </div>
 </div>
 
@@ -2116,7 +2119,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#78350F 0%,#92400E 55%,#D97706 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🤝</span>
-      <h1>Sosyal Bağ & Amaç</h1>
+      <h2>Sosyal Bağ & Amaç</h2>
       <span class="zp-tag">İzolasyon Sigara Kadar Öldürüyor — Bağlantı Hayat Kurtarıyor</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">15</div><div class="zp-st-l">Günlük sigara — sosyal izolasyonun ölüm riskine eşdeğeri</div></div>
@@ -2148,7 +2151,7 @@
     </div>
     <div class="zp-sec">
       <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>İlişki Türleri: Hepsi Eşit Değil</h2>
-      <p class="zp-p">Harvard'ın 85 yıllık "Grant and Glueck Study" sonucu tek bir cümleyle özetlenebilir: <strong>Hayatımızda güvendiğimiz ve güvende hissettiğimiz insanların varlığı, başka her şeyden daha önemli.</strong></p>
+      <p class="zp-p"><a href="https://www.adultdevelopmentstudy.org/" target="_blank" rel="noopener noreferrer">Harvard'ın 85 yıllık "Grant and Glueck Study"</a> sonucu tek bir cümleyle özetlenebilir: <strong>Hayatımızda güvendiğimiz ve güvende hissettiğimiz insanların varlığı, başka her şeyden daha önemli.</strong></p>
       <ul class="zp-ul">
         <li><b>Güçlü Bağlar:</b> Eş, yakın arkadaş, aile. Derinliği ve güveni olan bağlar. Biyolojik etkisi en yüksek olan bu bağlar. Yalnızca birkaç tane olması yeterli — sayı değil kalite önemli.</li>
         <li><b>Zayıf Bağlar:</b> Komşu, esnaf, tanıdık. Daha az derinlikli ama psikolojik açıdan önemli. "Günaydın" dediğiniz kasap bile yabancılık hissini azaltıyor.</li>
@@ -2179,9 +2182,9 @@
     </div>
     <div class="zp-quote">
       <p>"İyi ilişkiler bizi mutlu ediyor ve sağlıklı tutuyor. Bu kadar basit."</p>
-      <cite>— Robert Waldinger, Harvard Yetişkin Gelişimi Çalışması Direktörü (85 yıllık araştırma)</cite>
+      <cite>— Robert Waldinger, <a href="https://www.adultdevelopmentstudy.org/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;">Harvard Yetişkin Gelişimi Çalışması</a> Direktörü (85 yıllık araştırma)</cite>
     </div>
-    <div class="zp-src">Kaynak: Harvard Study of Adult Development · Holt-Lunstad Meta-analizi 2015 · US Surgeon General Advisory on Loneliness 2023 · JAMA Internal Medicine · Blue Zones Research</div>
+    <div class="zp-src">Kaynak: <a href="https://www.adultdevelopmentstudy.org/" target="_blank" rel="noopener noreferrer">Harvard Study of Adult Development</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/25910392/" target="_blank" rel="noopener noreferrer">Holt-Lunstad Meta-analizi 2015</a> · <a href="https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf" target="_blank" rel="noopener noreferrer">US Surgeon General Advisory on Loneliness 2023</a> · <a href="https://jamanetwork.com/journals/jamainternalmedicine" target="_blank" rel="noopener noreferrer">JAMA Internal Medicine</a> · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">Blue Zones Research</a></div>
   </div>
 </div>
 
@@ -2197,7 +2200,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#1E3A8A 0%,#1D4ED8 55%,#3B82F6 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🏃</span>
-      <h1>Hareket & Egzersiz</h1>
+      <h2>Hareket & Egzersiz</h2>
       <span class="zp-tag">Spor Salonu Değil Yaşam Biçimi — Mitokondriden Kasa, Kalpten Beyne</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">8 yıl</div><div class="zp-st-l">Düzenli egzersizin biyolojik yaşı gençleştirdiği tahmin edilen süre</div></div>
@@ -2268,7 +2271,7 @@
       <p>"Spor, ilaçları reçete edebildiğimiz bir ilaç olsaydı — yan etkisiz, her hastalığa yarar sağlayan — tarihte en büyük tıbbi keşif olarak anılırdı."</p>
       <cite>— Dr. Mark Tarnopolsky, McMaster Üniversitesi Egzersiz Tıbbı Araştırmacısı</cite>
     </div>
-    <div class="zp-src">Kaynak: JAMA Internal Medicine 2021 · Peter Attia "Outlive" · WHO Fiziksel Aktivite Rehberleri · Nature Reviews Cardiology · Journal of Physiology</div>
+    <div class="zp-src">Kaynak: <a href="https://jamanetwork.com/journals/jamainternalmedicine" target="_blank" rel="noopener noreferrer">JAMA Internal Medicine</a> 2021 · Peter Attia "Outlive" · <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">WHO Fiziksel Aktivite Rehberleri</a> · <a href="https://www.nature.com/nrcardio/" target="_blank" rel="noopener noreferrer">Nature Reviews Cardiology</a> · <a href="https://physoc.org/" target="_blank" rel="noopener noreferrer">Journal of Physiology</a></div>
   </div>
 </div>
 
@@ -2284,7 +2287,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#500724 0%,#881337 55%,#BE185D 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🌙</span>
-      <h1>Uyku & Zihin Sağlığı</h1>
+      <h2>Uyku & Zihin Sağlığı</h2>
       <span class="zp-tag">Uyku Kısaltılabilir Bir Lüks Değil — Zorunlu Bir Biyolojik İhtiyaç</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">3×</div><div class="zp-st-l">Kısa uyuyanlarda soğuk algınlığına yakalanma riski (6 saat altı)</div></div>
@@ -2328,7 +2331,7 @@
       <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>Meditasyon — Kanıtlanmış Bir Araç</h2>
       <p class="zp-p">Meditasyon artık mistik bir pratik değil — nörobilim tarafından kapsamlı biçimde incelenen, ölçülebilir fizyolojik etkileri kanıtlanmış bir zihin-beden aracı.</p>
       <ul class="zp-ul">
-        <li><b>Beyin Yapısında Değişim:</b> Harvard'ın 2011 çalışması: 8 hafta boyunca günde 27 dakika meditasyon prefrontal korteksi kalınlaştırdı, amigdala hacmini küçülttü. MRI ile görülebilir yapısal değişim.</li>
+        <li><b>Beyin Yapısında Değişim:</b> <a href="https://pubmed.ncbi.nlm.nih.gov/21071182/" target="_blank" rel="noopener noreferrer">Harvard'ın 2011 çalışması</a>: 8 hafta boyunca günde 27 dakika meditasyon prefrontal korteksi kalınlaştırdı, amigdala hacmini küçülttü. MRI ile görülebilir yapısal değişim.</li>
         <li><b>Kortizol Düşüşü:</b> Mindfulness temelli stres azaltma (MBSR) programları tutarlı biçimde kortizol düzeyini %20–48 düşürüyor.</li>
         <li><b>Bağışıklık:</b> Jon Kabat-Zinn'in öncü çalışması: MBSR programı katılımcıları grip aşısına daha güçlü antikor yanıtı üretti.</li>
         <li><b>Başlangıç İçin:</b> Mükemmeliyetçilik tuzağına düşmeyin. Günde 5–10 dakika, düzenli yapılırsa etkili. Nefes farkındalığı en kolay giriş noktası: sadece nefes alıp verişi takip edin, dikkat dağılınca nazikçe geri dönün.</li>
@@ -2361,7 +2364,7 @@
       <p>"Uyku doğanın en etkili sağlık sigortası. Bunu göz ardı etmek, arabanızı yağ koymadan kullanmak gibi — bir süre çalışır, sonra motor yanar."</p>
       <cite>— Matthew Walker, Nörobilimci & "Why We Sleep" Yazarı</cite>
     </div>
-    <div class="zp-src">Kaynak: Matthew Walker "Why We Sleep" · Harvard Meditasyon Çalışması 2011 · Epel & Blackburn "The Telomere Effect" · Stanford Sleep Medicine Center · Yoshifumi Miyazaki Shinrin-yoku Araştırmaları</div>
+    <div class="zp-src">Kaynak: Matthew Walker "Why We Sleep" · <a href="https://pubmed.ncbi.nlm.nih.gov/21071182/" target="_blank" rel="noopener noreferrer">Harvard Meditasyon Çalışması 2011</a> · Epel & Blackburn "The Telomere Effect" · <a href="https://sleep.stanford.edu/" target="_blank" rel="noopener noreferrer">Stanford Sleep Medicine Center</a> · Yoshifumi Miyazaki Shinrin-yoku Araştırmaları</div>
   </div>
 </div>
 
@@ -2377,7 +2380,7 @@
       <div class="sccard"><div class="scnum">3–5<span> yıl</span></div><h4>Sigara etkisi</h4><p>Aktif sigara içimi biyolojik yaşı 3–5 yıl artırıyor. Bırakıldıktan sonra etki yıllar içinde azalıyor.</p></div>
       <div class="sccard"><div class="scnum">2×</div><h4>Uyku & bağışıklık</h4><p>6 saatten az uyuyanlarda enfeksiyon riski 2 kattan fazla artıyor. Uyku kalitesi bağışıklığı doğrudan etkiliyor.</p></div>
       <div class="sccard"><div class="scnum">26<span>%</span></div><h4>Yalnızlığın riski</h4><p>Sosyal izolasyon erken ölüm riskini %26 artırıyor — günde 15 sigara içmekle eşdeğer etki.</p></div>
-      <div class="sccard"><div class="scnum">2050</div><h4>Yaşlanan dünya</h4><p>Küresel 60+ nüfusu 2050'de 2,1 milyara ulaşacak (NCBI 2024). Longevity araştırması hiç bu kadar kritik olmamıştı.</p></div>
+      <div class="sccard"><div class="scnum">2050</div><h4>Yaşlanan dünya</h4><p>Küresel 60+ nüfusu 2050'de 2,1 milyara ulaşacak (<a href="https://www.who.int/news-room/fact-sheets/detail/ageing-and-health" target="_blank" rel="noopener noreferrer">WHO</a>). Longevity araştırması hiç bu kadar kritik olmamıştı.</p></div>
     </div>
   </div>
 </section>
@@ -2523,7 +2526,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#065F46 0%,#059669 60%,#34D399 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🧬</span>
-      <h1>Telomerler: Yaşam Sürenizin Biyolojik Saati</h1>
+      <h2>Telomerler: Yaşam Sürenizin Biyolojik Saati</h2>
       <span class="zp-tag">Nobel Ödüllü Keşif · Biyoloji · 8 dk okuma</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">2009</div><div class="zp-st-l">Telomer Nobel Ödülü — Blackburn, Greider, Szostak</div></div>
@@ -2584,7 +2587,7 @@
       <p>"Telomerler bize şunu öğretti: Hücrelerimiz stresimizi, sevgimizi, korkularımızı ve umutlarımızı duyuyor. Yaşam tarzımız biyolojimizle sürekli konuşuyor."</p>
       <cite>— Elizabeth Blackburn & Elissa Epel, "The Telomere Effect" (2017)</cite>
     </div>
-    <div class="zp-src">Kaynak: Blackburn & Epel "The Telomere Effect" (2017) · PNAS 2004 (Epel et al.) · Lancet Oncology 2013 (Ornish et al.) · PREDIMED-Plus Çalışması · Journal of Aging Research</div>
+    <div class="zp-src">Kaynak: Blackburn & Epel "The Telomere Effect" (2017) · <a href="https://www.pnas.org/" target="_blank" rel="noopener noreferrer">PNAS</a> 2004 (Epel et al.) · <a href="https://www.thelancet.com/journals/lanonc/home" target="_blank" rel="noopener noreferrer">Lancet Oncology</a> 2013 (Ornish et al.) · <a href="https://predimedplus.com/" target="_blank" rel="noopener noreferrer">PREDIMED-Plus Çalışması</a> · Journal of Aging Research</div>
   </div>
 </div>
 
@@ -2600,7 +2603,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#7F1D1D 0%,#B91C1C 60%,#EF4444 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">♻️</span>
-      <h1>Otofaji: Hücrenin Öz-Temizleme Mucizesi</h1>
+      <h2>Otofaji: Hücrenin Öz-Temizleme Mucizesi</h2>
       <span class="zp-tag">Nobel 2016 · Yoshinori Ohsumi · 7 dk okuma</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">2016</div><div class="zp-st-l">Otofaji Nobel Tıp Ödülü — Yoshinori Ohsumi</div></div>
@@ -2654,7 +2657,7 @@
       <p>"Otofaji, hücrelerimizin binlerce yıl evrimle geliştirdiği hayatta kalma ve yenilenme stratejisi. Modern yaşam tarzı bu sistemi kapatıyor — bilinçli seçimlerle yeniden açabiliriz."</p>
       <cite>— Yoshinori Ohsumi, Nobel Konuşması (2016)</cite>
     </div>
-    <div class="zp-src">Kaynak: Yoshinori Ohsumi Nobel Lecture 2016 · Cell 2011 (Mizushima & Komatsu) · Nature Reviews Molecular Cell Biology · New England Journal of Medicine (Levine & Kroemer, 2019) · Nature Medicine</div>
+    <div class="zp-src">Kaynak: <a href="https://www.nobelprize.org/prizes/medicine/2016/ohsumi/lecture/" target="_blank" rel="noopener noreferrer">Yoshinori Ohsumi Nobel Lecture 2016</a> · Cell 2011 (Mizushima & Komatsu) · <a href="https://www.nature.com/nrm/" target="_blank" rel="noopener noreferrer">Nature Reviews Molecular Cell Biology</a> · <a href="https://www.nejm.org/" target="_blank" rel="noopener noreferrer">New England Journal of Medicine</a> (Levine & Kroemer, 2019) · <a href="https://www.nature.com/nm/" target="_blank" rel="noopener noreferrer">Nature Medicine</a></div>
   </div>
 </div>
 
@@ -2670,7 +2673,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#3B0764 0%,#6D28D9 60%,#8B5CF6 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🔬</span>
-      <h1>Epigenetik: Genleriniz Kaderiniz Değil</h1>
+      <h2>Epigenetik: Genleriniz Kaderiniz Değil</h2>
       <span class="zp-tag">Genetik · Horvath Saati · 9 dk okuma</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">%25–30</div><div class="zp-st-l">Uzun ömrün genlerle belirlenen kısmı</div></div>
@@ -2724,7 +2727,7 @@
       <p>"Genler mermi yüklü silahlar gibi — ama tetikçi siz ve yaşam tarzınızsınız."</p>
       <cite>— Dr. Mehmet Oz (klişe ama bilimsel özü doğru) / daha doğrusu: Dean Ornish, Preventive Medicine Research Institute</cite>
     </div>
-    <div class="zp-src">Kaynak: Horvath S. "DNA methylation age" (Genome Biology 2013) · Ornish et al. Lancet Oncology 2013 · Surrey University Sleep Study 2013 · Nature Reviews Genetics · Cell Metabolism (Barres & Zierath, 2016)</div>
+    <div class="zp-src">Kaynak: Horvath S. "DNA methylation age" (<a href="https://genomebiology.biomedcentral.com/" target="_blank" rel="noopener noreferrer">Genome Biology</a> 2013) · Ornish et al. <a href="https://www.thelancet.com/journals/lanonc/home" target="_blank" rel="noopener noreferrer">Lancet Oncology</a> 2013 · Surrey University Sleep Study 2013 · <a href="https://www.nature.com/nrg/" target="_blank" rel="noopener noreferrer">Nature Reviews Genetics</a> · <a href="https://www.cell.com/cell-metabolism/home" target="_blank" rel="noopener noreferrer">Cell Metabolism</a> (Barres & Zierath, 2016)</div>
   </div>
 </div>
 
@@ -2740,7 +2743,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#78350F 0%,#D97706 60%,#F59E0B 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🔥</span>
-      <h1>Inflammaging: Sizi Sessizce Yaşlandıran İltihap</h1>
+      <h2>Inflammaging: Sizi Sessizce Yaşlandıran İltihap</h2>
       <span class="zp-tag">İmmünoloji · Kronik İnflamasyon · 8 dk okuma</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">7</div><div class="zp-st-l">Kronik hastalıktan 7'sinin altında inflamasyon var (kanser, diyabet, alzheimer…)</div></div>
@@ -2794,7 +2797,7 @@
       <p>"Yaşa bağlı hastalıkların neredeyse hepsinin ortak paydası inflammaging. Bu yangını söndürmek longevity'nin merkezinde."</p>
       <cite>— Claudio Franceschi, "Inflammaging: a new immune-metabolic viewpoint" (Nature Reviews Immunology, 2018)</cite>
     </div>
-    <div class="zp-src">Kaynak: Franceschi et al. Nature Reviews Immunology 2018 · Cell 2019 (Senescence Reviews) · Stanford Fermented Foods Study 2021 · NEJM Cardiovascular Inflammation Reviews · Journal of Neuroinflammation</div>
+    <div class="zp-src">Kaynak: Franceschi et al. <a href="https://www.nature.com/nri/" target="_blank" rel="noopener noreferrer">Nature Reviews Immunology</a> 2018 · <a href="https://www.cell.com/" target="_blank" rel="noopener noreferrer">Cell</a> 2019 (Senescence Reviews) · Stanford Fermented Foods Study 2021 · <a href="https://www.nejm.org/" target="_blank" rel="noopener noreferrer">NEJM</a> Cardiovascular Inflammation Reviews · <a href="https://jneuroinflammation.biomedcentral.com/" target="_blank" rel="noopener noreferrer">Journal of Neuroinflammation</a></div>
   </div>
 </div>
 
@@ -2810,7 +2813,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#1E3A8A 0%,#2563EB 60%,#60A5FA 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">👴</span>
-      <h1>100 Yaşında Sağlıklı: Süper Yaşlılardan Dersler</h1>
+      <h2>100 Yaşında Sağlıklı: Süper Yaşlılardan Dersler</h2>
       <span class="zp-tag">Centenarian Araştırmaları · 30 Yıllık Takip · 7 dk okuma</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">30 yıl</div><div class="zp-st-l">New England Centenarian Study'nin araştırma süresi</div></div>
@@ -2863,7 +2866,7 @@
       <p>"Yüzlükler bize şunu öğretiyor: Sağlıklı yaşlanmak olası — ve birçok etken kontrolümüzde. Genetik kaderimiz değil, başlangıç noktamız."</p>
       <cite>— Thomas Perls, New England Centenarian Study Direktörü</cite>
     </div>
-    <div class="zp-src">Kaynak: New England Centenarian Study (Perls et al.) · Nir Barzilai, Ashkenazi Longevity Study · FOXO3 Meta-analysis (Flachsbart et al.) · Journal of Gerontology · Nature Aging</div>
+    <div class="zp-src">Kaynak: <a href="https://www.bumc.bu.edu/centenarian/" target="_blank" rel="noopener noreferrer">New England Centenarian Study</a> (Perls et al.) · Nir Barzilai, Ashkenazi Longevity Study · FOXO3 Meta-analysis (Flachsbart et al.) · Journal of Gerontology · <a href="https://www.nature.com/nataging/" target="_blank" rel="noopener noreferrer">Nature Aging</a></div>
   </div>
 </div>
 
@@ -2879,7 +2882,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#064E3B 0%,#059669 60%,#34D399 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">⚡</span>
-      <h1>NAD+ ve Sirtuin Genleri: Uzun Yaşamın Moleküler Sırrı</h1>
+      <h2>NAD+ ve Sirtuin Genleri: Uzun Yaşamın Moleküler Sırrı</h2>
       <span class="zp-tag">Biyokimya · David Sinclair · 10 dk okuma</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">%50</div><div class="zp-st-l">50 yaşında 20 yaşa kıyasla NAD+ düzeyindeki düşüş</div></div>
@@ -2892,7 +2895,7 @@
     <div class="zp-sec">
       <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>NAD+ Nedir ve Neden Önemli?</h2>
       <p class="zp-p">NAD+ (nikotinamid adenin dinükleotid) vücudunuzdaki her hücrede bulunan ve enerji metabolizmasının merkezinde yer alan bir koenzim. Mitokondriyle birlikte çalışarak besinlerden enerji üretiyor; DNA onarım enzimlerini aktive ediyor; sirkadyen ritmi düzenliyor.</p>
-      <p class="zp-p">Sorun şu: NAD+ düzeyleri yaşla dramatik biçimde düşüyor. 50 yaşında, 20 yaşındaki seviyenizin yaklaşık yarısına inmiş olabilir. Harvard'lı araştırmacı David Sinclair bu düşüşü "yaşlanmanın hem belirtisi hem nedeni" olarak tanımlıyor.</p>
+      <p class="zp-p">Sorun şu: NAD+ düzeyleri yaşla dramatik biçimde düşüyor. 50 yaşında, 20 yaşındaki seviyenizin yaklaşık yarısına inmiş olabilir. Harvard'lı araştırmacı <a href="https://sinclair.hms.harvard.edu/" target="_blank" rel="noopener noreferrer">David Sinclair</a> bu düşüşü "yaşlanmanın hem belirtisi hem nedeni" olarak tanımlıyor.</p>
       <ul class="zp-ul">
         <li><b>Enerji Üretimi:</b> NAD+ mitokondrinin elektron taşıma zincirinde merkezi rol oynuyor. Düşük NAD+ = düşük mitokondriyal verimlilik = yorgunluk, yavaş metabolizma, düşük performans.</li>
         <li><b>PARP Enzimleri — DNA Onarımı:</b> DNA hasarlandığında PARP enzimleri onarım sürecini başlatıyor. Bu enzimler büyük miktarda NAD+ tüketiyor. Yaşlandıkça DNA hasarı artıyor → daha fazla NAD+ harcanıyor → stok azalıyor.</li>
@@ -2935,9 +2938,9 @@
     </div>
     <div class="zp-quote">
       <p>"NAD+ yaşlanmanın merkezi mekanizması. İnsanlarda düzeyini artırmanın yollarını bulmak yaşlanmayı tedavi etmenin yolunu açıyor."</p>
-      <cite>— David Sinclair, Harvard Medical School Genetik Profesörü & "Lifespan" Yazarı (2019)</cite>
+      <cite>— <a href="https://sinclair.hms.harvard.edu/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;">David Sinclair</a>, Harvard Medical School Genetik Profesörü & "Lifespan" Yazarı (2019)</cite>
     </div>
-    <div class="zp-src">Kaynak: Sinclair DA "Lifespan" (2019) · Cell Metabolism (Yoshino et al. NMN 2018) · Nature (Guarente Lab Sirtuin Reviews) · PNAS (Verdin Lab) · Cell Reports (NAD+ & Aging 2020)</div>
+    <div class="zp-src">Kaynak: <a href="https://sinclair.hms.harvard.edu/" target="_blank" rel="noopener noreferrer">Sinclair DA</a> "Lifespan" (2019) · <a href="https://www.cell.com/cell-metabolism/home" target="_blank" rel="noopener noreferrer">Cell Metabolism</a> (Yoshino et al. NMN 2018) · <a href="https://www.nature.com/" target="_blank" rel="noopener noreferrer">Nature</a> (Guarente Lab Sirtuin Reviews) · <a href="https://www.pnas.org/" target="_blank" rel="noopener noreferrer">PNAS</a> (Verdin Lab) · <a href="https://www.cell.com/cell-reports/home" target="_blank" rel="noopener noreferrer">Cell Reports</a> (NAD+ & Aging 2020)</div>
   </div>
 </div>
 
@@ -2953,7 +2956,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#064E3B 0%,#047857 55%,#10B981 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🌿</span>
-      <h1>Alkali Beslenme: pH Dengesi ve Uzun Yaşam</h1>
+      <h2>Alkali Beslenme: pH Dengesi ve Uzun Yaşam</h2>
       <span class="zp-tag">Hücresel Beslenme · Ayşegül Çoruhlu Yaklaşımı · 8 dk okuma</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">7.35–7.45</div><div class="zp-st-l">Sağlıklı kan pH aralığı — bu denge hayati</div></div>
@@ -3037,7 +3040,7 @@
       <p>"Hücreleriniz doğru yakıtı, doğru zamanda, doğru koşullarda aldığında gençliğiniz devam eder. Alkali beslenme bu ortamı yaratmanın en pratik yoludur."</p>
       <cite>— Dr. Ayşegül Çoruhlu, Fonksiyonel Tıp & Longevity Uzmanı</cite>
     </div>
-    <div class="zp-src">Kaynak: Ayşegül Çoruhlu — aysegulcoruhlu.com (Hücresel Beslenme, Longevity Yaklaşımı) · European Journal of Clinical Nutrition (Alkali Diyet Meta-Analizi) · JAMA Internal Medicine 2008 (Potasyum ve Kas Kütlesi) · Journal of Renal Nutrition · Schwalfenberg GK "The alkaline diet" (J Environ Public Health, 2012)</div>
+    <div class="zp-src">Kaynak: Ayşegül Çoruhlu — <a href="https://www.aysegulcoruhlu.com/" target="_blank" rel="noopener noreferrer">aysegulcoruhlu.com</a> (Hücresel Beslenme, Longevity Yaklaşımı) · <a href="https://www.nature.com/ejcn/" target="_blank" rel="noopener noreferrer">European Journal of Clinical Nutrition</a> (Alkali Diyet Meta-Analizi) · <a href="https://jamanetwork.com/journals/jamainternalmedicine" target="_blank" rel="noopener noreferrer">JAMA Internal Medicine</a> 2008 (Potasyum ve Kas Kütlesi) · <a href="https://www.jrnjournal.org/" target="_blank" rel="noopener noreferrer">Journal of Renal Nutrition</a> · Schwalfenberg GK "The alkaline diet" (J Environ Public Health, 2012)</div>
   </div>
 </div>
 
@@ -3053,7 +3056,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#451A03 0%,#92400E 55%,#F59E0B 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">🕐</span>
-      <h1>Sirkadiyen Beslenme: Ne Zaman Yediğin de Önemli</h1>
+      <h2>Sirkadiyen Beslenme: Ne Zaman Yediğin de Önemli</h2>
       <span class="zp-tag">Nobel 2017 · Kronobiyoloji · 7 dk okuma</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">2017</div><div class="zp-st-l">Sirkadiyen ritim Nobel'i — Hall, Rosbash, Young</div></div>
@@ -3086,7 +3089,7 @@
       <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>Gece Yemenin Gizli Maliyeti</h2>
       <ul class="zp-ul">
         <li><b>İnsülin Direnci:</b> Gece geç saatlerde karbonhidrat ve şeker yemek insülinin verimli çalışmadığı bir anda pankreas üzerinde baskı oluşturuyor. Yıllar içinde bu pattern insülin direncine ve tip 2 diyabete zemin hazırlıyor.</li>
-        <li><b>Kilo Yönetimi:</b> Aynı kalorinin sabah mı yoksa gece mi alındığı vücut kompozisyonunu etkiliyor. Harvard çalışması: geç yiyenler erken yiyenlere kıyasla aynı kaloriyle daha fazla yağ depoluyor.</li>
+        <li><b>Kilo Yönetimi:</b> Aynı kalorinin sabah mı yoksa gece mi alındığı vücut kompozisyonunu etkiliyor. <a href="https://hms.harvard.edu/news/late-night-eating-impact" target="_blank" rel="noopener noreferrer">Harvard çalışması</a>: geç yiyenler erken yiyenlere kıyasla aynı kaloriyle daha fazla yağ depoluyor.</li>
         <li><b>Uyku Kalitesi:</b> Geç ve ağır yemek uyku kalitesini düşürüyor. Sindirim sistemi çalışırken derin uyku süresi azalıyor. Bozuk uyku → bozuk metabolizma → daha fazla gece yeme → kısır döngü.</li>
         <li><b>Mikrobiyom Ritmi:</b> Bağırsak bakterilerinin de kendi sirkadiyen ritmi var. Gece geç beslenmek mikrobiyomun "dinlenme döngüsünü" bozuyor, disbiyoz ve inflamasyona zemin hazırlıyor.</li>
         <li><b>GERD ve Reflü:</b> Yatmadan 2 saat içinde yemek yemek gastroözofageal reflü riskini artırıyor. Kronik reflü özofagus hasarına ve uzun vadede kanser riskine kapı açıyor.</li>
@@ -3121,7 +3124,7 @@
       <p>"Ne yediğiniz kadar ne zaman yediğiniz de metabolik sağlığınızı ve yaşlanma hızınızı belirliyor. Biyolojik saatinizle uyumlu yaşamak en ucuz ve en etkili longevity müdahalesi."</p>
       <cite>— Satchin Panda, Salk Enstitüsü "Circadian Code" (2019) · Ayşegül Çoruhlu, Sirkadiyen Yaşam Yaklaşımı</cite>
     </div>
-    <div class="zp-src">Kaynak: Satchin Panda "The Circadian Code" (2019) · Cell Metabolism (Sutton et al. eTRE 2018) · Nature Reviews Endocrinology · Ayşegül Çoruhlu — aysegulcoruhlu.com (Sirkadiyen Ritim Nedir) · Nobel Committee 2017 Press Release</div>
+    <div class="zp-src">Kaynak: <a href="https://www.salk.edu/scientist/satchidananda-panda/" target="_blank" rel="noopener noreferrer">Satchin Panda</a> "The Circadian Code" (2019) · <a href="https://www.cell.com/cell-metabolism/home" target="_blank" rel="noopener noreferrer">Cell Metabolism</a> (Sutton et al. eTRE 2018) · <a href="https://www.nature.com/nrendo/" target="_blank" rel="noopener noreferrer">Nature Reviews Endocrinology</a> · Ayşegül Çoruhlu — <a href="https://www.aysegulcoruhlu.com/" target="_blank" rel="noopener noreferrer">aysegulcoruhlu.com</a> (Sirkadiyen Ritim Nedir) · <a href="https://www.nobelprize.org/prizes/medicine/2017/press-release/" target="_blank" rel="noopener noreferrer">Nobel Committee 2017 Press Release</a></div>
   </div>
 </div>
 
@@ -3137,7 +3140,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#1E3A8A 0%,#1D4ED8 55%,#60A5FA 100%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">⚙️</span>
-      <h1>Mitokondri: Uzun Yaşamın Enerji Merkezi</h1>
+      <h2>Mitokondri: Uzun Yaşamın Enerji Merkezi</h2>
       <span class="zp-tag">Hücre Biyolojisi · Enerji & Yaşlanma · 9 dk okuma</span>
       <div class="zp-stats">
         <div class="zp-st"><div class="zp-st-n">1.000+</div><div class="zp-st-l">Her kalp hücresindeki mitokondri sayısı</div></div>
@@ -3197,7 +3200,7 @@
       <p>"Mitokondrinizin sağlığı enerji düzeyinizin, metabolizmanızın ve yaşlanma hızınızın merkezindedir. Egzersiz, oruç ve doğru beslenme bu gücü korumanın en kanıtlanmış yoludur."</p>
       <cite>— Dr. Ayşegül Çoruhlu (Mitokondri Sağlığı Yaklaşımı) · Peter Attia "Outlive" (2023) · Nature Reviews Molecular Cell Biology</cite>
     </div>
-    <div class="zp-src">Kaynak: Peter Attia "Outlive" (2023) · Nature Reviews Molecular Cell Biology (Mitochondria & Aging) · Cell (Mitophagy Reviews) · Ayşegül Çoruhlu — aysegulcoruhlu.com · Journal of Physiology (PGC-1α & Exercise) · PNAS (CoQ10 & Aging)</div>
+    <div class="zp-src">Kaynak: Peter Attia "Outlive" (2023) · <a href="https://www.nature.com/nrm/" target="_blank" rel="noopener noreferrer">Nature Reviews Molecular Cell Biology</a> (Mitochondria & Aging) · <a href="https://www.cell.com/" target="_blank" rel="noopener noreferrer">Cell</a> (Mitophagy Reviews) · Ayşegül Çoruhlu — <a href="https://www.aysegulcoruhlu.com/" target="_blank" rel="noopener noreferrer">aysegulcoruhlu.com</a> · <a href="https://physoc.org/" target="_blank" rel="noopener noreferrer">Journal of Physiology</a> (PGC-1α & Exercise) · <a href="https://www.pnas.org/" target="_blank" rel="noopener noreferrer">PNAS</a> (CoQ10 & Aging)</div>
   </div>
 </div>
 
@@ -3215,7 +3218,7 @@
   <div class="zp-hero" style="background:linear-gradient(160deg,#0A2818 0%,#1A4731 45%,#2D6A4F 80%,#D4A847 160%);">
     <div class="zp-hero-inner">
       <span class="zp-emoji">⚡</span>
-      <h1>Vivelong <span class="grad-text">Pro</span></h1>
+      <h2>Vivelong <span class="grad-text">Pro</span></h2>
       <span class="zp-tag">Biyolojik yaşınızı bilimle yönetin — kişisel, ölçülebilir, sürdürülebilir</span>
       <div class="pro-hero-feats">
         <span class="pro-hf">📈 Biyolojik Yaş Grafiği</span>
@@ -3871,7 +3874,7 @@
   <div class="zp-hero">
     <div class="zp-hero-inner">
       <span class="zp-emoji">💬</span>
-      <h1>Topluluk Forumu</h1>
+      <h2>Topluluk Forumu</h2>
       <span class="zp-tag">Deneyimlerinizi paylaşın · Sorularınızı sorun · Birlikte öğrenin</span>
     </div>
   </div>
