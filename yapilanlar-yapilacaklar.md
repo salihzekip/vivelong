@@ -1,6 +1,6 @@
 # Vivelong SEO/GEO Çalışması — Yapılanlar & Yapılacaklar
 
-**Son güncelleme:** 9 Ağustos 2026 (Search Console doğrulandı + rapor/kod çapraz kontrolüyle Hafta 1 açık maddeleri eklendi)
+**Son güncelleme:** 9 Ağustos 2026 (H1 hiyerarşisi + dış kaynak linkleri tamamlandı ve deploy edildi)
 **Kapsam:** vivelong.com SEO + GEO denetimi ve uygulanan hızlı aksiyonlar
 
 ---
@@ -63,6 +63,7 @@ Tam SEO/GEO denetim raporu (bulgular + öncelik sıralı aksiyon takvimi):
 - [x] Mülk doğrulandı (9 Ağustos, URL-öneki + Google Analytics yöntemiyle)
 - [ ] Sitemaps bölümünden `sitemap.xml` gönder (kullanıcı yapacak/yapıyor)
 - [ ] Birkaç gün içinde "Kapsam" (Coverage/Pages) raporunda 20 sayfanın indekslendiğini kontrol et
+- **Not (9 Ağustos):** Chrome uzantısı (claude-in-chrome) üzerinden Search Console'a otomatik bağlanmayı denedim, uzantı bağlı değildi ("Browser extension is not connected"). Kullanıcının Search Console durumunu kendi tarayıcısından kontrol etmesi veya uzantıyı/Chrome'u yeniden başlatıp tekrar denemesi gerekiyor.
 
 ### Öncelik 2 — Raporun "Ay 2+" maddeleri
 - [x] `netlify/functions/subscribe.js` git'e eklendi (9 Ağustos, commit `88ee712`, push edildi). `.gitignore` eklendi (`.netlify/` yerel önbelleği artık izlenmiyor).
@@ -73,14 +74,15 @@ Tam SEO/GEO denetim raporu (bulgular + öncelik sıralı aksiyon takvimi):
   - **Rakip biyolojik yaş hesaplayıcıları (backlink değil, rakip/konumlandırma referansı):** hesaplama.lol, hesapratik.com, engelli.com, SuperAge (App Store uygulaması)
   - Sıradaki adım: kullanıcı hangi isimlerle iletişime geçmek istediğine karar vermeli — bu bir öneri listesi, otomatik outreach yapılmadı
 
-### Öncelik 3 — Raporun "Hafta 1: Güven sinyalleri" maddesi (HİÇ BAŞLANMADI)
-Rapor + kod karşılaştırmasıyla 9 Ağustos'ta doğrulandı, bunlardan hiçbiri yapılmamış:
-- [ ] Dış kaynak referanslarını (metinde geçen "NCBI", "Harvard" gibi isimler) gerçek tıklanabilir linke bağla — kodda hâlâ sadece 2 dış link var (denetimdeki durumla birebir aynı, hiç değişmemiş)
+### Öncelik 3 — Raporun "Hafta 1: Güven sinyalleri" maddesi
+- [x] **H1 hiyerarşisi düzeltildi (9 Ağustos, deploy edildi, canlıda doğrulandı):** ana sayfada 22 `<h1>` vardı, artık sadece hero başlığı `<h1>`, panellerdeki 21 başlık `<h2>`'ye çevrildi (+ `.zp-hero h1` CSS selektörü `.zp-hero h2`'ye güncellendi). `curl vivelong.com | grep -c "<h1"` → 1.
+- [x] **Dış kaynak referansları gerçek linklere bağlandı (9 Ağustos, deploy edildi, canlıda doğrulandı):** 0 içerik linkinden 30 gerçek dış linke çıkıldı. WebSearch ile doğrulanan spesifik atıflar: NCBI PMC11688636 (biyomarker bölümü), Harvard Study of Adult Development (adultdevelopmentstudy.org), Sara Lazar 2011 meditasyon çalışması (PubMed), David Sinclair'in Harvard laboratuvarı, Harvard'ın geç yeme/yağ depolama çalışması (hms.harvard.edu), Holt-Lunstad 2015 yalnızlık meta-analizi, US Surgeon General 2023 advisory (hhs.gov PDF). Ayrıca 19 "Kaynak:" kutusundaki kurum/dergi isimleri (WHO, Mayo Clinic, Nature ailesi, Cell ailesi, PNAS, NEJM, JAMA, PREDIMED, bluezones.com, aysegulcoruhlu.com vb.) kendi resmi sayfalarına bağlandı.
+  - **Yan düzeltme:** "2050'de 60+ nüfus 2,1 milyar" istatistiği kodda yanlışlıkla "(NCBI 2024)" olarak etiketlenmişti — gerçek kaynağı WHO, düzeltilip who.int'e linklendi.
+  - **Kapsam dışı bırakılan (uydurma riski nedeniyle linklenmedi):** Kaynak kutularındaki tekil yazar+yıl atıfları (Pes & Poulain 2004, Willcox 2007, Rosero-Bixby 2013, Panagiotakos 2011, Fraser 2009, Horvath 2013'ün tam DOI'si, PNAS 2004 Epel'in tam DOI'si, Ornish 2013, Yoshino 2018, Franceschi 2018, Perls Centenarian çalışmasının tam atfı, FOXO3/Flachsbart, Schwalfenberg 2012, Mizushima & Komatsu 2011) — bunlar için doğru PubMed/DOI linkini tek tek doğrulamadan eklemek yanlış/kırık link riski taşıyordu, o yüzden düz metin bırakıldı. İleride derinlemesine bir link-doğrulama turu yapılabilir.
 - [ ] "Hakkımızda" bölümü ekle — kim yazıyor, editoryal/kaynak süreci nedir bilgisi hâlâ yok (YMYL/sağlık içeriği için önemli, rapor bunu özellikle vurguluyor)
-- [ ] H1 hiyerarşisi düzelt — ana sayfada hâlâ **22 adet `<h1>`** var (`grep -c "<h1" index.html` ile 9 Ağustos'ta doğrulandı); panel başlıkları H2'ye çevrilmeli, sadece ana sayfa başlığı H1 kalmalı
 - [ ] Sosyal medya hesabı bağla — sitede Instagram/Facebook/LinkedIn linki hiç yok (`grep` 0 eşleşme verdi); önce hesap var mı yok mu netleşmeli, yoksa açılması değerlendirilmeli
 
-*Not: H1 düzeltmesi ve dış kaynak linkleri düşük efor/yüksek etki — sadece `index.html` düzenlemesi, yapısal değişiklik gerektirmiyor.*
+*Not: Sıradaki oturumda buradan devam: "Hakkımızda" bölümü + sosyal medya hesabı kararı.*
 
 ### Öncelik 4 — Doğrulama / temizlik
 - [ ] Kart tıklama davranışını (Mavi Bölgeler/Blog kartına tıklayınca JS panelinin sayfadan çıkmadan açılması) kullanıcı kendi tarayıcısında bir kez elle test etmeli — Chrome uzantısı bu ağır sayfada otomatik test edemedi (tekrarlayan zaman aşımı)
