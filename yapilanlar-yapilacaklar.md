@@ -91,6 +91,23 @@ Tam SEO/GEO denetim raporu (bulgular + öncelik sıralı aksiyon takvimi):
 
 ---
 
+## Soru-tabanlı içerik genişletmesi (9 Ağustos 2026)
+
+Google/GEO'da sağlıklı yaşam, longevity ve alkali yaşam konusunda gerçekten sorulan sorular araştırıldı (WebSearch), mevcut 19 sayfayla karşılaştırılıp gerçek boşluklar bulundu ve dolduruldu:
+
+- [x] **alkali-beslenme:** 2 yeni FAQ — "Alkali diyet kan pH'ını gerçekten değiştirir mi?" (mit-açıklama, Healthline kaynaklı) ve "Alkali su içmek faydalı mı?" (çok aranan ama sitede hiç olmayan bir konu)
+- [x] **nad-sirtuin-genleri:** "NMN takviyesi almak güvenli mi, kimler kullanmamalı?" — pratik doz/güvenlik sorusu, mevcut FAQ sadece etkinliği tartışıyordu
+- [x] **sirkadiyen-beslenme:** sayfanın HİÇ sahip olmadığı FAQPage şeması + 4 soruluk "aralıklı oruç" odaklı görünür FAQ bölümü eklendi (bu terim sirkadiyen beslenmeden çok daha yüksek arama hacmine sahip)
+- [x] **telomerler-nedir kontrol edildi, atlandı:** "telomer uzatma mümkün mü" sorusu zaten mevcut FAQ'de iyi cevaplanıyordu, tekrar eklenmedi
+- [x] Yeni FAQ'ler hem JSON-LD (Google rich snippet) hem de görünür `<details>/<summary>` HTML olarak eklendi — önceki 7 FAQPage'in hepsi SADECE gizli şemaydı, kullanıcı hiç göremiyordu. Bu GEO için önemli: AI motorları çoğunlukla görünür metni okuyor, gizli şemayı değil.
+- [x] Bu 3 sayfada eskiden beri eksik olan zp-src/zp-quote dış kaynak linkleri de eklendi (kök index.html'deki 9 Ağustos linkleme çalışması standalone sayfalara hiç yansımamıştı — bu genel bir bulgu, aşağıya not edildi)
+
+**Yan bulgu — TÜM standalone sayfalar linksizdi:** kök `index.html`'e eklenen 30 dış link, ayrı blog/rehber/mavi-bölge sayfalarına (aynı içeriğin kopyaları) hiç işlenmemişti. Bugün dokunulan 3 sayfada düzeltildi; kalan ~16 sayfada hâlâ link yok — ileride toplu bir tur gerekebilir.
+
+**Tıbbi bilgilendirme uyarısı — TÜM 20 sayfaya eklendi (kullanıcı talebiyle, 9 Ağustos):** Daha önce sadece biyolojik yaş hesaplayıcısında "bilgilendirme amaçlıdır, tedavi değildir" uyarısı vardı; 19 makale/rehber sayfasının hiçbirinde yoktu. `.zp-disclaimer` bileşeni (assets/site.css + index.html embedded style) ile her sayfanın sonuna eklendi. NMN dozu, aralıklı oruç uygunluğu gibi eyleme geçirilebilir tavsiyeler artık hekime danışma uyarısıyla birlikte.
+
+---
+
 ## GA4 durum kontrolü (9 Ağustos 2026)
 
 Chrome üzerinden GA4'e (property 546237084) girildi, son 7 gün: **2 etkin kullanıcı, 9 etkinlik, 0 yeni kullanıcı, 0 önemli faaliyet**. Trafiğin tamamı `Direct/(none)` — organik arama trafiği henüz yok. Görüntülenen tek sayfa ana sayfa; yeni 20 sayfadan (Mavi Bölgeler/Rehber/Blog) hiçbirine henüz ziyaret gelmemiş. Bu beklenen bir durum: site bu hafta yapısal değişiklik geçirdi ve Search Console yeni doğrulandı, Google henüz taramaya/indekslemeye başlamadı. Birkaç gün sonra tekrar kontrol edilmeli.
