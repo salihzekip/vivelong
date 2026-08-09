@@ -269,6 +269,10 @@
     .zp-zones-nav button { display:flex; align-items:center; gap:6px; padding:8px 14px; background:var(--surface); border:1.5px solid var(--border); border-radius:9px; font-family:'Raleway',sans-serif; font-size:12px; font-weight:600; color:var(--text-mid); cursor:pointer; transition:all .18s; }
     .zp-zones-nav button:hover { border-color:var(--primary-light); color:var(--primary); background:var(--pale); }
     .zp-src { font-size:11px; color:var(--text-muted); border-top:1px solid var(--border-light); padding-top:14px; margin-top:8px; line-height:1.7; }
+    .zp-disclaimer { display:flex; gap:10px; align-items:flex-start; background:var(--bg2); border:1.5px solid var(--border); border-radius:var(--radius-sm); padding:14px 16px; margin-top:16px; }
+    .zp-disclaimer svg { flex-shrink:0; margin-top:1px; color:var(--gold); }
+    .zp-disclaimer span { font-size:12px; color:var(--text-muted); line-height:1.7; }
+    .zp-disclaimer strong { color:var(--text-mid); }
     /* ── BLOG ── */
     #blog { background:var(--bg); }
     .bgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:20px; margin-top:40px; }
@@ -1337,6 +1341,10 @@
       </div>
     </div>
     <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> (National Geographic Press) · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">bluezones.com</a> · Pes & Poulain, Experimental Gerontology 2004</div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
     <div class="zp-zones-nav">
       <button onclick="switchZone('sardunya','okinawa')">🇯🇵 Okinawa</button>
       <button onclick="switchZone('sardunya','nicoya')">🇨🇷 Nicoya</button>
@@ -1413,6 +1421,10 @@
       </div>
     </div>
     <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">bluezones.com</a> · Willcox BJ et al., "Caloric restriction, the traditional Okinawan diet", 2007</div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
     <div class="zp-zones-nav">
       <button onclick="switchZone('okinawa','sardunya')">🇮🇹 Sardunya</button>
       <button onclick="switchZone('okinawa','nicoya')">🇨🇷 Nicoya</button>
@@ -1490,6 +1502,10 @@
       </div>
     </div>
     <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">bluezones.com</a> · Rosero-Bixby L., "High longevity in Nicoya Peninsula", 2013</div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
     <div class="zp-zones-nav">
       <button onclick="switchZone('nicoya','sardunya')">🇮🇹 Sardunya</button>
       <button onclick="switchZone('nicoya','okinawa')">🇯🇵 Okinawa</button>
@@ -1566,6 +1582,10 @@
       </div>
     </div>
     <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">bluezones.com</a> · Panagiotakos DB et al., "Ikaria Study", 2011</div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
     <div class="zp-zones-nav">
       <button onclick="switchZone('ikaria','sardunya')">🇮🇹 Sardunya</button>
       <button onclick="switchZone('ikaria','okinawa')">🇯🇵 Okinawa</button>
@@ -1642,6 +1662,10 @@
       </div>
     </div>
     <div class="zp-src">Kaynak: Dan Buettner — <em>The Blue Zones</em> · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">bluezones.com</a> · Fraser GE, "Vegetarian diets: what do we know of their effects on common chronic diseases?", 2009</div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
     <div class="zp-zones-nav">
       <button onclick="switchZone('loma','sardunya')">🇮🇹 Sardunya</button>
       <button onclick="switchZone('loma','okinawa')">🇯🇵 Okinawa</button>
@@ -1976,6 +2000,10 @@
     </div>
 
     <div class="zp-src">Kaynak: <a href="https://www.mayoclinic.org/" target="_blank" rel="noopener noreferrer">Mayo Clinic</a> Healthy Aging Research · <a href="https://www.who.int/data/gho" target="_blank" rel="noopener noreferrer">WHO Global Health Observatory</a> · <a href="https://www.ahajournals.org/journal/jaha" target="_blank" rel="noopener noreferrer">Journal of the American Heart Association</a> · <a href="https://www.nature.com/nataging/" target="_blank" rel="noopener noreferrer">Nature Aging</a> · Longevity Consortium 2023</div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
@@ -2104,6 +2132,10 @@
       <cite>— Dr. David Katz, True Health Initiative</cite>
     </div>
     <div class="zp-src">Kaynak: <a href="https://predimed.es/" target="_blank" rel="noopener noreferrer">PREDIMED Çalışması</a> · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">Blue Zones Araştırmaları</a> (Dan Buettner) · Stanford Mikrobiyom Çalışması 2021 · <a href="https://www.jandonline.org/" target="_blank" rel="noopener noreferrer">Journal of the Academy of Nutrition and Dietetics</a> · <a href="https://www.nature.com/nm/" target="_blank" rel="noopener noreferrer">Nature Medicine</a></div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
@@ -2185,6 +2217,10 @@
       <cite>— Robert Waldinger, <a href="https://www.adultdevelopmentstudy.org/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;">Harvard Yetişkin Gelişimi Çalışması</a> Direktörü (85 yıllık araştırma)</cite>
     </div>
     <div class="zp-src">Kaynak: <a href="https://www.adultdevelopmentstudy.org/" target="_blank" rel="noopener noreferrer">Harvard Study of Adult Development</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/25910392/" target="_blank" rel="noopener noreferrer">Holt-Lunstad Meta-analizi 2015</a> · <a href="https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf" target="_blank" rel="noopener noreferrer">US Surgeon General Advisory on Loneliness 2023</a> · <a href="https://jamanetwork.com/journals/jamainternalmedicine" target="_blank" rel="noopener noreferrer">JAMA Internal Medicine</a> · <a href="https://www.bluezones.com/" target="_blank" rel="noopener noreferrer">Blue Zones Research</a></div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
@@ -2272,6 +2308,10 @@
       <cite>— Dr. Mark Tarnopolsky, McMaster Üniversitesi Egzersiz Tıbbı Araştırmacısı</cite>
     </div>
     <div class="zp-src">Kaynak: <a href="https://jamanetwork.com/journals/jamainternalmedicine" target="_blank" rel="noopener noreferrer">JAMA Internal Medicine</a> 2021 · Peter Attia "Outlive" · <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">WHO Fiziksel Aktivite Rehberleri</a> · <a href="https://www.nature.com/nrcardio/" target="_blank" rel="noopener noreferrer">Nature Reviews Cardiology</a> · <a href="https://physoc.org/" target="_blank" rel="noopener noreferrer">Journal of Physiology</a></div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
@@ -2365,6 +2405,10 @@
       <cite>— Matthew Walker, Nörobilimci & "Why We Sleep" Yazarı</cite>
     </div>
     <div class="zp-src">Kaynak: Matthew Walker "Why We Sleep" · <a href="https://pubmed.ncbi.nlm.nih.gov/21071182/" target="_blank" rel="noopener noreferrer">Harvard Meditasyon Çalışması 2011</a> · Epel & Blackburn "The Telomere Effect" · <a href="https://sleep.stanford.edu/" target="_blank" rel="noopener noreferrer">Stanford Sleep Medicine Center</a> · Yoshifumi Miyazaki Shinrin-yoku Araştırmaları</div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
@@ -2588,6 +2632,10 @@
       <cite>— Elizabeth Blackburn & Elissa Epel, "The Telomere Effect" (2017)</cite>
     </div>
     <div class="zp-src">Kaynak: Blackburn & Epel "The Telomere Effect" (2017) · <a href="https://www.pnas.org/" target="_blank" rel="noopener noreferrer">PNAS</a> 2004 (Epel et al.) · <a href="https://www.thelancet.com/journals/lanonc/home" target="_blank" rel="noopener noreferrer">Lancet Oncology</a> 2013 (Ornish et al.) · <a href="https://predimedplus.com/" target="_blank" rel="noopener noreferrer">PREDIMED-Plus Çalışması</a> · Journal of Aging Research</div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
@@ -2658,6 +2706,10 @@
       <cite>— Yoshinori Ohsumi, Nobel Konuşması (2016)</cite>
     </div>
     <div class="zp-src">Kaynak: <a href="https://www.nobelprize.org/prizes/medicine/2016/ohsumi/lecture/" target="_blank" rel="noopener noreferrer">Yoshinori Ohsumi Nobel Lecture 2016</a> · Cell 2011 (Mizushima & Komatsu) · <a href="https://www.nature.com/nrm/" target="_blank" rel="noopener noreferrer">Nature Reviews Molecular Cell Biology</a> · <a href="https://www.nejm.org/" target="_blank" rel="noopener noreferrer">New England Journal of Medicine</a> (Levine & Kroemer, 2019) · <a href="https://www.nature.com/nm/" target="_blank" rel="noopener noreferrer">Nature Medicine</a></div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
@@ -2728,6 +2780,10 @@
       <cite>— Dr. Mehmet Oz (klişe ama bilimsel özü doğru) / daha doğrusu: Dean Ornish, Preventive Medicine Research Institute</cite>
     </div>
     <div class="zp-src">Kaynak: Horvath S. "DNA methylation age" (<a href="https://genomebiology.biomedcentral.com/" target="_blank" rel="noopener noreferrer">Genome Biology</a> 2013) · Ornish et al. <a href="https://www.thelancet.com/journals/lanonc/home" target="_blank" rel="noopener noreferrer">Lancet Oncology</a> 2013 · Surrey University Sleep Study 2013 · <a href="https://www.nature.com/nrg/" target="_blank" rel="noopener noreferrer">Nature Reviews Genetics</a> · <a href="https://www.cell.com/cell-metabolism/home" target="_blank" rel="noopener noreferrer">Cell Metabolism</a> (Barres & Zierath, 2016)</div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
@@ -2798,6 +2854,10 @@
       <cite>— Claudio Franceschi, "Inflammaging: a new immune-metabolic viewpoint" (Nature Reviews Immunology, 2018)</cite>
     </div>
     <div class="zp-src">Kaynak: Franceschi et al. <a href="https://www.nature.com/nri/" target="_blank" rel="noopener noreferrer">Nature Reviews Immunology</a> 2018 · <a href="https://www.cell.com/" target="_blank" rel="noopener noreferrer">Cell</a> 2019 (Senescence Reviews) · Stanford Fermented Foods Study 2021 · <a href="https://www.nejm.org/" target="_blank" rel="noopener noreferrer">NEJM</a> Cardiovascular Inflammation Reviews · <a href="https://jneuroinflammation.biomedcentral.com/" target="_blank" rel="noopener noreferrer">Journal of Neuroinflammation</a></div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
@@ -2867,6 +2927,10 @@
       <cite>— Thomas Perls, New England Centenarian Study Direktörü</cite>
     </div>
     <div class="zp-src">Kaynak: <a href="https://www.bumc.bu.edu/centenarian/" target="_blank" rel="noopener noreferrer">New England Centenarian Study</a> (Perls et al.) · Nir Barzilai, Ashkenazi Longevity Study · FOXO3 Meta-analysis (Flachsbart et al.) · Journal of Gerontology · <a href="https://www.nature.com/nataging/" target="_blank" rel="noopener noreferrer">Nature Aging</a></div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
@@ -2941,6 +3005,10 @@
       <cite>— <a href="https://sinclair.hms.harvard.edu/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;">David Sinclair</a>, Harvard Medical School Genetik Profesörü & "Lifespan" Yazarı (2019)</cite>
     </div>
     <div class="zp-src">Kaynak: <a href="https://sinclair.hms.harvard.edu/" target="_blank" rel="noopener noreferrer">Sinclair DA</a> "Lifespan" (2019) · <a href="https://www.cell.com/cell-metabolism/home" target="_blank" rel="noopener noreferrer">Cell Metabolism</a> (Yoshino et al. NMN 2018) · <a href="https://www.nature.com/" target="_blank" rel="noopener noreferrer">Nature</a> (Guarente Lab Sirtuin Reviews) · <a href="https://www.pnas.org/" target="_blank" rel="noopener noreferrer">PNAS</a> (Verdin Lab) · <a href="https://www.cell.com/cell-reports/home" target="_blank" rel="noopener noreferrer">Cell Reports</a> (NAD+ & Aging 2020)</div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
@@ -3041,6 +3109,10 @@
       <cite>— Dr. Ayşegül Çoruhlu, Fonksiyonel Tıp & Longevity Uzmanı</cite>
     </div>
     <div class="zp-src">Kaynak: Ayşegül Çoruhlu — <a href="https://www.aysegulcoruhlu.com/" target="_blank" rel="noopener noreferrer">aysegulcoruhlu.com</a> (Hücresel Beslenme, Longevity Yaklaşımı) · <a href="https://www.nature.com/ejcn/" target="_blank" rel="noopener noreferrer">European Journal of Clinical Nutrition</a> (Alkali Diyet Meta-Analizi) · <a href="https://jamanetwork.com/journals/jamainternalmedicine" target="_blank" rel="noopener noreferrer">JAMA Internal Medicine</a> 2008 (Potasyum ve Kas Kütlesi) · <a href="https://www.jrnjournal.org/" target="_blank" rel="noopener noreferrer">Journal of Renal Nutrition</a> · Schwalfenberg GK "The alkaline diet" (J Environ Public Health, 2012)</div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
@@ -3125,6 +3197,10 @@
       <cite>— Satchin Panda, Salk Enstitüsü "Circadian Code" (2019) · Ayşegül Çoruhlu, Sirkadiyen Yaşam Yaklaşımı</cite>
     </div>
     <div class="zp-src">Kaynak: <a href="https://www.salk.edu/scientist/satchidananda-panda/" target="_blank" rel="noopener noreferrer">Satchin Panda</a> "The Circadian Code" (2019) · <a href="https://www.cell.com/cell-metabolism/home" target="_blank" rel="noopener noreferrer">Cell Metabolism</a> (Sutton et al. eTRE 2018) · <a href="https://www.nature.com/nrendo/" target="_blank" rel="noopener noreferrer">Nature Reviews Endocrinology</a> · Ayşegül Çoruhlu — <a href="https://www.aysegulcoruhlu.com/" target="_blank" rel="noopener noreferrer">aysegulcoruhlu.com</a> (Sirkadiyen Ritim Nedir) · <a href="https://www.nobelprize.org/prizes/medicine/2017/press-release/" target="_blank" rel="noopener noreferrer">Nobel Committee 2017 Press Release</a></div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
@@ -3201,6 +3277,10 @@
       <cite>— Dr. Ayşegül Çoruhlu (Mitokondri Sağlığı Yaklaşımı) · Peter Attia "Outlive" (2023) · Nature Reviews Molecular Cell Biology</cite>
     </div>
     <div class="zp-src">Kaynak: Peter Attia "Outlive" (2023) · <a href="https://www.nature.com/nrm/" target="_blank" rel="noopener noreferrer">Nature Reviews Molecular Cell Biology</a> (Mitochondria & Aging) · <a href="https://www.cell.com/" target="_blank" rel="noopener noreferrer">Cell</a> (Mitophagy Reviews) · Ayşegül Çoruhlu — <a href="https://www.aysegulcoruhlu.com/" target="_blank" rel="noopener noreferrer">aysegulcoruhlu.com</a> · <a href="https://physoc.org/" target="_blank" rel="noopener noreferrer">Journal of Physiology</a> (PGC-1α & Exercise) · <a href="https://www.pnas.org/" target="_blank" rel="noopener noreferrer">PNAS</a> (CoQ10 & Aging)</div>
+    <div class="zp-disclaimer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span><strong>Bu içerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye veya tedavi yerine geçmez.</strong> Sağlık kararlarınız için mutlaka bir hekime danışın. Vivelong tıbbi teşhis veya tedavi hizmeti sunmaz.</span>
+    </div>
   </div>
 </div>
 
