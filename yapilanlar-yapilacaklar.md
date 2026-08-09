@@ -51,20 +51,25 @@ Tam SEO/GEO denetim raporu (bulgular + öncelik sıralı aksiyon takvimi):
   - Değer: `google-site-verification=XwV1qYoYB4ftjBfNqvFakx5l0Cv6IE_lJD8`
 - [x] DNS yayılımı doğrulandı: Netlify'ın kendi NS'i, Google'ın 8.8.8.8'i ve Cloudflare 1.1.1.1 — hepsinde kayıt doğru ve eksiksiz görünüyor
 - [x] Netlify API'den ham JSON ile + genel DNS'ten okunan değer karakter karakter karşılaştırıldı: **tam eşleşiyor, veri hatası yok**
-- [ ] **Google Search Console doğrulaması 4 denemede de başarısız oldu** (son deneme: 9 Ağustos 00:26). Veri doğru olduğu için bu tamamen Google'ın doğrulama servisinin kendi önbellek/gecikme sorunu — Google'ın kendi yardım metni de "birkaç saat bekleyin" diyor.
+- [x] **Google Search Console mülkü doğrulandı** (9 Ağustos, DNS TXT + Domain mülkü 5. denemede de başarısız kalınca URL-öneki (`https://vivelong.com/`) mülk türüne geçildi, Google Analytics doğrulama yöntemiyle anında doğrulandı — GA4'ün zaten aynı Google hesabında kurulu olması sayesinde).
 
 ---
 
 ## 🔲 Yapılacaklar (yarın devam)
 
 ### Öncelik 1 — Search Console'u bitir
-- [ ] search.google.com/search-console → vivelong.com mülkü → "Sahipliğinizi Doğrulayın" → Doğrula'yı tekrar dene (birkaç saat aradan sonra, örn. öğleden sonra)
-- [ ] Doğrulanınca: Sitemaps bölümünden `sitemap.xml` gönder
-- [ ] Doğrulanınca: birkaç gün içinde "Kapsam" (Coverage) raporunda 20 sayfanın indekslendiğini kontrol et
+- [x] Mülk doğrulandı (9 Ağustos, URL-öneki + Google Analytics yöntemiyle)
+- [ ] Sitemaps bölümünden `sitemap.xml` gönder (kullanıcı yapacak/yapıyor)
+- [ ] Birkaç gün içinde "Kapsam" (Coverage/Pages) raporunda 20 sayfanın indekslendiğini kontrol et
 
 ### Öncelik 2 — Raporun "Ay 2+" maddeleri
-- [ ] Backlink stratejisi — Türkçe longevity/sağlık dizinleri, ilgili blog/forumlar için gerçek fırsatlar araştırılmalı (henüz hiç yapılmadı, uydurma liste verilmedi)
-- [ ] `netlify/functions/subscribe.js` git'e hiç commit edilmemiş (repo'da hiç izlenmiyor, sadece diskten deploy oluyor) — bir noktada eklenmeli
+- [x] `netlify/functions/subscribe.js` git'e eklendi (9 Ağustos, commit `88ee712`, push edildi). `.gitignore` eklendi (`.netlify/` yerel önbelleği artık izlenmiyor).
+- [~] Backlink stratejisi — ilk araştırma turu yapıldı (WebSearch), henüz kimseyle iletişime geçilmedi. Bulunanlar:
+  - **Startup/ürün dizinleri (somut, düşük efor):** [startuplist.com.tr](https://startuplist.com.tr/) (Türkiye girişim kataloğu), [StartupMarket](https://startupmarket.co/) — vivelong'u ürün olarak eklemek gerçek, hızlı bir backlink fırsatı
+  - **Aynı konuda otorite sahibi siteler (işbirliği/atıf fırsatı, önce ilişki kurulmalı):** [Longevity Okulu](https://www.longevityokulu.com/) (doğrudan aynı niş, eğitim platformu), [Dr. Mehmet Portakal](https://www.drmehmetportakal.com/) (longevity konulu doktor bloğu), [Ekolife Yaşam Merkezi](https://www.ekolifeyasammerkezi.com.tr/)
+  - **Genel sağlıklı yaşam blog toplulukları (misafir yazı ihtimali, doğrulanmadı):** Uplifers, Yesilist.com, TheLifeCo Blog
+  - **Rakip biyolojik yaş hesaplayıcıları (backlink değil, rakip/konumlandırma referansı):** hesaplama.lol, hesapratik.com, engelli.com, SuperAge (App Store uygulaması)
+  - Sıradaki adım: kullanıcı hangi isimlerle iletişime geçmek istediğine karar vermeli — bu bir öneri listesi, otomatik outreach yapılmadı
 
 ### Öncelik 3 — Doğrulama / temizlik
 - [ ] Kart tıklama davranışını (Mavi Bölgeler/Blog kartına tıklayınca JS panelinin sayfadan çıkmadan açılması) kullanıcı kendi tarayıcısında bir kez elle test etmeli — Chrome uzantısı bu ağır sayfada otomatik test edemedi (tekrarlayan zaman aşımı)
