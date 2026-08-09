@@ -57,6 +57,8 @@ Tam SEO/GEO denetim raporu (bulgular + öncelik sıralı aksiyon takvimi):
 
 ## 🔲 Yapılacaklar (yarın devam)
 
+> **Sıradaki oturumda İLK bunlarla başla:** H1 hiyerarşisi düzeltmesi ve dış kaynak linkleri (bkz. Öncelik 3). En yüksek etki/efor oranına sahip olanlar bunlar — ikisi de sadece `index.html`'de küçük düzenlemeler, deploy gerektirir ama yapısal değişiklik değil.
+
 ### Öncelik 1 — Search Console'u bitir
 - [x] Mülk doğrulandı (9 Ağustos, URL-öneki + Google Analytics yöntemiyle)
 - [ ] Sitemaps bölümünden `sitemap.xml` gönder (kullanıcı yapacak/yapıyor)
