@@ -61,9 +61,9 @@ Tam SEO/GEO denetim raporu (bulgular + öncelik sıralı aksiyon takvimi):
 
 ### Öncelik 1 — Search Console'u bitir
 - [x] Mülk doğrulandı (9 Ağustos, URL-öneki + Google Analytics yöntemiyle)
-- [ ] Sitemaps bölümünden `sitemap.xml` gönder (kullanıcı yapacak/yapıyor)
-- [ ] Birkaç gün içinde "Kapsam" (Coverage/Pages) raporunda 20 sayfanın indekslendiğini kontrol et
-- **Not (9 Ağustos):** Chrome uzantısı (claude-in-chrome) üzerinden Search Console'a otomatik bağlanmayı denedim, uzantı bağlı değildi ("Browser extension is not connected"). Kullanıcının Search Console durumunu kendi tarayıcısından kontrol etmesi veya uzantıyı/Chrome'u yeniden başlatıp tekrar denemesi gerekiyor.
+- [x] `sitemap.xml` Search Console'a gönderildi (9 Ağustos, Chrome üzerinden claude-in-chrome ile: Site Haritaları → `sitemap.xml` → Gönder → "Site haritası başarıyla gönderildi" onayı alındı). Durum ilk anda "Getirilemedi" gösteriyor — bu normal, Google birkaç saat/gün içinde periyodik taramayla güncelleyecek.
+- [ ] Birkaç gün içinde "Kapsam" (Coverage/Pages) raporunda 20 sayfanın indekslendiğini kontrol et — sitemap durumu "Getirilemedi"den "Başarılı"ya dönünce tekrar bak
+- **Not (9 Ağustos):** Chrome uzantısı ilk denemede bağlı değildi, ikinci denemede bağlandı ve Search Console + GA4'e erişildi.
 
 ### Öncelik 2 — Raporun "Ay 2+" maddeleri
 - [x] `netlify/functions/subscribe.js` git'e eklendi (9 Ağustos, commit `88ee712`, push edildi). `.gitignore` eklendi (`.netlify/` yerel önbelleği artık izlenmiyor).
@@ -88,6 +88,12 @@ Tam SEO/GEO denetim raporu (bulgular + öncelik sıralı aksiyon takvimi):
 - [ ] Kart tıklama davranışını (Mavi Bölgeler/Blog kartına tıklayınca JS panelinin sayfadan çıkmadan açılması) kullanıcı kendi tarayıcısında bir kez elle test etmeli — Chrome uzantısı bu ağır sayfada otomatik test edemedi (tekrarlayan zaman aşımı)
 - [ ] İsteğe bağlı: sirkadiyen-beslenme ve mitokondri makalelerine soru-cevap formatlı bölüm eklenirse FAQPage şeması onlara da eklenebilir
 - [ ] İsteğe bağlı: Pro sayfası (`zp-pro`) ve Forum (`zp-forum`) şu an ayrı URL'ye taşınmadı — SEO değeri düşük görüldüğü için kapsam dışı bırakıldı
+
+---
+
+## GA4 durum kontrolü (9 Ağustos 2026)
+
+Chrome üzerinden GA4'e (property 546237084) girildi, son 7 gün: **2 etkin kullanıcı, 9 etkinlik, 0 yeni kullanıcı, 0 önemli faaliyet**. Trafiğin tamamı `Direct/(none)` — organik arama trafiği henüz yok. Görüntülenen tek sayfa ana sayfa; yeni 20 sayfadan (Mavi Bölgeler/Rehber/Blog) hiçbirine henüz ziyaret gelmemiş. Bu beklenen bir durum: site bu hafta yapısal değişiklik geçirdi ve Search Console yeni doğrulandı, Google henüz taramaya/indekslemeye başlamadı. Birkaç gün sonra tekrar kontrol edilmeli.
 
 ---
 
