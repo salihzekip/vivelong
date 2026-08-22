@@ -1,7 +1,24 @@
 # Vivelong SEO/GEO Çalışması — Yapılanlar & Yapılacaklar
 
-**Son güncelleme:** 9 Ağustos 2026 (kalan 16 sayfaya dış link + 2 yeni popüler blog yazısı + site 22 sayfaya çıktı)
+**Son güncelleme:** 22 Ağustos 2026 (Mavi Bölgeler veri tartışması eklendi + yeni GLP-1/Ozempic blog yazısı, site 23 sayfaya çıktı)
 **Kapsam:** vivelong.com SEO + GEO denetimi ve uygulanan hızlı aksiyonlar
+
+---
+
+## ✅ 22 Ağustos 2026 — Güncel araştırma taraması + yeni içerik
+
+**Görev:** Site kurulduğundan beri eklenebilecek yeni bilimsel gelişme var mı diye araştırıldı + az rekabetli/çok aranan bir konuda yeni blog yazısı eklendi.
+
+### 1. Mavi Bölgeler veri tartışması — şeffaflık eklemesi (kredibilite/YMYL için önemli)
+- [x] WebSearch ile araştırıldı: 2024'te UCL demografı Saul Newman, Mavi Bölgeler'deki süper-yaşlı istatistiklerinin bir kısmının kayıt hataları/doğum belgesi eksikliği/emeklilik dolandırıcılığından kaynaklanabileceğini öne sürerek Ig Nobel Ödülü kazandı. Dan Buettner 2025'te *The Gerontologist*'te resmi kayıtlarla reddetti — ama bu makale en tartışmalı bölge olan Loma Linda'yı kapsamıyor.
+- [x] `/blog/power-9-mavi-bolgeler/` sayfasına yeni bir bölüm ("Dürüst Olmak Gerekirse: Mavi Bölge Verileri Tartışmalı") + yeni FAQ (görünür + JSON-LD) + 2 yeni kaynak linki (UCL, Science.org) eklendi. Dengeli çerçeve: ham süper-yaşlı istatistiği tartışmalı ama Power 9'daki davranışsal tavsiyeler ayrı literatürle destekleniyor.
+- [ ] İsteğe bağlı: aynı not 5 Mavi Bölge sayfasına ve ana sayfanın Mavi Bölgeler bölümüne de kısaca eklenebilir — şimdilik sadece en çok okunan özet sayfaya (Power 9) eklendi, efor/kapsam dengesi için.
+
+### 2. Yeni blog yazısı: GLP-1 ilaçları / Ozempic ve uzun yaşam (düşük rekabet, yüksek arama hacmi)
+- [x] Araştırma: Türkçe'de "Ozempic yaşlanma/biyolojik yaş" konusunda sadece haber/köşe yazısı formatında içerik var (Sabah, Karar) — sitenin FAQ+kaynak+yapılandırılmış blog formatında hiç yok. Ozempic Türkiye'de çok yüksek arama hacmine sahip, bu spesifik açı (longevity bilimi) düşük rekabetli.
+- [x] `/blog/glp1-ilaclari-uzun-yasam/` oluşturuldu: 2026 Nature Communications epigenetik yaş çalışması (semaglutid, PhenoAge -4,9 yıl, PCGrimAge -3,1 yıl, DunedinPACE %9), mekanizma, rapamisin/NMN karşılaştırması, riskler, 3 FAQ, tam şablon (meta/OG/JSON-LD/disclaimer).
+- [x] Ana sayfa blog gridine kart eklendi, `sitemap.xml`'e eklendi (23 URL), `llms.txt`'ye eklendi (ayrıca daha önce eksik kalan power-9 ve biyolojik-yasi-dusurmek girdileri de llms.txt'ye eklendi — 9 Ağustos'ta unutulmuş).
+- **Not:** Bu yazı da (son 2 yazı gibi) ana sayfada JS panel olarak yok, sadece standalone sayfa + gerçek `<a href>` kartı var.
 
 ---
 

@@ -29,6 +29,9 @@
 - [Alkali Beslenme: pH Dengesi ve Uzun Yaşam](https://vivelong.com/blog/alkali-beslenme/)
 - [Sirkadiyen Beslenme: Ne Zaman Yediğin de Önemli](https://vivelong.com/blog/sirkadiyen-beslenme/)
 - [Mitokondri: Uzun Yaşamın Enerji Merkezi](https://vivelong.com/blog/mitokondri/)
+- [Power 9: Mavi Bölgelerin Ortak 9 Uzun Yaşam İlkesi](https://vivelong.com/blog/power-9-mavi-bolgeler/): Dan Buettner'ın Power 9 çerçevesi ve Mavi Bölge verilerine yönelik bilimsel eleştiri (Saul Newman) üzerine dürüst bir değerlendirme.
+- [Biyolojik Yaşınızı Düşürmek Mümkün mü? 10 Kanıtlanmış Yöntem](https://vivelong.com/blog/biyolojik-yasi-dusurmek/)
+- [Ozempic ve GLP-1 İlaçları Yaşlanmayı Yavaşlatır mı?](https://vivelong.com/blog/glp1-ilaclari-uzun-yasam/): 2026'nın Nature Communications epigenetik yaş çalışması, mekanizma ve sınırlar.
 
 ## Notlar
 - Site dili: Türkçe.
