@@ -1,7 +1,20 @@
 # Vivelong SEO/GEO Çalışması — Yapılanlar & Yapılacaklar
 
-**Son güncelleme:** 22 Ağustos 2026 (Mavi Bölgeler veri tartışması eklendi + yeni GLP-1/Ozempic blog yazısı, site 23 sayfaya çıktı)
+**Son güncelleme:** 23 Ağustos 2026 (yeni "Organ Yaşı" blog yazısı eklendi, site 24 sayfaya çıktı)
 **Kapsam:** vivelong.com SEO + GEO denetimi ve uygulanan hızlı aksiyonlar
+
+---
+
+## ✅ 23 Ağustos 2026 — Yeni araştırma taraması + yeni içerik
+
+**Görev:** 22 Ağustos'tan bu yana yayımlanmış yeni bir bilimsel gelişme araştırıldı + az rekabetli/çok aranan bir konuda yeni blog yazısı eklendi.
+
+### Yeni blog yazısı: Organ Yaşı (düşük içerik-derinliği rekabeti, yüksek haber görünürlüğü)
+- [x] Araştırma: WebSearch ile UCL + Stanford'un "Eight decades of follow-up link life course exposures to proteomic organ ageing and longevity" başlıklı çalışması bulundu (medRxiv preprint, DOI 10.1101/2025.09.07.25335188, Eylül 2025 yayımlandı, Ağustos 2026'da Cumhuriyet/Habertürk/Tıbbiye Bülteni gibi Türk medyasında haberleşti). 1946 doğum kohortundan 1.803 kişi, 15 yıl takip, 7 organ için proteomik yaş. Tam metin PMC12440047'den (hazard ratio'lar, yaşam boyu etken katsayıları) doğrulandı.
+- [x] Neden düşük rekabet: "organ yaşı" konusunda Türkçe'de birkaç haber makalesi var (Cumhuriyet, Habertürk, Ensonolay, Tıbbiye Bülteni) ama hiçbiri FAQ+kaynak+yapılandırılmış blog formatında değil ve hiçbiri çalışmanın en pratik/eyleme geçirilebilir bulgusunu (hangi yaşam tarzı kararının hangi organı ne kadar yıl hızlandırdığı: sigara +0,59 yıl/20 paket-yıl, ergenlik obezitesi +1,13 yıl, fiziksel aktivite −0,79 yıl, 43 yaşında sigara bırakmanın hiç içmemiş gibi sonuç vermesi) işlemiyor.
+- [x] `/blog/organ-yasi-nedir/` oluşturuldu: tam şablon (meta/OG/JSON-LD BlogPosting+Breadcrumb+FAQPage, disclaimer, 3 görünür+şema FAQ, zp-src kaynak kutusu — medRxiv + PMC + Tıbbiye Bülteni linkleri).
+- [x] Ana sayfa blog gridine kart eklendi (🫀, rose gradient — önceki kartlarla çakışmayan yeni renk), `sitemap.xml`'e eklendi (24 URL, ana sayfa lastmod da güncellendi), `llms.txt`'ye eklendi.
+- **Not:** Çalışma henüz hakemli dergide değil (preprint) — yazıda bu açıkça belirtildi, "rutin organ yaşı testi yok" uyarısı FAQ'de de var (aşırı iddia/uydurma riskine karşı).
 
 ---
 
