@@ -1,7 +1,23 @@
 # Vivelong SEO/GEO Çalışması — Yapılanlar & Yapılacaklar
 
-**Son güncelleme:** 23 Ağustos 2026 (yeni "Organ Yaşı" blog yazısı eklendi, site 24 sayfaya çıktı)
+**Son güncelleme:** 23 Ağustos 2026 (site tamamen İngilizce'ye çevrildi — /en/ altında 24 sayfa, TR↔EN dil değiştirici, hreflang)
 **Kapsam:** vivelong.com SEO + GEO denetimi ve uygulanan hızlı aksiyonlar
+
+---
+
+## ✅ 23 Ağustos 2026 — Sitenin tamamı İngilizce'ye çevrildi (24 sayfa)
+
+**Görev:** vivelong.com'un tamamını (24 TR sayfası + ana sayfa) İngilizce'ye çevirip `/en/` altına yayınlamak, TR↔EN dil değiştirici eklemek.
+
+- [x] **Mimari:** `/en/` alt dizini, her sayfa kendi gerçek URL'sinde (TR'nin mevcut "her içeriğin gerçek URL'si olsun" felsefesiyle tutarlı). Slug'lar İngilizce'ye çevrildi (örn. `/mavi-bolgeler/sardunya/` → `/en/blue-zones/sardinia/`, `/blog/organ-yasi-nedir/` → `/en/blog/organ-age/`).
+- [x] **23 standalone sayfa** (5 Mavi Bölge, 4 rehber, 13 blog, cinsiyet sayfası): tam çeviri — title/meta/OG/JSON-LD (BlogPosting/Article+Breadcrumb+FAQPage), tüm gövde metni, KVKK modalı → İngilizce "Privacy Notice" (GDPR çerçevesi, iletişim e-postası aynı), cookie banner. Tüm istatistik/kaynak linkleri (href) TR kaynaktaki ile birebir korundu, sadece link metni çevrildi — hiçbir yeni kaynak uydurulmadı.
+- [x] **Ana sayfa (`/en/index.html`, 5000+ satır):** nav, hero, giriş/üyelik modalı, gizlilik bildirimi, 16 soruluk biyolojik yaş hesaplayıcı (tüm soru/seçenek metinleri + JS sonuç mesajları/faktör isimleri/14 ipucu), 22 alışkanlıklık günlük takip listesi, Mavi Bölgeler önizleme + 5 bölge paneli, 6 hücresel biyobelirteç kartı (tam detaylı metin), cinsiyet paradoksu bölümü + tam panel, 4 Temel Taş + 4 rehber paneli, bilim istatistikleri, 13 blog kartı + 9 gömülü blog paneli, Pro/üyelik sayfası (demo grafikler, AI koç sohbet örnekleri, 12 haftalık plan, biyomarker paneli, fiyatlandırma — **gerçek ₺119/ay TL fiyatı korundu, USD uydurulmadı**), topluluk forumu (kategori/post/oylama UI'ı — forum verisi Supabase'den geldiği için dinamik içerik çevrilmedi, sadece UI metni), footer, AI asistan yanıt bankası (14 konu, tam markdown formatlı cevaplar), tüm toast/hata/buton mesajları.
+- [x] Her TR sayfaya (+ ana sayfa) `hreflang` etiketleri (tr/en/x-default) ve üst barda küçük bir "EN" dil değiştirici linki eklendi; her EN sayfaya karşılık gelen "TR" linki eklendi.
+- [x] `assets/site.css`'e `.zp-lang-switch` stili eklendi (paylaşımlı CSS, TR ve EN sayfalar aynı dosyayı kullanıyor).
+- [x] `sitemap.xml` 24 yeni EN URL'iyle güncellendi (toplam 48 URL). `llms.txt`'ye bilingual bölüm eklendi (İngilizce özet + tüm EN sayfa linkleri).
+- [x] **Doğrulama:** Node ile tüm 24 EN + 24 TR sayfanın JSON-LD'si JSON.parse ile, ana sayfanın 3 `<script>` bloğu `new Function()` ile sözdizimi hatası olmadan doğrulandı. Kalan Türkçe karakter taraması yapıldı — sadece gerçek özel isimler (Ayşegül Çoruhlu, Tıbbiye Bülteni kaynak adı) bilerek çevrilmeden bırakıldı, başka hiçbir yerde Türkçe metin kalmadı.
+- **Süreç notu:** Çeviri işi büyük ölçüde arka planda paralel fork'larla yapıldı (23 standalone sayfa: 4 fork; ana sayfa panelleri: 2 fork; ilk fork hesabın aylık harcama limitine takılıp başarısız oldu, limit sıfırlandıktan sonra tekrar başlatılıp tamamlandı). Ana sayfanın en karmaşık/riskli kısımları (hesaplayıcı JS mantığı, Pro/forum JS state yönetimi) elle çevrildi, otomatik doğrulama scriptleriyle bozulma olmadığı teyit edildi.
+- **Kapsam dışı:** Forum'daki gerçek kullanıcı gönderileri (Supabase'den canlı geliyor) çevrilmedi — bu beklenen bir durum, sadece UI çevrildi.
 
 ---
 

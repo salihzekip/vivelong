@@ -1,6 +1,8 @@
 # Vivelong
 
-> Vivelong, bilimsel kaynaklara (NCBI/PubMed, Harvard, Blue Zones araştırmaları) dayalı Türkçe bir longevity (uzun yaşam) ve biyolojik yaş platformudur. 16 faktörlü biyolojik yaş hesaplayıcı, günlük longevity alışkanlık takibi, Mavi Bölge araştırmaları ve hücresel yaşlanma biyobelirteçleri (telomer, epigenetik, otofaji, inflammaging, mitokondri) hakkında derinlemesine, kaynak gösterilmiş içerik sunar. İçerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye yerine geçmez.
+> Vivelong, bilimsel kaynaklara (NCBI/PubMed, Harvard, Blue Zones araştırmaları) dayalı, Türkçe ve İngilizce olarak sunulan bir longevity (uzun yaşam) ve biyolojik yaş platformudur. 16 faktörlü biyolojik yaş hesaplayıcı, günlük longevity alışkanlık takibi, Mavi Bölge araştırmaları ve hücresel yaşlanma biyobelirteçleri (telomer, epigenetik, otofaji, inflammaging, mitokondri) hakkında derinlemesine, kaynak gösterilmiş içerik sunar. İçerik yalnızca bilgilendirme amaçlıdır, tıbbi tavsiye yerine geçmez.
+>
+> Vivelong is a science-based longevity and biological-age platform (drawing on NCBI/PubMed, Harvard and Blue Zones research), available in both Turkish and English. It offers a 16-factor biological age calculator, daily longevity habit tracking, Blue Zones research, and in-depth, sourced content on cellular aging biomarkers (telomeres, epigenetics, autophagy, inflammaging, mitochondria). Content is for informational purposes only and is not medical advice.
 
 ## Araç
 - [Biyolojik Yaş Testi](https://vivelong.com/#hesaplama): Yaş, cinsiyet, BMI ve 11 yaşam tarzı sorusuna dayalı ücretsiz biyolojik yaş hesaplayıcı.
@@ -34,6 +36,40 @@
 - [Ozempic ve GLP-1 İlaçları Yaşlanmayı Yavaşlatır mı?](https://vivelong.com/blog/glp1-ilaclari-uzun-yasam/): 2026'nın Nature Communications epigenetik yaş çalışması, mekanizma ve sınırlar.
 - [Organ Yaşı Nedir? Kalbiniz, Böbreğiniz Neden Farklı Yaşlanır?](https://vivelong.com/blog/organ-yasi-nedir/): UCL-Stanford'ın 1.803 kişilik 15 yıllık proteomik organ yaşlanması çalışması — hangi yaşam tarzı kararı hangi organı hızlandırıyor.
 
-## Notlar
-- Site dili: Türkçe.
-- Sağlık ve longevity bilgileri araştırma literatürüne dayalı tahmin/özetlerdir; klinik tanı veya tedavi yerine geçmez.
+## English Pages (full parallel site under /en/)
+
+### Tool
+- [Biological Age Test](https://vivelong.com/en/#hesaplama): Free biological age calculator based on age, gender, BMI and 11 lifestyle questions.
+
+### Blue Zones — The World's Longest-Lived Communities
+- [Sardinia, Italy](https://vivelong.com/en/blue-zones/sardinia/): The Barbagia Valley region where the male-to-female centenarian ratio is nearly equal.
+- [Okinawa, Japan](https://vivelong.com/en/blue-zones/okinawa/): Hara hachi bu, moai support circles, and the ikigai philosophy.
+- [Nicoya, Costa Rica](https://vivelong.com/en/blue-zones/nicoya/): Plan de vida and the Three Sisters diet.
+- [Ikaria, Greece](https://vivelong.com/en/blue-zones/ikaria/): Afternoon naps, wild greens, and a low dementia rate.
+- [Loma Linda, California](https://vivelong.com/en/blue-zones/loma-linda/): The Adventist community, the Sabbath, and a vegetarian diet.
+
+### Longevity Guides
+- [Longevity Nutrition](https://vivelong.com/en/guide/longevity-nutrition/): The 5 core principles of Blue Zone eating, intermittent fasting, the microbiome.
+- [Social Connection and Purpose](https://vivelong.com/en/guide/social-connection-and-purpose/): The health impact of social isolation, ikigai, moai.
+- [Movement and Exercise](https://vivelong.com/en/guide/movement-and-exercise/): Zone 2 cardio, strength training, preventing sarcopenia.
+- [Sleep and Mental Health](https://vivelong.com/en/guide/sleep-and-mental-health/): Circadian rhythm, sleep hygiene, chronic stress management.
+- [The Gender & Longevity Paradox](https://vivelong.com/en/gender-and-longevity/): The male/female lifespan-healthspan gap and gender-specific strategies.
+
+### Blog — In-Depth Science Reviews
+- [Telomeres: Your Lifespan's Biological Clock](https://vivelong.com/en/blog/telomeres/)
+- [Autophagy: Your Cells' Self-Cleaning Miracle](https://vivelong.com/en/blog/autophagy/)
+- [Epigenetics: Your Genes Are Not Your Destiny](https://vivelong.com/en/blog/epigenetics/)
+- [Inflammaging: The Silent Inflammation Aging You From Within](https://vivelong.com/en/blog/inflammaging/)
+- [Healthy at 100: Lessons From the Super-Aged](https://vivelong.com/en/blog/healthy-at-100/)
+- [NAD+ and Sirtuin Genes: Longevity's Molecular Secret](https://vivelong.com/en/blog/nad-and-sirtuin-genes/)
+- [The Alkaline Diet: pH Balance and Longevity](https://vivelong.com/en/blog/alkaline-diet/)
+- [Circadian Eating: When You Eat Matters Too](https://vivelong.com/en/blog/circadian-eating/)
+- [Mitochondria: Longevity's Energy Center](https://vivelong.com/en/blog/mitochondria/)
+- [Power 9: The 9 Principles Shared by the Blue Zones](https://vivelong.com/en/blog/power-9-blue-zones/): Dan Buettner's Power 9 framework, plus a fair look at the scientific critique of Blue Zone data (Saul Newman).
+- [Can You Actually Lower Your Biological Age? 10 Proven Methods](https://vivelong.com/en/blog/lower-your-biological-age/)
+- [Do Ozempic and GLP-1 Drugs Slow Aging?](https://vivelong.com/en/blog/glp1-drugs-and-longevity/): The 2026 Nature Communications epigenetic-age study, its mechanism and its limits.
+- [Organ Age: Why Do Your Heart and Kidneys Age at Different Rates?](https://vivelong.com/en/blog/organ-age/): A UCL-Stanford study tracking 1,803 people for 15 years — which lifestyle choices accelerate which organs.
+
+## Notlar / Notes
+- Site dilleri: Türkçe (varsayılan, `/`) ve İngilizce (`/en/`). / Site languages: Turkish (default, `/`) and English (`/en/`).
+- Sağlık ve longevity bilgileri araştırma literatürüne dayalı tahmin/özetlerdir; klinik tanı veya tedavi yerine geçmez. / Health and longevity information is a summary based on research literature; it is not a clinical diagnosis or treatment.
