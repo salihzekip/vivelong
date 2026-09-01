@@ -7,6 +7,9 @@
 ## Araç
 - [Biyolojik Yaş Testi](https://vivelong.com/#hesaplama): Yaş, cinsiyet, BMI ve 11 yaşam tarzı sorusuna dayalı ücretsiz biyolojik yaş hesaplayıcı.
 
+## Hakkımızda
+- [Hakkımızda](https://vivelong.com/hakkimizda/): Vivelong kimdir, editoryal yaklaşımı ve kaynak seçim ilkeleri nedir, sınırları nelerdir.
+
 ## Mavi Bölgeler — Dünyanın En Uzun Yaşayan Toplulukları
 - [Sardunya, İtalya](https://vivelong.com/mavi-bolgeler/sardunya/): Barbagia Vadisi'nde erkek-kadın yüzyıllık oranının eşit olduğu bölge.
 - [Okinawa, Japonya](https://vivelong.com/mavi-bolgeler/okinawa/): Hara hachi bu, moai toplulukları ve ikigai felsefesi.
@@ -40,6 +43,9 @@
 
 ### Tool
 - [Biological Age Test](https://vivelong.com/en/#hesaplama): Free biological age calculator based on age, gender, BMI and 11 lifestyle questions.
+
+### About
+- [About Us](https://vivelong.com/en/about/): Who is behind Vivelong, our editorial approach, source-selection principles, and limitations.
 
 ### Blue Zones — The World's Longest-Lived Communities
 - [Sardinia, Italy](https://vivelong.com/en/blue-zones/sardinia/): The Barbagia Valley region where the male-to-female centenarian ratio is nearly equal.

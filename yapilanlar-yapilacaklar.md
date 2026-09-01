@@ -170,6 +170,16 @@ Chrome üzerinden GA4'e (property 546237084) girildi, son 7 gün: **2 etkin kull
 
 ---
 
+## Trafik kontrolü (2026-09-01) — İngilizce çeviri sonrası ilk ölçüm
+
+**GA4 (property 546237084):** Son 28 gün (4-31 Ağustos): sadece **6 aktif kullanıcı**, tamamı Türkiye'den (Denizli 4, Antalya/İzmir/Rize 1'er). **Son 7 günde 0 aktif kullanıcı, 0 etkinlik** — dokuz gün önceki 2 kullanıcı/7 günden bile geriledi. Sayfa görüntülemenin büyük kısmı (21/26) hâlâ sadece ana sayfa; yeni eklenen 24 EN sayfaya pratikte hiç ziyaret yok. Kullanıcı yeniden ziyaret oranı %0. Dil kırılımında 1 İngilizce ziyaretçi görünüyor (ilk EN sinyali, ama tekil).
+
+**Search Console (URL-öneki mülkü, `https://vivelong.com/`, salihzekip@gmail.com) — ilk kez kontrol edildi:** Son 3 ay: **17 gösterim / 1 tıklama**, ortalama pozisyon 32,5 (pozisyon ketodiyetim'den iyi ama hacim çok düşük). **Sayfa dizine ekleme:** 25 bilinen sayfadan sadece **5'i indekste, 20'si dizine eklenmedi** (17'si "Keşfedildi - şu anda dizine eklenmiş değil", 3'ü "Tarandı - şu anda dizine eklenmiş değil"). Site haritası (`/sitemap.xml`) sağlıklı: 29 Ağustos'ta başarıyla okunmuş, 48 URL keşfedilmiş (24 TR + 24 EN) — yani sorun sitemap değil, düşük otorite/crawl bütçesi nedeniyle Google'ın henüz çoğu sayfayı taramamış/indekslememiş olması.
+
+**Değerlendirme:** İngilizce çeviri + yeni içerikler (organ yaşı, GLP-1) yayınlandıktan sonra trafik ilk kez ölçüldü ve sonuç zayıf: organik arama trafiği pratikte sıfıra yakın, GA4'te son 7 günde tam sıfır kullanıcı. Bu, ketodiyetim'in aynı dönemdeki güçlü yukarı trendinin (bkz. [[ketodiyetim-seo-geo-project]]) tam tersi. En olası neden: 48 sayfanın çoğu henüz Google tarafından indekslenmedi, dolayısıyla aranabilir değil. Rapor'daki backlink stratejisi (Öncelik 2, hâlâ hiç uygulanmadı) ve eksik "Hakkımızda" sayfası (Öncelik 3, hâlâ yapılmadı) bu düşük otoriteyi açıklıyor olabilir — ikisi de sıradaki en yüksek öncelikli adım.
+
+---
+
 ## Search Console doğrulama denemeleri (referans)
 
 | Zaman | Sonuç |
