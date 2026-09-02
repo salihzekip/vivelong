@@ -190,3 +190,18 @@ Chrome üzerinden GA4'e (property 546237084) girildi, son 7 gün: **2 etkin kull
 | **9 Ağustos, 00:26** | Başarısız |
 
 *Not: İlk iki denemenin dakikası tam loglanmadı, yaklaşık verildi. Veri doğruluğu (DNS kaydı) her denemeden bağımsız olarak ayrıca doğrulandı — sorun veri değil, Google'ın doğrulama servisinin gecikmesi.*
+
+---
+
+## ✅ 2 Eylül 2026 — Yeni makale: Sauna ve Uzun Yaşam (haftalık az-işlenmiş konu taraması)
+
+**Görev:** Yüksek arama talebi olan ama Türkçe içerikte derinlemesine işlenmemiş bir longevity konusu bulup SEO+GEO'ya uygun makale yazmak, siteye eklemek, İngilizce'ye çevirmek.
+
+- **Konu araştırması:** WebSearch ile kas gücü/kavrama gücü, VO2 max, uyku kalitesi/biyolojik yaş ve sauna/kontrast terapi konuları tarandı. İlk üçü Türk sağlık medyasında (Hürriyet, Sabah, Habertürk, Ahaber, Biomedya) zaten güncel ve nispeten derin kapsanıyordu. Sauna/ısı maruziyeti ise tam tersi: Türkçe'de sadece "2026 wellness trend" listelerinde yüzeysel bir madde olarak geçiyor, arkasındaki gerçek klinik veriyi (Laukkanen ve ark., KIHD kohortu, JAMA Internal Medicine 2015) işleyen tek bir Türkçe kaynak bulunamadı — genel "sauna sağlıklı mı" tarzı içerik dışında. Gerçek bir içerik boşluğu.
+- **Yeni sayfa (TR):** `/blog/sauna-ve-uzun-yasam/` — 2.315 kişilik, 20,7 yıllık Fin KIHD kohort çalışmasının gerçek sayılarıyla (sıklık ve süre bazlı doz-yanıt ilişkisi: %63 ani kalp ölümü riski düşüşü, %40 tüm nedenlere bağlı ölüm riski düşüşü, >19 dk seansta %52 risk düşüşü), ısı şoku proteinleri mekanizmasıyla ve — önemlisi — çalışmanın gerçek sınırlamalarıyla (gözlemsel çalışma, JAMA'nın kendi "nedensel olmayabilir" eleştirisi, tek homojen örneklem) birlikte. FAQPage + BlogPosting + BreadcrumbList JSON-LD, 5 soruluk SSS, GEO için doğrudan-cevap girişi.
+- **Çeviri (EN):** `/en/blog/sauna-and-longevity/` — tam kalite çeviri, karşılıklı hreflang, İngilizce KVKK/Privacy Notice overlay'i dahil.
+- **Siteye entegrasyon:** Her iki ana sayfanın (`index.html`, `en/index.html`) `#blog` bölümüne en yeni kart olarak eklendi (organ-yaşı kartının "Yeni" rozeti "Proteomik Longevity" kategori rozetine çevrildi, çünkü artık en yeni içerik bu değil). `sitemap.xml`'e her iki URL eklendi. `mitokondri`/`mitochondria`, `inflammaging-nedir`/`inflammaging`, `biyolojik-yasi-dusurmek`/`lower-your-biological-age` sayfalarına hem gövde içi bağlamsal link hem de "devamı" listesine karşılıklı link eklendi (6 dosya).
+- **Kaynaklar (gerçek, uydurma yok):** ACC Journal Scan (Laukkanen ve ark. 2015 JAMA Internal Medicine özeti), JAMA Internal Medicine'ın "nedensel olmayabilir" yorum yazısı, PMC'deki aynı kohortun inflamasyon analizi.
+- **Deploy:** git commit + push + `netlify-cli deploy --prod` ile canlıya alındı, TR ve EN URL'leri curl ile 200 doğrulandı (bkz. commit hash'i için `git log`).
+
+**Yapılacak (sıradaki hafta için not):** Bu, "haftalık konu taraması" görevinin ilk turu — devam ederse bir sonraki tur için VO2 max veya kas gücü gibi zaten kapsanmış konulara değil, benzer şekilde gerçek-ama-derinlemesine-işlenmemiş bir konu/çalışma aranmalı.
