@@ -205,3 +205,17 @@ Chrome üzerinden GA4'e (property 546237084) girildi, son 7 gün: **2 etkin kull
 - **Deploy:** git commit + push + `netlify-cli deploy --prod` ile canlıya alındı, TR ve EN URL'leri curl ile 200 doğrulandı (bkz. commit hash'i için `git log`).
 
 **Yapılacak (sıradaki hafta için not):** Bu, "haftalık konu taraması" görevinin ilk turu — devam ederse bir sonraki tur için VO2 max veya kas gücü gibi zaten kapsanmış konulara değil, benzer şekilde gerçek-ama-derinlemesine-işlenmemiş bir konu/çalışma aranmalı.
+
+---
+
+## ✅ 5 Eylül 2026 — GA4 veri toplama sorunu bulundu ve düzeltildi
+
+**Görev:** GA4 property'sinin (546237084) hiç veri toplamadığı fark edildi ("Web sitenizde veri toplama etkin değil", son 48 saatte veri yok, rapor anlık görüntüsü hiç oluşturulmamış — property kuruluşundan beri sıfır event).
+
+**Teşhis:** Kod hatası değil — `gtag('consent', 'default', ...)` bloğunda `analytics_storage: 'denied'` + `wait_for_update: 500` vardı, yani ziyaretçi KVKK çerez bannerında "Kabul Et"e tıklamadan GA hiç ölçüm yapmıyordu. Ketodiyetim'de böyle bir consent-gate olmadığı için (GA her ziyaretçide anında çalışıyor) orada veri var, burada yoktu. Düşük trafik + düşük banner onay oranı birleşince GA4'e pratikte hiç veri gitmiyordu. Doğrulama: 5 farklı sayfa şablonunda tag'in doğru yüklü olduğu curl ile, Google'ın bu measurement ID için hit kabul ettiği doğrudan curl ile (204) teyit edildi.
+
+**Karar (kullanıcı onaylı):** `analytics_storage` varsayılanı `'granted'` yapıldı (reklam consent'i — ad_storage/ad_user_data/ad_personalization — `'denied'` kaldı, sadece analytics artık varsayılan açık). "Reddet" butonu hâlâ kullanıcıya açıkça opt-out imkanı veriyor. 52 sayfanın hepsinde (TR+EN, tüm blog/rehber/mavi-bölgeler şablonları) aynı değişiklik uygulandı, `wait_for_update` kaldırıldı.
+
+**Deploy:** commit `4fdfc51`, push edildi, `netlify-cli deploy --prod` ile canlıya alındı, ana sayfa + `/en/` üzerinde `analytics_storage: 'granted'` curl ile doğrulandı.
+
+**Not:** Backlink stratejisi (Öncelik 2) ve genel otorite eksikliği hâlâ ana darboğaz — bkz. [[ketodiyetim-seo-geo-project]] karşılaştırması. GA4 artık veri toplayacak ama trafiği büyütecek asıl iş (backlink + TR anahtar kelime hedefleme) hâlâ yapılmadı.
