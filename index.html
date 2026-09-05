@@ -51,11 +51,13 @@
       'ad_storage': 'denied',
       'ad_user_data': 'denied',
       'ad_personalization': 'denied',
-      'analytics_storage': 'denied',
-      'wait_for_update': 500
+      'analytics_storage': 'granted'
     });
     gtag('js', new Date());
     gtag('config', 'G-L4VXBQFR9D');
+    function vlTrack(name, params) {
+      try { if (typeof gtag === 'function') gtag('event', name, params || {}); } catch (e) {}
+    }
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4VXBQFR9D"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -4141,7 +4143,9 @@ function calcBMI() {
 }
 
 /* ═══ QUESTIONS ═══ */
+let _vlCalcStarted = false;
 function pick(el) {
+  if (!_vlCalcStarted) { _vlCalcStarted = true; vlTrack('calc_started', {}); }
   const q = el.dataset.q;
   document.querySelectorAll(`.qo[data-q="${q}"]`).forEach(o=>o.classList.remove('on'));
   el.classList.add('on');
