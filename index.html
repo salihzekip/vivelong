@@ -186,6 +186,34 @@
     .rtip { display:flex; align-items:flex-start; gap:7px; background:rgba(255,255,255,.08); border-radius:8px; padding:9px 11px; font-size:11px; color:rgba(255,255,255,.85); text-align:left; }
     .rtip svg { flex-shrink:0; margin-top:1px; }
 
+    /* ── ÖLÇÜMÜ KAYDET / TREND (sonuç panelinin altı) ── */
+    .rsave { width:100%; margin-top:14px; padding-top:14px; border-top:1px solid rgba(255,255,255,.14); text-align:left; }
+    .rsave-t { font-size:12px; font-weight:700; color:#fff; margin-bottom:3px; }
+    .rsave-s { font-size:11px; color:rgba(255,255,255,.62); line-height:1.6; margin-bottom:10px; }
+    .rsave-form { display:flex; gap:6px; }
+    .rsave-form input { flex:1; min-width:0; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.2); border-radius:8px; padding:9px 11px; font-size:12px; color:#fff; font-family:inherit; }
+    .rsave-form input::placeholder { color:rgba(255,255,255,.45); }
+    .rsave-form input:focus { outline:none; border-color:var(--accent); background:rgba(255,255,255,.14); }
+    .rsave-btn { background:var(--accent); color:var(--primary); border:none; border-radius:8px; padding:9px 15px; font-size:12px; font-weight:700; cursor:pointer; font-family:inherit; white-space:nowrap; transition:filter .2s; }
+    .rsave-btn:hover:not(:disabled) { filter:brightness(1.08); }
+    .rsave-btn:disabled { opacity:.6; cursor:default; }
+    .rsave-kvkk { display:flex; align-items:flex-start; gap:6px; margin-top:8px; font-size:10px; color:rgba(255,255,255,.5); line-height:1.5; cursor:pointer; }
+    .rsave-kvkk input { margin-top:1px; flex-shrink:0; accent-color:var(--accent); }
+    .rsave-kvkk a { color:var(--accent); }
+    .rsave-msg { font-size:11px; margin-top:8px; line-height:1.6; display:none; }
+    .rsave-msg.show { display:block; }
+    .rsave-msg.ok  { color:var(--accent); }
+    .rsave-msg.err { color:#FC8181; }
+    /* trend: geçmiş ölçümler */
+    .rtrend { display:flex; align-items:flex-end; gap:5px; height:56px; margin:12px 0 8px; }
+    .rtcol { flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; min-width:0; }
+    .rtbar { width:100%; max-width:26px; border-radius:4px 4px 0 0; background:rgba(255,255,255,.28); transition:height .4s ease; }
+    .rtbar.g { background:var(--accent); } .rtbar.b { background:#FC8181; }
+    .rtval { font-size:10px; font-weight:700; color:#fff; }
+    .rtlbl { font-size:9px; color:rgba(255,255,255,.45); white-space:nowrap; }
+    .rtnote { font-size:11px; color:rgba(255,255,255,.62); line-height:1.6; }
+    .rtnote b { color:#fff; }
+
     /* ── HABITS ── */
     #aliskanliklar { background:var(--bg2); }
     .hprog { background:var(--surface); border:1.5px solid var(--border-light); border-radius:var(--radius); padding:20px; margin-top:28px; }
@@ -543,6 +571,26 @@
     .pro-cta-main-btn:hover { transform:translateY(-3px); box-shadow:0 10px 32px rgba(0,0,0,.3); }
     .pro-cta-perks { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:22px; }
     .pro-cta-perk { display:flex; align-items:center; gap:6px; color:rgba(255,255,255,.75); font-size:12px; }
+    /* Pro ön kayıt formu */
+    .wl-form { max-width:420px; margin:0 auto; display:none; }
+    .wl-form.open { display:block; }
+    .wl-row { display:flex; gap:8px; }
+    .wl-row input { flex:1; min-width:0; background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.25); border-radius:11px; padding:14px 15px; font-size:14px; color:#fff; font-family:inherit; }
+    .wl-row input::placeholder { color:rgba(255,255,255,.5); }
+    .wl-row input:focus { outline:none; border-color:#fff; background:rgba(255,255,255,.18); }
+    .wl-row button { padding:14px 24px; background:#fff; color:var(--primary); border:none; border-radius:11px; font-family:inherit; font-size:14px; font-weight:700; cursor:pointer; white-space:nowrap; transition:all .2s; }
+    .wl-row button:hover:not(:disabled) { transform:translateY(-2px); box-shadow:0 8px 22px rgba(0,0,0,.28); }
+    .wl-row button:disabled { opacity:.6; cursor:default; transform:none; }
+    .wl-plan { display:flex; gap:8px; justify-content:center; margin-bottom:12px; }
+    .wl-plan label { display:flex; align-items:center; gap:6px; font-size:12px; color:rgba(255,255,255,.8); cursor:pointer; padding:7px 13px; border-radius:100px; border:1.5px solid rgba(255,255,255,.22); transition:all .2s; }
+    .wl-plan label:has(input:checked) { background:rgba(255,255,255,.16); border-color:#fff; color:#fff; }
+    .wl-plan input { accent-color:#fff; }
+    .wl-msg { font-size:13px; margin-top:14px; line-height:1.65; display:none; }
+    .wl-msg.show { display:block; }
+    .wl-msg.ok  { color:var(--pale); }
+    .wl-msg.err { color:#FFC9C9; }
+    .wl-fine { font-size:11px; color:rgba(255,255,255,.5); margin-top:10px; line-height:1.6; }
+    .wl-fine a { color:rgba(255,255,255,.8); }
     /* Gradient text */
     .grad-text { background:linear-gradient(135deg,var(--accent),var(--gold)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
 
@@ -928,7 +976,7 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         Biyolojik Yaşını Hesapla
       </a>
-      <a href="#uyelik" class="btn btn-gold">Pro'ya Geç — ₺119/ay</a>
+      <a href="#uyelik" class="btn btn-gold">Pro'ya Ön Kayıt Ol — Ücretsiz</a>
     </div>
     <div class="hero-stats">
       <div><div class="hs-num">16</div><div class="hs-lbl">Değerlendirilen faktör</div></div>
@@ -1222,6 +1270,8 @@
           <div class="rmsg" id="rMsg"></div>
           <div class="fbars" id="fBars"><div class="fbtitle">Faktör Katkısı (yıl)</div></div>
           <div class="rtips" id="rTips"></div>
+          <!-- Ölçümü kaydet / geçmiş trend — runCalc() sonunda doldurulur -->
+          <div class="rsave" id="rSave" style="display:none"></div>
         </div>
       </div>
     </div>
@@ -3394,7 +3444,7 @@
           <div class="pro-section-ttl">Biyolojik Yaş Takip Grafiği</div>
           <div class="pro-section-sub">Her ay testin sonucu kaydedilir — düşüşünüzü gözle görün</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Pro'ya Geç →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Ön Kayıt Ol →</button>
       </div>
       <div class="pro-demo-card">
         <div class="pro-demo-topbar">
@@ -3470,7 +3520,7 @@
           <div class="pro-section-ttl">Haftalık İlerleme Raporu</div>
           <div class="pro-section-sub">Her Pazartesi gelen kişisel skor kartı — neyi iyi yaptınız, ne değişmeli?</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Pro'ya Geç →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Ön Kayıt Ol →</button>
       </div>
       <div class="pro-demo-card">
         <div class="pro-demo-topbar">
@@ -3533,7 +3583,7 @@
           <div class="pro-section-ttl">AI Longevity Koçu</div>
           <div class="pro-section-sub">Biyolojik yaş verilerinize göre kişisel öneriler — 7/24</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Pro'ya Geç →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Ön Kayıt Ol →</button>
       </div>
       <div class="pro-demo-card">
         <div class="pro-demo-topbar">
@@ -3583,7 +3633,7 @@
           <div class="pro-section-ttl">Streak & Alışkanlık Analizi</div>
           <div class="pro-section-sub">12 haftalık alışkanlık ısı haritası — tutarlılığı görün</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Pro'ya Geç →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Ön Kayıt Ol →</button>
       </div>
       <div class="pro-demo-card">
         <div class="pro-demo-topbar">
@@ -3655,7 +3705,7 @@
           <div class="pro-section-ttl">12 Haftalık Kişisel Longevity Planı</div>
           <div class="pro-section-sub">Biyolojik yaş testine göre oluşturulan özel sıralı program</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Pro'ya Geç →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Ön Kayıt Ol →</button>
       </div>
       <div class="pro-demo-card">
         <div class="pro-demo-topbar">
@@ -3725,7 +3775,7 @@
           <div class="pro-section-ttl">Biyomarker Takip Paneli</div>
           <div class="pro-section-sub">Kan değerlerinizi girin — ideal aralıkla karşılaştırın, yorumunu alın</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Pro'ya Geç →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Ön Kayıt Ol →</button>
       </div>
       <div class="pro-demo-card">
         <div class="pro-demo-topbar">
@@ -3802,7 +3852,7 @@
           <div class="pro-section-ttl">Longevity Asistanı</div>
           <div class="pro-section-sub">Longevity, biyolojik yaş veya Pro hakkında merak ettiklerinizi sorun</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Pro'ya Geç →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Ön Kayıt Ol →</button>
       </div>
       <div class="pro-ai-card">
         <div class="pro-ai-header">
@@ -3852,20 +3902,35 @@
     <div class="pro-cta-block" id="proCta">
       <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;">Vivelong Pro</div>
       <div class="pro-cta-price">₺119<sub>/ay</sub></div>
-      <div class="pro-cta-note">veya yıllık ödemede ₺99/ay — ₺1.188/yıl · %17 tasarruf</div>
-      <button class="pro-cta-main-btn">Hemen Pro'ya Geç</button>
+      <div class="pro-cta-note">Planlanan fiyat · yıllık ödemede ₺99/ay — ₺1.188/yıl<br>Pro henüz açılmadı; şu an ön kayıt alıyoruz ve <b>ödeme alınmıyor</b>.</div>
+
+      <button class="pro-cta-main-btn" id="wlOpenBtn" onclick="openWaitlist()">Ön Kayıt Ol — Açılınca İlk Sen Öğren</button>
+
+      <form class="wl-form" id="wlForm" onsubmit="submitWaitlist(event)">
+        <div class="wl-plan">
+          <label><input type="radio" name="wlPlan" value="monthly" checked> Aylık ₺119</label>
+          <label><input type="radio" name="wlPlan" value="annual"> Yıllık ₺99/ay</label>
+        </div>
+        <div class="wl-row">
+          <input type="email" id="wlEmail" placeholder="ornek@email.com" required autocomplete="email">
+          <button type="submit" id="wlBtn">Ön Kayıt</button>
+        </div>
+        <div class="wl-fine">Ön kayıt ücretsizdir, ödeme bilgisi istemiyoruz ve taahhüt oluşturmaz. Sadece Pro açıldığında sana haber vermek için kullanılır. <a href="#" onclick="openKvkk(event)">KVKK Aydınlatma Metni</a></div>
+        <div class="wl-msg" id="wlMsg"></div>
+      </form>
+
       <div class="pro-cta-perks">
         <div class="pro-cta-perk">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          7 gün ücretsiz deneme
+          Ön kayıt ücretsiz — ödeme alınmaz
         </div>
         <div class="pro-cta-perk">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          Kredi kartı gerekmez
+          Açılışta ilk sen haberdar ol
         </div>
         <div class="pro-cta-perk">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          30 gün para iade garantisi
+          İstediğin an listeden çık
         </div>
         <div class="pro-cta-perk">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -3908,12 +3973,12 @@
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#74C69D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 12 günlük alışkanlık takibi</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#74C69D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Mavi Bölgeler bilgisi</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#74C69D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 4 Temel Taş ve bilim bölümleri</li>
-          <li class="no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Biyolojik yaş geçmişi</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#74C69D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Biyolojik yaş geçmişi (son 6 ölçüm)</li>
           <li class="no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Kişisel longevity planı</li>
           <li class="no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Haftalık ilerleme raporu</li>
           <li class="no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> AI Longevity Koçu</li>
         </ul>
-        <button class="plan-btn free-btn">Ücretsiz Başla</button>
+        <button class="plan-btn free-btn" onclick="openAuth('register')">Ücretsiz Başla</button>
       </div>
 
       <!-- PRO -->
@@ -3921,11 +3986,11 @@
         <div class="plan-badge">En Popüler</div>
         <div class="plan-name">Pro</div>
         <div class="plan-price" id="proPrice">₺119<sub>/ay</sub></div>
-        <div class="plan-price-note" id="proPriceNote">Aylık ₺119 · İstediğin zaman iptal et</div>
+        <div class="plan-price-note" id="proPriceNote">Aylık ₺119 · yakında — şu an ön kayıt</div>
         <div class="plan-desc">Kişisel longevity planı ve bilimsel koçlukla biyolojik yaşını gerçekten düşür.</div>
         <ul class="plan-features">
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Tüm ücretsiz özellikler</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Aylık biyolojik yaş takibi & grafik</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Sınırsız ölçüm geçmişi & trend analizi</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Kişisel 12 haftalık longevity planı</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Haftalık bilimsel içerik & özet</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> AI Longevity Koçu (kişisel öneriler)</li>
@@ -3948,7 +4013,7 @@
       <div class="cmp-row"><div class="cmp-feat">Günlük alışkanlık takibi</div><div class="cmp-val cmp-yes">✓</div><div class="cmp-val cmp-yes">✓</div></div>
       <div class="cmp-row"><div class="cmp-feat">Mavi Bölgeler & bilim içerikleri</div><div class="cmp-val cmp-yes">✓</div><div class="cmp-val cmp-yes">✓</div></div>
       <div class="cmp-row"><div class="cmp-feat">Faktör bazlı sonuç analizi</div><div class="cmp-val cmp-yes">✓</div><div class="cmp-val cmp-yes">✓</div></div>
-      <div class="cmp-row"><div class="cmp-feat">Biyolojik yaş geçmiş grafiği</div><div class="cmp-val cmp-no">—</div><div class="cmp-val cmp-yes">✓</div></div>
+      <div class="cmp-row"><div class="cmp-feat">Biyolojik yaş geçmiş grafiği</div><div class="cmp-val cmp-yes">Son 6</div><div class="cmp-val cmp-yes">✓ Sınırsız</div></div>
       <div class="cmp-row"><div class="cmp-feat">Kişisel longevity planı</div><div class="cmp-val cmp-no">—</div><div class="cmp-val cmp-yes">✓</div></div>
       <div class="cmp-row"><div class="cmp-feat">Haftalık bilimsel rapor</div><div class="cmp-val cmp-no">—</div><div class="cmp-val cmp-txt">PRO</div></div>
       <div class="cmp-row"><div class="cmp-feat">AI Longevity Koçu</div><div class="cmp-val cmp-no">—</div><div class="cmp-val cmp-txt">PRO</div></div>
@@ -4238,6 +4303,8 @@ function runCalc() {
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#74C69D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
       ${t}
     </div>`).join('');
+
+  _afterCalc({ real_age:age, bio_age:bioAge, diff:diff, gender:gender, factors:factors });
 }
 
 /* ═══ BILLING TOGGLE ═══ */
@@ -4278,7 +4345,7 @@ const _proResponses = [
     ans: `Otofaji, hücrelerin hasarlı parçalarını geri dönüştürdüğü temizlik mekanizması. Nobel 2016 — Yoshinori Ohsumi.\n\n**Nasıl Aktive Edilir:**\n• **Oruç** — 14–16+ saatte mTOR baskılanır, otofaji başlar\n• **Egzersiz** — kas hücrelerinde otofajiyi uyarır\n• **Düşük karbonhidrat** — insülin düşer → mTOR baskılanır\n• **Siyah kahve** — kafein mTOR'u hafifçe baskılar\n\n**16:8 Başlangıç:**\nGece 20:00 – sabah 12:00 arası oruç. En sürdürülebilir model.` },
   { kw: ['pro','fiyat','ücret','abonelik','satın','üyelik','119','99'],
     zone: 'pro', zoneLabel: '⚡ Pro Özelliklerini Gör',
-    ans: `**Vivelong Pro** iki seçenek sunar:\n\n💳 **Aylık:** ₺119/ay — istediğin zaman iptal\n🏷️ **Yıllık:** ₺99/ay (₺1.188 yıllık) — %17 tasarruf\n\n**Pro'ya dahil:**\n✓ Aylık biyolojik yaş trend grafiği\n✓ 12 haftalık kişisel longevity planı\n✓ Haftalık ilerleme raporu & skor kartı\n✓ AI Longevity Koçu\n✓ Biyomarker takip paneli\n✓ Alışkanlık streak & ısı haritası\n\n🎁 **7 gün ücretsiz** — kredi kartı gerekmez\n💰 30 gün para iade garantisi` },
+    ans: `**Vivelong Pro henüz açılmadı** — şu an ön kayıt alıyoruz ve hiçbir ücret tahsil etmiyoruz.\n\n**Planlanan fiyat:**\n💳 **Aylık:** ₺119/ay\n🏷️ **Yıllık:** ₺99/ay (₺1.188 yıllık) — %17 tasarruf\n\n**Pro'ya dahil olması planlanan:**\n✓ Sınırsız ölçüm geçmişi & trend analizi\n✓ 12 haftalık kişisel longevity planı\n✓ Haftalık ilerleme raporu & skor kartı\n✓ AI Longevity Koçu\n✓ Biyomarker takip paneli\n✓ Alışkanlık streak & ısı haritası\n\n**Şu an ücretsiz kullanabileceklerin:** biyolojik yaş testi, son 6 ölçümlük geçmiş grafiğin, günlük alışkanlık takibi ve tüm bilim içerikleri.\n\nÖn kayıt için Pro bölümündeki forma e-postanı bırakabilirsin — açılınca ilk sen haber alırsın.` },
   { kw: ['vitamin','d vitamini','takviye','omega','magnezyum','b12','coq','supplement'],
     zone: 'blog9', zoneLabel: '📖 Mitokondri & Takviye Yazısını Oku',
     ans: `Longevity perspektifinden en değerli takviyeler (doktora danışarak):\n\n**D3 Vitamini:** Hedef 40–60 ng/mL. 2.000–5.000 IU/gün, K2 ile birlikte.\n**Magnezyum (Glisinат):** 300+ enzim reaksiyonunda kofaktör. 200–400 mg/gün.\n**Omega-3 (EPA+DHA):** İnflamasyonu düşürür. Günde 1–2 g.\n**B12 (Metilkobalamin):** 50 yaş üzeri emilim azalır.\n**CoQ10:** 40 yaş üzeri ve statin kullananlar için. 100–200 mg/gün.` },
@@ -4358,8 +4425,8 @@ function setBill(type) {
     ? '₺99<sub>/ay</sub>'
     : '₺119<sub>/ay</sub>';
   document.getElementById('proPriceNote').textContent = isYr
-    ? 'Yıllık ₺1.188 — aylık ₺119 yerine %17 tasarruf'
-    : 'Aylık ₺119 · İstediğin zaman iptal et';
+    ? 'Yıllık ₺1.188 (₺99/ay) · yakında — şu an ön kayıt'
+    : 'Aylık ₺119 · yakında — şu an ön kayıt';
 }
 
 /* ═══ HABITS ═══ */
@@ -4595,13 +4662,12 @@ function fabSend() {
 }
 
 /* ══════════════════════════════════════════════
-   SUPABASE + AUTH + FORUM
-   ADIM 1: supabase.com → New project oluşturun
-   ADIM 2: Settings > API'den URL ve anon key alın
-   ADIM 3: Aşağıdaki iki değeri güncelleyin
+   SUPABASE + AUTH + ÖLÇÜM + FORUM
+   anon key tarayıcıda açıkta durur — bu normaldir.
+   Verinin korunması RLS politikalarıyla sağlanıyor.
 ══════════════════════════════════════════════ */
-const SUPABASE_URL = 'https://PROJE_ID.supabase.co';
-const SUPABASE_ANON_KEY = 'BURAYA_ANON_KEY';
+const SUPABASE_URL = 'https://mdpynseovqlbfipbegij.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1kcHluc2VvdnFsYmZpcGJlZ2lqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg4NzcyOTIsImV4cCI6MjEwNDQ1MzI5Mn0.l7XcT0vJ-X649E-E5QH-LcMQuu1A0tW9vPIfiELs1zw';
 const _sb = (window.supabase && SUPABASE_URL.includes('supabase.co') && !SUPABASE_URL.includes('PROJE_ID'))
   ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
   : null;
@@ -4637,8 +4703,13 @@ async function _initAuth(){
 
 async function _loadProfile(){
   if(!_sb||!_currentUser) return;
-  const {data} = await _sb.from('profiles').select('*').eq('id',_currentUser.id).single();
-  _currentProfile = data;
+  // Not: profiles'ta select('*') KULLANMA. E-posta sızmasın diye tabloda kolon
+  // bazlı GRANT var (sadece id, display_name, created_at okunabilir); '*' istemek
+  // "permission denied" döndürür.
+  const {data} = await _sb.from('profiles')
+    .select('id,display_name,created_at')
+    .eq('id',_currentUser.id).maybeSingle();
+  _currentProfile = data || { display_name: (_currentUser.email||'Üye').split('@')[0] };
 }
 
 function _updateNavAuth(){
@@ -4707,6 +4778,7 @@ async function doLogin(e){
   } else {
     closeAuth();
     _showToast('Hoş geldiniz! 🎉');
+    await _flushPendingMeasurement();
     await _loadForumPosts();
     _loadUserVotes();
   }
@@ -4725,32 +4797,28 @@ async function doRegister(e){
   const btn = document.getElementById('registerBtn');
   btn.disabled=true; btn.textContent='Kaydediliyor…';
 
-  const {data, error} = await _sb.auth.signUp({email, password});
+  // Profili istemci DEĞİL, auth.users üzerindeki trigger oluşturuyor. Sebebi:
+  // e-posta doğrulaması açıkken signUp oturum döndürmez, auth.uid() null kalır
+  // ve profiles insert'i RLS tarafından sessizce reddedilirdi.
+  const {data, error} = await _sb.auth.signUp({
+    email, password,
+    options:{ data:{ display_name:name, kvkk_consent:true, marketing_consent:marketing } }
+  });
   if(error){
     _authMsg('registerMsg','err', error.message);
     btn.disabled=false; btn.textContent='Üye Ol'; return;
   }
-  if(data.user){
-    await _sb.from('profiles').insert({
-      id: data.user.id,
-      display_name: name,
-      email: email,
-      kvkk_consent: true,
-      kvkk_consent_date: new Date().toISOString(),
-      marketing_consent: marketing
-    });
-    if(marketing){
-      try{
-        await fetch('/.netlify/functions/subscribe',{
-          method:'POST',
-          headers:{'Content-Type':'application/json'},
-          body: JSON.stringify({email, firstName: name.split(' ')[0]})
-        });
-      }catch(_){}
-    }
-  }
   btn.disabled=false; btn.textContent='Üye Ol';
+  if(marketing) _brevoSubscribe(email, name.split(' ')[0]);
+
+  if(!data.session){
+    // Doğrulama e-postası bekleniyor — oturum henüz yok.
+    _authMsg('registerMsg','ok','Kayıt alındı. Hesabını aktifleştirmek için e-postandaki bağlantıya tıkla.');
+    return;
+  }
+
   _authMsg('registerMsg','ok','Kayıt başarılı! Hoş geldiniz. 🎉');
+  await _flushPendingMeasurement();
   await _loadForumPosts();
   setTimeout(closeAuth, 2000);
 }
@@ -4761,6 +4829,209 @@ async function doLogout(){
   _currentUser=null; _currentProfile=null;
   _updateNavAuth();
   _showToast('Çıkış yapıldı.');
+}
+
+/* ══════════════════════════════════════════════
+   FAZ 1 — ÖLÇÜM KAYDI, TREND, LEAD YAKALAMA
+   Ürünün asıl değeri tek bir sayıda değil, ölçümün TEKRARINDA.
+   Bu blok hesaplayıcıyı "bir kez bakılan araç"tan geri dönüşü olan
+   bir takip aracına çeviriyor.
+══════════════════════════════════════════════ */
+const _PENDING_KEY = 'vivelong_pending_measurement';
+let _lastMeasurement = null;
+
+/* runCalc() sonucu hesapladıktan sonra burayı çağırır */
+function _afterCalc(m){
+  _lastMeasurement = m;
+  const box = document.getElementById('rSave');
+  if(!box) return;
+  box.style.display = 'block';
+  if(_currentUser){
+    _saveMeasurementForUser(m, box);
+  } else {
+    // Üye değilse ölçümü sakla — kayıt olursa hesabına aktarılacak.
+    try{ sessionStorage.setItem(_PENDING_KEY, JSON.stringify(m)); }catch(_){}
+    _renderLeadCapture(box);
+  }
+}
+
+function _measRow(m){
+  return {
+    user_id:_currentUser.id,
+    real_age:m.real_age, bio_age:m.bio_age, diff:m.diff,
+    gender:(m.gender==='E'||m.gender==='K') ? m.gender : null,
+    factors:m.factors||{}, locale:'tr'
+  };
+}
+
+async function _saveMeasurementForUser(m, box){
+  if(!_sb || !_currentUser) return;
+  box.innerHTML = '<div class="rsave-s">Ölçümün kaydediliyor…</div>';
+  const {error} = await _sb.from('measurements').insert(_measRow(m));
+  if(error){
+    box.innerHTML = '<div class="rsave-msg show err">Ölçüm kaydedilemedi: '+_esc(error.message)+'</div>';
+    return;
+  }
+  try{ sessionStorage.removeItem(_PENDING_KEY); }catch(_){}
+  await _renderTrend(box);
+}
+
+async function _renderTrend(box){
+  if(!_sb || !_currentUser) return;
+  const {data, error} = await _sb.from('measurements')
+    .select('bio_age,real_age,diff,created_at')
+    .eq('user_id', _currentUser.id)
+    .order('created_at',{ascending:false}).limit(6);
+  if(error || !data || !data.length){ box.style.display='none'; return; }
+
+  const rows = data.slice().reverse();          // eskiden yeniye
+  const vals = rows.map(r=>r.bio_age);
+  const lo = Math.min(...vals) - 1, hi = Math.max(...vals) + 1;
+  const bars = rows.map(r=>{
+    const pct = 25 + ((r.bio_age - lo) / Math.max(1, hi - lo)) * 70;
+    const cls = r.diff < 0 ? 'g' : r.diff > 0 ? 'b' : '';
+    const lbl = new Date(r.created_at).toLocaleDateString('tr-TR',{day:'numeric',month:'short'});
+    return `<div class="rtcol">
+      <div class="rtval">${r.bio_age}</div>
+      <div class="rtbar ${cls}" style="height:${pct}%"></div>
+      <div class="rtlbl">${lbl}</div>
+    </div>`;
+  }).join('');
+
+  const last = rows[rows.length-1];
+  const next = new Date(new Date(last.created_at).getTime() + 30*864e5)
+    .toLocaleDateString('tr-TR',{day:'numeric',month:'long'});
+
+  let note;
+  if(rows.length === 1){
+    note = `İlk ölçümün kaydedildi. Tek bir sayı fazla bir şey söylemez — asıl bilgi değişimde. <b>${next}</b> civarında tekrar ölç, farkı burada gör.`;
+  } else {
+    const delta = last.bio_age - rows[0].bio_age;
+    const dTxt = delta < 0 ? `<b>${Math.abs(delta)} yaş geriledi</b>`
+               : delta > 0 ? `<b>${delta} yaş arttı</b>`
+               : '<b>değişmedi</b>';
+    note = `${rows.length} ölçümde biyolojik yaşın ${dTxt}. Sonraki ölçüm için uygun tarih: <b>${next}</b>.`;
+  }
+
+  box.innerHTML = `<div class="rsave-t">Biyolojik yaş geçmişin</div>
+    <div class="rtrend">${bars}</div>
+    <div class="rtnote">${note}</div>`;
+}
+
+function _renderLeadCapture(box){
+  box.innerHTML = `<div class="rsave-t">Bu sonucu kaydet</div>
+    <div class="rsave-s">Tek seferlik bir sayı işe yaramaz. E-postanı bırak; 30 gün sonra hatırlatalım, tekrar ölç ve biyolojik yaşının hangi yöne gittiğini gör.</div>
+    <form class="rsave-form" onsubmit="captureLead(event)">
+      <input type="email" id="leadEmail" placeholder="ornek@email.com" required autocomplete="email">
+      <button type="submit" class="rsave-btn" id="leadBtn">Kaydet</button>
+    </form>
+    <label class="rsave-kvkk">
+      <input type="checkbox" id="leadKvkk">
+      <span>Sonucumun e-posta ile gönderilmesini ve ölçüm hatırlatması almayı kabul ediyorum. <a href="#" onclick="openKvkk(event)">KVKK Aydınlatma Metni</a></span>
+    </label>
+    <div class="rsave-msg" id="leadMsg"></div>`;
+}
+
+async function captureLead(e){
+  e.preventDefault();
+  const email = document.getElementById('leadEmail').value.trim();
+  const msg = document.getElementById('leadMsg');
+  const btn = document.getElementById('leadBtn');
+  const show = (html, cls) => { msg.className = 'rsave-msg show '+cls; msg.innerHTML = html; };
+
+  if(!document.getElementById('leadKvkk').checked){
+    show('Devam etmek için KVKK onayı gerekiyor.','err'); return;
+  }
+  if(!_sb){ show('Bağlantı kurulamadı, lütfen sonra tekrar dene.','err'); return; }
+
+  btn.disabled = true; btn.textContent = '…';
+  const m = _lastMeasurement || {};
+  const {error} = await _sb.from('leads').insert({
+    email, source:'calculator',
+    real_age: m.real_age ?? null, bio_age: m.bio_age ?? null, diff: m.diff ?? null,
+    locale:'tr'
+  });
+  btn.disabled = false; btn.textContent = 'Kaydet';
+
+  // 23505 = aynı e-posta zaten kayıtlı; kullanıcı için bu bir hata değil.
+  if(error && error.code !== '23505'){
+    show('Kaydedilemedi: '+_esc(error.message),'err'); return;
+  }
+  _brevoSubscribe(email);
+  show('Kaydedildi. Sonucun kalıcı olarak saklanması ve trend grafiğin için <a href="#" onclick="openAuth(\'register\');return false;">ücretsiz hesap oluştur</a> — bu ölçüm otomatik aktarılacak.','ok');
+}
+
+/* Üye olmadan ölçüm yapıp sonra kayıt/giriş yapanın ölçümü kaybolmasın */
+async function _flushPendingMeasurement(){
+  if(!_sb || !_currentUser) return;
+  let m = null;
+  try{
+    const raw = sessionStorage.getItem(_PENDING_KEY);
+    if(raw) m = JSON.parse(raw);
+  }catch(_){}
+  if(!m || typeof m.bio_age !== 'number') return;
+  const {error} = await _sb.from('measurements').insert(_measRow(m));
+  if(error) return;
+  try{ sessionStorage.removeItem(_PENDING_KEY); }catch(_){}
+  const box = document.getElementById('rSave');
+  if(box && box.style.display !== 'none') await _renderTrend(box);
+}
+
+/* Bülten aboneliği — en iyi çaba. Kaynağı doğru kayıt Supabase'te tutuluyor,
+   bu çağrı başarısız olsa da lead kaybolmaz. */
+function _brevoSubscribe(email, firstName){
+  try{
+    fetch('/.netlify/functions/subscribe',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({email, firstName: firstName || ''})
+    }).catch(()=>{});
+  }catch(_){}
+}
+
+/* ══════════════════════════════════════════════
+   FAZ 0 — PRO ÖN KAYIT
+   Ödeme altyapısı kurulana kadar buradaki buton hiçbir şey yapmıyordu.
+   Ödeme sözü vermek yerine gerçek talebi ölçüyoruz: kaç kişi bu fiyata
+   ön kayıt oluyor? Ödeme entegrasyonu geldiğinde bu liste ilk hedef kitle.
+══════════════════════════════════════════════ */
+function openWaitlist(){
+  const f = document.getElementById('wlForm');
+  const b = document.getElementById('wlOpenBtn');
+  if(!f) return;
+  f.classList.add('open');
+  if(b) b.style.display = 'none';
+  const em = document.getElementById('wlEmail');
+  if(em){ if(_currentUser && _currentUser.email) em.value = _currentUser.email; em.focus(); }
+}
+
+async function submitWaitlist(e){
+  e.preventDefault();
+  const email = document.getElementById('wlEmail').value.trim();
+  const planEl = document.querySelector('input[name="wlPlan"]:checked');
+  const msg = document.getElementById('wlMsg');
+  const btn = document.getElementById('wlBtn');
+  const show = (html, cls) => { msg.className = 'wl-msg show '+cls; msg.innerHTML = html; };
+
+  if(!_sb){ show('Bağlantı kurulamadı, lütfen sonra tekrar dene.','err'); return; }
+  btn.disabled = true; btn.textContent = '…';
+
+  const {error} = await _sb.from('pro_waitlist').insert({
+    email,
+    plan: planEl ? planEl.value : 'monthly',
+    user_id: _currentUser ? _currentUser.id : null,
+    locale: 'tr'
+  });
+  btn.disabled = false; btn.textContent = 'Ön Kayıt';
+
+  // 23505 = bu e-posta zaten listede; kullanıcı açısından başarı sayılır.
+  if(error && error.code !== '23505'){
+    show('Kaydedilemedi: '+_esc(error.message),'err'); return;
+  }
+  _brevoSubscribe(email);
+  document.querySelector('#wlForm .wl-row').style.display = 'none';
+  show(error ? 'Zaten listedesin — Pro açılır açılmaz haber vereceğiz.'
+             : 'Ön kaydın alındı. Pro açılır açılmaz sana ilk haber vereceğiz — o ana kadar hiçbir ücret alınmayacak.','ok');
 }
 
 /* ─── KVKK MODAL ─── */

@@ -183,6 +183,33 @@
     .rtip { display:flex; align-items:flex-start; gap:7px; background:rgba(255,255,255,.08); border-radius:8px; padding:9px 11px; font-size:11px; color:rgba(255,255,255,.85); text-align:left; }
     .rtip svg { flex-shrink:0; margin-top:1px; }
 
+    /* ── SAVE MEASUREMENT / TREND (below the result panel) ── */
+    .rsave { width:100%; margin-top:14px; padding-top:14px; border-top:1px solid rgba(255,255,255,.14); text-align:left; }
+    .rsave-t { font-size:12px; font-weight:700; color:#fff; margin-bottom:3px; }
+    .rsave-s { font-size:11px; color:rgba(255,255,255,.62); line-height:1.6; margin-bottom:10px; }
+    .rsave-form { display:flex; gap:6px; }
+    .rsave-form input { flex:1; min-width:0; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.2); border-radius:8px; padding:9px 11px; font-size:12px; color:#fff; font-family:inherit; }
+    .rsave-form input::placeholder { color:rgba(255,255,255,.45); }
+    .rsave-form input:focus { outline:none; border-color:var(--accent); background:rgba(255,255,255,.14); }
+    .rsave-btn { background:var(--accent); color:var(--primary); border:none; border-radius:8px; padding:9px 15px; font-size:12px; font-weight:700; cursor:pointer; font-family:inherit; white-space:nowrap; transition:filter .2s; }
+    .rsave-btn:hover:not(:disabled) { filter:brightness(1.08); }
+    .rsave-btn:disabled { opacity:.6; cursor:default; }
+    .rsave-kvkk { display:flex; align-items:flex-start; gap:6px; margin-top:8px; font-size:10px; color:rgba(255,255,255,.5); line-height:1.5; cursor:pointer; }
+    .rsave-kvkk input { margin-top:1px; flex-shrink:0; accent-color:var(--accent); }
+    .rsave-kvkk a { color:var(--accent); }
+    .rsave-msg { font-size:11px; margin-top:8px; line-height:1.6; display:none; }
+    .rsave-msg.show { display:block; }
+    .rsave-msg.ok  { color:var(--accent); }
+    .rsave-msg.err { color:#FC8181; }
+    .rtrend { display:flex; align-items:flex-end; gap:5px; height:56px; margin:12px 0 8px; }
+    .rtcol { flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; min-width:0; }
+    .rtbar { width:100%; max-width:26px; border-radius:4px 4px 0 0; background:rgba(255,255,255,.28); transition:height .4s ease; }
+    .rtbar.g { background:var(--accent); } .rtbar.b { background:#FC8181; }
+    .rtval { font-size:10px; font-weight:700; color:#fff; }
+    .rtlbl { font-size:9px; color:rgba(255,255,255,.45); white-space:nowrap; }
+    .rtnote { font-size:11px; color:rgba(255,255,255,.62); line-height:1.6; }
+    .rtnote b { color:#fff; }
+
     /* ── HABITS ── */
     #aliskanliklar { background:var(--bg2); }
     .hprog { background:var(--surface); border:1.5px solid var(--border-light); border-radius:var(--radius); padding:20px; margin-top:28px; }
@@ -540,6 +567,26 @@
     .pro-cta-main-btn:hover { transform:translateY(-3px); box-shadow:0 10px 32px rgba(0,0,0,.3); }
     .pro-cta-perks { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:22px; }
     .pro-cta-perk { display:flex; align-items:center; gap:6px; color:rgba(255,255,255,.75); font-size:12px; }
+    /* Pro waitlist form */
+    .wl-form { max-width:420px; margin:0 auto; display:none; }
+    .wl-form.open { display:block; }
+    .wl-row { display:flex; gap:8px; }
+    .wl-row input { flex:1; min-width:0; background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.25); border-radius:11px; padding:14px 15px; font-size:14px; color:#fff; font-family:inherit; }
+    .wl-row input::placeholder { color:rgba(255,255,255,.5); }
+    .wl-row input:focus { outline:none; border-color:#fff; background:rgba(255,255,255,.18); }
+    .wl-row button { padding:14px 24px; background:#fff; color:var(--primary); border:none; border-radius:11px; font-family:inherit; font-size:14px; font-weight:700; cursor:pointer; white-space:nowrap; transition:all .2s; }
+    .wl-row button:hover:not(:disabled) { transform:translateY(-2px); box-shadow:0 8px 22px rgba(0,0,0,.28); }
+    .wl-row button:disabled { opacity:.6; cursor:default; transform:none; }
+    .wl-plan { display:flex; gap:8px; justify-content:center; margin-bottom:12px; }
+    .wl-plan label { display:flex; align-items:center; gap:6px; font-size:12px; color:rgba(255,255,255,.8); cursor:pointer; padding:7px 13px; border-radius:100px; border:1.5px solid rgba(255,255,255,.22); transition:all .2s; }
+    .wl-plan label:has(input:checked) { background:rgba(255,255,255,.16); border-color:#fff; color:#fff; }
+    .wl-plan input { accent-color:#fff; }
+    .wl-msg { font-size:13px; margin-top:14px; line-height:1.65; display:none; }
+    .wl-msg.show { display:block; }
+    .wl-msg.ok  { color:var(--pale); }
+    .wl-msg.err { color:#FFC9C9; }
+    .wl-fine { font-size:11px; color:rgba(255,255,255,.5); margin-top:10px; line-height:1.6; }
+    .wl-fine a { color:rgba(255,255,255,.8); }
     /* Gradient text */
     .grad-text { background:linear-gradient(135deg,var(--accent),var(--gold)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
 
@@ -925,7 +972,7 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         Calculate Your Biological Age
       </a>
-      <a href="#uyelik" class="btn btn-gold">Go Pro — ₺119/mo</a>
+      <a href="#uyelik" class="btn btn-gold">Join the Pro Waitlist — Free</a>
     </div>
     <div class="hero-stats">
       <div><div class="hs-num">16</div><div class="hs-lbl">Factors assessed</div></div>
@@ -1219,6 +1266,8 @@
           <div class="rmsg" id="rMsg"></div>
           <div class="fbars" id="fBars"><div class="fbtitle">Factor Contribution (years)</div></div>
           <div class="rtips" id="rTips"></div>
+          <!-- Save measurement / history trend — filled in at the end of runCalc() -->
+          <div class="rsave" id="rSave" style="display:none"></div>
         </div>
       </div>
     </div>
@@ -3391,7 +3440,7 @@
           <div class="pro-section-ttl">Biological Age Tracking Chart</div>
           <div class="pro-section-sub">Your test result is logged every month — watch your number drop</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Go Pro →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Join Waitlist →</button>
       </div>
       <div class="pro-demo-card">
         <div class="pro-demo-topbar">
@@ -3467,7 +3516,7 @@
           <div class="pro-section-ttl">Weekly Progress Report</div>
           <div class="pro-section-sub">A personal scorecard delivered every Monday — what you did well, what needs to change</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Go Pro →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Join Waitlist →</button>
       </div>
       <div class="pro-demo-card">
         <div class="pro-demo-topbar">
@@ -3530,7 +3579,7 @@
           <div class="pro-section-ttl">AI Longevity Coach</div>
           <div class="pro-section-sub">Personal recommendations based on your biological age data — 24/7</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Go Pro →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Join Waitlist →</button>
       </div>
       <div class="pro-demo-card">
         <div class="pro-demo-topbar">
@@ -3580,7 +3629,7 @@
           <div class="pro-section-ttl">Streak & Habit Analysis</div>
           <div class="pro-section-sub">A 12-week habit heatmap — see your consistency</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Go Pro →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Join Waitlist →</button>
       </div>
       <div class="pro-demo-card">
         <div class="pro-demo-topbar">
@@ -3652,7 +3701,7 @@
           <div class="pro-section-ttl">Your 12-Week Personal Longevity Plan</div>
           <div class="pro-section-sub">A custom, sequenced program built from your biological age test</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Go Pro →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Join Waitlist →</button>
       </div>
       <div class="pro-demo-card">
         <div class="pro-demo-topbar">
@@ -3722,7 +3771,7 @@
           <div class="pro-section-ttl">Biomarker Tracking Panel</div>
           <div class="pro-section-sub">Enter your blood values — compare against the ideal range, get an interpretation</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Go Pro →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Join Waitlist →</button>
       </div>
       <div class="pro-demo-card">
         <div class="pro-demo-topbar">
@@ -3799,7 +3848,7 @@
           <div class="pro-section-ttl">Longevity Assistant</div>
           <div class="pro-section-sub">Ask anything about longevity, biological age, or Pro</div>
         </div>
-        <button class="pro-go-btn" onclick="scrollProCta()">Go Pro →</button>
+        <button class="pro-go-btn" onclick="scrollProCta()">Join Waitlist →</button>
       </div>
       <div class="pro-ai-card">
         <div class="pro-ai-header">
@@ -3849,20 +3898,35 @@
     <div class="pro-cta-block" id="proCta">
       <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;">Vivelong Pro</div>
       <div class="pro-cta-price">₺119<sub>/mo</sub></div>
-      <div class="pro-cta-note">or ₺99/mo billed annually — ₺1,188/yr · save 17%</div>
-      <button class="pro-cta-main-btn">Go Pro Now</button>
+      <div class="pro-cta-note">Planned pricing · ₺99/mo billed annually — ₺1,188/yr<br>Pro hasn't launched yet; we're taking pre-registrations and <b>charging nothing</b>.</div>
+
+      <button class="pro-cta-main-btn" id="wlOpenBtn" onclick="openWaitlist()">Join the Waitlist — Be First to Know</button>
+
+      <form class="wl-form" id="wlForm" onsubmit="submitWaitlist(event)">
+        <div class="wl-plan">
+          <label><input type="radio" name="wlPlan" value="monthly" checked> Monthly ₺119</label>
+          <label><input type="radio" name="wlPlan" value="annual"> Yearly ₺99/mo</label>
+        </div>
+        <div class="wl-row">
+          <input type="email" id="wlEmail" placeholder="you@example.com" required autocomplete="email">
+          <button type="submit" id="wlBtn">Join Waitlist</button>
+        </div>
+        <div class="wl-fine">Joining is free, we don't ask for payment details, and it commits you to nothing. We'll only use it to tell you when Pro opens. <a href="#" onclick="openKvkk(event)">Privacy Notice</a></div>
+        <div class="wl-msg" id="wlMsg"></div>
+      </form>
+
       <div class="pro-cta-perks">
         <div class="pro-cta-perk">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          7-day free trial
+          Free to join — no charge
         </div>
         <div class="pro-cta-perk">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          No credit card required
+          First to know at launch
         </div>
         <div class="pro-cta-perk">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          30-day money-back guarantee
+          Leave the list any time
         </div>
         <div class="pro-cta-perk">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -3905,12 +3969,12 @@
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#74C69D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 12-habit daily tracker</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#74C69D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Blue Zones knowledge base</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#74C69D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 4 Pillars and science sections</li>
-          <li class="no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Biological age history</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#74C69D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Biological age history (last 6 measurements)</li>
           <li class="no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Personal longevity plan</li>
           <li class="no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Weekly progress report</li>
           <li class="no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> AI Longevity Coach</li>
         </ul>
-        <button class="plan-btn free-btn">Start Free</button>
+        <button class="plan-btn free-btn" onclick="openAuth('register')">Start Free</button>
       </div>
 
       <!-- PRO -->
@@ -3918,11 +3982,11 @@
         <div class="plan-badge">Most Popular</div>
         <div class="plan-name">Pro</div>
         <div class="plan-price" id="proPrice">₺119<sub>/mo</sub></div>
-        <div class="plan-price-note" id="proPriceNote">₺119/mo · Cancel anytime</div>
+        <div class="plan-price-note" id="proPriceNote">₺119/mo · coming soon — waitlist open</div>
         <div class="plan-desc">Actually lower your biological age with a personal longevity plan and science-based coaching.</div>
         <ul class="plan-features">
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Everything in Free</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Monthly biological age tracking & chart</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Unlimited measurement history & trend analysis</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Personal 12-week longevity plan</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Weekly science digest</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> AI Longevity Coach (personal recommendations)</li>
@@ -3945,7 +4009,7 @@
       <div class="cmp-row"><div class="cmp-feat">Daily habit tracking</div><div class="cmp-val cmp-yes">✓</div><div class="cmp-val cmp-yes">✓</div></div>
       <div class="cmp-row"><div class="cmp-feat">Blue Zones & science content</div><div class="cmp-val cmp-yes">✓</div><div class="cmp-val cmp-yes">✓</div></div>
       <div class="cmp-row"><div class="cmp-feat">Factor-based result analysis</div><div class="cmp-val cmp-yes">✓</div><div class="cmp-val cmp-yes">✓</div></div>
-      <div class="cmp-row"><div class="cmp-feat">Biological age history chart</div><div class="cmp-val cmp-no">—</div><div class="cmp-val cmp-yes">✓</div></div>
+      <div class="cmp-row"><div class="cmp-feat">Biological age history chart</div><div class="cmp-val cmp-yes">Last 6</div><div class="cmp-val cmp-yes">✓ Unlimited</div></div>
       <div class="cmp-row"><div class="cmp-feat">Personal longevity plan</div><div class="cmp-val cmp-no">—</div><div class="cmp-val cmp-yes">✓</div></div>
       <div class="cmp-row"><div class="cmp-feat">Weekly science report</div><div class="cmp-val cmp-no">—</div><div class="cmp-val cmp-txt">PRO</div></div>
       <div class="cmp-row"><div class="cmp-feat">AI Longevity Coach</div><div class="cmp-val cmp-no">—</div><div class="cmp-val cmp-txt">PRO</div></div>
@@ -4233,6 +4297,8 @@ function runCalc() {
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#74C69D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
       ${t}
     </div>`).join('');
+
+  _afterCalc({ real_age:age, bio_age:bioAge, diff:diff, gender:gender, factors:factors });
 }
 
 /* ═══ BILLING TOGGLE ═══ */
@@ -4273,7 +4339,7 @@ const _proResponses = [
     ans: `Autophagy is the cleanup mechanism by which cells recycle their damaged parts. Nobel Prize 2016 — Yoshinori Ohsumi.\n\n**How to Activate It:**\n• **Fasting** — mTOR is suppressed after 14–16+ hours, triggering autophagy\n• **Exercise** — stimulates autophagy in muscle cells\n• **Low carb** — lowers insulin → suppresses mTOR\n• **Black coffee** — caffeine mildly suppresses mTOR\n\n**16:8 to Start:**\nFast from 8pm to noon. The most sustainable model.` },
   { kw: ['pro','price','cost','subscription','buy','membership','119','99'],
     zone: 'pro', zoneLabel: '⚡ See Pro Features',
-    ans: `**Vivelong Pro** offers two options:\n\n💳 **Monthly:** ₺119/mo — cancel anytime\n🏷️ **Yearly:** ₺99/mo (₺1,188 billed yearly) — save 17%\n\n**Included in Pro:**\n✓ Monthly biological age trend chart\n✓ 12-week personal longevity plan\n✓ Weekly progress report & score card\n✓ AI Longevity Coach\n✓ Biomarker tracking panel\n✓ Habit streaks & heatmap\n\n🎁 **7 days free** — no credit card required\n💰 30-day money-back guarantee` },
+    ans: `**Vivelong Pro hasn't launched yet** — we're taking pre-registrations and charging nothing.\n\n**Planned pricing:**\n💳 **Monthly:** ₺119/mo\n🏷️ **Yearly:** ₺99/mo (₺1,188 billed yearly) — save 17%\n\n**Planned for Pro:**\n✓ Unlimited measurement history & trend analysis\n✓ 12-week personal longevity plan\n✓ Weekly progress report & score card\n✓ AI Longevity Coach\n✓ Biomarker tracking panel\n✓ Habit streaks & heatmap\n\n**Free right now:** the biological age test, your last 6 measurements as a trend chart, daily habit tracking and all the science content.\n\nDrop your email in the Pro section to join the waitlist — you'll hear first when it opens.` },
   { kw: ['vitamin','vitamin d','supplement','omega','magnesium','b12','coq','supplements'],
     zone: 'blog9', zoneLabel: '📖 Read the Mitochondria & Supplements Article',
     ans: `The most valuable supplements from a longevity perspective (consult your doctor first):\n\n**Vitamin D3:** Target 40–60 ng/mL. 2,000–5,000 IU/day, taken with K2.\n**Magnesium (Glycinate):** A cofactor in 300+ enzyme reactions. 200–400 mg/day.\n**Omega-3 (EPA+DHA):** Lowers inflammation. 1–2 g per day.\n**B12 (Methylcobalamin):** Absorption declines after age 50.\n**CoQ10:** For those over 40 and statin users. 100–200 mg/day.` },
@@ -4354,7 +4420,7 @@ function setBill(type) {
     : '₺119<sub>/mo</sub>';
   document.getElementById('proPriceNote').textContent = isYr
     ? '₺1,188 billed yearly — 17% savings vs. ₺119/mo'
-    : '₺119/mo · Cancel anytime';
+    : '₺119/mo · coming soon — waitlist open';
 }
 
 /* ═══ HABITS ═══ */
@@ -4590,13 +4656,11 @@ function fabSend() {
 }
 
 /* ══════════════════════════════════════════════
-   SUPABASE + AUTH + FORUM
-   STEP 1: supabase.com → create a New project
-   STEP 2: get the URL and anon key from Settings > API
-   STEP 3: update the two values below
+   SUPABASE + AUTH + MEASUREMENTS + FORUM
+   The anon key is public by design — data is protected by RLS policies.
 ══════════════════════════════════════════════ */
-const SUPABASE_URL = 'https://PROJECT_ID.supabase.co';
-const SUPABASE_ANON_KEY = 'YOUR_ANON_KEY_HERE';
+const SUPABASE_URL = 'https://mdpynseovqlbfipbegij.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1kcHluc2VvdnFsYmZpcGJlZ2lqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg4NzcyOTIsImV4cCI6MjEwNDQ1MzI5Mn0.l7XcT0vJ-X649E-E5QH-LcMQuu1A0tW9vPIfiELs1zw';
 const _sb = (window.supabase && SUPABASE_URL.includes('supabase.co') && !SUPABASE_URL.includes('PROJECT_ID'))
   ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
   : null;
@@ -4632,8 +4696,12 @@ async function _initAuth(){
 
 async function _loadProfile(){
   if(!_sb||!_currentUser) return;
-  const {data} = await _sb.from('profiles').select('*').eq('id',_currentUser.id).single();
-  _currentProfile = data;
+  // Do NOT use select('*') on profiles. Column-level GRANTs keep emails private
+  // (only id, display_name, created_at are readable); '*' returns permission denied.
+  const {data} = await _sb.from('profiles')
+    .select('id,display_name,created_at')
+    .eq('id',_currentUser.id).maybeSingle();
+  _currentProfile = data || { display_name: (_currentUser.email||'Member').split('@')[0] };
 }
 
 function _updateNavAuth(){
@@ -4702,6 +4770,7 @@ async function doLogin(e){
   } else {
     closeAuth();
     _showToast('Welcome! 🎉');
+    await _flushPendingMeasurement();
     await _loadForumPosts();
     _loadUserVotes();
   }
@@ -4720,32 +4789,27 @@ async function doRegister(e){
   const btn = document.getElementById('registerBtn');
   btn.disabled=true; btn.textContent='Signing up…';
 
-  const {data, error} = await _sb.auth.signUp({email, password});
+  // The profile row is created by a trigger on auth.users, not by the client:
+  // when email confirmation is on, signUp returns no session, auth.uid() is null
+  // and the profiles insert would be silently rejected by RLS.
+  const {data, error} = await _sb.auth.signUp({
+    email, password,
+    options:{ data:{ display_name:name, kvkk_consent:true, marketing_consent:marketing } }
+  });
   if(error){
     _authMsg('registerMsg','err', error.message);
     btn.disabled=false; btn.textContent='Sign Up'; return;
   }
-  if(data.user){
-    await _sb.from('profiles').insert({
-      id: data.user.id,
-      display_name: name,
-      email: email,
-      kvkk_consent: true,
-      kvkk_consent_date: new Date().toISOString(),
-      marketing_consent: marketing
-    });
-    if(marketing){
-      try{
-        await fetch('/.netlify/functions/subscribe',{
-          method:'POST',
-          headers:{'Content-Type':'application/json'},
-          body: JSON.stringify({email, firstName: name.split(' ')[0]})
-        });
-      }catch(_){}
-    }
-  }
   btn.disabled=false; btn.textContent='Sign Up';
+  if(marketing) _brevoSubscribe(email, name.split(' ')[0]);
+
+  if(!data.session){
+    _authMsg('registerMsg','ok','Almost there — click the link in your email to activate your account.');
+    return;
+  }
+
   _authMsg('registerMsg','ok','Registration successful! Welcome. 🎉');
+  await _flushPendingMeasurement();
   await _loadForumPosts();
   setTimeout(closeAuth, 2000);
 }
@@ -4756,6 +4820,206 @@ async function doLogout(){
   _currentUser=null; _currentProfile=null;
   _updateNavAuth();
   _showToast('Logged out.');
+}
+
+/* ══════════════════════════════════════════════
+   PHASE 1 — MEASUREMENT HISTORY, TREND, LEAD CAPTURE
+   The product's value is not one number, it's the REPEAT measurement.
+   This turns the calculator from a one-shot toy into something worth
+   coming back to.
+══════════════════════════════════════════════ */
+const _PENDING_KEY = 'vivelong_pending_measurement';
+let _lastMeasurement = null;
+
+function _afterCalc(m){
+  _lastMeasurement = m;
+  const box = document.getElementById('rSave');
+  if(!box) return;
+  box.style.display = 'block';
+  if(_currentUser){
+    _saveMeasurementForUser(m, box);
+  } else {
+    // Not signed in: stash it so it can be moved into their account on sign-up.
+    try{ sessionStorage.setItem(_PENDING_KEY, JSON.stringify(m)); }catch(_){}
+    _renderLeadCapture(box);
+  }
+}
+
+function _measRow(m){
+  return {
+    user_id:_currentUser.id,
+    real_age:m.real_age, bio_age:m.bio_age, diff:m.diff,
+    gender:(m.gender==='E'||m.gender==='K') ? m.gender : null,
+    factors:m.factors||{}, locale:'en'
+  };
+}
+
+async function _saveMeasurementForUser(m, box){
+  if(!_sb || !_currentUser) return;
+  box.innerHTML = '<div class="rsave-s">Saving your measurement…</div>';
+  const {error} = await _sb.from('measurements').insert(_measRow(m));
+  if(error){
+    box.innerHTML = '<div class="rsave-msg show err">Could not save measurement: '+_esc(error.message)+'</div>';
+    return;
+  }
+  try{ sessionStorage.removeItem(_PENDING_KEY); }catch(_){}
+  await _renderTrend(box);
+}
+
+async function _renderTrend(box){
+  if(!_sb || !_currentUser) return;
+  const {data, error} = await _sb.from('measurements')
+    .select('bio_age,real_age,diff,created_at')
+    .eq('user_id', _currentUser.id)
+    .order('created_at',{ascending:false}).limit(6);
+  if(error || !data || !data.length){ box.style.display='none'; return; }
+
+  const rows = data.slice().reverse();
+  const vals = rows.map(r=>r.bio_age);
+  const lo = Math.min(...vals) - 1, hi = Math.max(...vals) + 1;
+  const bars = rows.map(r=>{
+    const pct = 25 + ((r.bio_age - lo) / Math.max(1, hi - lo)) * 70;
+    const cls = r.diff < 0 ? 'g' : r.diff > 0 ? 'b' : '';
+    const lbl = new Date(r.created_at).toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+    return `<div class="rtcol">
+      <div class="rtval">${r.bio_age}</div>
+      <div class="rtbar ${cls}" style="height:${pct}%"></div>
+      <div class="rtlbl">${lbl}</div>
+    </div>`;
+  }).join('');
+
+  const last = rows[rows.length-1];
+  const next = new Date(new Date(last.created_at).getTime() + 30*864e5)
+    .toLocaleDateString('en-GB',{day:'numeric',month:'long'});
+
+  let note;
+  if(rows.length === 1){
+    note = `First measurement saved. A single number says little — the signal is in the change. Come back around <b>${next}</b> and measure again.`;
+  } else {
+    const delta = last.bio_age - rows[0].bio_age;
+    const dTxt = delta < 0 ? `<b>dropped ${Math.abs(delta)} years</b>`
+               : delta > 0 ? `<b>rose ${delta} years</b>`
+               : '<b>stayed flat</b>';
+    note = `Across ${rows.length} measurements your biological age has ${dTxt}. Next measurement due: <b>${next}</b>.`;
+  }
+
+  box.innerHTML = `<div class="rsave-t">Your biological age history</div>
+    <div class="rtrend">${bars}</div>
+    <div class="rtnote">${note}</div>`;
+}
+
+function _renderLeadCapture(box){
+  box.innerHTML = `<div class="rsave-t">Save this result</div>
+    <div class="rsave-s">A one-off number is not useful. Leave your email and we'll remind you in 30 days — measure again and see which way your biological age is heading.</div>
+    <form class="rsave-form" onsubmit="captureLead(event)">
+      <input type="email" id="leadEmail" placeholder="you@example.com" required autocomplete="email">
+      <button type="submit" class="rsave-btn" id="leadBtn">Save</button>
+    </form>
+    <label class="rsave-kvkk">
+      <input type="checkbox" id="leadKvkk">
+      <span>I agree to receive my result and a measurement reminder by email. <a href="#" onclick="openKvkk(event)">Privacy Notice</a></span>
+    </label>
+    <div class="rsave-msg" id="leadMsg"></div>`;
+}
+
+async function captureLead(e){
+  e.preventDefault();
+  const email = document.getElementById('leadEmail').value.trim();
+  const msg = document.getElementById('leadMsg');
+  const btn = document.getElementById('leadBtn');
+  const show = (html, cls) => { msg.className = 'rsave-msg show '+cls; msg.innerHTML = html; };
+
+  if(!document.getElementById('leadKvkk').checked){
+    show('Please accept the privacy notice to continue.','err'); return;
+  }
+  if(!_sb){ show('Could not connect, please try again later.','err'); return; }
+
+  btn.disabled = true; btn.textContent = '…';
+  const m = _lastMeasurement || {};
+  const {error} = await _sb.from('leads').insert({
+    email, source:'calculator',
+    real_age: m.real_age ?? null, bio_age: m.bio_age ?? null, diff: m.diff ?? null,
+    locale:'en'
+  });
+  btn.disabled = false; btn.textContent = 'Save';
+
+  // 23505 = this email is already on the list; not an error from the user's side.
+  if(error && error.code !== '23505'){
+    show('Could not save: '+_esc(error.message),'err'); return;
+  }
+  _brevoSubscribe(email);
+  show('Saved. To keep your result permanently and see your trend, <a href="#" onclick="openAuth(\'register\');return false;">create a free account</a> — this measurement carries over automatically.','ok');
+}
+
+async function _flushPendingMeasurement(){
+  if(!_sb || !_currentUser) return;
+  let m = null;
+  try{
+    const raw = sessionStorage.getItem(_PENDING_KEY);
+    if(raw) m = JSON.parse(raw);
+  }catch(_){}
+  if(!m || typeof m.bio_age !== 'number') return;
+  const {error} = await _sb.from('measurements').insert(_measRow(m));
+  if(error) return;
+  try{ sessionStorage.removeItem(_PENDING_KEY); }catch(_){}
+  const box = document.getElementById('rSave');
+  if(box && box.style.display !== 'none') await _renderTrend(box);
+}
+
+/* Newsletter signup — best effort. Supabase is the source of truth, so a
+   failure here never loses the lead. */
+function _brevoSubscribe(email, firstName){
+  try{
+    fetch('/.netlify/functions/subscribe',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({email, firstName: firstName || ''})
+    }).catch(()=>{});
+  }catch(_){}
+}
+
+/* ══════════════════════════════════════════════
+   PHASE 0 — PRO WAITLIST
+   This button did nothing until now. Rather than promise a checkout that
+   doesn't exist, measure real demand: how many people pre-register at this
+   price? That list is the first audience when billing goes live.
+══════════════════════════════════════════════ */
+function openWaitlist(){
+  const f = document.getElementById('wlForm');
+  const b = document.getElementById('wlOpenBtn');
+  if(!f) return;
+  f.classList.add('open');
+  if(b) b.style.display = 'none';
+  const em = document.getElementById('wlEmail');
+  if(em){ if(_currentUser && _currentUser.email) em.value = _currentUser.email; em.focus(); }
+}
+
+async function submitWaitlist(e){
+  e.preventDefault();
+  const email = document.getElementById('wlEmail').value.trim();
+  const planEl = document.querySelector('input[name="wlPlan"]:checked');
+  const msg = document.getElementById('wlMsg');
+  const btn = document.getElementById('wlBtn');
+  const show = (html, cls) => { msg.className = 'wl-msg show '+cls; msg.innerHTML = html; };
+
+  if(!_sb){ show('Could not connect, please try again later.','err'); return; }
+  btn.disabled = true; btn.textContent = '…';
+
+  const {error} = await _sb.from('pro_waitlist').insert({
+    email,
+    plan: planEl ? planEl.value : 'monthly',
+    user_id: _currentUser ? _currentUser.id : null,
+    locale: 'en'
+  });
+  btn.disabled = false; btn.textContent = 'Join Waitlist';
+
+  if(error && error.code !== '23505'){
+    show('Could not save: '+_esc(error.message),'err'); return;
+  }
+  _brevoSubscribe(email);
+  document.querySelector('#wlForm .wl-row').style.display = 'none';
+  show(error ? "You're already on the list — we'll email you the moment Pro opens."
+             : "You're on the list. We'll email you the moment Pro opens — no charge until then.",'ok');
 }
 
 /* ─── KVKK MODAL ─── */
