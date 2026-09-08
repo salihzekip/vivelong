@@ -219,3 +219,46 @@ Chrome üzerinden GA4'e (property 546237084) girildi, son 7 gün: **2 etkin kull
 **Deploy:** commit `4fdfc51`, push edildi, `netlify-cli deploy --prod` ile canlıya alındı, ana sayfa + `/en/` üzerinde `analytics_storage: 'granted'` curl ile doğrulandı.
 
 **Not:** Backlink stratejisi (Öncelik 2) ve genel otorite eksikliği hâlâ ana darboğaz — bkz. [[ketodiyetim-seo-geo-project]] karşılaştırması. GA4 artık veri toplayacak ama trafiği büyütecek asıl iş (backlink + TR anahtar kelime hedefleme) hâlâ yapılmadı.
+
+---
+
+## ✅ 8 Eylül 2026 — Faz 0 + Faz 1: sahte ürün akışı gerçeğe çevrildi
+
+**Bağlam:** Kullanıcı "siteyi yatırımcıya çıkarmak istiyorum" dedi. Yapılan değerlendirmede sitenin içerik tarafının güçlü, iş tarafının ise tamamen boş olduğu bulundu: ₺119/ay fiyat kartı yayındaydı ama **hiçbir ödeme entegrasyonu yoktu**, `SUPABASE_URL` hâlâ `PROJE_ID` placeholder'ıydı ve "Üye Ol" butonu ölüydü. Kayıtlı kullanıcı: 0. Verilen tavsiye: bu haliyle yatırımcıya çıkma; önce ürünü gerçek yap, sonra metrik biriktir.
+
+### Altyapı
+- Gerçek Supabase projesi açıldı: **`mdpynseovqlbfipbegij`** (org `xrrtbaqdjmrmoxglkwgc`, eu-central-1, ücretsiz kota).
+- 6 tablo: `profiles`, `measurements`, `leads`, `pro_waitlist`, `forum_posts`, `post_votes`. Hepsinde RLS açık.
+- 2 trigger: `handle_new_user` (auth.users → profiles) ve `sync_vote_count` (post_votes → forum_posts.vote_count).
+- Güvenlik denetimi (`get_advisors`) temiz. Trigger fonksiyonlarının REST `/rpc` üzerinden çağrılabilmesi kapatıldı (`revoke execute`).
+
+### Faz 0 — dürüstlük temizliği
+- Ölü "Hemen Pro'ya Geç" butonu gerçek **ön kayıt formuna** çevrildi (`pro_waitlist`, aylık/yıllık plan seçimiyle). Ödeme altyapısı yokken satın alma vaat etmek yerine gerçek talebi ölçüyor.
+- Gerçek olmayan ifadeler **tamamen kaldırıldı**: "7 gün ücretsiz deneme", "kredi kartı gerekmez", "30 gün para iade garantisi". Bunları chatbot cevabı da söylüyordu, o da düzeltildi. Fiyat notları "yakında — şu an ön kayıt" oldu.
+- Ölü "Ücretsiz Başla" butonu kayıt formuna bağlandı.
+
+### Faz 1 — geri dönüşü olan ürün
+- Hesaplama sonucu artık **kaydediliyor**. Üye, son 6 ölçümünü trend grafiği olarak görüyor + 30 gün sonrası için tekrar ölçüm tarihi gösteriliyor. Ürünün değeri tek bir sayıda değil, ölçümün tekrarında.
+- Üye olmayana **e-posta yakalama** (`leads`); sonra kayıt olursa sessionStorage'daki ölçüm hesabına otomatik aktarılıyor (`_flushPendingMeasurement`).
+- Ücretsiz planda "biyolojik yaş geçmişi" artık ✓ (son 6), Pro'nun farkı sınırsız geçmiş — plan kartları ve karşılaştırma tablosu koda göre düzeltildi.
+
+### Yol boyunca bulunan 3 GERÇEK hata
+1. **`profiles` insert'i istemcide yapılıyordu.** E-posta doğrulaması açıkken `signUp` oturum döndürmüyor → `auth.uid()` null → RLS insert'i **sessizce reddediyordu**. Yani hiç kimse profil oluşturamazdı. Profil artık `auth.users` trigger'ı ile oluşuyor (testte doğrulandı).
+2. **`post_votes`'a oy ekleniyordu ama `forum_posts.vote_count` hiç artırılmıyordu** — oylar görünmez kalıyordu. Sayıç artık trigger'da; istemci elle yazamıyor (kolon bazlı GRANT, 403 ile doğrulandı).
+3. **Forum listesi `profiles(display_name)` gömüyordu ama `forum_posts` ↔ `profiles` arasında FK yoktu.** PostgREST `PGRST200` ile 400 dönüyordu — yani forum listesi **hiç yüklenmezdi**. FK eklendi.
+
+### Gizlilik notu (önemli)
+- `profiles`'ta **kolon bazlı GRANT** var: forum yazar adı herkese açık, e-posta okunamıyor. Bu yüzden `profiles`'ta **`select('*')` KULLANMA** — "permission denied" döner. Sadece `id,display_name,created_at` iste.
+- `leads` ve `pro_waitlist`'te SELECT **tamamen kapalı** (e-posta hasadını engellemek için). Dışa aktarım yalnızca `service_role` ile / Supabase panelinden.
+
+### Deploy
+commit `872ced7`, push edildi, `netlify-cli deploy --prod` ile canlıya alındı. TR ve EN 200 doğrulandı; canlı sayfanın gömülü anon key'iyle lead ve ön kayıt insert'leri 201, dışarıdan e-posta okuma 401 (doğru).
+
+### AÇIK KALANLAR (sıradaki oturum buradan devam etmeli)
+- [ ] **Supabase'de e-posta doğrulamasını KAPAT.** Kullanıcı kararı bu yönde. Panel → Authentication → Sign In / Providers → Email → "Confirm email" kapat. Şu an açık olduğu için kayıt olan kişi e-postadaki linke tıklamadan giriş yapamıyor ve Supabase'in kendi mail servisi saatte ~2-4 mail sınırlı + spam'e düşüyor. Kod her iki durumu da karşılıyor, sadece toggle gerekiyor.
+- [ ] **`BREVO_API_KEY` Netlify'da tanımlı değil** (`netlify env:list` boş) → `/.netlify/functions/subscribe` 500 dönüyor, kimseye bülten maili gitmiyor. Lead KAYBOLMUYOR (Supabase kaynak-doğru kayıt), ama hatırlatma maili gönderilemiyor.
+- [ ] **30 günlük "tekrar ölç" hatırlatma maili** henüz yok. Faz 1'in retention halkası bu mail olmadan yarım — `measurements.created_at` üzerinden zamanlanmış bir job gerekiyor.
+- [ ] **iyzico entegrasyonu yapılamadı** — üye işyeri hesabı + API anahtarı gerekiyor (kullanıcı adımı). Kod tarafı hazır olduğunda `netlify/functions/` dizini zaten mevcut.
+- [ ] Faz 1 hedefi: **100 kayıt / 10 ödeyen**. Trafik kanalı SEO değil Instagram olmalı (ketodiyetim.tr pipeline'ı kopyalanacak) — SEO 6-12 ay sürüyor.
+- [ ] Backlink stratejisi (Öncelik 2) hâlâ hiç uygulanmadı; 25 sayfadan 20'si indekste değil. Ana otorite darboğazı bu.
+
