@@ -286,13 +286,11 @@ Faz 1'in retention halkası bu mail olmadan yarımdı: kullanıcı ölçümünü
 
 **Deploy:** commit `6d3916e`, push edildi, `netlify-cli deploy --prod`. `/abonelik-iptal/` ve `/en/unsubscribe/` canlıda 200.
 
-### ⚠️ TEK EKSİK — mail henüz GİTMİYOR
-Fonksiyon `{"configured":false}` dönüyor çünkü iki secret tanımlı değil. **Supabase paneli → Edge Functions → Secrets:**
-- `BREVO_API_KEY` — Brevo hesabından alınan API anahtarı
-- `BREVO_SENDER_EMAIL` — Brevo'da **doğrulanmış** gönderici adresi (doğrulanmamış adresle Brevo göndermeyi reddeder)
-- `BREVO_SENDER_NAME` — isteğe bağlı, varsayılan "Vivelong"
+### ✅ 8 Eylül 2026 (devam 2) — Brevo secret'ları girildi, GERÇEK gönderim doğrulandı
 
-Bu ikisi girilir girilmez sistem kendiliğinden çalışmaya başlar; başka bir şey yapmaya gerek yok. Elle test için:
-`select net.http_post(url:='https://mdpynseovqlbfipbegij.supabase.co/functions/v1/send-reminders', headers:=jsonb_build_object('Content-Type','application/json','Authorization','Bearer <anon key>'), body:='{}'::jsonb);`
-sonra `select status_code, content from net._http_response order by id desc limit 1;`
+Kullanıcı secret'ları girdi ama ilk denemede Brevo hep `401 Key not found` döndü. Kök neden: **Brevo'nun aynı sayfasında iki sekme var (SMTP / API Keys), kullanıcı SMTP sekmesindeki anahtarı kopyalamıştı** (`xsmtpsib-...` ile başlıyordu, API anahtarı `xkeysib-...` ile başlamalı). Bu, tek başına tahminle bulunamayacak bir hataydı — sohbetten anlaşılamıyordu, bu yüzden **geçici bir tanı Edge Function'ı (`diag-brevo`)** yazılıp deploy edildi: secret'ın TAM DEĞERİNİ hiçbir zaman döndürmeden yalnızca uzunluk + ilk 10 karakter + Brevo'nun kendi `/v3/account` endpoint'iyle canlı doğrulama sonucunu döndürdü. Bu, anahtarın tipini (`xsmtpsib-` vs `xkeysib-`) ifşa etmeden teşhis etmeyi sağladı.
+
+Düzeltme sonrası doğrulama: `diag-brevo` → `brevo_account_check_status: 200`, hesap bilgileri (organizasyon, plan: free/300 kredi) döndü. Ardından **gerçek bir test lead'i** (kullanıcının kendi e-postası, 31 gün öncesine tarihlenmiş) eklenip `send-reminders` tetiklendi: `{"ok":true,"due":1,"sent":1,"failed":[]}` — **mail gerçekten gitti**, kullanıcı gelen kutusunu kontrol edecek. Test verisi (`leads`, `email_contacts`) temizlendi. `diag-brevo` fonksiyonu işi bitince zararsız bir stub'a (410 dönen) çevrildi — MCP'de fonksiyon silme aracı yok, tamamen kaldırmak istenirse Supabase panelinden (Edge Functions > diag-brevo > Delete) yapılabilir.
+
+**Sistem artık tam çalışır durumda.** Hatırlatma zinciri (cron → pg_net → Edge Function → Brevo) baştan sona gerçek bir mail göndererek doğrulandı.
 
