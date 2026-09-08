@@ -257,8 +257,42 @@ commit `872ced7`, push edildi, `netlify-cli deploy --prod` ile canlıya alındı
 ### AÇIK KALANLAR (sıradaki oturum buradan devam etmeli)
 - [ ] **Supabase'de e-posta doğrulamasını KAPAT.** Kullanıcı kararı bu yönde. Panel → Authentication → Sign In / Providers → Email → "Confirm email" kapat. Şu an açık olduğu için kayıt olan kişi e-postadaki linke tıklamadan giriş yapamıyor ve Supabase'in kendi mail servisi saatte ~2-4 mail sınırlı + spam'e düşüyor. Kod her iki durumu da karşılıyor, sadece toggle gerekiyor.
 - [ ] **`BREVO_API_KEY` Netlify'da tanımlı değil** (`netlify env:list` boş) → `/.netlify/functions/subscribe` 500 dönüyor, kimseye bülten maili gitmiyor. Lead KAYBOLMUYOR (Supabase kaynak-doğru kayıt), ama hatırlatma maili gönderilemiyor.
-- [ ] **30 günlük "tekrar ölç" hatırlatma maili** henüz yok. Faz 1'in retention halkası bu mail olmadan yarım — `measurements.created_at` üzerinden zamanlanmış bir job gerekiyor.
+- [x] **30 günlük "tekrar ölç" hatırlatma maili KURULDU** (8 Eylül, aşağıdaki bölüme bak). Tek eksik: Brevo secret'ları.
 - [ ] **iyzico entegrasyonu yapılamadı** — üye işyeri hesabı + API anahtarı gerekiyor (kullanıcı adımı). Kod tarafı hazır olduğunda `netlify/functions/` dizini zaten mevcut.
 - [ ] Faz 1 hedefi: **100 kayıt / 10 ödeyen**. Trafik kanalı SEO değil Instagram olmalı (ketodiyetim.tr pipeline'ı kopyalanacak) — SEO 6-12 ay sürüyor.
 - [ ] Backlink stratejisi (Öncelik 2) hâlâ hiç uygulanmadı; 25 sayfadan 20'si indekste değil. Ana otorite darboğazı bu.
+
+---
+
+## ✅ 8 Eylül 2026 (devam) — 30 günlük hatırlatma maili kuruldu
+
+Faz 1'in retention halkası bu mail olmadan yarımdı: kullanıcı ölçümünü yapıyordu ama onu geri getirecek hiçbir şey yoktu.
+
+**Zincir:** `pg_cron` (her gün 07:00 UTC = TR 10:00) → `pg_net` → Edge Function `send-reminders` → Brevo transactional API. Cron işi: `vivelong-30d-reminders`.
+
+**Kimlere gidiyor:**
+- `lead` — hesap açmamış, hesaplayıcıda e-posta bırakmış ziyaretçi. **Tek sefer.** Aynı adresle hesap açtıysa dışlanıyor (iki mail gitmesin).
+- `user` — üye, son ölçümü 30 günden eski. 30 günde bir tekrar edebilir. **KVKK: yalnızca `marketing_consent` veren üyeye gidiyor.**
+
+**Mükerrer gönderim koruması:** kayıt gönderimden **ÖNCE** işaretleniyor (`leads.reminder_sent_at` / `profiles.last_reminded_at`). Bir hatırlatmayı kaçırmak, aynı kişiye iki kez göndermekten iyidir. Bu aynı zamanda fonksiyonu **idempotent** yapıyor — cron'un (herkese açık) anon key ile çağırması bu yüzden güvenli: tekrar tetiklemek fazladan mail göndermiyor.
+
+**Abonelikten çıkma:** `email_contacts` tablosunda adres başına uuid v4 token. Statik `/abonelik-iptal/` ve `/en/unsubscribe/` sayfaları anon key ile `unsubscribe_by_token` RPC'sini çağırıyor — serverless fonksiyon gerekmiyor, site statik kalmaya devam ediyor. İşlem idempotent (link iki kez tıklanabilir).
+
+**Gizlilik:** `email_contacts`'ta RLS açık ve **sıfır politika** (deny-all); yalnızca `service_role` ve SECURITY DEFINER fonksiyonlar erişiyor. `due_reminders` / `mark_reminder_sent` anon'a kapalı (401 ile doğrulandı). Denetimdeki 3 uyarı (deny-all tablo + anon'a açık `unsubscribe_by_token`) **bilinçli tasarımdır** ve gerekçesi SQL `COMMENT`'leriyle veritabanına yazıldı.
+
+**Yol boyunca bulunan hata:** ilk cron gövdesi `extensions.http_post` çağırıyordu ama pg_net Supabase'de **`net`** şemasına kuruluyor — iş her gün sessizce `42883` ile patlayacaktı. `net.http_post` ile düzeltildi, zincir uçtan uca test edildi (`net._http_response`'ta 200).
+
+**Doğrulanan 5 senaryo:** (A) abonelikten çıkan dışlanıyor ✓ (B) abone + vadesi gelmiş dönüyor ✓ (C) gönderildi işaretlenen bir daha dönmüyor ✓ (D) taze ölçümü olan ve pazarlama izni olmayan dışlanıyor ✓ (E) izinli + eski ölçümü olan doğru ad/yaş/dil ile dönüyor ✓
+
+**Deploy:** commit `6d3916e`, push edildi, `netlify-cli deploy --prod`. `/abonelik-iptal/` ve `/en/unsubscribe/` canlıda 200.
+
+### ⚠️ TEK EKSİK — mail henüz GİTMİYOR
+Fonksiyon `{"configured":false}` dönüyor çünkü iki secret tanımlı değil. **Supabase paneli → Edge Functions → Secrets:**
+- `BREVO_API_KEY` — Brevo hesabından alınan API anahtarı
+- `BREVO_SENDER_EMAIL` — Brevo'da **doğrulanmış** gönderici adresi (doğrulanmamış adresle Brevo göndermeyi reddeder)
+- `BREVO_SENDER_NAME` — isteğe bağlı, varsayılan "Vivelong"
+
+Bu ikisi girilir girilmez sistem kendiliğinden çalışmaya başlar; başka bir şey yapmaya gerek yok. Elle test için:
+`select net.http_post(url:='https://mdpynseovqlbfipbegij.supabase.co/functions/v1/send-reminders', headers:=jsonb_build_object('Content-Type','application/json','Authorization','Bearer <anon key>'), body:='{}'::jsonb);`
+sonra `select status_code, content from net._http_response order by id desc limit 1;`
 
