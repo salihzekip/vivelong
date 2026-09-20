@@ -294,3 +294,9 @@ Düzeltme sonrası doğrulama: `diag-brevo` → `brevo_account_check_status: 200
 
 **Sistem artık tam çalışır durumda.** Hatırlatma zinciri (cron → pg_net → Edge Function → Brevo) baştan sona gerçek bir mail göndererek doğrulandı.
 
+
+## 2026-09-20 — Taurin makalesi (TR/EN) yayına alındı
+- `/blog/taurin-ve-uzun-yasam/` + `/en/blog/taurine-and-longevity/` eklendi: 2023 Science (Singh ve ark.) iddiası vs 2025 NIH/Science ve Aging Cell (Marcangeli ve ark., 137 erkek) çalışmaları. Uydurma rakam yok, kaynaklar WebSearch ile doğrulandı.
+- Ana sayfa blog kartları (TR/EN), sitemap (2 URL), mitokondri + inflammaging (TR/EN) iç linkleri güncellendi. Commit `5176aa6`, push + `netlify-cli deploy --prod` yapıldı, iki URL canlıda 200.
+- 19 Eylül bulut routine'inin bu makaleyi push edememesi (GitHub App 403) nedeniyle yeniden yazıldı.
+- Açık: GSC'de (salihzekip@gmail.com, /u/1/) iki URL için "Dizine eklenmesini iste" henüz gönderilmedi.
