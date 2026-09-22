@@ -300,3 +300,9 @@ Düzeltme sonrası doğrulama: `diag-brevo` → `brevo_account_check_status: 200
 - Ana sayfa blog kartları (TR/EN), sitemap (2 URL), mitokondri + inflammaging (TR/EN) iç linkleri güncellendi. Commit `5176aa6`, push + `netlify-cli deploy --prod` yapıldı, iki URL canlıda 200.
 - 19 Eylül bulut routine'inin bu makaleyi push edememesi (GitHub App 403) nedeniyle yeniden yazıldı.
 - Açık: GSC'de (salihzekip@gmail.com, /u/1/) iki URL için "Dizine eklenmesini iste" henüz gönderilmedi.
+
+## 2026-09-22 — El Kavrama Gücü makalesi (TR/EN) yayına alındı
+- `/blog/el-kavrama-gucu-nedir/` + `/en/blog/grip-strength/` eklendi: PURE çalışması (Leong ve ark., Lancet 2015, n=139.691, kavrama gücü sistolik tansiyondan daha güçlü ölüm riski öngörücüsü), JAMDA meta-analizi (Wu ve ark., 2017, n=3.002.203), EWGSOP2 sarkopeni eşikleri (Cruz-Jentoft ve ark., 2019). Uydurma rakam yok, tüm kaynaklar WebSearch ile doğrulandı.
+- Ana sayfa blog kartları (TR/EN), sitemap (2 URL) güncellendi. Commit `cedb88e`, push + `netlify-cli deploy --prod` yapıldı.
+- 22 Eylül bulut routine'inin bu makaleyi (ve aynı gün ayrıca "el kavrama gücü" konusunu 20 Eylül'de de) push edememesi (GitHub App 403, kalıcı sorun — bkz. [[keto-vivelong-content-automation]]) nedeniyle yeniden yazıldı. Notion pano güncellendi (20 ve 22 Eylül satırları Yayinlandi).
+- Açık: sosyal medya paylaşımı (LinkedIn/Substack/Medium/Ekşi) henüz yapılmadı; GSC'de dizine ekleme isteği gönderilmedi.
