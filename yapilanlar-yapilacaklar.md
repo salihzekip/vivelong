@@ -306,3 +306,8 @@ Düzeltme sonrası doğrulama: `diag-brevo` → `brevo_account_check_status: 200
 - Ana sayfa blog kartları (TR/EN), sitemap (2 URL) güncellendi. Commit `cedb88e`, push + `netlify-cli deploy --prod` yapıldı.
 - 22 Eylül bulut routine'inin bu makaleyi (ve aynı gün ayrıca "el kavrama gücü" konusunu 20 Eylül'de de) push edememesi (GitHub App 403, kalıcı sorun — bkz. [[keto-vivelong-content-automation]]) nedeniyle yeniden yazıldı. Notion pano güncellendi (20 ve 22 Eylül satırları Yayinlandi).
 - Açık: sosyal medya paylaşımı (LinkedIn/Substack/Medium/Ekşi) henüz yapılmadı; GSC'de dizine ekleme isteği gönderilmedi.
+
+## 2026-10-01 — Kreatin ve Uzun Yaşam makalesi (TR/EN) yayına alındı
+- `/blog/kreatin-ve-uzun-yasam/` + `/en/blog/creatine-and-longevity/` eklendi: Sharifian ve ark. 2025 meta-analizi (European Review of Aging and Physical Activity; 20 RKÇ, 1.093 kişi, 55+, kreatin+egzersizde 1RM +2,1 kg, p=0,001; vücut yağı ve kemik yoğunluğunda güvenilir fark yok) ve Kansas Üniversitesi Alzheimer pilot çalışması (Smith ve ark. 2025; 20 kişi, 8 hafta, 20 g/gün, beyin kreatini +%11, plasebo yok). Rakamlar kaynak sayfalardan doğrulandı.
+- Ana sayfa blog kartları (TR/EN), sitemap (2 URL), el-kavrama-gucu + mitokondri + nad-sirtuin (TR/EN) iç linkleri güncellendi.
+- 28 Eylül bulut routine çıktısı push 403 yüzünden sandbox'ta kalmıştı; canlı oturumda bağımsız yeniden yazıldı.
