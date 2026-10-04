@@ -38,6 +38,7 @@
 - [Biyolojik Yaşınızı Düşürmek Mümkün mü? 10 Kanıtlanmış Yöntem](https://vivelong.com/blog/biyolojik-yasi-dusurmek/)
 - [Ozempic ve GLP-1 İlaçları Yaşlanmayı Yavaşlatır mı?](https://vivelong.com/blog/glp1-ilaclari-uzun-yasam/): 2026'nın Nature Communications epigenetik yaş çalışması, mekanizma ve sınırlar.
 - [Organ Yaşı Nedir? Kalbiniz, Böbreğiniz Neden Farklı Yaşlanır?](https://vivelong.com/blog/organ-yasi-nedir/): UCL-Stanford'ın 1.803 kişilik 15 yıllık proteomik organ yaşlanması çalışması — hangi yaşam tarzı kararı hangi organı hızlandırıyor.
+- [Rapamisin ve Uzun Yaşam: İnsan Çalışmalarında Ne Bulundu?](https://vivelong.com/blog/rapamisin-ve-uzun-yasam/): 8 omurgalı türünde kalori kısıtlamasına yakın ömür etkisi gösteren rapamisin, 2025'in PEARL insan çalışmasında birincil hedefinde fark vermedi ama kadınlarda kas kütlesi ve ağrıda iyileşme bulundu.
 
 ## English Pages (full parallel site under /en/)
 
@@ -75,6 +76,7 @@
 - [Can You Actually Lower Your Biological Age? 10 Proven Methods](https://vivelong.com/en/blog/lower-your-biological-age/)
 - [Do Ozempic and GLP-1 Drugs Slow Aging?](https://vivelong.com/en/blog/glp1-drugs-and-longevity/): The 2026 Nature Communications epigenetic-age study, its mechanism and its limits.
 - [Organ Age: Why Do Your Heart and Kidneys Age at Different Rates?](https://vivelong.com/en/blog/organ-age/): A UCL-Stanford study tracking 1,803 people for 15 years — which lifestyle choices accelerate which organs.
+- [Rapamycin and Longevity: What Do Human Trials Actually Show?](https://vivelong.com/en/blog/rapamycin-and-longevity/): Rapamycin extends lifespan nearly as much as caloric restriction across 8 vertebrate species, but the 2025 PEARL human trial found no effect on its primary target — only secondary, sex-specific gains in women.
 
 ## Notlar / Notes
 - Site dilleri: Türkçe (varsayılan, `/`) ve İngilizce (`/en/`). / Site languages: Turkish (default, `/`) and English (`/en/`).
