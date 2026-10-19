@@ -43,6 +43,10 @@
 - [Ozempic ve GLP-1 İlaçları Yaşlanmayı Yavaşlatır mı?](https://vivelong.com/blog/glp1-ilaclari-uzun-yasam/): 2026'nın Nature Communications epigenetik yaş çalışması, mekanizma ve sınırlar.
 - [Organ Yaşı Nedir? Kalbiniz, Böbreğiniz Neden Farklı Yaşlanır?](https://vivelong.com/blog/organ-yasi-nedir/): UCL-Stanford'ın 1.803 kişilik 15 yıllık proteomik organ yaşlanması çalışması — hangi yaşam tarzı kararı hangi organı hızlandırıyor.
 - [Rapamisin ve Uzun Yaşam: İnsan Çalışmalarında Ne Bulundu?](https://vivelong.com/blog/rapamisin-ve-uzun-yasam/): 8 omurgalı türünde kalori kısıtlamasına yakın ömür etkisi gösteren rapamisin, 2025'in PEARL insan çalışmasında birincil hedefinde fark vermedi ama kadınlarda kas kütlesi ve ağrıda iyileşme bulundu.
+- [VO2 Max Nasıl Artırılır? Kanıta Dayalı Antrenman Türleri ve Beklenebilecek Kazanç](https://vivelong.com/blog/vo2-max-nasil-artirilir/): 28 kontrollü çalışmanın meta-analizine göre dayanıklılık antrenmanı VO2 max'ı ortalama 4,9, HIIT 5,5 ml/kg/dk artırıyor. HIIT ile sürekli antrenman farkı, süre ve sınırlamalar.
+- [VO2 Max Kaç Olmalı? Yaş ve Cinsiyete Göre Referans Değerler](https://vivelong.com/blog/vo2-max-kac-olmali/): ABD FRIEND kayıt verisine göre 20-29 yaşta ortanca VO2 max erkeklerde 48,0, kadınlarda 37,6 ml/kg/dk; 70-79 yaşta 24,4 ve 18,3. Yaşla düşüş, yüzdelik dilimler ve ne anlama geldiği.
+- [Telomer Nasıl Uzatılır? Egzersiz, Beslenme ve Stres Yönetimi Ne Kadar İşe Yarıyor?](https://vivelong.com/blog/telomer-nasil-uzatilir/): 124 kişilik randomize çalışmada dayanıklılık ve interval antrenmanı telomeraz aktivitesini 2-3 kat artırdı. Egzersiz, Akdeniz diyeti ve yaşam tarzı çalışmalarının gerçekte ne gösterdiği ve sınırları.
+- [Sauna Faydaları ve Zararları: Gözlemsel Veriler Ne Diyor, Kimler Dikkat Etmeli?](https://vivelong.com/blog/sauna-faydalari-ve-zararlari/): 2.315 Fin erkeğin 20 yıllık takibinde haftada 4-7 sauna seansı daha düşük ani kalp ölümü ve demans riskiyle ilişkiliydi. Faydaların gözlemsel kanıtı, riskler ve kimlerin dikkatli olması gerektiği.
 
 ## English Pages (full parallel site under /en/)
 
@@ -81,6 +85,10 @@
 - [Do Ozempic and GLP-1 Drugs Slow Aging?](https://vivelong.com/en/blog/glp1-drugs-and-longevity/): The 2026 Nature Communications epigenetic-age study, its mechanism and its limits.
 - [Organ Age: Why Do Your Heart and Kidneys Age at Different Rates?](https://vivelong.com/en/blog/organ-age/): A UCL-Stanford study tracking 1,803 people for 15 years — which lifestyle choices accelerate which organs.
 - [Rapamycin and Longevity: What Do Human Trials Actually Show?](https://vivelong.com/en/blog/rapamycin-and-longevity/): Rapamycin extends lifespan nearly as much as caloric restriction across 8 vertebrate species, but the 2025 PEARL human trial found no effect on its primary target — only secondary, sex-specific gains in women.
+- [How to Increase VO2 Max: Evidence-Based Training Types and the Gains to Expect](https://vivelong.com/en/blog/how-to-increase-vo2-max/): A meta-analysis of 28 controlled trials found endurance training raised VO2 max by about 4.9 and HIIT by 5.5 ml/kg/min. HIIT vs continuous training, duration and limitations.
+- [What Is a Good VO2 Max? Reference Values by Age and Sex](https://vivelong.com/en/blog/what-is-a-good-vo2-max/): In the US FRIEND registry the median VO2 max at ages 20-29 was 48.0 (men) and 37.6 (women) ml/kg/min, falling to 24.4 and 18.3 at 70-79. Decline with age, percentiles and what they mean.
+- [How to Lengthen Telomeres: What Exercise, Diet and Stress Management Really Do](https://vivelong.com/en/blog/how-to-lengthen-telomeres/): In a 124-person randomized trial, endurance and interval training raised telomerase activity 2-3 fold. What studies on exercise, the Mediterranean diet and lifestyle actually show, and their limits.
+- [Sauna Benefits and Risks: What the Observational Data Say and Who Should Be Careful](https://vivelong.com/en/blog/sauna-benefits-and-risks/): In a 20-year follow-up of 2,315 Finnish men, 4-7 sauna sessions a week were linked to lower sudden cardiac death and dementia risk. The observational evidence for benefits, the risks, and who should take care.
 
 ## Notlar / Notes
 - Site dilleri: Türkçe (varsayılan, `/`) ve İngilizce (`/en/`). / Site languages: Turkish (default, `/`) and English (`/en/`).

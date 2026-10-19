@@ -200,6 +200,46 @@
       "question": "Ortak Paydalar — Ne Buldular?",
       "answer": "Yüzlükleri inceleyen araştırmacılar hayret verici bulgulara ulaştı. Bunların bir kısmı beklenen, bir kısmı ise kesinlikle sürpriz: Hastalık Ertelenmiş, Yokmuş Gibi Geçiyor: NECS'in en çarpıcı bulgusu şu: yüzlüklerin çoğu hayatlarının büyük bölümünde kronik hastalık yaşamıyor. Hastalık 90–95'li yaşlarda geliyor ama çok kısa sürüyor. Bu \"sıkıştırılmış hastalık\" modelini doğruluyor. Sigara İçmiyorlar (Büyük Çoğunlukla): Yüzlüklerin %90'ı hiç sigara içmemiş ya da gençlikten sonra bırakmış. Bu tek faktör bile o kadar güçlü ki araştırmacılar bunu \"gerekli koşul\" olarak tanımlıyor. Sosyal Bağlantı Güçlü: Yalnız yaşayan yüzlük nadir. Aile, topluluk ve akran bağları güçlü. Bu hem tercih hem de hayatta kalma seleksiyonu olabilir. Stres Direnci Yüksek: Thomas Perls'ün gözlemi: yüzlükler \"strese maruz kalmamış\" değil, \"stresle başa çıkmayı daha iyi öğrenmiş.\" Birçoğu savaş, açlık, yoksulluk deneyimlemiş — ama bunları işleyebilmiş. Vücut Kitle İndeksi Düşük: Yüzlüklerin büyük çoğunluğu orta yaşta normal veya düşük kiloları ile dikkat çekiyor. Karın yağının longevity için en zararlı yağ tipi olduğu açık.",
       "source": "https://vivelong.com/blog/yuz-yasinda-saglikli/"
+    },
+    {
+      "question": "VO2 max nasıl artırılır?",
+      "answer": "Kontrollü çalışmaların meta-analizine göre hem sürekli dayanıklılık antrenmanı hem de yüksek yoğunluklu interval antrenman (HIIT) sağlıklı yetişkinlerde VO2 max'ı anlamlı biçimde yükseltiyor: egzersiz yapmayanlara göre sırasıyla ortalama 4,9 ve 5,5 ml/kg/dk.",
+      "source": "https://vivelong.com/blog/vo2-max-nasil-artirilir/"
+    },
+    {
+      "question": "HIIT mi, sürekli antrenman mı daha iyi?",
+      "answer": "HIIT ortalamada sürekli dayanıklılık antrenmanından ortalama 1,2 ml/kg/dk daha fazla kazanç sağladı; yazarlar bunu küçük bir üstünlük olarak yorumluyor. İkisi de etkili; sürdürülebilirlik ve sağlık durumu belirleyici.",
+      "source": "https://vivelong.com/blog/vo2-max-nasil-artirilir/"
+    },
+    {
+      "question": "VO2 max ortalaması kaçtır?",
+      "answer": "ABD FRIEND verisinde (2015) 20-29 yaş ortanca VO2 max erkeklerde 48,0, kadınlarda 37,6 ml/kg/dk; 70-79 yaşta sırasıyla 24,4 ve 18,3 ml/kg/dk idi. Değerler yaşa ve cinsiyete göre değişir.",
+      "source": "https://vivelong.com/blog/vo2-max-kac-olmali/"
+    },
+    {
+      "question": "VO2 max yaşla ne kadar düşer?",
+      "answer": "FRIEND 2015 verisinde ortalama düşüş on yılda yaklaşık %10'du; 2022 güncellemesinde treadmill testinde on yılda ortalama %13,5 (4,0 ml/kg/dk) bulundu.",
+      "source": "https://vivelong.com/blog/vo2-max-kac-olmali/"
+    },
+    {
+      "question": "Telomer nasıl uzatılır?",
+      "answer": "Kesin bir yöntem yok. 124 kişilik randomize bir çalışmada altı aylık dayanıklılık ve interval antrenmanı telomeraz aktivitesini ve kan hücrelerindeki telomer uzunluğunu artırdı; direnç antrenmanı artırmadı. Bu, uzun vadeli sağlık faydası kanıtı değildir.",
+      "source": "https://vivelong.com/blog/telomer-nasil-uzatilir/"
+    },
+    {
+      "question": "Telomer uzamak ömrü uzatır mı?",
+      "answer": "Bunu gösteren bir çalışma bu yazıda yok. Telomer uzunluğu bir biyobelirteç; uzamasının hastalık veya ölüm riskini azalttığı bu çalışmalarda gösterilmedi.",
+      "source": "https://vivelong.com/blog/telomer-nasil-uzatilir/"
+    },
+    {
+      "question": "Sauna faydalı mı?",
+      "answer": "Gözlemsel çalışmalarda sık sauna kullanımı daha düşük ani kalp ölümü ve demans riskiyle ilişkili bulundu (Fin erkeklerde, haftada 4-7 seans ile 1 seans kıyaslandığında). Bu nedensellik kanıtı değildir.",
+      "source": "https://vivelong.com/blog/sauna-faydalari-ve-zararlari/"
+    },
+    {
+      "question": "Sauna zararlı olabilir mi?",
+      "answer": "Sağlıklı yetişkinlerin çoğunda iyi tolere edilir, ancak kararsız anjina, yakın zamanda geçirilmiş kalp krizi ve ciddi aort darlığında kontrendikedir; sauna sırasında alkol hipotansiyon ve aritmi riskini artırır.",
+      "source": "https://vivelong.com/blog/sauna-faydalari-ve-zararlari/"
     }
   ]
 }
