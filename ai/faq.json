@@ -1,0 +1,175 @@
+{
+  "site": "https://vivelong.com/",
+  "faq": [
+    {
+      "question": "pH Dengesi Nedir ve Neden Önemli?",
+      "answer": "pH, bir maddenin asit mi yoksa baz (alkali) mi olduğunu gösteren ölçek — 0'dan 14'e kadar. 7 nötr, 7'nin altı asit, üstü alkali. Kanınızın pH'ı 7.35–7.45 arasında olmalı. Bu küçük aralığın dışına çıkmak ciddi metabolik sorunlara yol açar. Vücut bu dengeyi her koşulda korumaya çalışır — bu yüzden \"asitlenme\" dediğimizde kanın pH'ının düştüğünü kastetmiyoruz. Kastımız daha ince bir şey: dengeyi korumak için vücudun kendi mineral ve enzim rezervlerini tüketmesi. Kemikten kalsiyum çekilmesi, böbreklerin aşırı yüklenmesi, hücresel stresin artması — bunlar asitlenmenin görünmez bedeli. Asidoz Nedir? Metabolik asidoz kan pH'ının 7.35'in altına düştüğü durum — acil tıp sorunu. Ama subklinik (hafif, kronik) asidik yük de uzun vadede hücresel yaşlanmayı hızlandırıyor. Böbrek, kas ve kemik sağlığını sessizce etkiliyor. Alkali Diyet Neden Önemli? Alkali yönlü beslenme vücudun tampon sistemlerini rahatlatıyor. Böbreklerin daha az çalışması, kemiklerden mineral çekilmemesi ve hücresel ortamın daha sağlıklı kalması anlamına geliyor. Hücresel Düzey: Ayşegül Çoruhlu'nun \"hücresel sağlık\" yaklaşımında vurgulanan temel nokta şu: \"Hücrelerimiz doğru yakıtı, doğru zamanda, doğru koşullarda alırsa sağlıklı kalır.\" Asit yükü bu üç koşulu da bozuyor.",
+      "source": "https://vivelong.com/blog/alkali-beslenme/"
+    },
+    {
+      "question": "Alkali Beslenme Longevity'yi Nasıl Destekliyor?",
+      "answer": "Kemik Sağlığı: Kronik asit yüküne karşı vücut kemiklerden kalsiyum ve magnezyum çekiyor. Uzun vadede bu osteoporoza zemin hazırlıyor. Alkali ağırlıklı beslenme bu mineral kaybını önlüyor. Avrupa Klinik Beslenme Dergisi'ndeki meta-analiz: alkali takviyeler kemik erimesini yavaşlatıyor. Kas Kütlesi Korunması: Yaşla birlikte asit yükü artar ve kas protein sentezi düşer. JAMA Internal Medicine 2008 çalışması: potasyum zengini (alkali) diyet ile yaşlılarda daha yüksek yağsız kas kütlesi arasında anlamlı ilişki. Böbrek Sağlığı: Kronik asit yükü böbrek tübüllerini zorlayan ve taş oluşumunu kolaylaştıran bir ortam yaratıyor. Alkali gıdalar bu yükü azaltıyor. Mitokondriyal Verimlilik: Asitik hücresel ortam mitokondriyal enzim aktivitesini düşürüyor. pH optimal aralıkta olduğunda ATP üretimi daha verimli işliyor — bu da enerji, performans ve yavaş yaşlanma demek. İnflamasyon Azalması: Alkali gıdaların büyük çoğunluğu aynı zamanda anti-inflamatuvar: antioksidanlar, polifenoller, magnezyum. İkili etki: hem pH yükü azaltıyor hem de inflammaging'i frenliyor.",
+      "source": "https://vivelong.com/blog/alkali-beslenme/"
+    },
+    {
+      "question": "Biyolojik Yaş Testleri Ne Kadar Güvenilir?",
+      "answer": "Değişiyor. Bilimsel literatürde en güvenilir kabul edilenler DNA metilasyonuna dayalı \"epigenetik saat\" testleri (Horvath saati gibi) — ama bunlar pahalı ve klinik/araştırma laboratuvarı gerektiriyor. Telomer uzunluğu, biyobelirteç panelleri (CRP, HbA1c, kreatinin gibi) ve anket/yaşam tarzı bazlı tahmin araçları (Vivelong'un ücretsiz testi dahil) daha erişilebilir ama daha kaba tahminler sunuyor — kesin tıbbi teşhis değil, eğilim göstergesi olarak değerlendirilmeli. Hiçbir test tek başına \"gerçeği\" söylemiyor; asıl değerli olan zaman içindeki değişimi takip etmek.",
+      "source": "https://vivelong.com/blog/biyolojik-yasi-dusurmek/"
+    },
+    {
+      "question": "Biyolojik Yaşı Düşürmeye Kaç Yaşında Başlamalı?",
+      "answer": "Ne kadar erken o kadar iyi ama \"artık çok geç\" diye bir nokta yok. Hücresel yaşlanma süreçleri (telomer kısalması, epigenetik değişim, mitokondriyal verim kaybı) 20'li yaşlardan itibaren yavaş yavaş işliyor, bu yüzden erken müdahale birikimli fayda sağlıyor. Ama araştırmalar egzersiz, beslenme ve uyku değişikliklerinin 60'lı, hatta 70'li yaşlarda başlanınca bile ölçülebilir biyolojik iyileşme sağladığını gösteriyor — vücudun kendini onarma kapasitesi yaşla azalıyor ama sıfırlanmıyor.",
+      "source": "https://vivelong.com/blog/biyolojik-yasi-dusurmek/"
+    },
+    {
+      "question": "El Kavrama Gücü Neden Bir Longevity Göstergesi?",
+      "answer": "El kavrama gücü, tüm vücuttaki kas kütlesi ve fonksiyonunun ucuz, hızlı ve güvenilir bir vekil ölçütü. Ölçmesi 10 saniye sürüyor ama kas gücü, sinir-kas iletimi, genel fiziksel dayanıklılık ve bazı çalışmalara göre biyolojik yaşlanma hızıyla ilişkili.",
+      "source": "https://vivelong.com/blog/el-kavrama-gucu-nedir/"
+    },
+    {
+      "question": "Kavrama Gücü Gerçekten Tansiyondan Daha mı Önemli?",
+      "answer": "2015'te Lancet'te yayımlanan PURE çalışması, 139.691 kişide kavrama gücündeki her 5 kg düşüşün, tüm nedenlere bağlı ölüm ve kardiyovasküler ölüm riskini sistolik tansiyondan daha güçlü öngördüğünü buldu. Bu, tansiyonun önemsiz olduğu anlamına gelmiyor — ikisi birlikte değerlendirildiğinde kavrama gücünün öngörü gücü daha yüksek çıktı.",
+      "source": "https://vivelong.com/blog/el-kavrama-gucu-nedir/"
+    },
+    {
+      "question": "Epigenetik Nedir?",
+      "answer": "\"Epigenetik\" kelimesi \"genin üzerinde\" anlamına geliyor. DNA dizinizi değiştirmeden — yani genetik kodunuz aynı kalırken — hangi genlerin ne zaman, ne kadar aktif olduğunu belirleyen mekanizmaların tümü epigenetik kapsamında. Şu anoloji işi netleştiriyor: DNA, bir piyanonun bütün tuşları. Epigenetik ise hangi tuşların çalındığı — müzik. Aynı piyanodan çok farklı müzikler çıkabilir. Genetiğiniz piyanoyu belirliyor; yaşam tarzınız çalınan müziği. DNA Metilasyonu: DNA zincirindeki sitozin bazlarına metil grubu ekleniyor. Bu işaret genellikle \"bu geni kapat\" anlamına geliyor. Yaşla birlikte metilasyon örüntüsü değişiyor — bilim bu değişimi biyolojik yaş göstergesi olarak kullanıyor. Histon Modifikasyonu: DNA histon proteinlerinin etrafına sarılı. Histonlara eklenen kimyasal işaretler DNA'nın gevşemesini (gen aktif) ya da sıkışmasını (gen sessiz) belirliyor. Kalıtım: Epigenetik değişimlerin bir kısmı nesiller arasında aktarılabiliyor. Holokost ve Hollanda Açlığı hayatta kalanlarının torunlarında epigenetik izler saptandı — stres biyolojinin içine işleniyor.",
+      "source": "https://vivelong.com/blog/epigenetik-nedir/"
+    },
+    {
+      "question": "Ozempic Biyolojik Yaşı Gerçekten Düşürüyor mu, Yoksa Sadece Kilo mu Verdiriyor?",
+      "answer": "2026'da Nature Communications'ta yayımlanan randomize kontrollü bir çalışma, semaglutidin etkisini vücut kitle indeksi ve iltihap belirteçleri için istatistiksel olarak düzeltince bile epigenetik yaş göstergelerinde (PhenoAge, PCGrimAge, DunedinPACE) anlamlı bir gerileme bulundu — yani etki tamamen kilo kaybına indirgenemiyor. Ama bu tek çalışma HIV ile yaşayan, hızlanmış biyolojik yaşlanma gösteren özel bir grupta yapıldı; sağlıklı genel popülasyonda henüz doğrulanmadı.",
+      "source": "https://vivelong.com/blog/glp1-ilaclari-uzun-yasam/"
+    },
+    {
+      "question": "Sadece Yaşlanmayı Yavaşlatmak İçin Ozempic Kullanabilir miyim?",
+      "answer": "Hayır, bu önerilmiyor. Ozempic ve benzeri GLP-1 ilaçlarının onaylı endikasyonu tip 2 diyabet ve obezite tedavisi. Longevity amaçlı \"off-label\" kullanımın uzun dönem güvenlik verisi yok, kas kütlesi kaybı gibi riskleri var ve mutlaka bir hekim gözetiminde değerlendirilmesi gerekiyor. Vivelong bu ilaçların reçetesiz veya doktor onayı olmadan kullanılmasını önermez.",
+      "source": "https://vivelong.com/blog/glp1-ilaclari-uzun-yasam/"
+    },
+    {
+      "question": "Hangi Hastalıkların Temelinde İnflamasyon Var?",
+      "answer": "Kronik inflamasyon longevity araştırmacılarının \"ortak paydası\" olarak tanımladığı merkezi bir mekanizma. Neredeyse tüm yaşa bağlı hastalıklarda rol oynuyor: Kardiyovasküler Hastalık: Ateroskleroz artık \"kolesterol plağı\" olmanın ötesinde — temelinde inflamatuvar süreç yatıyor. LDL oksidasyonu damar duvarını inflamasyon yoluyla hasara uğratıyor. CRP düzeyi kalp krizi riskini LDL'den bağımsız olarak öngörüyor. Alzheimer: Beyindeki mikroglia (bağışıklık hücreleri) aşırı aktive olarak nörotoksik inflamasyon oluşturuyor. Nöroinflmasyon beyindeki beta-amiloid birikimini ve nöron ölümünü hızlandırıyor. Tip 2 Diyabet: İnsülin direnci ve pankreas beta hücre hasarının altında inflamasyon var. Adipoz doku (özellikle karın yağı) TNF-α ve IL-6 salgılayarak insülin sinyalini bozuyor. Kanser: Kronik inflamasyon ortamı DNA hasarını artırıyor, onkogenleri aktive ediyor, tümör büyümesini destekliyor. H. pylori (mide ülseri) — mide kanseri bağlantısı inflamasyon-kanser ilişkisinin kanıtlanmış örneği. Depresyon ve Beyin Sağlığı: İnflamatuvar sitokinler kan-beyin bariyerini aşıp ruh hali düzenleyici nörotransmitterleri etkiliyor. Depresyon olan hastalarda CRP ve IL-6 düzeyleri yüksek bulunuyor.",
+      "source": "https://vivelong.com/blog/inflammaging-nedir/"
+    },
+    {
+      "question": "Kreatin yaşlanmayı yavaşlatır mı?",
+      "answer": "İnsanlarda kreatinin yaşam süresini uzattığını gösteren bir çalışma yok. 2025 tarihli bir meta-analiz, 55 yaş üstünde egzersizle birlikte kullanıldığında kas gücünü ortalama 2,1 kg daha fazla artırdığını buldu. Kas gücü sağlıklı yaşlanmayla ilişkili bir gösterge, ama bu doğrudan ömür uzaması anlamına gelmiyor.",
+      "source": "https://vivelong.com/blog/kreatin-ve-uzun-yasam/"
+    },
+    {
+      "question": "Yaşlılar için kreatin dozu ne kadar?",
+      "answer": "Meta-analize giren çalışmaların çoğu günde 5-7 gram ya da kilo başına 0,1 gram kullandı; bazıları ilk 5-7 gün 20 gramlık yükleme yaptı. Bu bir araştırma özeti, kişisel doz önerisi değil. Böbrek hastalığı ya da düzenli ilaç kullanımı varsa hekime danışmak gerekir.",
+      "source": "https://vivelong.com/blog/kreatin-ve-uzun-yasam/"
+    },
+    {
+      "question": "NAD+ Nedir ve Neden Önemli?",
+      "answer": "NAD+ (nikotinamid adenin dinükleotid) vücudunuzdaki her hücrede bulunan ve enerji metabolizmasının merkezinde yer alan bir koenzim. Mitokondriyle birlikte çalışarak besinlerden enerji üretiyor; DNA onarım enzimlerini aktive ediyor; sirkadyen ritmi düzenliyor. Sorun şu: NAD+ düzeyleri yaşla dramatik biçimde düşüyor. 50 yaşında, 20 yaşındaki seviyenizin yaklaşık yarısına inmiş olabilir. Harvard'lı araştırmacı David Sinclair bu düşüşü \"yaşlanmanın hem belirtisi hem nedeni\" olarak tanımlıyor. Enerji Üretimi: NAD+ mitokondrinin elektron taşıma zincirinde merkezi rol oynuyor. Düşük NAD+ = düşük mitokondriyal verimlilik = yorgunluk, yavaş metabolizma, düşük performans. PARP Enzimleri — DNA Onarımı: DNA hasarlandığında PARP enzimleri onarım sürecini başlatıyor. Bu enzimler büyük miktarda NAD+ tüketiyor. Yaşlandıkça DNA hasarı artıyor → daha fazla NAD+ harcanıyor → stok azalıyor. Sirkadyen Ritim: NAD+ düzeyleri gün içinde ritmik dalgalanma gösteriyor ve biyolojik saatin önemli bir parçası. NAD+ düşüşü sirkadyen ritmi bozuyor — bu uyku kalitesinin neden yaşla kötüleştiğini açıklıyor.",
+      "source": "https://vivelong.com/blog/nad-sirtuin-genleri/"
+    },
+    {
+      "question": "Resveratrol, NMN, NR — Takviyeler İşe Yarıyor mu?",
+      "answer": "NAD+ düzeyini artırmak amacıyla kullanılan takviyeler longevity camiasında en çok tartışılan konu. Resveratrol: Kırmızı üzüm kabuğunda bulunan polifenol. Laboratuvarda SIRT1'i aktive ediyor. David Sinclair bunu kendi günlük rutinine dahil ettiğini açıkladı. Ama insan klinik çalışmaları henüz karar verdirecek güçte değil. En güçlü resveratrol kaynağı: kırmızı şarap değil, gerçek anlamda yüksek kaliteli ek — ve doğal polifenoller (yaban mersini, kakao). NMN (Nikotinamid Mononükleotid): NAD+'nın doğrudan öncülü. Fare çalışmaları: NMN takviyesi metabolizmayı, enerjiyi ve kas fonksiyonunu 20 yaşındaki farelerinkine yaklaştırdı. İnsan çalışmaları başlıyor ama büyük ölçekli RCT henüz yok. NR (Nikotinamid Ribozid): NMN'e benzer yol üzerinden NAD+ artırıyor. İnsan çalışmaları NAD+ düzeyini artırdığını gösteriyor; ama bunun klinik fayda yarattığı henüz tam kanıtlanmadı. Doğal Yollar Her Zaman Önce: Egzersiz, aralıklı oruç, uyku ve doğru beslenme NAD+ düzeyini artırmanın en iyi kanıtlanmış yolları. Takviyeler henüz \"bu dördünün yerini alıyor\" noktasında değil.",
+      "source": "https://vivelong.com/blog/nad-sirtuin-genleri/"
+    },
+    {
+      "question": "Organ Yaşı Nedir, Biyolojik Yaştan Farkı Ne?",
+      "answer": "Biyolojik yaş, vücudunuzun genel yaşlanma hızını tek bir sayıyla özetler. Organ yaşı ise bu fikri bir adım ileri götürüp her organınızın (kalp, böbrek, karaciğer, bağışıklık sistemi vb.) kanınızdaki protein örüntülerinden ayrı ayrı hesaplanan kendi biyolojik yaşı olabileceğini öne sürer. Yeni araştırmalar, aynı kişide bazı organların takvim yaşından yıllarca genç, bazılarının ise yıllarca yaşlı ölçülebildiğini gösteriyor.",
+      "source": "https://vivelong.com/blog/organ-yasi-nedir/"
+    },
+    {
+      "question": "Şu An Bir Organ Yaşı Testi Yaptırabilir miyim?",
+      "answer": "Hayır, rutin klinik kullanıma girmiş, doktorunuzun isteyebileceği bir \"organ yaşı kan tahlili\" henüz yok. Araştırmalarda kullanılan yöntem, on binlerce plazma proteinini aynı anda ölçen SomaScan gibi özel araştırma platformları ve makine öğrenmesi modelleri gerektiriyor; bu, standart bir kan tahlilinden çok farklı ve maliyetli bir süreç. Bugün ölçülebilen tek şey, Vivelong'un da sunduğu, yaşam tarzı verilerine dayanan biyolojik yaş tahminidir.",
+      "source": "https://vivelong.com/blog/organ-yasi-nedir/"
+    },
+    {
+      "question": "Otofaji Bozulduğunda Ne Olur?",
+      "answer": "Otofaji yetersiz kaldığında hücrelerde hasarlı protein ve organel birikir. Bu birikim doğrudan hastalık üretir: Alzheimer ve Parkinson: Bu hastalıkların temel özelliği beyinde hasarlı protein birikimi — beta-amiloid (Alzheimer) ve alfa-sinüklein (Parkinson). İşleyen otofaji bu proteinleri temizler. Yetersiz otofaji birikimlerine izin verir. Kanser: İlişki karmaşık. Erken evre kanserde otofaji tümörü baskılıyor; gelişmiş kanserde ise tümörü besliyor olabilir. Bu yüzden \"otofaji her zaman iyi\" denilemez — bağlam önemli. Tip 2 Diyabet: Otofaji bozukluğu pankreas beta hücrelerinin (insülin üreten) işlevini düşürüyor. İnsülin direnci ve otofaji yetmezliği birbirini besliyor. Kardiyovasküler Hastalık: Kalp kasındaki hasarlı mitokondrilerin otofaji yoluyla temizlenmesi kalp sağlığı için kritik. Yetersiz otofaji kalp yetmezliği riskini artırıyor.",
+      "source": "https://vivelong.com/blog/otofaji-nedir/"
+    },
+    {
+      "question": "Otofajiyi Desteklemek İçin Ne Yapabilirsiniz?",
+      "answer": "Aralıklı Oruç (16:8): En pratik ve araştırılmış yöntem. Yeme pencerenizi 8 saate daraltmak otofajiyi düzenli aktive ediyor. Başlangıç: akşam 19:00'dan sonra yemek yemek, kahvaltıyı 11:00'de başlatmak. Egzersiz: Özellikle dayanıklılık egzersizi (koşu, bisiklet) ve direnç egzersizi otofajiyi uyarıyor. Aç karnına egzersiz etkiyi artırıyor. Protein Zamanlaması: Gün boyunca sürekli yüksek proteinli yemek mTOR'u sürekli açık tutuyor. Protein alımını yemek pencerenize yoğunlaştırın; bazı araştırmacılar protein-kısıtlı periyotların otofajiyi artırdığını öne sürüyor. Kahvenin Sürprizi: Hem kafeinsiz hem kafeinli kahve otofajiyi uyardığı bulunan polifenol içeriyor. \"Sabah kahvesi otofajiyi bozar mı?\" sorusu: kahve (sütsüz) orucu bozmadan otofajiyle uyumlu görünüyor. Uyku: Derin uyku sırasında beyin glimfatik sistem üzerinden otofajiyle benzer temizlik yapıyor. Uyku ve otofaji bu anlamda birbirini tamamlıyor.",
+      "source": "https://vivelong.com/blog/otofaji-nedir/"
+    },
+    {
+      "question": "Mavi Bölgeler Verileri Gerçekten Tartışmalı mı?",
+      "answer": "Evet. 2024'te UCL'den demograf Saul Newman, süper-yaşlı istatistiklerinin bir kısmının kayıt hataları, doğum belgesi eksikliği ve emeklilik maaşı dolandırıcılığından kaynaklanabileceğini öne sürerek Ig Nobel Ödülü kazandı. Power 9'un yaratıcısı Dan Buettner ve ekibi 2025'te The Gerontologist dergisinde yayımladıkları bir makaleyle bunu kilise, doğum, evlilik ve ölüm kayıtlarıyla resmi olarak reddetti — ama bu doğrulama makalesi, 5 bölge içinde en çok tartışılan Loma Linda'yı kapsamıyor. Tartışma esas olarak 'kaç kişinin gerçekten 100+ yıl yaşadığı' istatistiğiyle sınırlı; Power 9'daki bireysel davranışların (beslenme, hareket, sosyal bağ, amaç) sağlık faydaları bu tartışmadan bağımsız, çok daha geniş bir epidemiyoloji literatürüyle ayrıca destekleniyor.",
+      "source": "https://vivelong.com/blog/power-9-mavi-bolgeler/"
+    },
+    {
+      "question": "Power 9 İlkelerini Uygulamak Gerçekten Ömrü Uzatıyor mu?",
+      "answer": "Power 9, tek bir çalışmanın değil, 5 Mavi Bölge'deki onlarca demografik ve epidemiyolojik araştırmanın ortak paydası olarak ortaya çıktı — bu yüzden nedensellik değil güçlü bir korelasyon ilişkisinden bahsediyoruz. Örneğin amaç duygusunun (ikigai/plan de vida) 7 yıla kadar ek yaşam beklentisiyle ilişkili olduğu, düzenli ibadete katılımın 4–14 yıl ek yaşam beklentisiyle ilişkilendirildiği raporlanıyor. Bunlar gözlemsel bulgular; yani \"bu 9 ilkeyi uygularsanız kesin 10 yıl fazla yaşarsınız\" garantisi yok, ama binlerce yıllık toplumsal deneyimin ve modern epidemiyolojinin kesiştiği güçlü bir sinyal var.",
+      "source": "https://vivelong.com/blog/power-9-mavi-bolgeler/"
+    },
+    {
+      "question": "Rapamisin insanlarda ömrü uzatıyor mu?",
+      "answer": "Bunu gösteren bir insan çalışması yok. 2025'teki büyük bir meta-analiz, 8 omurgalı türünde rapamisinin yaşam süresini kalori kısıtlamasına yakın ölçüde uzattığını buldu, ama bu veri fare, balık ve diğer hayvanlardan geliyor. İnsanlarda yapılan en büyük güvenlik çalışması olan PEARL'de birincil sonuç (visseral yağ) hiç değişmedi; ömür uzaması zaten o çalışmanın ölçtüğü bir şey değildi.",
+      "source": "https://vivelong.com/blog/rapamisin-ve-uzun-yasam/"
+    },
+    {
+      "question": "PEARL çalışmasında rapamisin ne buldu?",
+      "answer": "48 hafta süren, 50-85 yaş arası sağlıklı yetişkinlerde yapılan bu randomize kontrollü çalışmada visseral yağ hiçbir dozda değişmedi. Ama kadınlarda haftalık 10 mg dozda yağsız kas kütlesinde artış ve ağrıda azalma, 5 mg dozda ise öznel iyi oluş ve genel sağlıkta iyileşme bildirildi. Erkeklerde hiçbir dozda anlamlı bir fark bulunmadı.",
+      "source": "https://vivelong.com/blog/rapamisin-ve-uzun-yasam/"
+    },
+    {
+      "question": "Sauna Gerçekten Ömrü Uzatıyor mu, Yoksa Zaten Sağlıklı Olanlar mı Sauna Kullanıyor?",
+      "answer": "Kesin cevap: bilinmiyor. KIHD çalışması gözlemsel bir kohort, yani nedensellik kanıtlamıyor. Aynı derginin editörleri de bu ilişkinin nedensel olmayabileceğini, sık sauna kullananların zaten daha zengin, daha hareketli ve daha az kronik hastalıklı bir grup olabileceğini yazdı. Araştırmacılar sigara, egzersiz, kolesterol gibi bilinen risk faktörlerini istatistiksel olarak kontrol etti ama ilişki yine de güçlü kaldı — bu da tek başına yeterli bir kanıt sayılmasa da göz ardı edilecek bir bulgu değil.",
+      "source": "https://vivelong.com/blog/sauna-ve-uzun-yasam/"
+    },
+    {
+      "question": "Haftada Kaç Kez Sauna Yapmak Gerekiyor?",
+      "answer": "KIHD verisine göre en güçlü fark haftada 4-7 kez sauna kullananlarda görüldü (haftada 1 kez kullananlara kıyasla ani kalp ölümü riski %63, tüm nedenlere bağlı ölüm riski %40 daha düşük). Haftada 2-3 kez kullanım da anlamlı bir fark yarattı (%22 daha düşük ani kalp ölümü riski). Haftada tek seans, hiç kullanmamaktan iyi olsa da veri setindeki en zayıf koruma bu grupta görüldü.",
+      "source": "https://vivelong.com/blog/sauna-ve-uzun-yasam/"
+    },
+    {
+      "question": "Aralıklı Oruç (Intermittent Fasting) ile Sirkadiyen Beslenme Aynı Şey mi?",
+      "answer": "Hayır ama yakından ilişkililer. Aralıklı oruç, yeme ve oruç pencerelerini belirli bir düzene sokmayı hedefler (ör. 16:8) — odak noktası genelde kalori kısıtlaması ve kilo yönetimi. Sirkadiyen beslenme (TRE/eTRE) ise ne zaman yediğinizin biyolojik saatinizle (kortizol, insülin, melatonin ritmi) uyumlu olmasını hedefler — odak metabolik zamanlama. Pratikte örtüşüyorlar: örneğin 08:00–16:00 arası yemek yemek hem 16 saatlik bir aralıklı oruç hem de erken-TRE (eTRE) sayılır. Vivelong'un önerisi: sadece pencereyi daraltmak değil, pencereyi günün erken saatlerine kaydırmak — araştırmalar bunun ekstra metabolik fayda sağladığını gösteriyor.",
+      "source": "https://vivelong.com/blog/sirkadiyen-beslenme/"
+    },
+    {
+      "question": "Aralıklı Oruç Kas Kaybına Yol Açar mı?",
+      "answer": "Doğru yapılmadığında evet, risk var — ama kademeli uygulama ve yeterli protein alımıyla bu risk büyük ölçüde önlenebilir. Ani ve uzun süreli açlıklar kas yıkımını (katabolizma) tetikleyebilir; ancak oruç süresi kademeli artırılıp egzersizle desteklendiğinde çalışmalar anlamlı kas kaybı göstermiyor. Pratik kural: yeme penceresinde yeterli protein (vücut ağırlığı başına yaklaşık 1.2–1.6 g) alın ve direnç egzersizini ihmal etmeyin — kas koruması aç kalma süresinden çok bu iki faktöre bağlı.",
+      "source": "https://vivelong.com/blog/sirkadiyen-beslenme/"
+    },
+    {
+      "question": "Taurin Nedir?",
+      "answer": "Taurin, vücutta doğal olarak bulunan amino asit benzeri bir bileşiktir. Et, balık ve deniz ürünleri gibi besinlerle de alınır.",
+      "source": "https://vivelong.com/blog/taurin-ve-uzun-yasam/"
+    },
+    {
+      "question": "Taurin Yaşlanmayı Yavaşlatır mı?",
+      "answer": "2023'te Science'ta yayımlanan bir çalışma, taurin verilen farelerin yaklaşık %10-12 daha uzun yaşadığını bildirdi. İnsanlarda taurinin yaşlanmayı yavaşlattığı gösterilmiş değil; makalenin kendisi de bunun için klinik çalışmaların gerektiğini belirtiyor.",
+      "source": "https://vivelong.com/blog/taurin-ve-uzun-yasam/"
+    },
+    {
+      "question": "Telomer Nedir?",
+      "answer": "Her hücrenizin çekirdeğinde 46 kromozom var. Bu kromozomların her iki ucunda koruyucu bir \"kapak\" bulunuyor — tıpkı ayakkabı bağcığının ucundaki plastik uç gibi. Adı telomer. Telomerler DNA'nızı korur; hücre bölünürken genetik bilginin dağılmasını, kaybolmasını engeller. Ama her bölünmede biraz kısalırlar. Bu kısalma birikerek hücrenin artık bölünemez hale gelmesine — yaşlanma ya da ölüme — yol açar. Hayflick Sınırı: İnsan hücreleri yaklaşık 50–70 kez bölünebilir. Bu sınırın varlığını 1960'larda Leonard Hayflick keşfetti. Telomerlerin bu sınırı belirlediğini ise 2009 Nobel Ödülü sahipleri açıkladı. Telomeraz Enzimi: Bazı hücreler — kök hücreler, üreme hücreleri ve ne yazık ki kanser hücreleri — telomerleri yeniden uzatmak için telomeraz enzimini kullanıyor. Bu enzim \"ölümsüzlük enzimi\" olarak da biliniyor. Biyolojik Yaş Göstergesi: Telomer uzunluğu gerçek yaştan bağımsız olarak biyolojik yaşı gösteriyor. Aynı kronolojik yaşta iki kişinin telomerleri yıllarca farklılık gösterebiliyor — bu farkı yaratan yaşam tarzı.",
+      "source": "https://vivelong.com/blog/telomerler-nedir/"
+    },
+    {
+      "question": "Telomerleri Ne Kısaltıyor?",
+      "answer": "Elissa Epel ve Elizabeth Blackburn'ün ortak çalışmaları telomer kısalmasını hızlandıran faktörleri tek tek belirledi: Kronik Psikolojik Stres: Epel'in ikonik çalışması: ağır hasta çocuğuna bakan anneler, sağlıklı çocuğu olan annelere kıyasla 10 yıl daha kısa telomere sahip. Stresin beyinden hücreye kadar ulaştığının kanıtı. Uyku Eksikliği: Kronik az uyku (6 saat altı) telomer kısalmasını anlamlı biçimde hızlandırıyor. Mekanizma: uyku eksikliği kortizol ve oksidatif stresi yükseltiyor, telomerlere zarar veriyor. Oksidatif Stres: Serbest radikaller telomer DNA'sını diğer bölgelerden 7–10 kat daha fazla hasara uğratıyor. Anti-oksidan kapasiteyi desteklemek — meyve, sebze, antioksidanlar — bu hasarı azaltıyor. Hareketsizlik ve Obezite: Sedanter yaşam tarzı ve yüksek vücut kitle indeksi daha kısa telomerlerle ilişkili. Adipoz doku (yağ dokusu) inflamatuvar sitokinler salgılayarak telomerlere zarar veriyor. Ultra-İşlenmiş Gıdalar: Şekerli içecekler, işlenmiş etler ve trans yağlar telomer kısalmasıyla ilişkili. Akdeniz tipi beslenme ise koruyucu.",
+      "source": "https://vivelong.com/blog/telomerler-nedir/"
+    },
+    {
+      "question": "VO2 Max Nedir?",
+      "answer": "VO2 max, vücudunuzun en yoğun eforda dakikada kilogram başına kullanabildiği maksimum oksijen miktarıdır (ml/kg/dk). Kalbinizin, akciğerlerinizin ve kaslarınızın oksijeni ne kadar verimli taşıyıp kullandığını gösteren, kardiyorespiratuar fitness'ın altın standart ölçütüdür.",
+      "source": "https://vivelong.com/blog/vo2-max-nedir/"
+    },
+    {
+      "question": "VO2 Max Gerçekten Sigaradan Daha mı Tehlikeli?",
+      "answer": "122.007 kişilik JAMA Network Open araştırmasına göre, en düşük kardiyorespiratuar fitness grubunda olmanın düzeltilmiş ölüm riski (aHR 1,41 sigara, 1,40 diyabet, 1,29 koroner arter hastalığı ile karşılaştırıldığında) bu üç klinik risk faktörünün her birinden daha yüksek çıktı. Bu, sigarayı tehlikesiz gösteren bir bulgu değil; düşük fitness'ın da en az onlar kadar ciddiye alınması gerektiğini gösteren bir bulgu.",
+      "source": "https://vivelong.com/blog/vo2-max-nedir/"
+    },
+    {
+      "question": "Kimdir Bu İnsanlar?",
+      "answer": "Dünya genelinde 100 yaşın üzerinde yaklaşık 573.000 kişi yaşıyor (2021 verileri) — ve bu sayı 2050'ye kadar dramatik biçimde artacak. Bunların çok azı \"süper-yüzlük\" (supercentenarian): 110 yaş üzeri. Bu nadir grubu inceleyen araştırmalar longevity biliminin en değerli kaynakları arasında. New England Centenarian Study (NECS): Boston Üniversitesi'nden Thomas Perls liderliğinde 1994'te başlayan çalışma. 1.500'den fazla yüzlük ve ailelerini takip ediyor. Şimdiye kadar yapılan en kapsamlı yüzlük araştırması. Ashkenazi Yahudi Longevity Çalışması: Nir Barzilai (Einstein Tıp Koleji) 500'den fazla yüzlük Ashkenazi Yahudisini inceliyor. Genetik homojenlik araştırmayı güçlü kılıyor — yaşam tarzı ve genlerin rolünü daha net ayırt edebiliyorlar. Georgia Centenarian Study: ABD güneyinde 60 yılı aşkın takip. Irk, cinsiyet, sosyoekonomik faktörler ve uzun yaşam arasındaki ilişkiyi araştırıyor.",
+      "source": "https://vivelong.com/blog/yuz-yasinda-saglikli/"
+    },
+    {
+      "question": "Ortak Paydalar — Ne Buldular?",
+      "answer": "Yüzlükleri inceleyen araştırmacılar hayret verici bulgulara ulaştı. Bunların bir kısmı beklenen, bir kısmı ise kesinlikle sürpriz: Hastalık Ertelenmiş, Yokmuş Gibi Geçiyor: NECS'in en çarpıcı bulgusu şu: yüzlüklerin çoğu hayatlarının büyük bölümünde kronik hastalık yaşamıyor. Hastalık 90–95'li yaşlarda geliyor ama çok kısa sürüyor. Bu \"sıkıştırılmış hastalık\" modelini doğruluyor. Sigara İçmiyorlar (Büyük Çoğunlukla): Yüzlüklerin %90'ı hiç sigara içmemiş ya da gençlikten sonra bırakmış. Bu tek faktör bile o kadar güçlü ki araştırmacılar bunu \"gerekli koşul\" olarak tanımlıyor. Sosyal Bağlantı Güçlü: Yalnız yaşayan yüzlük nadir. Aile, topluluk ve akran bağları güçlü. Bu hem tercih hem de hayatta kalma seleksiyonu olabilir. Stres Direnci Yüksek: Thomas Perls'ün gözlemi: yüzlükler \"strese maruz kalmamış\" değil, \"stresle başa çıkmayı daha iyi öğrenmiş.\" Birçoğu savaş, açlık, yoksulluk deneyimlemiş — ama bunları işleyebilmiş. Vücut Kitle İndeksi Düşük: Yüzlüklerin büyük çoğunluğu orta yaşta normal veya düşük kiloları ile dikkat çekiyor. Karın yağının longevity için en zararlı yağ tipi olduğu açık.",
+      "source": "https://vivelong.com/blog/yuz-yasinda-saglikli/"
+    }
+  ]
+}

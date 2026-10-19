@@ -1,0 +1,10 @@
+# Vivelong AI erişim politikası
+User-Agent: *
+Allow: /
+
+# AI arama ve yanıt botlarının tarama/alıntı yapması serbesttir; kaynak olarak vivelong.com gösterilmesi rica edilir.
+Summary: https://vivelong.com/ai/summary.json
+FAQ: https://vivelong.com/ai/faq.json
+LLMs: https://vivelong.com/llms.txt
+Sitemap: https://vivelong.com/sitemap.xml
+Contact: https://vivelong.com/hakkimizda/

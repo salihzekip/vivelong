@@ -1,0 +1,24 @@
+{
+  "name": "Vivelong",
+  "url": "https://vivelong.com/",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "description": "Bilimsel kaynaklara (NCBI/PubMed, Harvard, Blue Zones araştırmaları) dayalı longevity (uzun yaşam) ve biyolojik yaş platformu: 16 faktörlü biyolojik yaş hesaplayıcı, günlük alışkanlık takibi, Mavi Bölge araştırmaları, hücresel yaşlanma biyobelirteçleri.",
+  "topics": [
+    "longevity",
+    "biyolojik yaş",
+    "telomer",
+    "rapamisin",
+    "VO2 max",
+    "sauna",
+    "mavi bölgeler",
+    "otofaji",
+    "mitokondri"
+  ],
+  "llms_txt": "https://vivelong.com/llms.txt",
+  "sitemap": "https://vivelong.com/sitemap.xml",
+  "feed": "https://vivelong.com/feed.xml",
+  "disclaimer": "İçerik bilgilendirme amaçlıdır, tıbbi tavsiye yerine geçmez."
+}
