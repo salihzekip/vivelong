@@ -2,6 +2,36 @@
   "site": "https://vivelong.com/",
   "faq": [
     {
+      "question": "Longevity nedir?",
+      "answer": "Longevity (uzun yaşam), uzun ve sağlıklı yaşama süresini anlatır. Yalnızca ömrün uzunluğu değil, bu yılların hastalıksız ve işlevsel geçmesi hedeflenir. Bilimde bu, sağlıklı yaşam süresi (healthspan) kavramıyla ifade edilir.",
+      "source": "https://vivelong.com/longevity-nedir/"
+    },
+    {
+      "question": "Longevity ne demek, Türkçesi nedir?",
+      "answer": "Longevity, Türkçede \"uzun ömürlülük\" ya da \"uzun yaşam\" anlamına gelir. Günümüzde yaşlanma biyolojisini ve sağlıklı yaşlanmayı inceleyen bilim alanı için de kullanılır.",
+      "source": "https://vivelong.com/longevity-nedir/"
+    },
+    {
+      "question": "Ömür ile sağlıklı yaşam süresi arasındaki fark nedir?",
+      "answer": "Ömür doğumdan ölüme geçen toplam süredir. Sağlıklı yaşam süresi ise bu sürenin ağır hastalık ve bağımlılık olmadan geçen kısmıdır. Longevity ikisini birlikte hedefler.",
+      "source": "https://vivelong.com/longevity-nedir/"
+    },
+    {
+      "question": "Longevity beslenme nedir?",
+      "answer": "Uzun vadeli sağlığı hedefleyen, ağırlıklı olarak bitkisel, işlenmiş gıdası az bir beslenme düzenidir. Zeytinyağı ve kuruyemişle desteklenen Akdeniz tipi beslenme, PREDIMED çalışmasında kalp-damar olaylarını azalttı.",
+      "source": "https://vivelong.com/longevity-nedir/"
+    },
+    {
+      "question": "Uzun yaşamak için en önemli alışkanlıklar nelerdir?",
+      "answer": "Araştırmalar düzenli hareket ve kondisyon, dengeli beslenme, yeterli uyku (yetişkinlerde en az 7 saat), güçlü sosyal bağlar ve stres yönetimini öne çıkarıyor. Bunlar riski azaltır, ömür garantisi vermez.",
+      "source": "https://vivelong.com/longevity-nedir/"
+    },
+    {
+      "question": "Biyolojik yaş nedir, longevity ile ilgisi var mı?",
+      "answer": "Biyolojik yaş, hücre ve organların takvim yaşından bağımsız aşınma düzeyidir. Longevity çalışmalarının amacı biyolojik yaşlanmayı yavaşlatmak ve sağlıklı yılları uzatmaktır.",
+      "source": "https://vivelong.com/longevity-nedir/"
+    },
+    {
       "question": "pH Dengesi Nedir ve Neden Önemli?",
       "answer": "pH, bir maddenin asit mi yoksa baz (alkali) mi olduğunu gösteren ölçek — 0'dan 14'e kadar. 7 nötr, 7'nin altı asit, üstü alkali. Kanınızın pH'ı 7.35–7.45 arasında olmalı. Bu küçük aralığın dışına çıkmak ciddi metabolik sorunlara yol açar. Vücut bu dengeyi her koşulda korumaya çalışır — bu yüzden \"asitlenme\" dediğimizde kanın pH'ının düştüğünü kastetmiyoruz. Kastımız daha ince bir şey: dengeyi korumak için vücudun kendi mineral ve enzim rezervlerini tüketmesi. Kemikten kalsiyum çekilmesi, böbreklerin aşırı yüklenmesi, hücresel stresin artması — bunlar asitlenmenin görünmez bedeli. Asidoz Nedir? Metabolik asidoz kan pH'ının 7.35'in altına düştüğü durum — acil tıp sorunu. Ama subklinik (hafif, kronik) asidik yük de uzun vadede hücresel yaşlanmayı hızlandırıyor. Böbrek, kas ve kemik sağlığını sessizce etkiliyor. Alkali Diyet Neden Önemli? Alkali yönlü beslenme vücudun tampon sistemlerini rahatlatıyor. Böbreklerin daha az çalışması, kemiklerden mineral çekilmemesi ve hücresel ortamın daha sağlıklı kalması anlamına geliyor. Hücresel Düzey: Ayşegül Çoruhlu'nun \"hücresel sağlık\" yaklaşımında vurgulanan temel nokta şu: \"Hücrelerimiz doğru yakıtı, doğru zamanda, doğru koşullarda alırsa sağlıklı kalır.\" Asit yükü bu üç koşulu da bozuyor.",
       "source": "https://vivelong.com/blog/alkali-beslenme/"

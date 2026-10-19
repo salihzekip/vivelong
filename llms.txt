@@ -4,6 +4,10 @@
 >
 > Vivelong is a science-based longevity and biological-age platform (drawing on NCBI/PubMed, Harvard and Blue Zones research), available in both Turkish and English. It offers a 16-factor biological age calculator, daily longevity habit tracking, Blue Zones research, and in-depth, sourced content on cellular aging biomarkers (telomeres, epigenetics, autophagy, inflammaging, mitochondria). Content is for informational purposes only and is not medical advice.
 
+## Başlangıç
+- [Longevity Nedir?](https://vivelong.com/longevity-nedir/): Longevity tanımı, ömür ve sağlıklı yaşam süresi farkı, 5 kanıta dayalı sütun ve SSS.
+- [What Is Longevity?](https://vivelong.com/en/what-is-longevity/): English guide to longevity, lifespan vs healthspan and the five pillars.
+
 ## Araç
 - [Biyolojik Yaş Testi](https://vivelong.com/#hesaplama): Yaş, cinsiyet, BMI ve 11 yaşam tarzı sorusuna dayalı ücretsiz biyolojik yaş hesaplayıcı.
 
@@ -81,3 +85,6 @@
 ## Notlar / Notes
 - Site dilleri: Türkçe (varsayılan, `/`) ve İngilizce (`/en/`). / Site languages: Turkish (default, `/`) and English (`/en/`).
 - Sağlık ve longevity bilgileri araştırma literatürüne dayalı tahmin/özetlerdir; klinik tanı veya tedavi yerine geçmez. / Health and longevity information is a summary based on research literature; it is not a clinical diagnosis or treatment.
+
+## İletişim
+- Telefon: +90 542 354 86 68 · E-posta: salihzekipehlivan@gmail.com

@@ -20,5 +20,13 @@
   "llms_txt": "https://vivelong.com/llms.txt",
   "sitemap": "https://vivelong.com/sitemap.xml",
   "feed": "https://vivelong.com/feed.xml",
-  "disclaimer": "İçerik bilgilendirme amaçlıdır, tıbbi tavsiye yerine geçmez."
+  "disclaimer": "İçerik bilgilendirme amaçlıdır, tıbbi tavsiye yerine geçmez.",
+  "key_pages": {
+    "longevity_nedir": "https://vivelong.com/longevity-nedir/",
+    "what_is_longevity": "https://vivelong.com/en/what-is-longevity/"
+  },
+  "contact": {
+    "telephone": "+90 542 354 86 68",
+    "email": "salihzekipehlivan@gmail.com"
+  }
 }
