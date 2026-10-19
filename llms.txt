@@ -7,6 +7,9 @@
 ## Başlangıç
 - [Longevity Nedir?](https://vivelong.com/longevity-nedir/): Longevity tanımı, ömür ve sağlıklı yaşam süresi farkı, 5 kanıta dayalı sütun ve SSS.
 - [What Is Longevity?](https://vivelong.com/en/what-is-longevity/): English guide to longevity, lifespan vs healthspan and the five pillars.
+- [Was ist Longevity?](https://vivelong.com/de/was-ist-longevity/): Deutscher Leitfaden zu Longevity, Lebensspanne vs. Gesundheitsspanne und den fünf Säulen.
+- [¿Qué es la longevidad?](https://vivelong.com/es/que-es-la-longevidad/): Guía en español sobre longevidad, duración de vida vs. años saludables y los cinco pilares.
+- [Qu’est-ce que la longévité ?](https://vivelong.com/fr/qu-est-ce-que-la-longevite/): Guide en français sur la longévité, durée de vie vs. espérance de vie en bonne santé et les cinq piliers.
 
 ## Araç
 - [Biyolojik Yaş Testi](https://vivelong.com/#hesaplama): Yaş, cinsiyet, BMI ve 11 yaşam tarzı sorusuna dayalı ücretsiz biyolojik yaş hesaplayıcı.
