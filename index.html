@@ -751,95 +751,6 @@
     .nav-drop-item{display:flex;align-items:center;gap:8px;padding:10px 14px;font-size:13px;color:var(--text);cursor:pointer;transition:background .15s;border:none;background:none;font-family:'Hanken Grotesk',sans-serif;width:100%;text-align:left;}
     .nav-drop-item:hover{background:var(--bg);}
     .nav-drop-item.danger{color:#DC2626;}
-    /* ── FORUM SECTION ── */
-    #forum{background:var(--surface);}
-    .forum-preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px;}
-    @media(max-width:860px){.forum-preview-grid{grid-template-columns:1fr;}}
-    .fp-card{background:var(--bg);border:1.5px solid var(--border-light);border-radius:var(--radius-sm);padding:16px;cursor:pointer;transition:all .2s;}
-    .fp-card:hover{border-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow);}
-    .fp-cat-badge{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--primary-light);background:var(--pale);padding:2px 8px;border-radius:5px;margin-bottom:8px;}
-    .fp-title{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--primary);font-weight:600;margin-bottom:5px;line-height:1.3;}
-    .fp-meta{font-size:11px;color:var(--text-muted);display:flex;align-items:center;gap:8px;margin-top:8px;}
-    .fp-vote-count{display:flex;align-items:center;gap:3px;font-weight:600;color:var(--primary-light);}
-    .stars-wrap{background:linear-gradient(135deg,#1A4731 0%,#2D6A4F 100%);border-radius:var(--radius);padding:28px;margin-top:36px;}
-    .stars-hdr{font-family:'Cormorant Garamond',serif;font-size:20px;color:#fff;margin-bottom:6px;display:flex;align-items:center;gap:8px;}
-    .stars-sub{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:20px;}
-    .stars-list{display:flex;flex-direction:column;gap:10px;}
-    .star-row{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.08);border-radius:10px;padding:11px 14px;}
-    .star-rank{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;color:var(--gold-light);width:26px;flex-shrink:0;text-align:center;}
-    .star-av{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-    .star-info{flex:1;}
-    .star-name{font-size:14px;font-weight:600;color:#fff;}
-    .star-pts{font-size:11px;color:rgba(255,255,255,.6);margin-top:1px;}
-    .star-badge-gold{background:var(--gold);color:var(--primary);font-size:10px;font-weight:700;padding:3px 9px;border-radius:100px;flex-shrink:0;}
-    .forum-section-cta{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:32px;flex-wrap:wrap;}
-    /* ── FORUM ZONE ── */
-    #zp-forum .zp-hero{background:linear-gradient(145deg,#1A4731 0%,#2D6A4F 100%);}
-    .forum-z-layout{display:grid;grid-template-columns:200px 1fr;gap:24px;max-width:1000px;margin:0 auto;padding:28px 20px 80px;}
-    @media(max-width:680px){.forum-z-layout{grid-template-columns:1fr;}}
-    .forum-cats-box{background:var(--surface);border:1.5px solid var(--border-light);border-radius:var(--radius-sm);overflow:hidden;height:fit-content;}
-    .fcat{padding:11px 14px;font-size:13px;font-weight:500;color:var(--text-mid);cursor:pointer;transition:all .15s;border-left:3px solid transparent;border-bottom:1px solid var(--border-light);display:flex;align-items:center;justify-content:space-between;}
-    .fcat:last-child{border-bottom:none;}
-    .fcat:hover{color:var(--primary);border-left-color:var(--primary-light);background:var(--bg);}
-    .fcat.active{color:var(--primary);border-left-color:var(--primary);background:var(--pale);font-weight:700;}
-    .fcat-count{font-size:10px;font-weight:700;color:var(--text-muted);background:var(--bg2);padding:2px 7px;border-radius:100px;}
-    .forum-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;gap:10px;flex-wrap:wrap;}
-    .forum-bar-title{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--primary);font-weight:600;}
-    .new-post-btn{background:var(--primary);color:#fff;border:none;border-radius:10px;padding:9px 16px;font-family:'Hanken Grotesk',sans-serif;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all .2s;}
-    .new-post-btn:hover{background:var(--primary-mid);}
-    .f-posts{display:flex;flex-direction:column;gap:12px;}
-    .fpost{background:var(--surface);border:1.5px solid var(--border-light);border-radius:var(--radius-sm);padding:14px 16px;transition:all .2s;}
-    .fpost:hover{border-color:var(--border);box-shadow:var(--shadow);}
-    .fpost-inner{display:flex;gap:12px;}
-    .fvote{display:flex;flex-direction:column;align-items:center;gap:3px;flex-shrink:0;padding-top:2px;}
-    .fvote-btn{background:none;border:1.5px solid var(--border);border-radius:7px;width:32px;height:28px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .18s;color:var(--text-muted);}
-    .fvote-btn:hover{border-color:var(--primary-light);color:var(--primary);background:var(--pale);}
-    .fvote-btn.voted{background:var(--primary);border-color:var(--primary);color:#fff;}
-    .fvote-n{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:700;color:var(--primary);}
-    .fpost-body{flex:1;min-width:0;}
-    .fpost-cat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--primary-light);background:var(--pale);padding:2px 8px;border-radius:5px;display:inline-block;margin-bottom:6px;}
-    .fpost-title{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--primary);font-weight:600;cursor:pointer;margin-bottom:5px;}
-    .fpost-title:hover{color:var(--primary-mid);}
-    .fpost-text{font-size:13px;color:var(--text-mid);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-    .fpost-footer{display:flex;align-items:center;gap:10px;margin-top:9px;padding-top:9px;border-top:1px solid var(--border-light);}
-    .fpost-av{width:20px;height:20px;border-radius:50%;background:var(--primary-light);color:#fff;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-    .fpost-author{font-size:11px;color:var(--text-muted);}
-    .fpost-date{font-size:11px;color:var(--text-muted);margin-left:auto;}
-    .f-empty{text-align:center;padding:50px 20px;color:var(--text-muted);}
-    .f-loading{text-align:center;padding:30px;color:var(--text-muted);font-size:13px;}
-    /* ── NEW POST MODAL ── */
-    .np-overlay{position:fixed;inset:0;z-index:1500;background:rgba(0,0,0,.55);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .25s;}
-    .np-overlay.open{opacity:1;pointer-events:all;}
-    .np-box{background:#fff;border-radius:20px;width:100%;max-width:540px;padding:30px;position:relative;transform:translateY(16px);transition:transform .25s;max-height:90vh;overflow-y:auto;}
-    .np-overlay.open .np-box{transform:translateY(0);}
-    .np-box h3{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--primary);margin-bottom:18px;}
-    .np-form{display:flex;flex-direction:column;gap:13px;}
-    .np-label{font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:4px;}
-    .np-input,.np-select,.np-textarea{width:100%;padding:10px 13px;border:1.5px solid var(--border);border-radius:10px;font-family:'Hanken Grotesk',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border .2s;}
-    .np-input:focus,.np-select:focus,.np-textarea:focus{border-color:var(--primary-light);}
-    .np-textarea{resize:vertical;min-height:100px;}
-    .np-btns{display:flex;gap:10px;margin-top:4px;}
-    .np-cancel{flex:1;padding:10px;border:1.5px solid var(--border);border-radius:10px;background:#fff;font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:600;color:var(--text-mid);cursor:pointer;}
-    .np-submit{flex:2;background:var(--primary);color:#fff;border:none;border-radius:10px;padding:10px;font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:all .2s;}
-    .np-submit:hover{background:var(--primary-mid);}
-    .np-submit:disabled{opacity:.6;cursor:not-allowed;}
-    .np-err{background:#FEF2F2;color:#DC2626;border:1px solid #FECACA;border-radius:8px;padding:9px 12px;font-size:12px;display:none;}
-    .np-err.show{display:block;}
-    /* ── POST DETAIL MODAL ── */
-    .pd-overlay{position:fixed;inset:0;z-index:1500;background:rgba(0,0,0,.55);backdrop-filter:blur(5px);display:flex;align-items:flex-start;justify-content:center;padding:40px 20px;opacity:0;pointer-events:none;transition:opacity .25s;overflow-y:auto;}
-    .pd-overlay.open{opacity:1;pointer-events:all;}
-    .pd-box{background:#fff;border-radius:20px;width:100%;max-width:620px;padding:28px;position:relative;transform:translateY(16px);transition:transform .25s;}
-    .pd-overlay.open .pd-box{transform:translateY(0);}
-    .pd-close{position:absolute;top:14px;right:14px;background:none;border:none;cursor:pointer;color:var(--text-muted);padding:6px;border-radius:6px;line-height:0;}
-    .pd-close:hover{background:var(--bg);}
-    .pd-cat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--primary-light);background:var(--pale);padding:3px 10px;border-radius:5px;display:inline-block;margin-bottom:10px;}
-    .pd-title{font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--primary);margin-bottom:14px;line-height:1.3;}
-    .pd-content{font-size:14px;color:var(--text-mid);line-height:1.8;white-space:pre-wrap;}
-    .pd-footer{display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:14px;border-top:1.5px solid var(--border-light);flex-wrap:wrap;}
-    .pd-vote-btn{display:flex;align-items:center;gap:7px;background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:8px 14px;cursor:pointer;font-family:'Hanken Grotesk',sans-serif;font-size:13px;font-weight:600;color:var(--text-mid);transition:all .2s;}
-    .pd-vote-btn:hover{border-color:var(--primary-light);color:var(--primary);}
-    .pd-vote-btn.voted{background:var(--primary);border-color:var(--primary);color:#fff;}
-    .pd-author-info{font-size:12px;color:var(--text-muted);margin-left:auto;}
     /* ═══ PREMIUM TASARIM KATMANI (Kasım 2026) ═══ */
     :root{
       --bg:#EEF1EA; --bg2:#E4E9E0; --surface:#F6F8F2; --primary:#12241B; --pale:#DDE5D6;
@@ -884,7 +795,7 @@
     .cbtn{ background:var(--text); border-radius:999px; font-weight:600; }
 
     /* kartlar: düz, ince çizgili */
-    .zcard,.bmcard,.pcard,.sccard,.hcard,.fp-card{ border:1px solid var(--border); background:var(--surface); box-shadow:none; }
+    .zcard,.bmcard,.pcard,.sccard,.hcard{ border:1px solid var(--border); background:var(--surface); box-shadow:none; }
     .zcard:hover,.bmcard:hover,.pcard:hover,.sccard:hover{ transform:none; border-color:var(--metal); box-shadow:none; }
     .zname{ font-size:30px; font-weight:400; line-height:1.05; }
     .zcountry{ font-size:13px; }
@@ -899,28 +810,60 @@
 
     /* açılış */
     .vh{ padding:96px 24px 0; background:var(--bg); }
-    .vh-in{ max-width:1120px; margin:0 auto; display:grid; grid-template-columns:1fr 440px; gap:56px; align-items:center; padding-block:40px 64px; }
+    .vh-in{ max-width:1120px; margin:0 auto; padding-block:36px 60px; display:grid; grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr); gap:56px; align-items:center; }
     .vh-in>*{ min-width:0; }
-    .vh .cap{ font-family:var(--mono); font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); }
-    .vh h1{ font-weight:400; font-size:clamp(38px,5.2vw,68px); line-height:1; color:var(--text); margin:14px 0 0; }
+    .vh .cap,.vq .cap{ font-family:var(--mono); font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); }
+    .vh h1{ font-weight:400; font-size:clamp(42px,5.6vw,76px); line-height:.98; letter-spacing:-.015em; color:var(--text); margin:18px 0 0; max-width:14ch; }
     .vh h1 em{ font-style:italic; color:var(--metal); }
-    .vh p{ color:var(--text-mid); font-size:17.5px; max-width:44ch; margin:24px 0 22px; }
-    .vh-ticks{ list-style:none; display:grid; gap:8px; font-size:14.5px; color:var(--text-mid); }
-    .vh-ticks li{ display:grid; grid-template-columns:14px 1fr; gap:12px; align-items:baseline; }
-    .vh-ticks li::before{ content:""; width:9px; height:1px; background:var(--metal); transform:translateY(-4px); }
-    .vh-cta{ display:flex; gap:12px; flex-wrap:wrap; margin-top:26px; }
-    .vh-test{ border:1px solid var(--metal); border-radius:14px; background:var(--bg2); padding:26px 24px; }
-    .vh-test-top{ display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; padding-bottom:14px; border-bottom:1px solid var(--border); }
-    .vh-test-top h2{ font-size:28px; font-weight:400; }
-    .vh-form{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:18px 0; }
+    .vh-row{ display:grid; grid-template-columns:minmax(0,1fr); gap:22px; align-items:start; margin-top:26px; }
+    .vh p{ color:var(--text-mid); font-size:18px; max-width:46ch; margin:0; }
+    .vh-ticks{ list-style:none; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; font-size:13.5px; color:var(--text-mid); margin-top:34px; }
+    .vh-ticks li{ border-top:1px solid var(--metal); padding-top:14px; min-width:0; }
+    .vh-cta{ display:flex; gap:12px; flex-wrap:wrap; }
+
+    /* hızlı ölçüm şeridi */
+    .vq{ padding:40px 24px; background:var(--bg); }
+    .vh-test{ max-width:1120px; margin:0 auto; border:1px solid var(--metal); border-radius:14px; background:var(--bg2); padding:26px 28px; display:grid; grid-template-columns:170px minmax(0,1fr) 260px; gap:28px; align-items:center; }
+    .vh-test>*{ min-width:0; }
+    .vh-test-top{ display:grid; gap:8px; align-content:center; }
+    .vh-test-top h2{ font-size:30px; font-weight:400; line-height:1.05; }
+    .vh-form{ display:grid; grid-template-columns:minmax(0,.62fr) minmax(0,1.15fr) minmax(0,1.2fr) minmax(0,1fr); gap:12px; margin:0; }
     .vh-form label{ display:grid; gap:6px; font-size:12.5px; color:var(--text-muted); min-width:0; }
     .vh-form input,.vh-form select{ font:inherit; font-size:15px; padding:11px 12px; border-radius:8px; border:1px solid var(--border); background:var(--bg); color:var(--text); width:100%; min-width:0; }
-    .vh-res{ display:grid; grid-template-columns:auto 1fr; gap:18px; align-items:center; padding:16px 0 4px; border-top:1px solid var(--border); }
-    .vh-res b{ font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:64px; line-height:1; font-variant-numeric:lining-nums tabular-nums; color:var(--metal); }
-    .vh-res span{ font-size:14px; color:var(--text-mid); }
-    .vh-res strong{ display:block; font-weight:600; color:var(--text); font-size:15px; }
-    .vh-test small{ display:block; font-size:12px; color:var(--text-muted); margin-top:12px; }
+    .vh-side{ border-left:1px solid var(--border); padding-left:24px; }
+    .vh-res{ display:grid; grid-template-columns:auto 1fr; gap:16px; align-items:center; }
+    .vh-res b{ font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:56px; line-height:1; font-variant-numeric:lining-nums tabular-nums; color:var(--metal); }
+    .vh-res span{ font-size:13.5px; color:var(--text-mid); }
+    .vh-res strong{ display:block; font-weight:600; color:var(--text); font-size:14.5px; }
+    .vh-test small{ display:block; font-size:12px; color:var(--text-muted); line-height:1.45; }
     .vh-test .btn{ width:100%; justify-content:center; margin-top:14px; }
+
+    /* veri grafiği (yeniden kullanılabilir: .vg-*) */
+    .vg{ display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:56px; align-items:center; margin:38px 0 8px; }
+    .vg>*{ min-width:0; }
+    .vg figure{ margin:0; }
+    .vg-key{ display:flex; gap:20px; flex-wrap:wrap; font-size:13px; color:var(--text-mid); margin-bottom:10px; }
+    .vg-key span{ display:inline-flex; align-items:center; gap:8px; }
+    .vg-key i{ width:12px; height:12px; border-radius:2px; display:inline-block; }
+    .vg-key .k-m{ background:var(--metal); } .vg-key .k-f{ background:var(--text); }
+    .vg-key .k-g{ border:1px dashed var(--text-muted); }
+    .vg svg{ width:100%; height:auto; display:block; }
+    .vg-grid{ stroke:var(--border); stroke-width:1; }
+    .vg-base{ stroke:var(--text-muted); stroke-width:1; }
+    .vg-ax{ font-family:var(--mono); font-size:12px; fill:var(--text-muted); }
+    .vg-m{ fill:var(--metal); } .vg-f{ fill:var(--text); }
+    .vg-ghost{ fill:none; stroke:var(--text-muted); stroke-width:1.2; stroke-dasharray:4 4; }
+    .vg-val{ font-family:'Cormorant Garamond',Georgia,serif; font-size:24px; fill:var(--text); font-variant-numeric:lining-nums; }
+    .vg-drop{ font-family:var(--mono); font-size:12px; fill:var(--text-mid); }
+    .vg-grp{ font-family:'Hanken Grotesk',sans-serif; font-size:14px; font-weight:600; fill:var(--text); }
+    .vg figcaption{ font-size:12.5px; color:var(--text-muted); margin-top:12px; line-height:1.5; }
+    .vg figcaption a{ color:var(--text-muted); }
+    .vg-hook{ font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(34px,4.4vw,56px); font-weight:400; line-height:1.02; margin:10px 0 18px; color:var(--text); font-variant-numeric:lining-nums; }
+    .vg-hook em{ font-style:italic; color:var(--metal); }
+    .vg-body p{ color:var(--text-mid); max-width:48ch; margin:0 0 14px; }
+    .vg-note{ font-size:14px; border-top:1px solid var(--border); padding-top:14px; }
+    .vg-more{ display:inline-block; font-size:14px; color:var(--metal); text-decoration:none; letter-spacing:.02em; }
+    .vg-more:hover{ text-decoration:underline; }
     .vh-facts{ border-block:1px solid var(--border); }
     .vh-facts>div{ max-width:1120px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); }
     .vh-facts a{ display:block; padding:24px 20px 24px 0; text-decoration:none; min-width:0; }
@@ -929,21 +872,104 @@
     .vh-facts span{ font-size:13.5px; color:var(--text-mid); }
     .vh-facts a:hover b{ color:var(--metal); }
 
-    /* sağlıklı yıllar eğrisi */
-    .vc{ display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; margin:38px 0 8px; }
-    .vc>*{ min-width:0; }
-    .vc figure{ margin:0; }
-    .vc svg{ width:100%; height:auto; display:block; }
-    .vc figcaption{ font-size:13px; color:var(--text-muted); margin-top:12px; max-width:46ch; }
-    .vc-axis{ stroke:var(--border); stroke-width:1; fill:none; }
-    .vc-t{ font-family:var(--mono); font-size:10px; fill:var(--text-muted); }
-    .vc-life{ stroke:var(--text-muted); stroke-width:1.5; fill:none; }
-    .vc-now{ stroke:var(--text); stroke-width:1.5; fill:none; }
-    .vc-goal{ stroke:var(--metal); stroke-width:2; fill:none; }
-    .vc-gap{ fill:var(--metal); opacity:.12; }
-    .vc-lb{ font-family:'Hanken Grotesk',sans-serif; font-size:11.5px; }
-    .vc h3{ font-size:clamp(28px,3.4vw,40px); font-weight:400; line-height:1.08; margin-bottom:12px; }
-    .vc p{ color:var(--text-mid); max-width:46ch; }
+    /* açılış: örnek profil grafiği (.vp-*) */
+    .vp{ border:1px solid var(--border); border-radius:14px; background:var(--surface); padding:22px 24px 18px; }
+    .vp-top{ display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; padding-bottom:14px; border-bottom:1px solid var(--border); }
+    .vp-top .cap{ color:var(--metal); }
+    .vp-top span{ font-size:12.5px; color:var(--text-muted); }
+    .vp-body{ display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); gap:0; padding-top:16px; }
+    .vp-body>*{ min-width:0; }
+    .vp-sub{ font-family:var(--mono); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px; }
+    .vp-bars{ list-style:none; margin:0; padding:0 22px 0 0; display:grid; gap:11px; }
+    .vp-bars li{ display:grid; grid-template-columns:1fr auto; gap:5px 8px; font-size:13px; color:var(--text); }
+    .vp-bars li span{ font-size:11.5px; color:var(--text-mid); }
+    .vp-bars i{ grid-column:1/-1; height:6px; border-radius:3px; background:var(--bg2); overflow:hidden; display:block; }
+    .vp-bars i::before{ content:""; display:block; height:100%; width:var(--w); border-radius:3px; background:var(--leaf); transform-origin:left center; animation:vpBar .9s cubic-bezier(.2,.7,.2,1) .2s both; }
+    .vp-bars .orta i::before{ background:var(--metal-soft); }
+    .vp-bars .gel i::before{ background:var(--metal); }
+    @keyframes vpBar{ from{ transform:scaleX(0); } to{ transform:scaleX(1); } }
+    .vp-out{ position:relative; border-left:1px solid var(--border); padding-left:22px; display:grid; align-content:center; }
+    .vp-out::before{ content:"→"; position:absolute; left:-12px; top:50%; transform:translateY(-50%); width:22px; height:22px; border-radius:50%; border:1px solid var(--border); background:var(--surface); color:var(--metal); font-size:12px; line-height:20px; text-align:center; }
+    .vp-out svg{ width:100%; max-width:220px; height:auto; display:block; margin:0 auto; }
+    .vp-arc{ fill:none; stroke:var(--bg2); stroke-width:12; stroke-linecap:round; }
+    .vp-fill{ fill:none; stroke:var(--metal); stroke-width:12; stroke-linecap:round; }
+    .vp-tick{ stroke:var(--text); stroke-width:2; }
+    .vp-ax{ font-family:var(--mono); font-size:9px; fill:var(--text-muted); }
+    .vp-num{ font-family:'Cormorant Garamond',Georgia,serif; font-size:44px; fill:var(--text); font-variant-numeric:lining-nums; }
+    .vp-lbl{ font-family:var(--mono); font-size:8.5px; letter-spacing:.12em; fill:var(--text-muted); }
+    .vp-cmp{ margin:12px 0 0; display:grid; gap:6px; font-size:13px; }
+    .vp-cmp div{ display:flex; justify-content:space-between; gap:8px; border-top:1px solid var(--border); padding-top:6px; }
+    .vp-cmp dt{ color:var(--text-mid); }
+    .vp-cmp dd{ margin:0; color:var(--text); font-variant-numeric:lining-nums tabular-nums; }
+    .vp-cmp .vp-fark dd{ color:var(--metal); font-weight:600; }
+    .vp-foot{ display:flex; justify-content:space-between; align-items:center; gap:10px 16px; flex-wrap:wrap; margin-top:14px; padding-top:12px; border-top:1px solid var(--border); font-size:12px; color:var(--text-muted); }
+    .vp-key{ display:flex; gap:12px; flex-wrap:wrap; }
+    .vp-key span{ display:inline-flex; align-items:center; gap:6px; }
+    .vp-key b{ width:9px; height:9px; border-radius:50%; display:inline-block; background:var(--leaf); }
+    .vp-key .orta b{ background:var(--metal-soft); } .vp-key .gel b{ background:var(--metal); }
+    .vp-foot a{ color:var(--metal); text-decoration:none; font-size:13px; }
+    .vp-foot a:hover{ text-decoration:underline; }
+    @media (prefers-reduced-motion:reduce){ .vp-bars i::before{ animation:none; } }
+    /* grafik başlıkları: ilgili bölüme bağlantı */
+    a.vp-link{ display:inline-flex; align-items:center; gap:6px; text-decoration:none; color:var(--text-muted); border-bottom:1px solid transparent; padding-bottom:1px; transition:color .2s,border-color .2s; }
+    a.vp-link span{ color:var(--metal); font-size:11px; letter-spacing:0; transition:transform .2s; }
+    a.vp-link:hover,a.vp-link:focus-visible{ color:var(--metal); border-bottom-color:var(--metal); }
+    a.vp-link:hover span,a.vp-link:focus-visible span{ transform:translateX(3px); }
+    a.vp-link:focus-visible{ outline:2px solid var(--metal); outline-offset:3px; border-radius:2px; }
+    a.vp-link-c{ display:flex; width:max-content; margin-left:auto; margin-right:auto; }
+    @media (prefers-reduced-motion:reduce){ a.vp-link span{ transition:none; } }
+
+    /* açılış hizası: metin ve grafik kartı aynı çizgiden başlar, ilk ekrana sığar */
+    @media(min-width:961px){
+      .vh{ padding-top:64px; }
+      .vh-in{ align-items:start; padding-block:28px 40px; gap:48px; }
+      .vh h1{ font-size:clamp(40px,4.4vw,64px); margin-top:14px; }
+      .vh-row{ margin-top:20px; }
+      .vh p{ font-size:17px; }
+      .vh-ticks{ margin-top:26px; }
+      .vp{ padding:18px 22px 14px; }
+      .vp-top{ padding-bottom:10px; }
+      .vp-body{ padding-top:12px; }
+      .vp-bars{ gap:8px; }
+      .vp-cmp{ margin-top:8px; gap:4px; }
+      .vp-foot{ margin-top:10px; padding-top:10px; }
+    }
+
+    /* dil menüsü (.vlang-*) */
+    .vlang{ position:relative; }
+    .vlang-btn{ display:inline-flex; align-items:center; gap:6px; height:32px; padding:0 11px; border:1px solid var(--border); border-radius:999px; background:var(--surface); color:var(--text); font:inherit; font-family:var(--mono); font-size:12px; letter-spacing:.08em; cursor:pointer; transition:border-color .2s,color .2s; }
+    .vlang-btn .vlang-globe{ color:var(--metal); }
+    .vlang-btn .vlang-car{ transition:transform .2s; color:var(--text-muted); }
+    .vlang:hover .vlang-btn,.vlang:focus-within .vlang-btn,.vlang.open .vlang-btn{ border-color:var(--metal); color:var(--metal); }
+    .vlang:hover .vlang-car,.vlang:focus-within .vlang-car,.vlang.open .vlang-car{ transform:rotate(180deg); }
+    .vlang-list{ position:absolute; top:100%; right:0; margin:0; padding:6px; list-style:none; min-width:184px; background:var(--surface); border:1px solid var(--border); border-radius:10px; box-shadow:var(--shadow-lg); z-index:300; opacity:0; visibility:hidden; transform:translateY(4px); transition:opacity .16s ease,transform .16s ease,visibility 0s linear .16s; }
+    /* hover köprüsü: düğme ile liste arasındaki boşlukta menü kapanmasın */
+    .vlang-list::before{ content:""; position:absolute; left:0; right:0; top:-10px; height:10px; }
+    .vlang:hover .vlang-list,.vlang:focus-within .vlang-list,.vlang.open .vlang-list{ opacity:1; visibility:visible; transform:translateY(8px); transition-delay:0s; }
+    .vlang.kapali .vlang-list{ opacity:0; visibility:hidden; transform:translateY(4px); }
+    .vlang-list a{ display:grid; grid-template-columns:28px 1fr auto; align-items:center; gap:8px; padding:9px 10px; border-radius:6px; text-decoration:none; color:var(--text); font-size:14px; }
+    .vlang-list a b{ font-family:var(--mono); font-weight:400; font-size:11px; letter-spacing:.08em; color:var(--text-muted); }
+    .vlang-list a:hover,.vlang-list a:focus-visible{ color:var(--metal); background:var(--bg); }
+    .vlang-list a:hover b{ color:var(--metal); }
+    .vlang-list a:focus-visible{ outline:2px solid var(--metal); outline-offset:-2px; }
+    .vlang-list .vlang-on{ color:var(--metal); font-weight:600; }
+    .vlang-list .vlang-on b{ color:var(--metal); }
+    .vlang-list li+li{ border-top:1px solid var(--border-light); }
+    @media (prefers-reduced-motion:reduce){ .vlang-list,.vlang-car{ transition:none !important; } }
+    @media(max-width:520px){ .vlang-btn{ padding:0 9px; } .vlang-btn .vlang-globe{ display:none; } }
+
+    /* 16 faktörlü test: varsayılan kapalı, tıklanınca yerinde açılır */
+    #hesaplama[hidden]{ display:none !important; }
+    #hesaplama.vt-acik{ animation:vtAc .35s ease-out; }
+    @keyframes vtAc{ from{ opacity:0; transform:translateY(8px); } to{ opacity:1; transform:none; } }
+    @media (prefers-reduced-motion:reduce){ #hesaplama.vt-acik{ animation:none; } }
+    .vt-kapat{ display:flex; justify-content:flex-end; margin-bottom:8px; }
+    .vt-kapat.alt{ justify-content:center; margin:28px 0 0; }
+    .vt-kapat button{ font:inherit; font-size:13.5px; padding:9px 18px; border-radius:999px; border:1px solid var(--border); background:var(--bg); color:var(--text); cursor:pointer; }
+    .vt-kapat button:hover{ border-color:var(--metal); color:var(--metal); }
+    #hesaplama-baslik:focus{ outline:none; }
+    #hesaplama-baslik:focus-visible{ outline:2px solid var(--metal); outline-offset:4px; }
+    .vq{ scroll-margin-top:56px; }
 
     /* araştırma kütüphanesi */
     .vl-lead{ display:grid; grid-template-columns:1.15fr .85fr; gap:56px; margin:40px 0 44px; }
@@ -981,8 +1007,16 @@
     .flogo{ font-weight:500; letter-spacing:.04em; }
 
     @media(max-width:960px){
-      .vh-in,.vl-lead,.vc{ grid-template-columns:1fr; gap:32px; }
+      .vh-in,.vl-lead,.vg{ grid-template-columns:1fr; gap:32px; }
+      .vh h1{ max-width:16ch; }
       .vh{ padding-top:76px; }
+      .vh-row{ grid-template-columns:1fr; }
+      .vh-ticks{ grid-template-columns:1fr; gap:12px; margin-top:28px; }
+      .vh-ticks li{ padding-top:10px; }
+      .vh-test{ grid-template-columns:1fr; gap:20px; }
+      .vh-form{ grid-template-columns:1fr 1fr; }
+      .vh-side{ border-left:0; padding-left:0; border-top:1px solid var(--border); padding-top:18px; }
+      .vg-body{ order:-1; }
       .vh-facts>div{ grid-template-columns:1fr 1fr; }
       .vh-facts a:nth-child(3){ padding-left:0; border-left:0; }
       .vh-facts a:nth-child(n+3){ border-top:1px solid var(--border); }
@@ -992,9 +1026,103 @@
       .vh-form{ grid-template-columns:1fr; }
       .vl-index{ columns:1; }
       .vh-res b{ font-size:52px; }
+      .vq{ padding:28px 16px; }
+      .vh-test{ padding:22px 18px; }
+      .vq .vh-form{ grid-template-columns:1fr 1fr; gap:12px; }
+      .vq .vh-form select,.vq .vh-form input{ font-size:14px; padding:10px; }
+      .vg-ax,.vg-drop{ font-size:15px; } .vg-grp{ font-size:17px; } .vg-val{ font-size:28px; }
+      .vp{ padding:18px 16px 14px; }
+      .vp-body{ grid-template-columns:1fr; }
+      .vp-bars{ padding:0 0 22px; }
+      .vp-out{ border-left:0; padding-left:0; border-top:1px solid var(--border); padding-top:20px; }
+      .vp-out::before{ content:"↓"; left:50%; top:-12px; transform:translateX(-50%); }
+    }
+    @media(max-width:380px){
+      .vq .vh-form{ grid-template-columns:1fr; }
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+
+  <style id="uye-panel-css">
+    /* ═══ ÜYE PANELİ (Hesabım) ═══ */
+    .nav-drop{ min-width:236px; }
+    .nd-head{ padding:12px 14px 10px; border-bottom:1px solid var(--border); }
+    .nd-head b{ display:block; font-family:'Cormorant Garamond',Georgia,serif; font-weight:500; font-size:20px; color:var(--text); line-height:1.1; }
+    .nd-head span{ font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted); }
+    .nd-item{ display:grid; grid-template-columns:1fr auto; align-items:baseline; gap:10px; width:100%; text-align:left; padding:10px 14px; border:0; background:none; cursor:pointer; font:inherit; font-size:13.5px; color:var(--text); }
+    .nd-item small{ font-family:var(--mono); font-size:11px; color:var(--metal); }
+    .nd-item:hover,.nd-item:focus-visible{ background:var(--bg); color:var(--metal); }
+    .nd-sep{ height:1px; background:var(--border); margin:4px 0; }
+
+    #zp-hesabim{ background:var(--bg); }
+    .uh{ max-width:1080px; margin:0 auto; padding:34px max(20px,env(safe-area-inset-left,0px)) 80px; }
+    .uh-top{ display:flex; justify-content:space-between; align-items:end; gap:24px; flex-wrap:wrap; padding-bottom:22px; border-bottom:1px solid var(--border); }
+    .uh-top h2{ font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:clamp(34px,4.6vw,52px); line-height:1.02; color:var(--text); }
+    .uh-top h2 em{ font-style:italic; color:var(--metal); }
+    .uh-top p{ color:var(--text-mid); font-size:15px; margin-top:8px; max-width:56ch; }
+    .uh-tabs{ display:flex; gap:8px; flex-wrap:wrap; }
+    .uh-tabs a{ font-size:13px; padding:8px 16px; border-radius:999px; border:1px solid var(--border); color:var(--text-mid); text-decoration:none; }
+    .uh-tabs a:hover,.uh-tabs a[aria-current="true"]{ border-color:var(--metal); color:var(--metal); }
+    .uh-sec{ padding:40px 0 8px; scroll-margin-top:70px; }
+    .uh-cap{ font-family:var(--mono); font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); }
+    .uh-sec h3{ font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:clamp(28px,3.4vw,40px); color:var(--text); margin:8px 0 18px; }
+    .uh-grid{ display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:28px; align-items:start; }
+    .uh-card{ background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:22px 22px; min-width:0; }
+    .uh-big{ display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+    .uh-big > b{ font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:76px; line-height:.9; color:var(--metal); font-variant-numeric:lining-nums tabular-nums; }
+    .uh-big span{ color:var(--text-mid); font-size:14.5px; line-height:1.45; }
+    .uh-big span b{ font-weight:600; }
+    .uh-rows{ display:grid; margin-top:16px; }
+    .uh-rows div{ display:flex; justify-content:space-between; gap:12px; padding:9px 0; border-top:1px solid var(--border); font-size:14px; color:var(--text-mid); }
+    .uh-rows div b{ color:var(--text); font-weight:600; font-variant-numeric:tabular-nums; }
+    .uh-good{ color:var(--leaf) !important; } .uh-bad{ color:#A24C3C !important; }
+    .uh-btns{ display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; }
+    .uh-btn{ display:inline-flex; align-items:center; gap:6px; font:inherit; font-size:13.5px; font-weight:500; padding:10px 18px; border-radius:999px; border:1px solid var(--metal); background:var(--metal); color:#fff; cursor:pointer; text-decoration:none; }
+    .uh-btn.line{ background:transparent; color:var(--text); border-color:var(--border); }
+    .uh-btn:hover{ filter:brightness(.95); } .uh-btn.line:hover{ border-color:var(--metal); color:var(--metal); }
+    .uh-chart svg{ width:100%; height:auto; display:block; }
+    .uh-chart .ax{ stroke:var(--border); stroke-width:1; }
+    .uh-chart .t{ font-family:var(--mono); font-size:10px; fill:var(--text-muted); }
+    .uh-chart .v{ font-family:'Cormorant Garamond',Georgia,serif; font-size:15px; fill:var(--text); }
+    .uh-note{ font-size:13px; color:var(--text-muted); margin-top:10px; line-height:1.55; }
+    .uh-empty{ color:var(--text-mid); font-size:15px; line-height:1.6; }
+    .uh-heat{ display:grid; grid-template-columns:repeat(10,minmax(0,1fr)); gap:6px; margin-top:6px; }
+    .uh-heat i{ aspect-ratio:1; border-radius:4px; background:var(--bg2); border:1px solid var(--border); display:block; max-width:100%; }
+    .uh-heat i[data-l="1"]{ background:color-mix(in srgb,var(--leaf) 25%,var(--surface)); }
+    .uh-heat i[data-l="2"]{ background:color-mix(in srgb,var(--leaf) 50%,var(--surface)); }
+    .uh-heat i[data-l="3"]{ background:color-mix(in srgb,var(--leaf) 75%,var(--surface)); }
+    .uh-heat i[data-l="4"]{ background:var(--leaf); }
+    .uh-heat i.today{ outline:2px solid var(--metal); outline-offset:1px; }
+    .uh-legend{ display:flex; justify-content:space-between; font-size:12px; color:var(--text-muted); margin-top:8px; }
+    .uh-stats{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; border:1px solid var(--border); border-radius:12px; background:var(--surface); }
+    .uh-stats div{ padding:16px 16px; min-width:0; }
+    .uh-stats div+div{ border-left:1px solid var(--border); }
+    .uh-stats b{ display:block; font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:38px; line-height:1; color:var(--text); font-variant-numeric:lining-nums tabular-nums; }
+    .uh-stats span{ font-size:12.5px; color:var(--text-mid); }
+    .uh-top3{ list-style:none; display:grid; gap:8px; margin-top:4px; }
+    .uh-top3 li{ display:grid; grid-template-columns:1fr auto; gap:10px; font-size:14px; color:var(--text); padding:8px 0; border-top:1px solid var(--border); }
+    .uh-top3 li span{ font-family:var(--mono); font-size:11.5px; color:var(--text-muted); }
+    .uh-miles{ list-style:none; display:grid; gap:0; }
+    .uh-miles li{ display:grid; grid-template-columns:26px 1fr auto; gap:12px; align-items:center; padding:12px 0; border-top:1px solid var(--border); font-size:14.5px; color:var(--text); }
+    .uh-miles li i{ width:22px; height:22px; border-radius:50%; border:1.5px solid var(--border); display:grid; place-items:center; font-style:normal; font-size:12px; color:#fff; }
+    .uh-miles li.ok i{ background:var(--leaf); border-color:var(--leaf); }
+    .uh-miles li small{ font-family:var(--mono); font-size:11px; color:var(--text-muted); }
+    .uh-miles .bar{ grid-column:2 / 4; height:4px; border-radius:2px; background:var(--bg2); overflow:hidden; }
+    .uh-miles .bar span{ display:block; height:100%; background:var(--metal); }
+    .uh-next{ border-left:2px solid var(--metal); padding:6px 0 6px 18px; margin-top:20px; }
+    .uh-next b{ display:block; font-size:15px; color:var(--text); margin-bottom:4px; }
+    .uh-next p{ font-size:14px; color:var(--text-mid); margin:0 0 10px; }
+    .uh-sync{ font-size:12.5px; color:var(--text-muted); margin-top:14px; }
+    .auth-perks{ list-style:none; margin:0 0 14px; padding:12px 14px; border:1px solid var(--border); border-radius:10px; background:var(--bg); display:grid; gap:6px; font-size:13px; color:var(--text-mid); }
+    .auth-perks b{ color:var(--text); font-weight:600; }
+    .auth-perks li{ display:grid; grid-template-columns:12px 1fr; gap:8px; align-items:baseline; }
+    .auth-perks li::before{ content:""; width:8px; height:1px; background:var(--metal); transform:translateY(-4px); }
+    @media(max-width:860px){
+      .uh-grid{ grid-template-columns:1fr; }
+      .uh-stats{ grid-template-columns:1fr; }
+      .uh-stats div+div{ border-left:0; border-top:1px solid var(--border); }
+    }
+  </style>
 </head>
 <body>
 
@@ -1005,19 +1133,28 @@
     Vivelong
   </a>
   <ul class="nav-links">
-    <li><a href="#hesaplama">Yaş Testi</a></li>
-    <li><a href="#aliskanliklar">Alışkanlıklar</a></li>
     <li><a href="#biyomarker">Hücresel Yaş</a></li>
     <li><a href="#mavi-bolgeler">Mavi Bölgeler</a></li>
     <li><a href="#paradoks">Cinsiyet</a></li>
     <li><a href="#direkleri">Rehberler</a></li>
     <li><a href="#blog">Araştırma</a></li>
-    <li><a href="#forum">Forum</a></li>
     <li><a href="#uyelik" class="nav-pro">Pro</a></li>
-    <li><a href="#hesaplama" class="nav-cta">Başla</a></li>
   </ul>
   <div style="display:flex;align-items:center;gap:10px;">
-    <a href="/en/" class="zp-lang-switch" style="height:30px;">EN</a>
+    <div class="vlang" id="vlang">
+      <button type="button" class="vlang-btn" id="vlangBtn" aria-haspopup="true" aria-expanded="false" aria-controls="vlangList" aria-label="Dil seçin. Geçerli dil: Türkçe">
+        <svg class="vlang-globe" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
+        <span>TR</span>
+        <svg class="vlang-car" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <ul class="vlang-list" id="vlangList">
+        <li><a href="/" lang="tr" hreflang="tr" aria-current="true" class="vlang-on"><b>TR</b>Türkçe<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg></a></li>
+        <li><a href="/en/" lang="en" hreflang="en"><b>EN</b>English</a></li>
+        <li><a href="/de/was-ist-longevity/" lang="de" hreflang="de"><b>DE</b>Deutsch</a></li>
+        <li><a href="/es/que-es-la-longevidad/" lang="es" hreflang="es"><b>ES</b>Español</a></li>
+        <li><a href="/fr/qu-est-ce-que-la-longevite/" lang="fr" hreflang="fr"><b>FR</b>Français</a></li>
+      </ul>
+    </div>
     <div id="navAuthArea"><button class="nav-auth-btn" onclick="openAuth('login')">Giriş / Üye Ol</button></div>
   </div>
 </nav>
@@ -1052,6 +1189,11 @@
     <!-- KAYIT FORMU -->
     <form class="auth-form hidden" id="formRegister" onsubmit="doRegister(event)">
       <div class="auth-msg" id="registerMsg"></div>
+      <ul class="auth-perks" aria-label="Üyeliğin sağladıkları">
+        <li><span><b>Biyolojik yaş geçmişin:</b> her ölçüm kaydedilir, değişimi grafikte görürsün.</span></li>
+        <li><span><b>Alışkanlık serilerin:</b> işaretlediğin günler hesabında saklanır, her cihazda.</span></li>
+        <li><span><b>Longevity ilerlemen:</b> hedefler ve bir sonraki adım önerisi.</span></li>
+      </ul>
       <div class="af-group">
         <label for="regName">Ad Soyad</label>
         <input type="text" id="regName" placeholder="Adınız Soyadınız" required autocomplete="name">
@@ -1124,31 +1266,55 @@
     <div>
       <div class="cap">Longevity · uzun ve sağlıklı yaşam bilimi</div>
       <h1>Takvim yaşınız belli. Biyolojik yaşınız <em>kaç</em>?</h1>
-      <p>Nüfus cüzdanınızdaki yaş ile bedeninizin yaşı aynı olmayabilir. Üç dakikalık testle ölçün, sizi en çok yaşlandıran alışkanlığı görün.</p>
+      <div class="vh-row">
+        <p>Nüfus cüzdanınızdaki yaş ile bedeninizin yaşı aynı olmayabilir. Üç dakikalık testle ölçün, sizi en çok yaşlandıran alışkanlığı görün.</p>
+        <div class="vh-cta">
+          <a href="#hesaplama" class="btn btn-gold">Biyolojik yaşımı ölç</a>
+        </div>
+      </div>
       <ul class="vh-ticks">
         <li>16 faktör: uyku, hareket, beslenme, bel çevresi, sosyal bağ ve diğerleri</li>
         <li>Ücretsiz, üyelik gerekmez, sonuç hemen ekranda</li>
         <li>30 gün sonra yeniden ölçün, değişimi grafikte izleyin</li>
       </ul>
-      <div class="vh-cta">
-        <a href="#hesaplama" class="btn btn-gold">Biyolojik yaşımı ölç</a>
-        <a href="#uyelik" class="btn btn-w" style="border:1px solid var(--border);">Pro'ya ön kayıt</a>
-      </div>
     </div>
-    <div class="vh-test">
-      <div class="vh-test-top"><h2>Hızlı ölçüm</h2><span class="cap">4 / 16 faktör · örnek</span></div>
-      <form class="vh-form" onsubmit="return false">
-        <label for="vh-yas">Yaşınız<input id="vh-yas" type="number" min="18" max="100" value="46" inputmode="numeric"></label>
-        <label for="vh-uyku">Gece uykusu<select id="vh-uyku"><option value="2">6 saatten az</option><option value="0.5" selected>6–7 saat</option><option value="-1">7–8 saat</option><option value="0">8 saatten çok</option></select></label>
-        <label for="vh-hareket">Haftalık egzersiz<select id="vh-hareket"><option value="3">Hiç</option><option value="0" selected>1–2 gün</option><option value="-1.5">3–4 gün</option><option value="-2.5">5 gün ve üzeri</option></select></label>
-        <label for="vh-sigara">Sigara<select id="vh-sigara"><option value="-1" selected>Hiç içmedim</option><option value="1">Bıraktım</option><option value="5">İçiyorum</option></select></label>
-      </form>
-      <div class="vh-res" aria-live="polite">
-        <b id="vh-sonuc">45,5</b>
-        <span><strong id="vh-fark">Takvim yaşınızdan 0,5 yıl genç</strong><span id="vh-ipucu">En büyük kazanım: uykuyu 7–8 saate çıkarmak.</span></span>
+    <div class="vp">
+      <div class="vp-top"><span class="cap">Örnek profil</span><span>Gösterim amaçlıdır, gerçek kişi verisi değildir</span></div>
+      <div class="vp-body">
+        <div>
+          <a class="vp-sub vp-link" href="#aliskanliklar" data-vp-habits>Alışkanlıklarınız<span aria-hidden="true">→</span></a>
+          <ul class="vp-bars" role="img" aria-label="Örnek profil: uyku orta, hareket iyi, beslenme iyi, sosyal bağ iyi, stres geliştirilebilir, sigara ve alkol iyi.">
+            <li class="orta">Uyku<span>orta</span><i style="--w:58%"></i></li>
+            <li>Hareket<span>iyi</span><i style="--w:82%"></i></li>
+            <li>Beslenme<span>iyi</span><i style="--w:76%"></i></li>
+            <li>Sosyal bağ<span>iyi</span><i style="--w:88%"></i></li>
+            <li class="gel">Stres<span>geliştirilebilir</span><i style="--w:34%"></i></li>
+            <li>Sigara ve alkol<span>iyi</span><i style="--w:94%"></i></li>
+          </ul>
+        </div>
+        <div class="vp-out">
+          <a class="vp-sub vp-link vp-link-c" href="#hesaplama">Biyolojik yaşınız<span aria-hidden="true">→</span></a>
+          <svg viewBox="0 -14 200 128" role="img" aria-label="Örnek sonuç: takvim yaşı 46, biyolojik yaş 43,5; fark 2,5 yıl genç." focusable="false">
+            <path class="vp-arc" d="M20 100 A80 80 0 0 1 180 100" pathLength="100"/>
+            <path class="vp-fill" d="M20 100 A80 80 0 0 1 180 100" pathLength="100" stroke-dasharray="45 100"/>
+            <line class="vp-tick" x1="107.3" y1="30.4" x2="109.4" y2="10.5"/>
+            <text class="vp-ax" x="111" y="0" text-anchor="middle">46</text>
+            <text class="vp-ax" x="20" y="113" text-anchor="middle">30</text>
+            <text class="vp-ax" x="180" y="113" text-anchor="middle">60</text>
+            <text class="vp-num" x="100" y="84" text-anchor="middle">43,5</text>
+            <text class="vp-lbl" x="100" y="101" text-anchor="middle">BİYOLOJİK YAŞ</text>
+          </svg>
+          <dl class="vp-cmp">
+            <div><dt>Takvim yaşı</dt><dd>46</dd></div>
+            <div><dt>Biyolojik yaş</dt><dd>43,5</dd></div>
+            <div class="vp-fark"><dt>Fark</dt><dd>−2,5 yıl</dd></div>
+          </dl>
+        </div>
       </div>
-      <a class="btn btn-gold" href="#hesaplama">16 faktörlü tam testi başlat</a>
-      <small>Bu kutu dört soruyla kaba bir tahmin verir. Asıl test 16 faktörlüdür ve aşağıda.</small>
+      <div class="vp-foot">
+        <div class="vp-key" aria-hidden="true"><span><b></b>iyi</span><span class="orta"><b></b>orta</span><span class="gel"><b></b>geliştirilebilir</span></div>
+        <a href="#hesaplama">Kendi değerleriniz için testi çözün →</a>
+      </div>
     </div>
   </div>
 </header>
@@ -1159,14 +1325,36 @@
   <a href="/en/"><b>5 dil</b><span>Türkçe, İngilizce, Almanca, İspanyolca, Fransızca</span></a>
 </div></div>
 
+<!-- ══ BİYOLOJİK YAŞ TESTİ (hızlı ölçüm şeridi) ══ -->
+<div class="vq" role="region" aria-labelledby="vq-baslik">
+    <div class="vh-test">
+      <div class="vh-test-top"><h2 id="vq-baslik">Biyolojik yaş testi</h2><span class="cap">4 / 16 faktör · örnek</span><small>Bu kutu dört soruyla kaba bir tahmin verir. Asıl test 16 faktörlüdür; düğmeye basınca açılır.</small></div>
+      <form class="vh-form" onsubmit="return false">
+        <label for="vh-yas">Yaşınız<input id="vh-yas" type="number" min="18" max="100" value="46" inputmode="numeric"></label>
+        <label for="vh-uyku">Gece uykusu<select id="vh-uyku"><option value="2">6 saatten az</option><option value="0.5" selected>6–7 saat</option><option value="-1">7–8 saat</option><option value="0">8 saatten çok</option></select></label>
+        <label for="vh-hareket">Haftalık egzersiz<select id="vh-hareket"><option value="3">Hiç</option><option value="0" selected>1–2 gün</option><option value="-1.5">3–4 gün</option><option value="-2.5">5 gün ve üzeri</option></select></label>
+        <label for="vh-sigara">Sigara<select id="vh-sigara"><option value="-1" selected>Hiç içmedim</option><option value="1">Bıraktım</option><option value="5">İçiyorum</option></select></label>
+      </form>
+      <div class="vh-side">
+        <div class="vh-res" aria-live="polite">
+          <b id="vh-sonuc">45,5</b>
+          <span><strong id="vh-fark">Takvim yaşınızdan 0,5 yıl genç</strong><span id="vh-ipucu">En büyük kazanım: uykuyu 7–8 saate çıkarmak.</span></span>
+        </div>
+        <a class="btn btn-gold" href="#hesaplama">16 faktörlü tam testi başlat</a>
+      </div>
+    </div>
+</div>
+
 <!-- ══ CALCULATOR ══ -->
-<section id="hesaplama">
+<noscript><style>#hesaplama[hidden]{display:block !important}.vt-kapat{display:none !important}</style></noscript>
+<section id="hesaplama" hidden aria-labelledby="hesaplama-baslik">
   <div class="si">
+    <div class="vt-kapat"><button type="button" data-vt-kapat>Testi kapat</button></div>
     <div class="stag">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
       16 Faktörlü Hesaplayıcı
     </div>
-    <h2 class="stit">Biyolojik Yaş Testi</h2>
+    <h2 class="stit" id="hesaplama-baslik" tabindex="-1">Biyolojik Yaş Testi</h2>
     <p class="ssub">Su tüketimi, diş sağlığı, D vitamini ve bilişsel aktivite dahil 16 faktörü değerlendiren kapsamlı test.</p>
 
     <div class="clayout">
@@ -1447,6 +1635,7 @@
         </div>
       </div>
     </div>
+    <div class="vt-kapat alt"><button type="button" data-vt-kapat>Testi kapat</button></div>
   </div>
 </section>
 
@@ -2648,25 +2837,42 @@
     <div class="stag">Araştırma Verileri</div>
     <h2 class="stit">Bilim Ne Diyor?</h2>
     <p class="ssub">Longevity araştırmalarından dikkat çekici rakamlar.</p>
-    <div class="vc">
+    <div class="vg">
       <figure>
-        <svg viewBox="0 0 520 330" role="img" aria-label="Yaşa göre sağlık eğrileri: ömür, bugünkü sağlıklı yıllar ve hedeflenen sağlıklı yıllar">
-          <path class="vc-gap" d="M40,60 C200,60 300,70 340,150 S380,262 400,270 L465,270 C455,262 440,230 420,165 C380,75 250,60 40,60Z"/>
-          <path class="vc-axis" d="M40,30V270H500"/>
-          <path class="vc-life" d="M40,60 C260,60 400,80 440,170 S470,262 480,270"/>
-          <path class="vc-now" d="M40,60 C200,60 300,70 340,150 S380,262 400,270"/>
-          <path class="vc-goal" d="M40,60 C250,60 380,75 420,165 S455,262 465,270"/>
-          <text class="vc-t" x="132" y="288" text-anchor="middle">20</text><text class="vc-t" x="224" y="288" text-anchor="middle">40</text><text class="vc-t" x="316" y="288" text-anchor="middle">60</text><text class="vc-t" x="408" y="288" text-anchor="middle">80</text><text class="vc-t" x="500" y="288" text-anchor="end">yaş</text>
-          <text class="vc-t" x="40" y="22">sağlık ve işlev</text>
-          <text class="vc-lb" x="300" y="196" text-anchor="end" fill="var(--text)">bugünkü sağlıklı yıllar</text>
-          <text class="vc-lb" x="392" y="122" fill="var(--metal)">hedef</text>
-          <text class="vc-lb" x="492" y="212" text-anchor="end" fill="var(--text-muted)">ömür</text>
+        <div class="vg-key" aria-hidden="true"><span><i class="k-m"></i>Erkek</span><span><i class="k-f"></i>Kadın</span><span><i class="k-g"></i>20–29 yaş değeri</span></div>
+        <svg viewBox="0 0 480 330" role="img" aria-labelledby="vg1-t vg1-d">
+          <title id="vg1-t">Yaşa göre ortanca VO2 max, ml/kg/dk (FRIEND kaydı, 2015)</title>
+          <desc id="vg1-d">20–29 yaş: erkek 48,0, kadın 37,6. 70–79 yaş: erkek 24,4, kadın 18,3. 70–79 yaş grubunun değeri 20–29 yaş grubunun erkeklerde yüzde 51'i, kadınlarda yüzde 49'u. Aradaki yaş grupları gösterilmiyor.</desc>
+          <g aria-hidden="true">
+            <line class="vg-grid" x1="44" x2="470" y1="40" y2="40"/><line class="vg-grid" x1="44" x2="470" y1="90" y2="90"/><line class="vg-grid" x1="44" x2="470" y1="140" y2="140"/><line class="vg-grid" x1="44" x2="470" y1="190" y2="190"/><line class="vg-grid" x1="44" x2="470" y1="240" y2="240"/>
+            <text class="vg-ax" x="36" y="44" text-anchor="end">50</text><text class="vg-ax" x="36" y="94" text-anchor="end">40</text><text class="vg-ax" x="36" y="144" text-anchor="end">30</text><text class="vg-ax" x="36" y="194" text-anchor="end">20</text><text class="vg-ax" x="36" y="244" text-anchor="end">10</text><text class="vg-ax" x="36" y="294" text-anchor="end">0</text>
+            <text class="vg-ax" x="44" y="20">ml/kg/dk</text>
+            <rect class="vg-m" x="64" y="50" width="58" height="240"/>
+            <rect class="vg-f" x="128" y="102" width="58" height="188"/>
+            <rect class="vg-ghost" x="290" y="50" width="58" height="240"/>
+            <rect class="vg-ghost" x="354" y="102" width="58" height="188"/>
+            <rect class="vg-m" x="290" y="168" width="58" height="122"/>
+            <rect class="vg-f" x="354" y="198.5" width="58" height="91.5"/>
+            <line class="vg-base" x1="44" x2="470" y1="290" y2="290"/>
+            <text class="vg-val" x="93" y="42" text-anchor="middle">48,0</text>
+            <text class="vg-val" x="157" y="94" text-anchor="middle">37,6</text>
+            <text class="vg-val" x="319" y="160" text-anchor="middle">24,4</text>
+            <text class="vg-val" x="383" y="190" text-anchor="middle">18,3</text>
+            <text class="vg-drop" x="319" y="112" text-anchor="middle">−%49</text>
+            <text class="vg-drop" x="383" y="150" text-anchor="middle">−%51</text>
+            <text class="vg-ax" x="238" y="286" text-anchor="middle">· · ·</text>
+            <text class="vg-grp" x="125" y="316" text-anchor="middle">20–29 yaş</text>
+            <text class="vg-grp" x="351" y="316" text-anchor="middle">70–79 yaş</text>
+          </g>
         </svg>
-        <figcaption>Şematik gösterim. Amaç ömrü uzatmaktan önce sağlıklı yılları ömre yaklaştırmak.</figcaption>
+        <figcaption>Ortanca (50. yüzdelik) değerler; popülasyon verisidir, kişisel tahmin değildir. 30–69 yaş grupları gösterilmiyor. Kaynak: FRIEND kaydı, ABD; kalp-damar hastalığı olmayan 20–79 yaş, 7.783 maksimal koşu bandı testi. <a href="https://doi.org/10.1016/j.mayocp.2015.07.026" target="_blank" rel="noopener">Mayo Clinic Proceedings, 2015</a>.</figcaption>
       </figure>
-      <div>
-        <h3>Uzun yaşamak yetmez, sağlıklı yaşamak gerekir</h3>
-        <p>Gri çizgi ömrü, siyah çizgi bugün sağlıklı geçen yılları, altın çizgi hedefi gösterir. Aradaki alan, hastalıkla geçen yıllardır. Vivelong'daki her araştırma bu alanı küçültmeye çalışan bir soruya bakar.</p>
+      <div class="vg-body">
+        <div class="stag">Kondisyon ve yaş</div>
+        <h3 class="vg-hook">70'lerde kondisyon, 20'lerdekinin <em>yarısı</em>.</h3>
+        <p>VO2 max, vücudun yoğun egzersizde kullanabildiği en yüksek oksijen miktarıdır ve kardiyorespiratuvar kondisyonun standart ölçüsüdür. ABD'deki FRIEND kaydında 70–79 yaş grubunun ortanca değeri, 20–29 yaş grubununkinin erkeklerde %51'i, kadınlarda %49'u kadardı.</p>
+        <p class="vg-note">Kondisyon antrenmanla da değişebiliyor: 28 kontrollü çalışmanın meta-analizinde dayanıklılık antrenmanı VO2 max'ı ortalama 4,9, HIIT 5,5 ml/kg/dk artırdı. <a class="vg-more" href="/blog/vo2-max-nasil-artirilir/">Nasıl artırılır?</a></p>
+        <a class="vg-more" href="/blog/vo2-max-kac-olmali/">Yazıyı oku →</a>
       </div>
     </div>
     <div class="scgrid">
@@ -4094,38 +4300,48 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     TOPLULUK FORUMU
-══════════════════════════════════════════════════ -->
-<section id="forum">
-  <div class="si">
-    <span class="stag">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="13" height="13"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-      Topluluk
-    </span>
-    <h2 class="stit">Vivelong Forum</h2>
-    <p class="ssub">Deneyimlerinizi paylaşın, sorularınızı sorun, topluluğun bilgeliğinden faydalanın.</p>
-
-    <div class="forum-preview-grid" id="forumPreviewGrid">
-      <div class="fp-card" style="cursor:default;grid-column:1/-1;text-align:center;color:var(--text-muted);">
-        <div class="f-loading">Forum yükleniyor…</div>
-      </div>
-    </div>
-
-    <div class="stars-wrap">
-      <div class="stars-hdr">⭐ Ayın Yıldızları</div>
-      <div class="stars-sub" id="starsMonth"></div>
-      <div class="stars-list" id="starsList">
-        <div class="f-loading" style="color:rgba(255,255,255,.5);">Yükleniyor…</div>
-      </div>
-    </div>
-
-    <div class="forum-section-cta">
-      <button class="btn btn-gold" onclick="openForumZone()">Foruma Katıl →</button>
-      <p style="font-size:13px;color:var(--text-muted);">Foruma katılmak ve yazı paylaşmak için üyelik gereklidir.</p>
-    </div>
+<!-- ══ ÜYE PANELİ: HESABIM ══ -->
+<div class="zone-page" id="zp-hesabim" aria-label="Hesabım">
+  <div class="zp-topbar">
+    <button class="zp-back" onclick="closeZone('hesabim')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      Geri
+    </button>
+    <span class="zp-crumb">Hesabım</span>
   </div>
-</section>
+  <div class="uh">
+    <div class="uh-top">
+      <div>
+        <div class="uh-cap" id="uhSince">Üye</div>
+        <h2>Merhaba, <em id="uhName">üye</em></h2>
+        <p>Ölçümlerin, alışkanlıkların ve ilerlemen burada birikir. Her ölçüm ve her işaretlediğin gün, bir sonraki adımı daha net gösterir.</p>
+      </div>
+      <nav class="uh-tabs" aria-label="Hesap bölümleri">
+        <a href="#uh-bio" data-uh="bio">Biyolojik yaşım</a>
+        <a href="#uh-hab" data-uh="hab">Alışkanlıklarım</a>
+        <a href="#uh-prog" data-uh="prog">Longevity ilerlemem</a>
+      </nav>
+    </div>
+
+    <section class="uh-sec" id="uh-bio" aria-labelledby="uh-bio-t">
+      <div class="uh-cap">01 · Ölçüm</div>
+      <h3 id="uh-bio-t">Biyolojik yaşım</h3>
+      <div id="uhBio"><p class="uh-empty">Yükleniyor…</p></div>
+    </section>
+
+    <section class="uh-sec" id="uh-hab" aria-labelledby="uh-hab-t">
+      <div class="uh-cap">02 · Günlük takip</div>
+      <h3 id="uh-hab-t">Alışkanlıklarım</h3>
+      <div id="uhHab"><p class="uh-empty">Yükleniyor…</p></div>
+    </section>
+
+    <section class="uh-sec" id="uh-prog" aria-labelledby="uh-prog-t">
+      <div class="uh-cap">03 · Yol haritası</div>
+      <h3 id="uh-prog-t">Longevity ilerlemem</h3>
+      <div id="uhProg"><p class="uh-empty">Yükleniyor…</p></div>
+    </section>
+  </div>
+</div>
 
 <!-- ══ FOOTER ══ -->
 <footer>
@@ -4138,117 +4354,14 @@
     <a href="#mavi-bolgeler">Mavi Bölgeler</a>
     <a href="#paradoks">Cinsiyet</a>
     <a href="#direkleri">Rehberler</a>
-    <a href="#forum">Forum</a>
     <a href="#uyelik">Pro Üyelik</a>
     <a href="/longevity-nedir/">Longevity Nedir?</a>
     <a href="/hakkimizda/">Hakkımızda</a>
   </div>
   <div class="fcopy">İletişim: <a href="tel:+905423548668">0542 354 86 68</a> · © 2026 Vivelong · Longevity bilimini herkese ulaştırmak için yapıldı. · <a href="#" onclick="openKvkk(event)" style="color:inherit;text-decoration:underline;">KVKK Aydınlatma Metni</a></div>
+  <div style="text-align:center;font-size:11px;opacity:.5;margin-top:8px">Web &amp; dijital: <a href="https://digikeyword.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">DigiKeyword</a></div>
   <div class="fdisc">Bu uygulama yalnızca bilgilendirme amaçlıdır. Klinik tanı veya tedavi yerine geçmez. Sağlık kararları için uzman doktora danışın. Biyolojik yaş hesaplaması araştırma literatürüne dayalı tahmindir.</div>
 </footer>
-
-<!-- ══ FORUM ZONE PAGE ══ -->
-<div class="zone-page" id="zp-forum">
-  <div class="zp-topbar">
-    <div class="zp-topbar-left">
-      <a class="zp-home-logo" href="#" onclick="goHome()">
-        <svg viewBox="0 0 32 32" fill="none" width="26" height="26"><circle cx="16" cy="16" r="15" fill="#1A4731"/><path d="M9 18c1.5-4 4-7 7-8.5C19 11 21.5 14 23 18" stroke="#74C69D" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M16 9.5v14M9 18h14" stroke="#D4A847" stroke-width="1.4" stroke-linecap="round" opacity="0.6"/><circle cx="16" cy="9" r="2.5" fill="#74C69D"/></svg>
-      </a>
-      <button class="zp-back" onclick="closeZone('zp-forum')">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
-        Geri
-      </button>
-    </div>
-    <span class="zp-crumb">Topluluk Forumu</span>
-  </div>
-
-  <div class="zp-hero">
-    <div class="zp-hero-inner">
-      <span class="zp-emoji">💬</span>
-      <h2>Topluluk Forumu</h2>
-      <span class="zp-tag">Deneyimlerinizi paylaşın · Sorularınızı sorun · Birlikte öğrenin</span>
-    </div>
-  </div>
-
-  <div class="forum-z-layout">
-    <!-- Kategoriler -->
-    <div>
-      <div class="forum-cats-box">
-        <div class="fcat active" onclick="filterForumCat('tumu',this)">Tümü <span class="fcat-count" id="catCountTumu">0</span></div>
-        <div class="fcat" onclick="filterForumCat('deneyimler',this)">Deneyimler <span class="fcat-count" id="catCountDeneyimler">0</span></div>
-        <div class="fcat" onclick="filterForumCat('beslenme',this)">Beslenme <span class="fcat-count" id="catCountBeslenme">0</span></div>
-        <div class="fcat" onclick="filterForumCat('egzersiz',this)">Egzersiz <span class="fcat-count" id="catCountEgzersiz">0</span></div>
-        <div class="fcat" onclick="filterForumCat('uyku',this)">Uyku <span class="fcat-count" id="catCountUyku">0</span></div>
-        <div class="fcat" onclick="filterForumCat('sorucevap',this)">Soru & Cevap <span class="fcat-count" id="catCountSorucevap">0</span></div>
-      </div>
-    </div>
-    <!-- Postlar -->
-    <div>
-      <div class="forum-bar">
-        <span class="forum-bar-title" id="forumCatTitle">Tüm Yazılar</span>
-        <button class="new-post-btn" onclick="openNewPost()">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          Yeni Yazı
-        </button>
-      </div>
-      <div class="f-posts" id="forumPostsList">
-        <div class="f-loading">Yazılar yükleniyor…</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══ YENİ YAZI MODAL ══ -->
-<div class="np-overlay" id="npOverlay" onclick="if(event.target===this)closeNewPost()">
-  <div class="np-box">
-    <h3>✍️ Yeni Yazı Oluştur</h3>
-    <form class="np-form" onsubmit="submitNewPost(event)">
-      <div class="np-err" id="npErr"></div>
-      <div>
-        <label class="np-label" for="npCat">Kategori</label>
-        <select class="np-select" id="npCat" required>
-          <option value="">Seçin…</option>
-          <option value="deneyimler">Deneyimler</option>
-          <option value="beslenme">Beslenme</option>
-          <option value="egzersiz">Egzersiz</option>
-          <option value="uyku">Uyku</option>
-          <option value="sorucevap">Soru & Cevap</option>
-        </select>
-      </div>
-      <div>
-        <label class="np-label" for="npTitle">Başlık</label>
-        <input class="np-input" type="text" id="npTitle" placeholder="Yazınızın başlığı" required maxlength="120">
-      </div>
-      <div>
-        <label class="np-label" for="npContent">İçerik</label>
-        <textarea class="np-textarea" id="npContent" placeholder="Deneyimlerinizi, bilgilerinizi veya sorunuzu buraya yazın…" required minlength="20"></textarea>
-      </div>
-      <div class="np-btns">
-        <button type="button" class="np-cancel" onclick="closeNewPost()">İptal</button>
-        <button type="submit" class="np-submit" id="npSubmitBtn">Paylaş</button>
-      </div>
-    </form>
-  </div>
-</div>
-
-<!-- ══ YAZI DETAY MODAL ══ -->
-<div class="pd-overlay" id="pdOverlay" onclick="if(event.target===this)closePdOverlay()">
-  <div class="pd-box">
-    <button class="pd-close" onclick="closePdOverlay()">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <div class="pd-cat" id="pdCat"></div>
-    <div class="pd-title" id="pdTitle"></div>
-    <div class="pd-content" id="pdContent"></div>
-    <div class="pd-footer">
-      <button class="pd-vote-btn" id="pdVoteBtn" onclick="togglePdVote()">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
-        <span id="pdVoteCount">0</span> Beğen
-      </button>
-      <div class="pd-author-info" id="pdAuthorInfo"></div>
-    </div>
-  </div>
-</div>
 
 <script>
 /* ═══ STATE ═══ */
@@ -4377,6 +4490,13 @@ function runCalc() {
     </div>`).join('');
 
   _afterCalc({ real_age:age, bio_age:bioAge, diff:diff, gender:gender, factors:factors });
+  // Sonuç yazıldı: ekranı sonuç paneline getir (menü 64 px olduğu için biraz pay bırak)
+  requestAnimationFrame(function(){
+    var r=document.getElementById('calcResult'); if(!r) return;
+    var azalt=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var y=r.getBoundingClientRect().top + window.pageYOffset - 84;
+    window.scrollTo({ top: Math.max(0,y), behavior: azalt ? 'auto' : 'smooth' });
+  });
 }
 
 /* ═══ BILLING TOGGLE ═══ */
@@ -4734,7 +4854,7 @@ function fabSend() {
 }
 
 /* ══════════════════════════════════════════════
-   SUPABASE + AUTH + ÖLÇÜM + FORUM
+   SUPABASE + AUTH + ÖLÇÜM
    anon key tarayıcıda açıkta durur — bu normaldir.
    Verinin korunması RLS politikalarıyla sağlanıyor.
 ══════════════════════════════════════════════ */
@@ -4747,18 +4867,7 @@ const _sb = (window.supabase && SUPABASE_URL.includes('supabase.co') && !SUPABAS
 /* ─── STATE ─── */
 let _currentUser = null;
 let _currentProfile = null;
-let _forumPosts = [];
-let _currentCat = 'tumu';
-let _pdPostId = null;
-let _userVotes = new Set();
-
-const _CAT_LABELS = {
-  tumu:'Tüm Yazılar', deneyimler:'Deneyimler', beslenme:'Beslenme',
-  egzersiz:'Egzersiz', uyku:'Uyku', sorucevap:'Soru & Cevap'
-};
-
 function _esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-function _fmtDate(iso){ const d=new Date(iso); return d.toLocaleDateString('tr-TR',{day:'numeric',month:'long',year:'numeric'}); }
 
 /* ─── AUTH INIT ─── */
 async function _initAuth(){
@@ -4797,7 +4906,6 @@ function _updateNavAuth(){
         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
       <div class="nav-drop" id="navDrop">
-        <button class="nav-drop-item" onclick="openForumZone()">💬 Forum</button>
         <button class="nav-drop-item danger" onclick="doLogout()">Çıkış Yap</button>
       </div>
     </div>`;
@@ -4851,8 +4959,6 @@ async function doLogin(e){
     closeAuth();
     _showToast('Hoş geldiniz! 🎉');
     await _flushPendingMeasurement();
-    await _loadForumPosts();
-    _loadUserVotes();
   }
 }
 
@@ -4891,7 +4997,6 @@ async function doRegister(e){
 
   _authMsg('registerMsg','ok','Kayıt başarılı! Hoş geldiniz. 🎉');
   await _flushPendingMeasurement();
-  await _loadForumPosts();
   setTimeout(closeAuth, 2000);
 }
 
@@ -5125,253 +5230,6 @@ function _showToast(msg){
   t._t=setTimeout(()=>{ t.style.opacity='0'; }, 2600);
 }
 
-/* ─── FORUM ZONE ─── */
-function openForumZone(){
-  if(!_currentUser){ openAuth('login'); return; }
-  openZone('forum');
-  _loadForumPosts();
-  _loadUserVotes();
-}
-
-async function _loadUserVotes(){
-  if(!_sb||!_currentUser) return;
-  const {data} = await _sb.from('post_votes').select('post_id').eq('user_id',_currentUser.id);
-  _userVotes = new Set((data||[]).map(v=>v.post_id));
-}
-
-async function _loadForumPosts(){
-  if(!_sb){ _renderForumPreviewFallback(); _renderStarsFallback(); return; }
-  const {data,error} = await _sb
-    .from('forum_posts')
-    .select('id,category,title,content,vote_count,created_at,profiles(display_name)')
-    .order('created_at',{ascending:false})
-    .limit(60);
-  if(error){ console.error(error); return; }
-  _forumPosts = data||[];
-  _renderForumPosts();
-  _renderForumPreview();
-  _updateCatCounts();
-  _renderMonthlyStars();
-}
-
-function _renderForumPreviewFallback(){
-  const c=document.getElementById('forumPreviewGrid');
-  if(c) c.innerHTML=`<div class="fp-card" style="grid-column:1/-1;text-align:center;cursor:default;color:var(--text-muted);padding:30px 20px;"><div style="font-size:36px;margin-bottom:10px;">💬</div><p>Forumu görüntülemek için <strong>Giriş yapın</strong> veya <strong>Üye olun</strong>.</p></div>`;
-}
-function _renderStarsFallback(){
-  const c=document.getElementById('starsList');
-  if(c) c.innerHTML=`<p style="color:rgba(255,255,255,.45);font-size:13px;text-align:center;padding:12px 0;">Giriş yaparak ayın yıldızlarını görün.</p>`;
-  const m=document.getElementById('starsMonth');
-  if(m) m.textContent='Bu ayki en aktif üyeler';
-}
-
-function filterForumCat(cat, el){
-  _currentCat=cat;
-  document.querySelectorAll('.fcat').forEach(c=>c.classList.remove('active'));
-  if(el) el.classList.add('active');
-  const title=document.getElementById('forumCatTitle');
-  if(title) title.textContent=_CAT_LABELS[cat]||cat;
-  _renderForumPosts();
-}
-
-function _filteredPosts(){
-  return _currentCat==='tumu' ? _forumPosts : _forumPosts.filter(p=>p.category===_currentCat);
-}
-
-function _updateCatCounts(){
-  const counts={tumu:_forumPosts.length,deneyimler:0,beslenme:0,egzersiz:0,uyku:0,sorucevap:0};
-  _forumPosts.forEach(p=>{ if(counts[p.category]!==undefined) counts[p.category]++; });
-  Object.entries(counts).forEach(([k,v])=>{
-    const el=document.getElementById('catCount'+k.charAt(0).toUpperCase()+k.slice(1));
-    if(el) el.textContent=v;
-  });
-}
-
-function _renderForumPosts(){
-  const container=document.getElementById('forumPostsList');
-  if(!container) return;
-  const posts=_filteredPosts();
-  if(posts.length===0){
-    container.innerHTML=`<div class="f-empty"><div style="font-size:40px;margin-bottom:12px;">📝</div><p>Bu kategoride henüz yazı yok.<br>İlk yazan siz olun!</p></div>`;
-    return;
-  }
-  container.innerHTML=posts.map(p=>{
-    const voted=_userVotes.has(p.id);
-    const initials=(p.profiles?.display_name||'U').substring(0,2).toUpperCase();
-    const name=p.profiles?.display_name||'Anonim';
-    return `<div class="fpost">
-      <div class="fpost-inner">
-        <div class="fvote">
-          <button class="fvote-btn${voted?' voted':''}" onclick="toggleVote('${p.id}',this)">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
-          </button>
-          <span class="fvote-n" id="vn-${p.id}">${p.vote_count||0}</span>
-        </div>
-        <div class="fpost-body">
-          <span class="fpost-cat">${_CAT_LABELS[p.category]||p.category}</span>
-          <div class="fpost-title" onclick="openPostDetail('${p.id}')">${_esc(p.title)}</div>
-          <div class="fpost-text">${_esc(p.content)}</div>
-          <div class="fpost-footer">
-            <div class="fpost-av">${initials}</div>
-            <span class="fpost-author">${_esc(name)}</span>
-            <span class="fpost-date">${_fmtDate(p.created_at)}</span>
-          </div>
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-}
-
-function _renderForumPreview(){
-  const container=document.getElementById('forumPreviewGrid');
-  if(!container) return;
-  const top=_forumPosts.slice(0,3);
-  if(top.length===0){ _renderForumPreviewFallback(); return; }
-  container.innerHTML=top.map(p=>{
-    const name=p.profiles?.display_name||'Anonim';
-    return `<div class="fp-card" onclick="openForumZone()">
-      <span class="fp-cat-badge">${_CAT_LABELS[p.category]||p.category}</span>
-      <div class="fp-title">${_esc(p.title)}</div>
-      <div style="font-size:12px;color:var(--text-muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">${_esc(p.content)}</div>
-      <div class="fp-meta"><span>${_esc(name)}</span><span class="fp-vote-count">▲ ${p.vote_count||0}</span></div>
-    </div>`;
-  }).join('');
-}
-
-async function _renderMonthlyStars(){
-  const container=document.getElementById('starsList');
-  const monthEl=document.getElementById('starsMonth');
-  const now=new Date();
-  const monthName=now.toLocaleDateString('tr-TR',{month:'long',year:'numeric'});
-  if(monthEl) monthEl.textContent=monthName+' ayının en aktif üyeleri';
-  if(!container) return;
-  if(!_sb){ _renderStarsFallback(); return; }
-
-  const startOfMonth=new Date(now.getFullYear(),now.getMonth(),1).toISOString();
-  const {data} = await _sb.from('forum_posts')
-    .select('user_id,vote_count,profiles(display_name)')
-    .gte('created_at',startOfMonth);
-
-  if(!data||data.length===0){
-    container.innerHTML=`<p style="color:rgba(255,255,255,.45);font-size:13px;text-align:center;padding:12px 0;">Bu ay henüz katkı bulunmuyor. İlk yıldız siz olun!</p>`;
-    return;
-  }
-  const totals={};
-  data.forEach(p=>{
-    const uid=p.user_id;
-    if(!totals[uid]) totals[uid]={name:p.profiles?.display_name||'Anonim',pts:0};
-    totals[uid].pts+=(p.vote_count||0);
-  });
-  const sorted=Object.values(totals).sort((a,b)=>b.pts-a.pts).slice(0,3);
-  const medals=['🥇','🥈','🥉'];
-  container.innerHTML=sorted.map((u,i)=>`
-    <div class="star-row">
-      <div class="star-rank">${medals[i]}</div>
-      <div class="star-av">${u.name.substring(0,2).toUpperCase()}</div>
-      <div class="star-info">
-        <div class="star-name">${_esc(u.name)}</div>
-        <div class="star-pts">${u.pts} beğeni · ${monthName}</div>
-      </div>
-      ${i===0?'<span class="star-badge-gold">Ayın Yıldızı ⭐</span>':''}
-    </div>`).join('');
-}
-
-/* ─── OY/BEĞENİ ─── */
-async function toggleVote(postId, btn){
-  if(!_currentUser){ openAuth('login'); return; }
-  if(!_sb) return;
-  const voted=_userVotes.has(postId);
-  const countEl=document.getElementById('vn-'+postId);
-  const cur=parseInt(countEl?.textContent||'0');
-  if(voted){
-    _userVotes.delete(postId);
-    btn.classList.remove('voted');
-    if(countEl) countEl.textContent=Math.max(0,cur-1);
-    await _sb.from('post_votes').delete().eq('post_id',postId).eq('user_id',_currentUser.id);
-  } else {
-    _userVotes.add(postId);
-    btn.classList.add('voted');
-    if(countEl) countEl.textContent=cur+1;
-    await _sb.from('post_votes').insert({post_id:postId,user_id:_currentUser.id});
-  }
-  const pi=_forumPosts.findIndex(p=>p.id===postId);
-  if(pi>=0) _forumPosts[pi].vote_count=parseInt(countEl?.textContent||'0');
-}
-
-/* ─── YENİ YAZI ─── */
-function openNewPost(){
-  if(!_currentUser){ openAuth('login'); return; }
-  document.getElementById('npOverlay').classList.add('open');
-}
-function closeNewPost(){
-  document.getElementById('npOverlay').classList.remove('open');
-  document.getElementById('npErr').classList.remove('show');
-  document.getElementById('npTitle').value='';
-  document.getElementById('npContent').value='';
-  document.getElementById('npCat').value='';
-}
-async function submitNewPost(e){
-  e.preventDefault();
-  if(!_sb||!_currentUser) return;
-  const cat=document.getElementById('npCat').value;
-  const title=document.getElementById('npTitle').value.trim();
-  const content=document.getElementById('npContent').value.trim();
-  const errEl=document.getElementById('npErr');
-  const btn=document.getElementById('npSubmitBtn');
-  if(!cat||!title||!content){ errEl.textContent='Tüm alanları doldurun.'; errEl.classList.add('show'); return; }
-  btn.disabled=true; btn.textContent='Paylaşılıyor…';
-  const {error}=await _sb.from('forum_posts').insert({
-    user_id:_currentUser.id, category:cat, title:title, content:content, vote_count:0
-  });
-  btn.disabled=false; btn.textContent='Paylaş';
-  if(error){ errEl.textContent='Hata: '+error.message; errEl.classList.add('show'); return; }
-  closeNewPost();
-  await _loadForumPosts();
-  _showToast('Yazınız paylaşıldı! 🎉');
-}
-
-/* ─── YAZI DETAY ─── */
-function openPostDetail(postId){
-  const post=_forumPosts.find(p=>p.id===postId);
-  if(!post) return;
-  _pdPostId=postId;
-  document.getElementById('pdCat').textContent=_CAT_LABELS[post.category]||post.category;
-  document.getElementById('pdTitle').textContent=post.title;
-  document.getElementById('pdContent').textContent=post.content;
-  document.getElementById('pdVoteCount').textContent=post.vote_count||0;
-  const name=post.profiles?.display_name||'Anonim';
-  document.getElementById('pdAuthorInfo').textContent=name+' · '+_fmtDate(post.created_at);
-  document.getElementById('pdVoteBtn').classList.toggle('voted',_userVotes.has(postId));
-  document.getElementById('pdOverlay').classList.add('open');
-}
-function closePdOverlay(){
-  document.getElementById('pdOverlay').classList.remove('open');
-  _pdPostId=null;
-}
-async function togglePdVote(){
-  if(!_pdPostId) return;
-  if(!_currentUser){ openAuth('login'); return; }
-  const voted=_userVotes.has(_pdPostId);
-  const countEl=document.getElementById('pdVoteCount');
-  const cur=parseInt(countEl?.textContent||'0');
-  const pdBtn=document.getElementById('pdVoteBtn');
-  if(voted){
-    _userVotes.delete(_pdPostId);
-    pdBtn.classList.remove('voted');
-    if(countEl) countEl.textContent=Math.max(0,cur-1);
-    await _sb.from('post_votes').delete().eq('post_id',_pdPostId).eq('user_id',_currentUser.id);
-  } else {
-    _userVotes.add(_pdPostId);
-    pdBtn.classList.add('voted');
-    if(countEl) countEl.textContent=cur+1;
-    await _sb.from('post_votes').insert({post_id:_pdPostId,user_id:_currentUser.id});
-  }
-  const vn=document.getElementById('vn-'+_pdPostId);
-  if(vn) vn.textContent=countEl.textContent;
-  const pi=_forumPosts.findIndex(p=>p.id===_pdPostId);
-  if(pi>=0) _forumPosts[pi].vote_count=parseInt(countEl?.textContent||'0');
-}
-
 /* ─── ÇEREZ ONAYI ─── */
 const COOKIE_CONSENT_KEY = 'vivelong_cookie_consent';
 function setCookieConsent(granted){
@@ -5390,7 +5248,6 @@ function _initCookieConsent(){
 
 /* ─── BAŞLAT ─── */
 _initAuth();
-_loadForumPosts();
 _initCookieConsent();
 </script>
 <script>
@@ -5433,6 +5290,342 @@ _initCookieConsent();
     var a=document.createElement('a');a.href=u;a.className='hlink';
     while(h.firstChild)a.appendChild(h.firstChild);h.appendChild(a);
   });
+  // açılış grafiği: "Alışkanlıklarınız" → #aliskanliklar, tüm alışkanlık kartları açık
+  var azHareketH=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('a[data-vp-habits]').forEach(function(a){
+    a.setAttribute('aria-controls','hGrid');
+    a.addEventListener('click',function(e){
+      if(e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+      var sec=document.getElementById('aliskanliklar'),grid=document.getElementById('hGrid');
+      if(!sec)return;
+      e.preventDefault();
+      if(grid&&!grid.classList.contains('expanded')&&typeof toggleMoreHabits==='function')toggleMoreHabits();
+      if(history.replaceState)history.replaceState(null,'','#aliskanliklar');
+      sec.scrollIntoView({behavior:azHareketH?'auto':'smooth',block:'start'});
+      var h=sec.querySelector('h2');
+      if(h){if(!h.hasAttribute('tabindex'))h.setAttribute('tabindex','-1');try{h.focus({preventScroll:true})}catch(_){}}
+    });
+  });
+  // dil menüsü: fareyle/odakla açılır; dokunmatikte tıklayınca; Escape ve dışarı tıklama kapatır
+  var vl=document.getElementById('vlang'),vlBtn=document.getElementById('vlangBtn');
+  if(vl&&vlBtn){
+    var vlSync=function(){
+      var acik=!vl.classList.contains('kapali')&&(vl.classList.contains('open')||vl.matches(':hover')||vl.matches(':focus-within'));
+      vlBtn.setAttribute('aria-expanded',acik?'true':'false');
+    };
+    var vlKapat=function(odak){
+      vl.classList.remove('open');vl.classList.add('kapali');
+      if(odak){try{vlBtn.focus({preventScroll:true})}catch(_){vlBtn.focus()}}
+      vlSync();
+    };
+    vlBtn.addEventListener('click',function(){
+      var acik=vlBtn.getAttribute('aria-expanded')==='true'&&vl.classList.contains('open');
+      if(acik){vlKapat(false);}else{vl.classList.remove('kapali');vl.classList.add('open');vlSync();}
+    });
+    vl.addEventListener('mouseenter',function(){vl.classList.remove('kapali');vlSync()});
+    vl.addEventListener('mouseleave',function(){if(!vl.matches(':focus-within'))vl.classList.remove('kapali');setTimeout(vlSync,0)});
+    vl.addEventListener('focusin',vlSync);
+    vl.addEventListener('focusout',function(e){
+      if(!vl.contains(e.relatedTarget)){vl.classList.remove('open','kapali');}
+      setTimeout(vlSync,0);
+    });
+    vl.addEventListener('keydown',function(e){
+      if(e.key==='Escape')return;
+      if((e.key==='ArrowDown'||e.key==='Enter'||e.key===' ')&&e.target===vlBtn&&vl.classList.contains('kapali')){vl.classList.remove('kapali');vlSync();}
+      else if(e.key==='ArrowDown'||e.key==='ArrowUp'){
+        var l=[].slice.call(vl.querySelectorAll('.vlang-list a')),i=l.indexOf(document.activeElement);
+        if(!l.length)return;e.preventDefault();
+        var n=e.key==='ArrowDown'?(i+1)%l.length:(i<=0?l.length-1:i-1);l[n].focus();
+      }
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key!=='Escape')return;vlSync();
+      if(vlBtn.getAttribute('aria-expanded')==='true'){e.preventDefault();vlKapat(vl.contains(document.activeElement));}
+    });
+    document.addEventListener('click',function(e){if(!vl.contains(e.target)&&(vl.classList.contains('open')||vlBtn.getAttribute('aria-expanded')==='true')){vlKapat(false);}});
+    vlSync();
+  }
+  // 16 faktörlü test: varsayılan kapalı; #hesaplama bağlantıları yerinde açar
+  var test=document.getElementById('hesaplama'),serit=document.querySelector('.vq'),baslik=document.getElementById('hesaplama-baslik');
+  if(test){
+    var azHareket=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var tetik=function(){return document.querySelectorAll('a[href="#hesaplama"]')};
+    var durum=function(acik){tetik().forEach(function(a){
+      if(test.contains(a))return;
+      a.setAttribute('aria-controls','hesaplama');a.setAttribute('aria-expanded',acik?'true':'false');
+    })};
+    var kay=function(el){if(el)el.scrollIntoView({behavior:azHareket?'auto':'smooth',block:'start'})};
+    var ac=function(){
+      if(test.hidden){test.hidden=false;test.classList.add('vt-acik');durum(true);}
+      kay(test);
+      if(baslik){try{baslik.focus({preventScroll:true})}catch(_){baslik.focus()}}
+    };
+    var kapat=function(){
+      test.hidden=true;test.classList.remove('vt-acik');durum(false);
+      if(location.hash==='#hesaplama'&&history.replaceState)history.replaceState(null,'',location.pathname+location.search);
+      kay(serit);
+      var b=serit&&serit.querySelector('a[href="#hesaplama"]');
+      if(b){try{b.focus({preventScroll:true})}catch(_){b.focus()}}
+    };
+    durum(false);
+    document.addEventListener('click',function(e){
+      var a=e.target.closest&&e.target.closest('a[href="#hesaplama"]');
+      if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+      e.preventDefault();
+      if(location.hash!=='#hesaplama'&&history.replaceState)history.replaceState(null,'','#hesaplama');
+      ac();
+    });
+    test.querySelectorAll('[data-vt-kapat]').forEach(function(b){b.addEventListener('click',kapat)});
+    window.addEventListener('hashchange',function(){if(location.hash==='#hesaplama')ac()});
+    if(location.hash==='#hesaplama')ac();
+  }
+})();
+</script>
+<script>
+/* ═══ ÜYE PANELİ (Hesabım) + alışkanlıkların hesaba kaydı ═══
+   Eski kodun içine girmeden, global fonksiyonları sarmalar.
+   habit_logs tablosu yoksa ya da erişilemezse panel tarayıcıdaki geçmişle çalışır. */
+(function(){
+  var DB_OK = null;            // null: denenmedi, true/false: sonuç
+  var syncTimer = null;
+  var cache = { meas:null };
+
+  function isoDay(d){ d=d||new Date(); var m=d.getMonth()+1, g=d.getDate(); return d.getFullYear()+'-'+(m<10?'0':'')+m+'-'+(g<10?'0':'')+g; }
+  function localKey(d){ return 'longeage_done_'+d.toDateString(); }
+  function readLocal(d){ try{ return JSON.parse(localStorage.getItem(localKey(d))||'{}')||{}; }catch(_){ return {}; } }
+  function writeLocal(d,obj){ try{ localStorage.setItem(localKey(d), JSON.stringify(obj)); }catch(_){} }
+  function fmtTR(n){ return String(n).replace('.',','); }
+  function trDate(s,opt){ return new Date(s).toLocaleDateString('tr-TR', opt||{day:'numeric',month:'long'}); }
+  function esc(s){ return (typeof _esc==='function') ? _esc(s) : String(s||''); }
+  function user(){ return (typeof _currentUser!=='undefined') ? _currentUser : null; }
+  function sb(){ return (typeof _sb!=='undefined') ? _sb : null; }
+
+  /* ── Alışkanlıkları hesaba yaz (işaretledikçe) ── */
+  async function pushDay(d, obj){
+    if(!sb() || !user() || DB_OK===false) return;
+    var row = { user_id:user().id, day:isoDay(d), done:Object.keys(obj).filter(function(k){return obj[k];}), updated_at:new Date().toISOString() };
+    var r = await sb().from('habit_logs').upsert(row, { onConflict:'user_id,day' });
+    DB_OK = !r.error;
+  }
+  if(typeof toggleH==='function'){
+    var _eskiToggle = toggleH;
+    window.toggleH = function(id){
+      _eskiToggle(id);
+      clearTimeout(syncTimer);
+      syncTimer = setTimeout(function(){ pushDay(new Date(), (typeof done!=='undefined')?done:readLocal(new Date())); }, 600);
+    };
+  }
+
+  /* ── Giriş yapınca: hesaptaki bugünü tarayıcıyla birleştir, yerel geçmişi hesaba aktar ── */
+  async function loginSync(){
+    if(!sb() || !user()) return;
+    var since = new Date(); since.setDate(since.getDate()-59);
+    var r = await sb().from('habit_logs').select('day,done').eq('user_id',user().id).gte('day',isoDay(since));
+    if(r.error){ DB_OK=false; return; }
+    DB_OK = true;
+    var remote = {}; (r.data||[]).forEach(function(x){ remote[x.day]=x.done||[]; });
+    var ups = [];
+    for(var i=0;i<60;i++){
+      var d = new Date(); d.setDate(d.getDate()-i);
+      var loc = readLocal(d), key = isoDay(d), rem = remote[key]||[];
+      var merged = {}; Object.keys(loc).forEach(function(k){ if(loc[k]) merged[k]=true; }); rem.forEach(function(k){ merged[k]=true; });
+      var mk = Object.keys(merged);
+      if(mk.length !== Object.keys(loc).filter(function(k){return loc[k];}).length) writeLocal(d, merged);
+      if(mk.length && mk.length !== rem.length) ups.push({ user_id:user().id, day:key, done:mk, updated_at:new Date().toISOString() });
+      if(i===0 && typeof done!=='undefined'){ done = merged; if(typeof renderHabits==='function') renderHabits(); }
+    }
+    if(ups.length){ var u = await sb().from('habit_logs').upsert(ups, { onConflict:'user_id,day' }); if(u.error) DB_OK=false; }
+  }
+
+  /* ── Menü: ismin altında panel başlıkları ── */
+  if(typeof _updateNavAuth==='function'){
+    var _eskiNav = _updateNavAuth;
+    window._updateNavAuth = function(){
+      _eskiNav();
+      var dd = document.getElementById('navDrop');
+      if(!dd || !user() || dd.querySelector('.nd-head')) return;
+      var p = (typeof _currentProfile!=='undefined' && _currentProfile) ? _currentProfile : {};
+      var since = p.created_at ? trDate(p.created_at,{month:'long',year:'numeric'}) : '';
+      dd.insertAdjacentHTML('afterbegin',
+        '<div class="nd-head"><b>'+esc(p.display_name||'Üye')+'</b><span>'+(since?'Üye · '+esc(since):'Üye')+'</span></div>'+
+        '<button class="nd-item" type="button" onclick="openHesabim(\'bio\')">Biyolojik yaşım <small id="ndBio"></small></button>'+
+        '<button class="nd-item" type="button" onclick="openHesabim(\'hab\')">Alışkanlıklarım <small id="ndHab"></small></button>'+
+        '<button class="nd-item" type="button" onclick="openHesabim(\'prog\')">Longevity ilerlemem <small id="ndProg"></small></button>'+
+        '<div class="nd-sep" role="separator"></div>');
+      fillNavBadges();
+    };
+  }
+  async function fillNavBadges(){
+    var m = await getMeas(); var h = habitStats();
+    var b=document.getElementById('ndBio'), a=document.getElementById('ndHab'), g=document.getElementById('ndProg');
+    if(b) b.textContent = m.length ? m[m.length-1].bio_age : 'ölç';
+    if(a) a.textContent = h.todayCount+'/'+HABITS.length;
+    if(g) g.textContent = h.streak ? h.streak+' gün seri' : '';
+  }
+
+  /* ── Veri ── */
+  async function getMeas(force){
+    if(cache.meas && !force) return cache.meas;
+    if(!sb() || !user()) return [];
+    var r = await sb().from('measurements').select('bio_age,real_age,diff,created_at').eq('user_id',user().id).order('created_at',{ascending:true}).limit(24);
+    cache.meas = r.error ? [] : (r.data||[]);
+    return cache.meas;
+  }
+  function habitStats(){
+    var days=[], total=HABITS.length;
+    for(var i=29;i>=0;i--){ var d=new Date(); d.setDate(d.getDate()-i); var o=readLocal(d); var ids=Object.keys(o).filter(function(k){return o[k];}); days.push({d:d, n:ids.length, ids:ids}); }
+    var today = days[days.length-1];
+    var streak=0; for(var j=days.length-1;j>=0;j--){ if(days[j].n>0) streak++; else if(j===days.length-1) continue; else break; }
+    var best=0,run=0; days.forEach(function(x){ run = x.n>0 ? run+1 : 0; if(run>best) best=run; });
+    var active=days.filter(function(x){return x.n>0;}).length;
+    var sum=days.reduce(function(a,x){return a+x.n;},0);
+    var pct = Math.round(sum/(30*total)*100);
+    var freq={}; days.forEach(function(x){ x.ids.forEach(function(id){ freq[id]=(freq[id]||0)+1; }); });
+    var top=Object.keys(freq).sort(function(a,b){return freq[b]-freq[a];}).slice(0,3).map(function(id){ var h=HABITS.filter(function(z){return z.id===id;})[0]; return {name:h?h.name:id, n:freq[id]}; });
+    return { days:days, todayCount:today.n, streak:streak, best:best, active:active, pct:pct, top:top, total:total };
+  }
+
+  /* ── Çizim ── */
+  function chartSVG(m){
+    var W=520,H=220,L=40,R=40,T=26,B=34, n=m.length;
+    var vals=m.map(function(x){return x.bio_age;}).concat(m.map(function(x){return x.real_age;}));
+    var lo=Math.floor(Math.min.apply(null,vals)-2), hi=Math.ceil(Math.max.apply(null,vals)+2);
+    function X(i){ return n===1 ? (L+W-R)/2 : L+i*((W-L-R)/(n-1)); }
+    function Y(v){ return T+(hi-v)*((H-T-B)/Math.max(1,hi-lo)); }
+    var g='', ticks=4;
+    for(var k=0;k<=ticks;k++){ var v=Math.round(lo+k*(hi-lo)/ticks); g+='<line class="ax" x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" opacity=".6"/><text class="t" x="'+(L-6)+'" y="'+(Y(v)+3)+'" text-anchor="end">'+v+'</text>'; }
+    var real=m.map(function(x,i){return X(i)+','+Y(x.real_age);}).join(' ');
+    var bio=m.map(function(x,i){return X(i)+','+Y(x.bio_age);}).join(' ');
+    var pts='';
+    m.forEach(function(x,i){ pts+='<circle cx="'+X(i)+'" cy="'+Y(x.bio_age)+'" r="4.5" fill="var(--metal)"/><text class="v" x="'+X(i)+'" y="'+(Y(x.bio_age)-10)+'" text-anchor="middle">'+x.bio_age+'</text><text class="t" x="'+X(i)+'" y="'+(H-12)+'" text-anchor="middle">'+trDate(x.created_at,{day:'numeric',month:'short'})+'</text>'; });
+    return '<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Biyolojik yaş ölçümlerin: '+m.map(function(x){return trDate(x.created_at,{day:'numeric',month:'short'})+' '+x.bio_age;}).join(', ')+'">'+g+
+      (n>1?'<polyline points="'+real+'" fill="none" stroke="var(--text-muted)" stroke-width="1.5" stroke-dasharray="4 4"/>':'')+
+      (n>1?'<polyline points="'+bio+'" fill="none" stroke="var(--metal)" stroke-width="2"/>':'')+pts+'</svg>';
+  }
+
+  function renderBio(m){
+    var el=document.getElementById('uhBio');
+    if(!m.length){
+      el.innerHTML='<div class="uh-card"><p class="uh-empty">Henüz kayıtlı bir ölçümün yok. 16 faktörlü testi bir kez çöz; sonucun hesabına kaydedilir ve buradan değişimini izlersin.</p><div class="uh-btns"><button class="uh-btn" type="button" onclick="uhTesteGit()">Biyolojik yaşımı ölç</button></div></div>';
+      return;
+    }
+    var last=m[m.length-1], first=m[0], next=new Date(new Date(last.created_at).getTime()+30*864e5);
+    var dTxt = last.diff<0 ? '<b class="uh-good">'+Math.abs(last.diff)+' yıl genç</b>' : last.diff>0 ? '<b class="uh-bad">'+last.diff+' yıl yaşlı</b>' : '<b>takvim yaşınla aynı</b>';
+    var ch = m.length>1 ? (last.bio_age-first.bio_age) : null;
+    var due = next <= new Date();
+    el.innerHTML =
+      '<div class="uh-grid"><div class="uh-card">'+
+        '<div class="uh-cap">Son ölçüm · '+trDate(last.created_at)+'</div>'+
+        '<div class="uh-big" style="margin-top:10px"><b>'+last.bio_age+'</b><span>biyolojik yaş<br>takvim yaşından '+dTxt+'</span></div>'+
+        '<div class="uh-rows">'+
+          '<div>Takvim yaşı <b>'+last.real_age+'</b></div>'+
+          '<div>Ölçüm sayısı <b>'+m.length+'</b></div>'+
+          (ch!==null?'<div>İlk ölçümden bu yana <b class="'+(ch<0?'uh-good':ch>0?'uh-bad':'')+'">'+(ch<0?'−'+Math.abs(ch)+' yıl':ch>0?'+'+ch+' yıl':'değişmedi')+'</b></div>':'')+
+          '<div>Sıradaki ölçüm <b>'+(due?'şimdi':trDate(next))+'</b></div>'+
+        '</div>'+
+        '<div class="uh-btns"><button class="uh-btn" type="button" onclick="uhTesteGit()">'+(due?'Yeniden ölç':'Testi aç')+'</button></div>'+
+      '</div><div class="uh-card uh-chart">'+
+        '<div class="uh-cap">Ölçüm geçmişi</div>'+ chartSVG(m)+
+        '<p class="uh-note">Altın çizgi biyolojik yaşın, kesikli çizgi takvim yaşın. Tek ölçüm fazla bir şey söylemez; asıl bilgi 30 günlük aralıklarla gelen değişimde.</p>'+
+      '</div></div>';
+  }
+
+  function renderHab(h){
+    var el=document.getElementById('uhHab');
+    var cells=h.days.map(function(x,i){ var l = x.n===0?0 : x.n<=3?1 : x.n<=7?2 : x.n<=12?3 : 4; return '<i data-l="'+l+'"'+(i===h.days.length-1?' class="today"':'')+' title="'+trDate(x.d,{day:'numeric',month:'long'})+': '+x.n+' alışkanlık"></i>'; }).join('');
+    var top = h.top.length ? '<ul class="uh-top3">'+h.top.map(function(t){return '<li>'+esc(t.name)+'<span>'+t.n+' gün</span></li>';}).join('')+'</ul>' : '<p class="uh-empty">Son 30 günde işaretlenmiş alışkanlık yok.</p>';
+    el.innerHTML =
+      '<div class="uh-stats" style="margin-bottom:22px">'+
+        '<div><b>'+h.todayCount+' / '+h.total+'</b><span>bugün işaretlenen</span></div>'+
+        '<div><b>'+h.streak+'</b><span>günlük seri (en uzun '+h.best+')</span></div>'+
+        '<div><b>%'+h.pct+'</b><span>son 30 günde tamamlama</span></div>'+
+      '</div>'+
+      '<div class="uh-grid"><div class="uh-card">'+
+        '<div class="uh-cap">Son 30 gün</div><div class="uh-heat" role="img" aria-label="Son 30 günde '+h.active+' gün alışkanlık işaretlendi">'+cells+'</div>'+
+        '<div class="uh-legend"><span>30 gün önce</span><span>bugün</span></div>'+
+        '<div class="uh-btns"><button class="uh-btn" type="button" onclick="uhAliskanligaGit()">Bugünü işaretle</button></div>'+
+      '</div><div class="uh-card">'+
+        '<div class="uh-cap">En çok sürdürdüklerin</div>'+top+
+        '<p class="uh-sync" id="uhSync"></p>'+
+      '</div></div>';
+    var sy=document.getElementById('uhSync');
+    if(sy) sy.textContent = DB_OK===true ? 'Alışkanlıkların hesabına kaydediliyor; başka cihazda giriş yaptığında da görünür.' : 'Alışkanlıkların şimdilik bu tarayıcıda saklanıyor.';
+  }
+
+  function renderProg(m,h){
+    var el=document.getElementById('uhProg');
+    var last=m.length?m[m.length-1]:null, first=m.length?m[0]:null;
+    var due = last ? (new Date(last.created_at).getTime()+30*864e5 <= Date.now()) : true;
+    var drop = (m.length>1) ? first.bio_age-last.bio_age : 0;
+    var miles=[
+      {t:'İlk biyolojik yaş ölçümü', ok:m.length>=1, p:m.length>=1?100:0, s:m.length>=1?trDate(first.created_at):'yapılmadı'},
+      {t:'7 günlük alışkanlık serisi', ok:h.best>=7, p:Math.min(100,Math.round(h.best/7*100)), s:Math.min(h.best,7)+' / 7 gün'},
+      {t:'30 gün sonra yeniden ölçüm', ok:m.length>=2, p:m.length>=2?100:(last?Math.min(100,Math.round((Date.now()-new Date(last.created_at).getTime())/(30*864e5)*100)):0), s:m.length>=2?'yapıldı':(last?'sıradaki: '+trDate(new Date(new Date(last.created_at).getTime()+30*864e5)):'önce ilk ölçüm')},
+      {t:'21 gün alışkanlık işaretleme', ok:h.active>=21, p:Math.min(100,Math.round(h.active/21*100)), s:h.active+' / 21 gün (son 30 gün)'},
+      {t:'Biyolojik yaşı 1 yıl düşürmek', ok:drop>=1, p:drop>=1?100:0, s:m.length>1?(drop>0?drop+' yıl düştü':'henüz düşmedi'):'en az iki ölçüm gerekir'}
+    ];
+    var done=miles.filter(function(x){return x.ok;}).length;
+    var next;
+    if(!m.length) next={b:'Önce biyolojik yaşını ölç', p:'Her şey bir başlangıç noktasıyla başlar. Test üç dakika sürer.', btn:'<button class="uh-btn" type="button" onclick="uhTesteGit()">Testi aç</button>'};
+    else if(h.todayCount===0) next={b:'Bugünün alışkanlıklarını işaretle', p:'Seriyi sürdürmenin en kolay yolu akşam tek bir kez işaretlemek.', btn:'<button class="uh-btn" type="button" onclick="uhAliskanligaGit()">Alışkanlıklara git</button>'};
+    else if(due) next={b:'Yeniden ölçme zamanı', p:'Son ölçümünün üzerinden 30 gün geçti. Değişimi görmek için testi tekrar çöz.', btn:'<button class="uh-btn" type="button" onclick="uhTesteGit()">Yeniden ölç</button>'};
+    else next={b:'Seriyi sürdür', p:'Bugün '+h.todayCount+' alışkanlık işaretledin. Bir sonraki ölçüme kadar düzenli işaretlemek değişimi görmeni kolaylaştırır.', btn:'<a class="uh-btn line" href="/blog/biyolojik-yasi-dusurmek/">Biyolojik yaşı düşürmek: 10 yöntem</a>'};
+    el.innerHTML =
+      '<div class="uh-grid"><div class="uh-card">'+
+        '<div class="uh-cap">Hedefler · '+done+' / '+miles.length+'</div>'+
+        '<ul class="uh-miles">'+miles.map(function(x){return '<li class="'+(x.ok?'ok':'')+'"><i aria-hidden="true">'+(x.ok?'✓':'')+'</i><span>'+x.t+'</span><small>'+x.s+'</small><div class="bar"><span style="width:'+x.p+'%"></span></div></li>';}).join('')+'</ul>'+
+      '</div><div class="uh-card">'+
+        '<div class="uh-cap">Sıradaki adım</div>'+
+        '<div class="uh-next"><b>'+next.b+'</b><p>'+next.p+'</p>'+next.btn+'</div>'+
+        '<p class="uh-note">Bu panel tıbbi bir değerlendirme değildir; ölçüm ve alışkanlıkların, araştırma literatürüne dayalı tahminlerdir.</p>'+
+      '</div></div>';
+  }
+
+  /* ── Panel aç/kapat ── */
+  window.openHesabim = async function(bolum){
+    var dd=document.getElementById('navDrop'); if(dd) dd.classList.remove('open');
+    if(!user()){ if(typeof openAuth==='function') openAuth('register'); return; }
+    var p=(typeof _currentProfile!=='undefined'&&_currentProfile)?_currentProfile:{};
+    document.getElementById('uhName').textContent = (p.display_name||'üye').split(' ')[0];
+    document.getElementById('uhSince').textContent = p.created_at ? 'Üye · '+trDate(p.created_at,{month:'long',year:'numeric'}) : 'Üye';
+    openZone('hesabim');
+    var h=habitStats(); renderHab(h);
+    var m=await getMeas(true); renderBio(m); renderProg(m,h);
+    var hedef=document.getElementById('uh-'+(bolum||'bio')); var zp=document.getElementById('zp-hesabim');
+    if(hedef && zp) zp.scrollTo({ top: Math.max(0, hedef.offsetTop-64), behavior: (matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth') });
+    document.querySelectorAll('.uh-tabs a').forEach(function(a){ a.setAttribute('aria-current', a.getAttribute('data-uh')===(bolum||'bio')?'true':'false'); });
+  };
+  document.addEventListener('click', function(e){
+    var a=e.target.closest('.uh-tabs a'); if(!a) return; e.preventDefault();
+    var id=a.getAttribute('href').slice(1), zp=document.getElementById('zp-hesabim'), t=document.getElementById(id);
+    if(zp&&t) zp.scrollTo({ top: Math.max(0,t.offsetTop-64), behavior:'smooth' });
+    document.querySelectorAll('.uh-tabs a').forEach(function(x){ x.setAttribute('aria-current', x===a?'true':'false'); });
+  });
+  window.uhTesteGit = function(){
+    closeZone('hesabim');
+    var a=document.querySelector('a[href="#hesaplama"]');
+    if(a) a.click(); else location.hash='#hesaplama';
+  };
+  window.uhAliskanligaGit = function(){
+    closeZone('hesabim');
+    var s=document.getElementById('aliskanliklar'); if(!s) return;
+    var g=document.getElementById('hGrid'); if(g && !g.classList.contains('expanded') && typeof toggleMoreHabits==='function') toggleMoreHabits();
+    s.scrollIntoView({ behavior:'smooth', block:'start' });
+  };
+  // Ölçüm kaydedilince panel önbelleğini tazele
+  if(typeof _saveMeasurementForUser==='function'){
+    var _eskiKayit=_saveMeasurementForUser;
+    window._saveMeasurementForUser = async function(m,box){ await _eskiKayit(m,box); cache.meas=null; fillNavBadges(); };
+  }
+
+  /* ── Oturum olaylarına bağlan ── */
+  if(sb()){
+    sb().auth.onAuthStateChange(function(ev,sess){
+      if(sess && sess.user && (ev==='SIGNED_IN' || ev==='INITIAL_SESSION')){ cache.meas=null; setTimeout(function(){ loginSync().then(fillNavBadges); }, 0); }
+      if(!sess){ cache.meas=null; DB_OK=null; }
+    });
+  }
+  if(user()){ _updateNavAuth(); loginSync().then(fillNavBadges); }
 })();
 </script>
 </body>

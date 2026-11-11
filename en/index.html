@@ -746,95 +746,6 @@
     .nav-drop-item{display:flex;align-items:center;gap:8px;padding:10px 14px;font-size:13px;color:var(--text);cursor:pointer;transition:background .15s;border:none;background:none;font-family:'Raleway',sans-serif;width:100%;text-align:left;}
     .nav-drop-item:hover{background:var(--bg);}
     .nav-drop-item.danger{color:#DC2626;}
-    /* ── FORUM SECTION ── */
-    #forum{background:var(--surface);}
-    .forum-preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px;}
-    @media(max-width:860px){.forum-preview-grid{grid-template-columns:1fr;}}
-    .fp-card{background:var(--bg);border:1.5px solid var(--border-light);border-radius:var(--radius-sm);padding:16px;cursor:pointer;transition:all .2s;}
-    .fp-card:hover{border-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow);}
-    .fp-cat-badge{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--primary-light);background:var(--pale);padding:2px 8px;border-radius:5px;margin-bottom:8px;}
-    .fp-title{font-family:'Lora',serif;font-size:15px;color:var(--primary);font-weight:600;margin-bottom:5px;line-height:1.3;}
-    .fp-meta{font-size:11px;color:var(--text-muted);display:flex;align-items:center;gap:8px;margin-top:8px;}
-    .fp-vote-count{display:flex;align-items:center;gap:3px;font-weight:600;color:var(--primary-light);}
-    .stars-wrap{background:linear-gradient(135deg,#1A4731 0%,#2D6A4F 100%);border-radius:var(--radius);padding:28px;margin-top:36px;}
-    .stars-hdr{font-family:'Lora',serif;font-size:20px;color:#fff;margin-bottom:6px;display:flex;align-items:center;gap:8px;}
-    .stars-sub{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:20px;}
-    .stars-list{display:flex;flex-direction:column;gap:10px;}
-    .star-row{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.08);border-radius:10px;padding:11px 14px;}
-    .star-rank{font-family:'Lora',serif;font-size:20px;font-weight:700;color:var(--gold-light);width:26px;flex-shrink:0;text-align:center;}
-    .star-av{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-    .star-info{flex:1;}
-    .star-name{font-size:14px;font-weight:600;color:#fff;}
-    .star-pts{font-size:11px;color:rgba(255,255,255,.6);margin-top:1px;}
-    .star-badge-gold{background:var(--gold);color:var(--primary);font-size:10px;font-weight:700;padding:3px 9px;border-radius:100px;flex-shrink:0;}
-    .forum-section-cta{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:32px;flex-wrap:wrap;}
-    /* ── FORUM ZONE ── */
-    #zp-forum .zp-hero{background:linear-gradient(145deg,#1A4731 0%,#2D6A4F 100%);}
-    .forum-z-layout{display:grid;grid-template-columns:200px 1fr;gap:24px;max-width:1000px;margin:0 auto;padding:28px 20px 80px;}
-    @media(max-width:680px){.forum-z-layout{grid-template-columns:1fr;}}
-    .forum-cats-box{background:var(--surface);border:1.5px solid var(--border-light);border-radius:var(--radius-sm);overflow:hidden;height:fit-content;}
-    .fcat{padding:11px 14px;font-size:13px;font-weight:500;color:var(--text-mid);cursor:pointer;transition:all .15s;border-left:3px solid transparent;border-bottom:1px solid var(--border-light);display:flex;align-items:center;justify-content:space-between;}
-    .fcat:last-child{border-bottom:none;}
-    .fcat:hover{color:var(--primary);border-left-color:var(--primary-light);background:var(--bg);}
-    .fcat.active{color:var(--primary);border-left-color:var(--primary);background:var(--pale);font-weight:700;}
-    .fcat-count{font-size:10px;font-weight:700;color:var(--text-muted);background:var(--bg2);padding:2px 7px;border-radius:100px;}
-    .forum-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;gap:10px;flex-wrap:wrap;}
-    .forum-bar-title{font-family:'Lora',serif;font-size:17px;color:var(--primary);font-weight:600;}
-    .new-post-btn{background:var(--primary);color:#fff;border:none;border-radius:10px;padding:9px 16px;font-family:'Raleway',sans-serif;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all .2s;}
-    .new-post-btn:hover{background:var(--primary-mid);}
-    .f-posts{display:flex;flex-direction:column;gap:12px;}
-    .fpost{background:var(--surface);border:1.5px solid var(--border-light);border-radius:var(--radius-sm);padding:14px 16px;transition:all .2s;}
-    .fpost:hover{border-color:var(--border);box-shadow:var(--shadow);}
-    .fpost-inner{display:flex;gap:12px;}
-    .fvote{display:flex;flex-direction:column;align-items:center;gap:3px;flex-shrink:0;padding-top:2px;}
-    .fvote-btn{background:none;border:1.5px solid var(--border);border-radius:7px;width:32px;height:28px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .18s;color:var(--text-muted);}
-    .fvote-btn:hover{border-color:var(--primary-light);color:var(--primary);background:var(--pale);}
-    .fvote-btn.voted{background:var(--primary);border-color:var(--primary);color:#fff;}
-    .fvote-n{font-family:'Lora',serif;font-size:14px;font-weight:700;color:var(--primary);}
-    .fpost-body{flex:1;min-width:0;}
-    .fpost-cat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--primary-light);background:var(--pale);padding:2px 8px;border-radius:5px;display:inline-block;margin-bottom:6px;}
-    .fpost-title{font-family:'Lora',serif;font-size:15px;color:var(--primary);font-weight:600;cursor:pointer;margin-bottom:5px;}
-    .fpost-title:hover{color:var(--primary-mid);}
-    .fpost-text{font-size:13px;color:var(--text-mid);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-    .fpost-footer{display:flex;align-items:center;gap:10px;margin-top:9px;padding-top:9px;border-top:1px solid var(--border-light);}
-    .fpost-av{width:20px;height:20px;border-radius:50%;background:var(--primary-light);color:#fff;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-    .fpost-author{font-size:11px;color:var(--text-muted);}
-    .fpost-date{font-size:11px;color:var(--text-muted);margin-left:auto;}
-    .f-empty{text-align:center;padding:50px 20px;color:var(--text-muted);}
-    .f-loading{text-align:center;padding:30px;color:var(--text-muted);font-size:13px;}
-    /* ── NEW POST MODAL ── */
-    .np-overlay{position:fixed;inset:0;z-index:1500;background:rgba(0,0,0,.55);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .25s;}
-    .np-overlay.open{opacity:1;pointer-events:all;}
-    .np-box{background:#fff;border-radius:20px;width:100%;max-width:540px;padding:30px;position:relative;transform:translateY(16px);transition:transform .25s;max-height:90vh;overflow-y:auto;}
-    .np-overlay.open .np-box{transform:translateY(0);}
-    .np-box h3{font-family:'Lora',serif;font-size:18px;color:var(--primary);margin-bottom:18px;}
-    .np-form{display:flex;flex-direction:column;gap:13px;}
-    .np-label{font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:4px;}
-    .np-input,.np-select,.np-textarea{width:100%;padding:10px 13px;border:1.5px solid var(--border);border-radius:10px;font-family:'Raleway',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border .2s;}
-    .np-input:focus,.np-select:focus,.np-textarea:focus{border-color:var(--primary-light);}
-    .np-textarea{resize:vertical;min-height:100px;}
-    .np-btns{display:flex;gap:10px;margin-top:4px;}
-    .np-cancel{flex:1;padding:10px;border:1.5px solid var(--border);border-radius:10px;background:#fff;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;color:var(--text-mid);cursor:pointer;}
-    .np-submit{flex:2;background:var(--primary);color:#fff;border:none;border-radius:10px;padding:10px;font-family:'Raleway',sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:all .2s;}
-    .np-submit:hover{background:var(--primary-mid);}
-    .np-submit:disabled{opacity:.6;cursor:not-allowed;}
-    .np-err{background:#FEF2F2;color:#DC2626;border:1px solid #FECACA;border-radius:8px;padding:9px 12px;font-size:12px;display:none;}
-    .np-err.show{display:block;}
-    /* ── POST DETAIL MODAL ── */
-    .pd-overlay{position:fixed;inset:0;z-index:1500;background:rgba(0,0,0,.55);backdrop-filter:blur(5px);display:flex;align-items:flex-start;justify-content:center;padding:40px 20px;opacity:0;pointer-events:none;transition:opacity .25s;overflow-y:auto;}
-    .pd-overlay.open{opacity:1;pointer-events:all;}
-    .pd-box{background:#fff;border-radius:20px;width:100%;max-width:620px;padding:28px;position:relative;transform:translateY(16px);transition:transform .25s;}
-    .pd-overlay.open .pd-box{transform:translateY(0);}
-    .pd-close{position:absolute;top:14px;right:14px;background:none;border:none;cursor:pointer;color:var(--text-muted);padding:6px;border-radius:6px;line-height:0;}
-    .pd-close:hover{background:var(--bg);}
-    .pd-cat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--primary-light);background:var(--pale);padding:3px 10px;border-radius:5px;display:inline-block;margin-bottom:10px;}
-    .pd-title{font-family:'Lora',serif;font-size:21px;color:var(--primary);margin-bottom:14px;line-height:1.3;}
-    .pd-content{font-size:14px;color:var(--text-mid);line-height:1.8;white-space:pre-wrap;}
-    .pd-footer{display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:14px;border-top:1.5px solid var(--border-light);flex-wrap:wrap;}
-    .pd-vote-btn{display:flex;align-items:center;gap:7px;background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:8px 14px;cursor:pointer;font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;color:var(--text-mid);transition:all .2s;}
-    .pd-vote-btn:hover{border-color:var(--primary-light);color:var(--primary);}
-    .pd-vote-btn.voted{background:var(--primary);border-color:var(--primary);color:#fff;}
-    .pd-author-info{font-size:12px;color:var(--text-muted);margin-left:auto;}
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 </head>
@@ -854,7 +765,6 @@
     <li><a href="#paradoks">Gender</a></li>
     <li><a href="#direkleri">4 Pillars</a></li>
     <li><a href="#blog">Blog</a></li>
-    <li><a href="#forum">Forum</a></li>
     <li><a href="#uyelik" class="nav-pro">Pro</a></li>
     <li><a href="#hesaplama" class="nav-cta">Start</a></li>
   </ul>
@@ -4319,39 +4229,6 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     COMMUNITY FORUM
-══════════════════════════════════════════════════ -->
-<section id="forum">
-  <div class="si">
-    <span class="stag">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="13" height="13"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-      Community
-    </span>
-    <h2 class="stit">Vivelong Forum</h2>
-    <p class="ssub">Share your experience, ask questions, and learn from the community's wisdom.</p>
-
-    <div class="forum-preview-grid" id="forumPreviewGrid">
-      <div class="fp-card" style="cursor:default;grid-column:1/-1;text-align:center;color:var(--text-muted);">
-        <div class="f-loading">Loading forum…</div>
-      </div>
-    </div>
-
-    <div class="stars-wrap">
-      <div class="stars-hdr">⭐ Members of the Month</div>
-      <div class="stars-sub" id="starsMonth"></div>
-      <div class="stars-list" id="starsList">
-        <div class="f-loading" style="color:rgba(255,255,255,.5);">Loading…</div>
-      </div>
-    </div>
-
-    <div class="forum-section-cta">
-      <button class="btn btn-gold" onclick="openForumZone()">Join the Forum →</button>
-      <p style="font-size:13px;color:var(--text-muted);">Membership is required to join the forum and post.</p>
-    </div>
-  </div>
-</section>
-
 <!-- ══ FOOTER ══ -->
 <footer>
   <div class="flogo">Vivelong</div>
@@ -4363,117 +4240,14 @@
     <a href="#mavi-bolgeler">Blue Zones</a>
     <a href="#paradoks">Gender</a>
     <a href="#direkleri">4 Pillars</a>
-    <a href="#forum">Forum</a>
     <a href="#uyelik">Pro Membership</a>
     <a href="/en/what-is-longevity/">What Is Longevity?</a>
     <a href="/en/about/">About Us</a>
   </div>
   <div class="fcopy">Contact: <a href="tel:+905423548668">+90 542 354 86 68</a> · © 2026 Vivelong · Built to make longevity science accessible to everyone. · <a href="#" onclick="openKvkk(event)" style="color:inherit;text-decoration:underline;">Privacy Notice</a></div>
+  <div style="text-align:center;font-size:11px;opacity:.5;margin-top:8px">Web &amp; digital: <a href="https://digikeyword.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">DigiKeyword</a></div>
   <div class="fdisc">This app is for informational purposes only. It is not a substitute for clinical diagnosis or treatment. Consult a qualified physician for health decisions. Biological age calculations are estimates based on research literature.</div>
 </footer>
-
-<!-- ══ FORUM ZONE PAGE ══ -->
-<div class="zone-page" id="zp-forum">
-  <div class="zp-topbar">
-    <div class="zp-topbar-left">
-      <a class="zp-home-logo" href="#" onclick="goHome()">
-        <svg viewBox="0 0 32 32" fill="none" width="26" height="26"><circle cx="16" cy="16" r="15" fill="#1A4731"/><path d="M9 18c1.5-4 4-7 7-8.5C19 11 21.5 14 23 18" stroke="#74C69D" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M16 9.5v14M9 18h14" stroke="#D4A847" stroke-width="1.4" stroke-linecap="round" opacity="0.6"/><circle cx="16" cy="9" r="2.5" fill="#74C69D"/></svg>
-      </a>
-      <button class="zp-back" onclick="closeZone('zp-forum')">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
-        Back
-      </button>
-    </div>
-    <span class="zp-crumb">Community Forum</span>
-  </div>
-
-  <div class="zp-hero">
-    <div class="zp-hero-inner">
-      <span class="zp-emoji">💬</span>
-      <h2>Community Forum</h2>
-      <span class="zp-tag">Share your experience · Ask questions · Learn together</span>
-    </div>
-  </div>
-
-  <div class="forum-z-layout">
-    <!-- Categories -->
-    <div>
-      <div class="forum-cats-box">
-        <div class="fcat active" onclick="filterForumCat('tumu',this)">All <span class="fcat-count" id="catCountTumu">0</span></div>
-        <div class="fcat" onclick="filterForumCat('deneyimler',this)">Experiences <span class="fcat-count" id="catCountDeneyimler">0</span></div>
-        <div class="fcat" onclick="filterForumCat('beslenme',this)">Nutrition <span class="fcat-count" id="catCountBeslenme">0</span></div>
-        <div class="fcat" onclick="filterForumCat('egzersiz',this)">Exercise <span class="fcat-count" id="catCountEgzersiz">0</span></div>
-        <div class="fcat" onclick="filterForumCat('uyku',this)">Sleep <span class="fcat-count" id="catCountUyku">0</span></div>
-        <div class="fcat" onclick="filterForumCat('sorucevap',this)">Q & A <span class="fcat-count" id="catCountSorucevap">0</span></div>
-      </div>
-    </div>
-    <!-- Posts -->
-    <div>
-      <div class="forum-bar">
-        <span class="forum-bar-title" id="forumCatTitle">All Posts</span>
-        <button class="new-post-btn" onclick="openNewPost()">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          New Post
-        </button>
-      </div>
-      <div class="f-posts" id="forumPostsList">
-        <div class="f-loading">Loading posts…</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══ NEW POST MODAL ══ -->
-<div class="np-overlay" id="npOverlay" onclick="if(event.target===this)closeNewPost()">
-  <div class="np-box">
-    <h3>✍️ Create New Post</h3>
-    <form class="np-form" onsubmit="submitNewPost(event)">
-      <div class="np-err" id="npErr"></div>
-      <div>
-        <label class="np-label" for="npCat">Category</label>
-        <select class="np-select" id="npCat" required>
-          <option value="">Select…</option>
-          <option value="deneyimler">Experiences</option>
-          <option value="beslenme">Nutrition</option>
-          <option value="egzersiz">Exercise</option>
-          <option value="uyku">Sleep</option>
-          <option value="sorucevap">Q & A</option>
-        </select>
-      </div>
-      <div>
-        <label class="np-label" for="npTitle">Title</label>
-        <input class="np-input" type="text" id="npTitle" placeholder="Your post's title" required maxlength="120">
-      </div>
-      <div>
-        <label class="np-label" for="npContent">Content</label>
-        <textarea class="np-textarea" id="npContent" placeholder="Write your experience, knowledge or question here…" required minlength="20"></textarea>
-      </div>
-      <div class="np-btns">
-        <button type="button" class="np-cancel" onclick="closeNewPost()">Cancel</button>
-        <button type="submit" class="np-submit" id="npSubmitBtn">Post</button>
-      </div>
-    </form>
-  </div>
-</div>
-
-<!-- ══ POST DETAIL MODAL ══ -->
-<div class="pd-overlay" id="pdOverlay" onclick="if(event.target===this)closePdOverlay()">
-  <div class="pd-box">
-    <button class="pd-close" onclick="closePdOverlay()">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <div class="pd-cat" id="pdCat"></div>
-    <div class="pd-title" id="pdTitle"></div>
-    <div class="pd-content" id="pdContent"></div>
-    <div class="pd-footer">
-      <button class="pd-vote-btn" id="pdVoteBtn" onclick="togglePdVote()">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
-        <span id="pdVoteCount">0</span> Like
-      </button>
-      <div class="pd-author-info" id="pdAuthorInfo"></div>
-    </div>
-  </div>
-</div>
 
 <script>
 /* ═══ STATE ═══ */
@@ -4957,7 +4731,7 @@ function fabSend() {
 }
 
 /* ══════════════════════════════════════════════
-   SUPABASE + AUTH + MEASUREMENTS + FORUM
+   SUPABASE + AUTH + MEASUREMENTS
    The anon key is public by design — data is protected by RLS policies.
 ══════════════════════════════════════════════ */
 const SUPABASE_URL = 'https://mdpynseovqlbfipbegij.supabase.co';
@@ -4969,18 +4743,7 @@ const _sb = (window.supabase && SUPABASE_URL.includes('supabase.co') && !SUPABAS
 /* ─── STATE ─── */
 let _currentUser = null;
 let _currentProfile = null;
-let _forumPosts = [];
-let _currentCat = 'tumu';
-let _pdPostId = null;
-let _userVotes = new Set();
-
-const _CAT_LABELS = {
-  tumu:'All Posts', deneyimler:'Experiences', beslenme:'Nutrition',
-  egzersiz:'Exercise', uyku:'Sleep', sorucevap:'Q & A'
-};
-
 function _esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-function _fmtDate(iso){ const d=new Date(iso); return d.toLocaleDateString('en-US',{day:'numeric',month:'long',year:'numeric'}); }
 
 /* ─── AUTH INIT ─── */
 async function _initAuth(){
@@ -5018,7 +4781,6 @@ function _updateNavAuth(){
         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
       <div class="nav-drop" id="navDrop">
-        <button class="nav-drop-item" onclick="openForumZone()">💬 Forum</button>
         <button class="nav-drop-item danger" onclick="doLogout()">Log Out</button>
       </div>
     </div>`;
@@ -5072,8 +4834,6 @@ async function doLogin(e){
     closeAuth();
     _showToast('Welcome! 🎉');
     await _flushPendingMeasurement();
-    await _loadForumPosts();
-    _loadUserVotes();
   }
 }
 
@@ -5111,7 +4871,6 @@ async function doRegister(e){
 
   _authMsg('registerMsg','ok','Registration successful! Welcome. 🎉');
   await _flushPendingMeasurement();
-  await _loadForumPosts();
   setTimeout(closeAuth, 2000);
 }
 
@@ -5342,253 +5101,6 @@ function _showToast(msg){
   t._t=setTimeout(()=>{ t.style.opacity='0'; }, 2600);
 }
 
-/* ─── FORUM ZONE ─── */
-function openForumZone(){
-  if(!_currentUser){ openAuth('login'); return; }
-  openZone('forum');
-  _loadForumPosts();
-  _loadUserVotes();
-}
-
-async function _loadUserVotes(){
-  if(!_sb||!_currentUser) return;
-  const {data} = await _sb.from('post_votes').select('post_id').eq('user_id',_currentUser.id);
-  _userVotes = new Set((data||[]).map(v=>v.post_id));
-}
-
-async function _loadForumPosts(){
-  if(!_sb){ _renderForumPreviewFallback(); _renderStarsFallback(); return; }
-  const {data,error} = await _sb
-    .from('forum_posts')
-    .select('id,category,title,content,vote_count,created_at,profiles(display_name)')
-    .order('created_at',{ascending:false})
-    .limit(60);
-  if(error){ console.error(error); return; }
-  _forumPosts = data||[];
-  _renderForumPosts();
-  _renderForumPreview();
-  _updateCatCounts();
-  _renderMonthlyStars();
-}
-
-function _renderForumPreviewFallback(){
-  const c=document.getElementById('forumPreviewGrid');
-  if(c) c.innerHTML=`<div class="fp-card" style="grid-column:1/-1;text-align:center;cursor:default;color:var(--text-muted);padding:30px 20px;"><div style="font-size:36px;margin-bottom:10px;">💬</div><p>To view the forum, please <strong>log in</strong> or <strong>sign up</strong>.</p></div>`;
-}
-function _renderStarsFallback(){
-  const c=document.getElementById('starsList');
-  if(c) c.innerHTML=`<p style="color:rgba(255,255,255,.45);font-size:13px;text-align:center;padding:12px 0;">Log in to see this month's top members.</p>`;
-  const m=document.getElementById('starsMonth');
-  if(m) m.textContent="This month's most active members";
-}
-
-function filterForumCat(cat, el){
-  _currentCat=cat;
-  document.querySelectorAll('.fcat').forEach(c=>c.classList.remove('active'));
-  if(el) el.classList.add('active');
-  const title=document.getElementById('forumCatTitle');
-  if(title) title.textContent=_CAT_LABELS[cat]||cat;
-  _renderForumPosts();
-}
-
-function _filteredPosts(){
-  return _currentCat==='tumu' ? _forumPosts : _forumPosts.filter(p=>p.category===_currentCat);
-}
-
-function _updateCatCounts(){
-  const counts={tumu:_forumPosts.length,deneyimler:0,beslenme:0,egzersiz:0,uyku:0,sorucevap:0};
-  _forumPosts.forEach(p=>{ if(counts[p.category]!==undefined) counts[p.category]++; });
-  Object.entries(counts).forEach(([k,v])=>{
-    const el=document.getElementById('catCount'+k.charAt(0).toUpperCase()+k.slice(1));
-    if(el) el.textContent=v;
-  });
-}
-
-function _renderForumPosts(){
-  const container=document.getElementById('forumPostsList');
-  if(!container) return;
-  const posts=_filteredPosts();
-  if(posts.length===0){
-    container.innerHTML=`<div class="f-empty"><div style="font-size:40px;margin-bottom:12px;">📝</div><p>No posts in this category yet.<br>Be the first to write one!</p></div>`;
-    return;
-  }
-  container.innerHTML=posts.map(p=>{
-    const voted=_userVotes.has(p.id);
-    const initials=(p.profiles?.display_name||'U').substring(0,2).toUpperCase();
-    const name=p.profiles?.display_name||'Anonymous';
-    return `<div class="fpost">
-      <div class="fpost-inner">
-        <div class="fvote">
-          <button class="fvote-btn${voted?' voted':''}" onclick="toggleVote('${p.id}',this)">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
-          </button>
-          <span class="fvote-n" id="vn-${p.id}">${p.vote_count||0}</span>
-        </div>
-        <div class="fpost-body">
-          <span class="fpost-cat">${_CAT_LABELS[p.category]||p.category}</span>
-          <div class="fpost-title" onclick="openPostDetail('${p.id}')">${_esc(p.title)}</div>
-          <div class="fpost-text">${_esc(p.content)}</div>
-          <div class="fpost-footer">
-            <div class="fpost-av">${initials}</div>
-            <span class="fpost-author">${_esc(name)}</span>
-            <span class="fpost-date">${_fmtDate(p.created_at)}</span>
-          </div>
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-}
-
-function _renderForumPreview(){
-  const container=document.getElementById('forumPreviewGrid');
-  if(!container) return;
-  const top=_forumPosts.slice(0,3);
-  if(top.length===0){ _renderForumPreviewFallback(); return; }
-  container.innerHTML=top.map(p=>{
-    const name=p.profiles?.display_name||'Anonymous';
-    return `<div class="fp-card" onclick="openForumZone()">
-      <span class="fp-cat-badge">${_CAT_LABELS[p.category]||p.category}</span>
-      <div class="fp-title">${_esc(p.title)}</div>
-      <div style="font-size:12px;color:var(--text-muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">${_esc(p.content)}</div>
-      <div class="fp-meta"><span>${_esc(name)}</span><span class="fp-vote-count">▲ ${p.vote_count||0}</span></div>
-    </div>`;
-  }).join('');
-}
-
-async function _renderMonthlyStars(){
-  const container=document.getElementById('starsList');
-  const monthEl=document.getElementById('starsMonth');
-  const now=new Date();
-  const monthName=now.toLocaleDateString('en-US',{month:'long',year:'numeric'});
-  if(monthEl) monthEl.textContent="Most active members in "+monthName;
-  if(!container) return;
-  if(!_sb){ _renderStarsFallback(); return; }
-
-  const startOfMonth=new Date(now.getFullYear(),now.getMonth(),1).toISOString();
-  const {data} = await _sb.from('forum_posts')
-    .select('user_id,vote_count,profiles(display_name)')
-    .gte('created_at',startOfMonth);
-
-  if(!data||data.length===0){
-    container.innerHTML=`<p style="color:rgba(255,255,255,.45);font-size:13px;text-align:center;padding:12px 0;">No contributions yet this month. Be the first star!</p>`;
-    return;
-  }
-  const totals={};
-  data.forEach(p=>{
-    const uid=p.user_id;
-    if(!totals[uid]) totals[uid]={name:p.profiles?.display_name||'Anonymous',pts:0};
-    totals[uid].pts+=(p.vote_count||0);
-  });
-  const sorted=Object.values(totals).sort((a,b)=>b.pts-a.pts).slice(0,3);
-  const medals=['🥇','🥈','🥉'];
-  container.innerHTML=sorted.map((u,i)=>`
-    <div class="star-row">
-      <div class="star-rank">${medals[i]}</div>
-      <div class="star-av">${u.name.substring(0,2).toUpperCase()}</div>
-      <div class="star-info">
-        <div class="star-name">${_esc(u.name)}</div>
-        <div class="star-pts">${u.pts} likes · ${monthName}</div>
-      </div>
-      ${i===0?'<span class="star-badge-gold">Member of the Month ⭐</span>':''}
-    </div>`).join('');
-}
-
-/* ─── OY/BEĞENİ ─── */
-async function toggleVote(postId, btn){
-  if(!_currentUser){ openAuth('login'); return; }
-  if(!_sb) return;
-  const voted=_userVotes.has(postId);
-  const countEl=document.getElementById('vn-'+postId);
-  const cur=parseInt(countEl?.textContent||'0');
-  if(voted){
-    _userVotes.delete(postId);
-    btn.classList.remove('voted');
-    if(countEl) countEl.textContent=Math.max(0,cur-1);
-    await _sb.from('post_votes').delete().eq('post_id',postId).eq('user_id',_currentUser.id);
-  } else {
-    _userVotes.add(postId);
-    btn.classList.add('voted');
-    if(countEl) countEl.textContent=cur+1;
-    await _sb.from('post_votes').insert({post_id:postId,user_id:_currentUser.id});
-  }
-  const pi=_forumPosts.findIndex(p=>p.id===postId);
-  if(pi>=0) _forumPosts[pi].vote_count=parseInt(countEl?.textContent||'0');
-}
-
-/* ─── YENİ YAZI ─── */
-function openNewPost(){
-  if(!_currentUser){ openAuth('login'); return; }
-  document.getElementById('npOverlay').classList.add('open');
-}
-function closeNewPost(){
-  document.getElementById('npOverlay').classList.remove('open');
-  document.getElementById('npErr').classList.remove('show');
-  document.getElementById('npTitle').value='';
-  document.getElementById('npContent').value='';
-  document.getElementById('npCat').value='';
-}
-async function submitNewPost(e){
-  e.preventDefault();
-  if(!_sb||!_currentUser) return;
-  const cat=document.getElementById('npCat').value;
-  const title=document.getElementById('npTitle').value.trim();
-  const content=document.getElementById('npContent').value.trim();
-  const errEl=document.getElementById('npErr');
-  const btn=document.getElementById('npSubmitBtn');
-  if(!cat||!title||!content){ errEl.textContent='Please fill in all fields.'; errEl.classList.add('show'); return; }
-  btn.disabled=true; btn.textContent='Posting…';
-  const {error}=await _sb.from('forum_posts').insert({
-    user_id:_currentUser.id, category:cat, title:title, content:content, vote_count:0
-  });
-  btn.disabled=false; btn.textContent='Post';
-  if(error){ errEl.textContent='Error: '+error.message; errEl.classList.add('show'); return; }
-  closeNewPost();
-  await _loadForumPosts();
-  _showToast('Your post has been shared! 🎉');
-}
-
-/* ─── YAZI DETAY ─── */
-function openPostDetail(postId){
-  const post=_forumPosts.find(p=>p.id===postId);
-  if(!post) return;
-  _pdPostId=postId;
-  document.getElementById('pdCat').textContent=_CAT_LABELS[post.category]||post.category;
-  document.getElementById('pdTitle').textContent=post.title;
-  document.getElementById('pdContent').textContent=post.content;
-  document.getElementById('pdVoteCount').textContent=post.vote_count||0;
-  const name=post.profiles?.display_name||'Anonymous';
-  document.getElementById('pdAuthorInfo').textContent=name+' · '+_fmtDate(post.created_at);
-  document.getElementById('pdVoteBtn').classList.toggle('voted',_userVotes.has(postId));
-  document.getElementById('pdOverlay').classList.add('open');
-}
-function closePdOverlay(){
-  document.getElementById('pdOverlay').classList.remove('open');
-  _pdPostId=null;
-}
-async function togglePdVote(){
-  if(!_pdPostId) return;
-  if(!_currentUser){ openAuth('login'); return; }
-  const voted=_userVotes.has(_pdPostId);
-  const countEl=document.getElementById('pdVoteCount');
-  const cur=parseInt(countEl?.textContent||'0');
-  const pdBtn=document.getElementById('pdVoteBtn');
-  if(voted){
-    _userVotes.delete(_pdPostId);
-    pdBtn.classList.remove('voted');
-    if(countEl) countEl.textContent=Math.max(0,cur-1);
-    await _sb.from('post_votes').delete().eq('post_id',_pdPostId).eq('user_id',_currentUser.id);
-  } else {
-    _userVotes.add(_pdPostId);
-    pdBtn.classList.add('voted');
-    if(countEl) countEl.textContent=cur+1;
-    await _sb.from('post_votes').insert({post_id:_pdPostId,user_id:_currentUser.id});
-  }
-  const vn=document.getElementById('vn-'+_pdPostId);
-  if(vn) vn.textContent=countEl.textContent;
-  const pi=_forumPosts.findIndex(p=>p.id===_pdPostId);
-  if(pi>=0) _forumPosts[pi].vote_count=parseInt(countEl?.textContent||'0');
-}
-
 /* ─── ÇEREZ ONAYI ─── */
 const COOKIE_CONSENT_KEY = 'vivelong_cookie_consent';
 function setCookieConsent(granted){
@@ -5607,7 +5119,6 @@ function _initCookieConsent(){
 
 /* ─── BAŞLAT ─── */
 _initAuth();
-_loadForumPosts();
 _initCookieConsent();
 </script>
 </body>
