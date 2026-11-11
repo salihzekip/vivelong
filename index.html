@@ -1117,12 +1117,30 @@
     .auth-perks b{ color:var(--text); font-weight:600; }
     .auth-perks li{ display:grid; grid-template-columns:12px 1fr; gap:8px; align-items:baseline; }
     .auth-perks li::before{ content:""; width:8px; height:1px; background:var(--metal); transform:translateY(-4px); }
+    .uh-push{ margin-bottom:22px; display:grid; grid-template-columns:minmax(0,1fr) auto; gap:14px 24px; align-items:center; border-color:var(--metal); }
+    .uh-push h4{ font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:26px; color:var(--text); margin:6px 0 4px; }
+    .uh-push p{ font-size:14px; color:var(--text-mid); margin:0; max-width:60ch; }
+    .uh-push ol{ margin:8px 0 0 18px; font-size:14px; color:var(--text-mid); display:grid; gap:4px; }
+    .uh-push .uh-btns{ margin-top:0; }
+    .uh-push .on{ color:var(--leaf); font-weight:600; }
+    .hpush{ display:flex; justify-content:space-between; align-items:center; gap:12px 20px; flex-wrap:wrap; margin:18px 0 6px; padding:14px 18px; border:1px solid var(--metal); border-radius:12px; background:var(--surface); }
+    .hpush b{ font-weight:600; color:var(--text); }
+    .hpush span{ font-size:14px; color:var(--text-mid); }
+    .hpush button{ font:inherit; font-size:13.5px; font-weight:500; padding:9px 18px; border-radius:999px; border:1px solid var(--metal); background:var(--metal); color:#fff; cursor:pointer; }
+    @media(max-width:860px){ .uh-push{ grid-template-columns:1fr; } }
     @media(max-width:860px){
       .uh-grid{ grid-template-columns:1fr; }
       .uh-stats{ grid-template-columns:1fr; }
       .uh-stats div+div{ border-left:0; border-top:1px solid var(--border); }
     }
   </style>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#12241B">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Vivelong">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 <body>
 
@@ -1649,6 +1667,7 @@
       <div class="phdr"><div class="plbl">Bugünkü İlerlemeniz</div><div class="pcnt" id="pCnt">0 / 12</div></div>
       <div class="pbar"><div class="pfill" id="pFill" style="width:0%"></div></div>
     </div>
+    <div class="hpush"><span><b>Her akşam 20:30'da telefonuna hatırlatma.</b> Bildirime dokun, iki dakikada işaretle.</span><button type="button" onclick="hPushCta()">Hatırlatıcıyı aç</button></div>
     <div class="hgrid" id="hGrid"></div>
     <button class="hmore-btn" id="hMoreBtn" onclick="toggleMoreHabits()">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
@@ -4329,6 +4348,7 @@
     <section class="uh-sec" id="uh-hab" aria-labelledby="uh-hab-t">
       <div class="uh-cap">02 · Günlük takip</div>
       <h3 id="uh-hab-t">Alışkanlıklarım</h3>
+      <div id="uhPush" class="uh-card uh-push" aria-live="polite"></div>
       <div id="uhHab"><p class="uh-empty">Yükleniyor…</p></div>
     </section>
 
@@ -5623,6 +5643,82 @@ _initCookieConsent();
     });
   }
   if(user()){ _updateNavAuth(); loginSync().then(fillNavBadges); }
+})();
+</script>
+<script>
+/* ═══ AKŞAM HATIRLATICISI (web push) + uygulama kurulumu ═══ */
+(function(){
+  var VAPID = 'BLa6wAr8ue8bOkITfatAinw9KAlFQdWHH9zvPJWgECaI2f99hegInX8M8rxgRjAHZyt5rAeoGEkT6kJmtTFXIiM';
+  if('serviceWorker' in navigator){ window.addEventListener('load', function(){ navigator.serviceWorker.register('/sw.js').catch(function(){}); }); }
+  function b64(s){ var p='='.repeat((4-s.length%4)%4), b=(s+p).replace(/-/g,'+').replace(/_/g,'/'), r=atob(b), a=new Uint8Array(r.length); for(var i=0;i<r.length;i++) a[i]=r.charCodeAt(i); return a; }
+  function iosMu(){ return /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform==='MacIntel' && navigator.maxTouchPoints>1); }
+  function kurulu(){ return (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone===true; }
+  function destek(){ return ('serviceWorker' in navigator) && ('PushManager' in window) && ('Notification' in window); }
+  async function abonelik(){ if(!destek()) return null; var reg = await navigator.serviceWorker.getRegistration('/'); return reg ? reg.pushManager.getSubscription() : null; }
+  async function durum(){
+    if(iosMu() && !kurulu()) return 'ios-kur';
+    if(!destek()) return 'desteksiz';
+    if(Notification.permission==='denied') return 'red';
+    return (Notification.permission==='granted' && await abonelik()) ? 'acik' : 'kapali';
+  }
+  window.renderPush = async function(){
+    var el = document.getElementById('uhPush'); if(!el) return;
+    var d = await durum(), sol, sag = '';
+    var bas = '<div class="uh-cap">Akşam hatırlatıcısı · 20:30</div><h4>Her akşam telefonuna bildirim</h4>';
+    if(d==='acik'){ sol = bas+'<p><span class="on">Açık.</span> Her akşam 20:30\'da bu cihaza bildirim gelir; dokununca bugünün alışkanlıkları açılır.</p>'; sag='<div class="uh-btns"><button class="uh-btn line" type="button" onclick="pushDene()">Deneme bildirimi</button><button class="uh-btn line" type="button" onclick="pushKapat(this)">Kapat</button></div>'; }
+    else if(d==='kapali'){ sol = bas+'<p>Her akşam tek bir bildirim gelir; dokununca bugünün alışkanlıkları açılır, iki dakikada işaretlersin ve serin bozulmaz.</p>'; sag='<div class="uh-btns"><button class="uh-btn" type="button" onclick="pushAc(this)">Hatırlatıcıyı aç</button></div>'; }
+    else if(d==='red'){ sol = bas+'<p>Bu tarayıcıda vivelong.com için bildirim izni kapalı. Tarayıcının site ayarlarından bildirimlere izin verip bu sayfayı yenileyin.</p>'; }
+    else if(d==='ios-kur'){ sol = bas+'<p>iPhone\'da bildirim için Vivelong\'u ana ekrana eklemen gerekiyor:</p><ol><li>Safari\'de alttaki <b>Paylaş</b> düğmesine dokun.</li><li><b>Ana Ekrana Ekle</b>\'yi seç.</li><li>Ana ekrandaki Vivelong simgesinden aç, giriş yap ve buradan hatırlatıcıyı aç.</li></ol>'; }
+    else { sol = bas+'<p>Bu tarayıcı bildirimleri desteklemiyor. Android\'de Chrome, iPhone\'da ana ekrana eklenmiş Vivelong ile açın.</p>'; }
+    el.innerHTML = '<div>'+sol+'<p class="uh-note" id="pushMsg"></p></div>'+sag;
+  };
+  function mesaj(t){ var m=document.getElementById('pushMsg'); if(m) m.textContent=t; }
+  window.pushAc = async function(btn){
+    try{
+      if(typeof _currentUser==='undefined' || !_currentUser){ if(typeof openAuth==='function') openAuth('register'); return; }
+      if(btn) btn.disabled = true;
+      var izin = await Notification.requestPermission();
+      if(izin!=='granted'){ await renderPush(); mesaj('Bildirim izni verilmedi.'); return; }
+      var reg = await navigator.serviceWorker.register('/sw.js'); await navigator.serviceWorker.ready;
+      var sub = await reg.pushManager.getSubscription() || await reg.pushManager.subscribe({ userVisibleOnly:true, applicationServerKey:b64(VAPID) });
+      var j = sub.toJSON();
+      var r = await _sb.from('push_subscriptions').upsert({ user_id:_currentUser.id, endpoint:j.endpoint, p256dh:j.keys.p256dh, auth:j.keys.auth, ua:navigator.userAgent.slice(0,200), aktif:true }, { onConflict:'endpoint' });
+      if(r.error) throw r.error;
+      await renderPush(); mesaj('Hatırlatıcı açıldı. İlk bildirim bu akşam 20:30\'da gelir.');
+      reg.showNotification('Akşam hatırlatıcısı açık', { body:'Her akşam 20:30\'da bugünün alışkanlıklarını hatırlatacağız.', icon:'/assets/icons/icon-192.png', badge:'/assets/icons/badge-96.png', tag:'vivelong-kurulum', data:{ url:'/bugun/' } });
+    }catch(e){ if(btn) btn.disabled=false; mesaj('Hatırlatıcı açılamadı: '+(e && e.message ? e.message : e)); }
+  };
+  window.pushKapat = async function(btn){
+    try{
+      if(btn) btn.disabled = true;
+      var sub = await abonelik();
+      if(sub){ if(typeof _sb!=='undefined' && _sb) await _sb.from('push_subscriptions').delete().eq('endpoint', sub.endpoint); await sub.unsubscribe(); }
+      await renderPush(); mesaj('Hatırlatıcı kapatıldı.');
+    }catch(e){ if(btn) btn.disabled=false; mesaj('Kapatılamadı: '+(e && e.message ? e.message : e)); }
+  };
+  window.pushDene = async function(){
+    var reg = await navigator.serviceWorker.ready;
+    reg.showNotification('Bugünün longevity alışkanlıkları', { body:'Deneme bildirimi. Dokun, bugünü işaretle.', icon:'/assets/icons/icon-192.png', badge:'/assets/icons/badge-96.png', tag:'vivelong-deneme', data:{ url:'/bugun/' } });
+  };
+  window.hPushCta = function(){
+    if(typeof _currentUser!=='undefined' && _currentUser){ openHesabim('hab'); } else if(typeof openAuth==='function'){ openAuth('register'); }
+  };
+  if(typeof window.openHesabim==='function'){
+    var _eskiAc = window.openHesabim;
+    window.openHesabim = async function(b){ var p = _eskiAc(b); renderPush(); return p; };
+  }
+  /* Bildirimden ya da /bugun/ sayfasından gelen adres parametreleri: ?giris=1, ?hesabim=hab */
+  var q = new URLSearchParams(location.search);
+  if(q.get('giris') || q.get('hesabim')){
+    var bolum = q.get('hesabim'), deneme = 0;
+    var t = setInterval(function(){
+      deneme++;
+      var u = (typeof _currentUser!=='undefined') ? _currentUser : null;
+      if(u && bolum){ clearInterval(t); openHesabim(bolum); }
+      else if(deneme > 12){ clearInterval(t); if(!u && typeof openAuth==='function') openAuth('login'); }
+    }, 300);
+    if(history.replaceState) history.replaceState(null, '', location.pathname + location.hash);
+  }
 })();
 </script>
 </body>

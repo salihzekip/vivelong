@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bugünün alışkanlıkları · Vivelong</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#12241B">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/assets/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Hanken+Grotesk:wght@400;500;600&family=DM+Mono:wght@400&display=swap">
+<style>
+  :root{ --bg:#EEF1EA; --bg2:#E4E9E0; --surface:#F6F8F2; --text:#12241B; --text-mid:#3F5247; --text-muted:#5F7166; --border:#CBD5CB; --metal:#86692A; --leaf:#1F6B47;
+    --display:'Cormorant Garamond',Georgia,serif; --body:'Hanken Grotesk','Segoe UI',system-ui,sans-serif; --mono:'DM Mono',ui-monospace,Consolas,monospace; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ background:var(--bg); color:var(--text); font-family:var(--body); font-size:16px; line-height:1.5; -webkit-tap-highlight-color:transparent; }
+  .w{ max-width:560px; margin:0 auto; padding:calc(18px + env(safe-area-inset-top,0px)) max(18px,env(safe-area-inset-right,0px)) calc(28px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px)); }
+  .top{ display:flex; justify-content:space-between; align-items:center; gap:12px; }
+  .logo{ font-family:var(--display); font-size:24px; letter-spacing:.04em; color:var(--text); text-decoration:none; }
+  .tarih{ font-family:var(--mono); font-size:11.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--text-muted); }
+  h1{ font-family:var(--display); font-weight:400; font-size:clamp(34px,9vw,44px); line-height:1.02; margin:22px 0 6px; }
+  h1 em{ font-style:italic; color:var(--metal); }
+  .alt{ color:var(--text-mid); font-size:15px; }
+  .ilerle{ margin:20px 0 14px; }
+  .ilerle .s{ display:flex; justify-content:space-between; align-items:baseline; font-size:13px; color:var(--text-muted); }
+  .ilerle b{ font-family:var(--display); font-weight:400; font-size:34px; color:var(--text); font-variant-numeric:lining-nums tabular-nums; }
+  .bar{ height:6px; border-radius:3px; background:var(--bg2); overflow:hidden; margin-top:6px; }
+  .bar span{ display:block; height:100%; width:0; background:var(--leaf); transition:width .3s; }
+  .liste{ display:grid; gap:8px; }
+  .h{ display:grid; grid-template-columns:30px 1fr; gap:12px; align-items:center; width:100%; text-align:left; padding:13px 14px; border:1px solid var(--border); border-radius:12px; background:var(--surface); color:var(--text); font:inherit; cursor:pointer; min-height:60px; }
+  .h i{ width:26px; height:26px; border-radius:50%; border:1.5px solid var(--border); display:grid; place-items:center; font-style:normal; color:#fff; font-size:14px; }
+  .h b{ display:block; font-weight:600; font-size:15.5px; }
+  .h small{ display:block; font-size:12.5px; color:var(--text-muted); line-height:1.35; margin-top:2px; }
+  .h[aria-pressed="true"]{ border-color:var(--leaf); background:color-mix(in srgb,var(--leaf) 8%,var(--surface)); }
+  .h[aria-pressed="true"] i{ background:var(--leaf); border-color:var(--leaf); }
+  .h:focus-visible,.btn:focus-visible,.daha:focus-visible{ outline:2px solid var(--metal); outline-offset:2px; }
+  .daha{ margin:12px 0 0; width:100%; padding:12px; border:1px dashed var(--border); border-radius:12px; background:transparent; color:var(--text-mid); font:inherit; font-size:14px; cursor:pointer; }
+  .ek{ display:grid; gap:8px; margin-top:8px; }
+  .ek[hidden]{ display:none; }
+  .alt-bar{ margin-top:22px; display:grid; gap:10px; }
+  .btn{ display:block; text-align:center; padding:14px 18px; border-radius:999px; background:var(--metal); color:#fff; font-weight:600; text-decoration:none; font-size:15px; }
+  .btn.line{ background:transparent; color:var(--text); border:1px solid var(--border); }
+  .durum{ font-size:12.5px; color:var(--text-muted); text-align:center; }
+  .durum a{ color:var(--metal); }
+  @media (prefers-reduced-motion: reduce){ .bar span{ transition:none; } }
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="top"><a class="logo" href="/">Vivelong</a><span class="tarih" id="tarih"></span></div>
+  <h1>Bugünün <em>alışkanlıkları</em></h1>
+  <p class="alt">Bugün yaptıklarına dokun. İki dakika yeter.</p>
+  <div class="ilerle" aria-live="polite"><div class="s"><span>Bugün işaretlenen</span><b id="say">0 / 22</b></div><div class="bar"><span id="dol"></span></div></div>
+  <div class="liste" id="ana"></div>
+  <button class="daha" id="dahaBtn" type="button" aria-expanded="false" aria-controls="ek">10 ek alışkanlığı göster</button>
+  <div class="ek" id="ek" hidden></div>
+  <div class="alt-bar">
+    <a class="btn" id="bitti" href="/">Tamam</a>
+    <p class="durum" id="durum">Yükleniyor…</p>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script>
+const HABITS = [
+  {id:'h1',  name:'7–9 saat uyudum',                   desc:'Kaliteli uyku hormon düzeni ve hücre yenilenmesi sağlar'},
+  {id:'h2',  name:'30+ dk yürüdüm',                    desc:'Günlük adım hedefini yerine getirdim'},
+  {id:'h3',  name:'Sebze/meyve yedim',                 desc:'En az 5 porsiyon taze besin tükettim'},
+  {id:'h4',  name:'2 lt su içtim',                     desc:'Yeterli hidrasyon metabolizmayı destekler'},
+  {id:'h5',  name:'Meditasyon / nefes',                desc:'En az 5 dakika bilinçli nefes egzersizi'},
+  {id:'h6',  name:'Şeker almadım',                     desc:'Rafine şeker ve ultra-işlenmiş gıdadan kaçındım'},
+  {id:'h7',  name:'Sevdiklerimle vakit',               desc:'Yüz yüze sosyal bağlantı kurdum'},
+  {id:'h8',  name:'Doğada zaman geçirdim',             desc:'Güneş ışığı ya da yeşil alanda bulundum'},
+  {id:'h9',  name:'Güç egzersizi yaptım',              desc:'Kas kütlesini koruyacak direnç çalışması'},
+  {id:'h10', name:'Erken yemek yedim',                 desc:'Son öğünü uyku öncesi 3 saat içinde bitirdim'},
+  {id:'h11', name:'Ekran arası verdim',                desc:'Her saat başı 5 dakika ekrandan uzaklaştım'},
+  {id:'h12', name:'Minnettar oldum',                   desc:'3 şey için şükrettim ya da günlük yazdım'},
+  /* ── 10 ek alışkanlık ── */
+  {id:'h13', name:'Kitap okudum (20+ dk)',             desc:'Bilişsel egzersiz demans riskini azaltır, nöroplastisiteyi artırır', extra:true},
+  {id:'h14', name:'Rafine karbonhidrat yemedim',       desc:'Beyaz ekmek, pirinç, makarna gibi işlenmiş karbonhidratlardan kaçındım', extra:true},
+  {id:'h15', name:'Sebze ağırlıklı tabak hazırladım', desc:'Tabağımın en az yarısı sebzeydi; bitkisel çeşitlilik mikrobiyomu besler', extra:true},
+  {id:'h16', name:'Aralıklı oruç uyguladım (16:8)',   desc:'16 saat oruç, 8 saatlik beslenme penceresi; otofajiyi tetikler', extra:true},
+  {id:'h17', name:'Akşam 17:00 sonrası yemek yemedim',desc:'Erken beslenme penceresi kalp ve metabolik sağlıkla ilişkili', extra:true},
+  {id:'h18', name:'Akşam yemekten sonra yemek yemedim',desc:'Gece saatinde yememek; karaciğer ve sindirim dinlenmesi sağlar', extra:true},
+  {id:'h19', name:'Uyumadan 1 saat önce ekranı kapattım',desc:'Mavi ışık melatonin salgısını baskılar; ekransız geçiş uyku kalitesini artırır', extra:true},
+  {id:'h20', name:'Soğuk duş aldım (30 sn+)',         desc:'Hormesis etkisi: mitokondriyi aktive eder, bağışıklığı güçlendirir', extra:true},
+  {id:'h21', name:'Fermente gıda tükettim',            desc:'Yoğurt, kefir, turşu veya kimchi; Bifidobacterium ve mikrobiyom çeşitliliği', extra:true},
+  {id:'h22', name:'Alkolsüz bir gün geçirdim',         desc:'Haftalık alkolsüz günler karaciğeri ve DNA onarım mekanizmalarını korur', extra:true},
+];
+var SB_URL='https://mdpynseovqlbfipbegij.supabase.co', SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1kcHluc2VvdnFsYmZpcGJlZ2lqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg4NzcyOTIsImV4cCI6MjEwNDQ1MzI5Mn0.l7XcT0vJ-X649E-E5QH-LcMQuu1A0tW9vPIfiELs1zw';
+var sb = window.supabase ? window.supabase.createClient(SB_URL, SB_KEY) : null;
+var bugun = new Date(), KEY = 'longeage_done_' + bugun.toDateString();
+function isoDay(d){ var m=d.getMonth()+1,g=d.getDate(); return d.getFullYear()+'-'+(m<10?'0':'')+m+'-'+(g<10?'0':'')+g; }
+var done = {}; try{ done = JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(_){}
+var kullanici = null, zaman = null, dbOk = null;
+document.getElementById('tarih').textContent = bugun.toLocaleDateString('tr-TR',{day:'numeric',month:'long',weekday:'long'});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function kart(h){ var on=!!done[h.id]; return '<button class="h" type="button" data-id="'+h.id+'" aria-pressed="'+on+'"><i aria-hidden="true">'+(on?'✓':'')+'</i><span><b>'+esc(h.name)+'</b><small>'+esc(h.desc)+'</small></span></button>'; }
+function ciz(){
+  document.getElementById('ana').innerHTML = HABITS.filter(function(h){return !h.extra;}).map(kart).join('');
+  document.getElementById('ek').innerHTML = HABITS.filter(function(h){return h.extra;}).map(kart).join('');
+  var n = Object.keys(done).filter(function(k){return done[k];}).length;
+  document.getElementById('say').textContent = n+' / '+HABITS.length;
+  document.getElementById('dol').style.width = (n/HABITS.length*100)+'%';
+}
+function durumYaz(){
+  var el=document.getElementById('durum');
+  if(kullanici && dbOk!==false){ el.textContent='İşaretlerin hesabına kaydediliyor.'; document.getElementById('bitti').href='/?hesabim=hab'; }
+  else if(kullanici){ el.textContent='İşaretlerin bu cihaza kaydedildi; hesaba kaydederken bir sorun oldu.'; }
+  else { el.innerHTML='İşaretlerin bu cihazda kalıyor. <a href="/?giris=1">Giriş yap</a>, hesabına kaydedilsin.'; }
+}
+async function kaydet(){
+  try{ localStorage.setItem(KEY, JSON.stringify(done)); }catch(_){}
+  if(!sb || !kullanici) return;
+  var r = await sb.from('habit_logs').upsert({ user_id:kullanici.id, day:isoDay(bugun), done:Object.keys(done).filter(function(k){return done[k];}), updated_at:new Date().toISOString() }, { onConflict:'user_id,day' });
+  dbOk = !r.error; durumYaz();
+}
+document.addEventListener('click', function(e){
+  var b = e.target.closest('.h'); if(!b) return;
+  var id = b.getAttribute('data-id'); if(done[id]) delete done[id]; else done[id]=true;
+  ciz(); clearTimeout(zaman); zaman = setTimeout(kaydet, 500);
+});
+document.getElementById('dahaBtn').addEventListener('click', function(){
+  var ek=document.getElementById('ek'), ac=ek.hidden; ek.hidden=!ac;
+  this.setAttribute('aria-expanded', String(ac)); this.textContent = ac ? 'Ek alışkanlıkları gizle' : '10 ek alışkanlığı göster';
+});
+(async function(){
+  ciz();
+  if(sb){
+    var s = await sb.auth.getSession(); kullanici = s.data && s.data.session ? s.data.session.user : null;
+    if(kullanici){
+      var r = await sb.from('habit_logs').select('done').eq('user_id',kullanici.id).eq('day',isoDay(bugun)).maybeSingle();
+      if(!r.error){ dbOk=true; ((r.data&&r.data.done)||[]).forEach(function(k){ done[k]=true; }); try{ localStorage.setItem(KEY, JSON.stringify(done)); }catch(_){} ciz(); }
+      else dbOk=false;
+    }
+  }
+  durumYaz();
+})();
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(function(){});
+</script>
+</body>
+</html>
