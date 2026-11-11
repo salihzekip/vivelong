@@ -64,7 +64,7 @@
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4VXBQFR9D"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Hanken+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -78,15 +78,15 @@
       --radius:16px; --radius-sm:10px;
     }
     html { scroll-behavior: smooth; }
-    body { font-family:'Raleway',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; overflow-x:hidden; }
-    h1,h2,h3,h4 { font-family:'Lora',serif; line-height:1.25; }
+    body { font-family:'Hanken Grotesk',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; overflow-x:hidden; }
+    h1,h2,h3,h4 { font-family:'Cormorant Garamond',serif; line-height:1.25; }
     a { color:inherit; }
     .zp-p a, .zp-src a, .hero-badge a, .sccard a { color:var(--accent); text-decoration:underline; text-underline-offset:2px; }
     .zp-p a:hover, .zp-src a:hover, .hero-badge a:hover, .sccard a:hover { color:var(--gold); }
 
     /* ── NAV ── */
     nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(242,245,240,.92); backdrop-filter:blur(16px); border-bottom:1px solid var(--border-light); padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between; }
-    .nav-logo { display:flex; align-items:center; gap:10px; font-family:'Lora',serif; font-size:22px; font-weight:700; color:var(--primary); text-decoration:none; }
+    .nav-logo { display:flex; align-items:center; gap:10px; font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:700; color:var(--primary); text-decoration:none; }
     .nav-logo svg { width:32px; height:32px; }
     .nav-links { display:flex; align-items:center; gap:4px; list-style:none; }
     .nav-links a { color:var(--text-mid); text-decoration:none; font-size:12px; font-weight:600; padding:6px 11px; border-radius:8px; transition:all .2s; }
@@ -111,7 +111,7 @@
     .hero h1 em { color:var(--gold-light); font-style:normal; }
     .hero p { font-size:clamp(15px,2.2vw,19px); color:rgba(255,255,255,.8); max-width:560px; margin:0 auto 40px; }
     .ha { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
-    .btn { display:inline-flex; align-items:center; gap:8px; padding:13px 26px; border-radius:12px; font-family:'Raleway',sans-serif; font-size:14px; font-weight:600; cursor:pointer; text-decoration:none; border:none; transition:all .2s; }
+    .btn { display:inline-flex; align-items:center; gap:8px; padding:13px 26px; border-radius:12px; font-family:'Hanken Grotesk',sans-serif; font-size:14px; font-weight:600; cursor:pointer; text-decoration:none; border:none; transition:all .2s; }
     .btn-w { background:#fff; color:var(--primary); }
     .btn-w:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(0,0,0,.15); }
     .btn-o { background:rgba(255,255,255,.1); color:#fff; border:1.5px solid rgba(255,255,255,.35); }
@@ -119,7 +119,7 @@
     .btn-gold { background:linear-gradient(135deg,#D4A847,#F4E4A6); color:var(--primary); font-weight:700; }
     .btn-gold:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(212,168,71,.4); }
     .hero-stats { display:flex; justify-content:center; gap:44px; margin-top:60px; flex-wrap:wrap; }
-    .hs-num { font-family:'Lora',serif; font-size:34px; color:#fff; font-weight:700; }
+    .hs-num { font-family:'Cormorant Garamond',serif; font-size:34px; color:#fff; font-weight:700; }
     .hs-lbl { font-size:12px; color:rgba(255,255,255,.6); margin-top:2px; }
 
     /* ── SECTIONS ── */
@@ -137,27 +137,27 @@
     .cform { display:flex; flex-direction:column; gap:14px; }
 
     .gtoggle { display:flex; border:1.5px solid var(--border); border-radius:10px; overflow:hidden; }
-    .gbtn { flex:1; padding:9px; background:#fff; border:none; font-family:'Raleway',sans-serif; font-size:13px; font-weight:600; color:var(--text-muted); cursor:pointer; transition:all .18s; display:flex; align-items:center; justify-content:center; gap:6px; }
+    .gbtn { flex:1; padding:9px; background:#fff; border:none; font-family:'Hanken Grotesk',sans-serif; font-size:13px; font-weight:600; color:var(--text-muted); cursor:pointer; transition:all .18s; display:flex; align-items:center; justify-content:center; gap:6px; }
     .gbtn.on { background:var(--primary); color:#fff; }
     .gbtn:first-child { border-right:1px solid var(--border); }
 
     .brow { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
     .ig { display:flex; flex-direction:column; gap:5px; }
     .ig label { font-size:11px; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; }
-    .ig input { padding:10px 13px; border:1.5px solid var(--border); border-radius:9px; font-family:'Raleway',sans-serif; font-size:14px; color:var(--text); background:#fff; outline:none; transition:border .2s; width:100%; }
+    .ig input { padding:10px 13px; border:1.5px solid var(--border); border-radius:9px; font-family:'Hanken Grotesk',sans-serif; font-size:14px; color:var(--text); background:#fff; outline:none; transition:border .2s; width:100%; }
     .ig input:focus { border-color:var(--primary-light); }
     .bmibadge { display:flex; align-items:center; gap:8px; padding:8px 13px; border-radius:9px; font-size:12px; font-weight:600; background:var(--bg); border:1.5px solid var(--border-light); margin-top:2px; }
-    .bmibadge b { font-family:'Lora',serif; font-size:17px; color:var(--primary); }
+    .bmibadge b { font-family:'Cormorant Garamond',serif; font-size:17px; color:var(--primary); }
 
     .qb { background:var(--bg); border:1.5px solid var(--border-light); border-radius:var(--radius-sm); padding:14px; }
     .ql { font-size:13px; font-weight:600; color:var(--text); margin-bottom:9px; display:flex; align-items:center; gap:5px; }
     .ql svg { opacity:.45; width:13px; height:13px; }
     .qopts { display:flex; flex-wrap:wrap; gap:6px; }
-    .qo { padding:6px 12px; border-radius:7px; border:1.5px solid var(--border); background:#fff; color:var(--text-mid); font-family:'Raleway',sans-serif; font-size:12px; font-weight:500; cursor:pointer; transition:all .15s; }
+    .qo { padding:6px 12px; border-radius:7px; border:1.5px solid var(--border); background:#fff; color:var(--text-mid); font-family:'Hanken Grotesk',sans-serif; font-size:12px; font-weight:500; cursor:pointer; transition:all .15s; }
     .qo:hover { border-color:var(--primary-light); color:var(--primary); }
     .qo.on { background:var(--primary); border-color:var(--primary); color:#fff; }
 
-    .cbtn { background:var(--primary); color:#fff; border:none; border-radius:12px; padding:14px; font-family:'Raleway',sans-serif; font-size:15px; font-weight:700; cursor:pointer; transition:all .2s; display:flex; align-items:center; justify-content:center; gap:8px; }
+    .cbtn { background:var(--primary); color:#fff; border:none; border-radius:12px; padding:14px; font-family:'Hanken Grotesk',sans-serif; font-size:15px; font-weight:700; cursor:pointer; transition:all .2s; display:flex; align-items:center; justify-content:center; gap:8px; }
     .cbtn:hover { background:var(--primary-mid); transform:translateY(-1px); }
 
     /* Result panel */
@@ -167,7 +167,7 @@
     .rempty svg { display:block; margin:0 auto 14px; }
     .rcontent { width:100%; }
     .rring { width:140px; height:140px; border-radius:50%; background:rgba(255,255,255,.1); border:3px solid rgba(255,255,255,.2); display:flex; align-items:center; justify-content:center; margin:0 auto 18px; }
-    .ragenum { font-family:'Lora',serif; font-size:48px; color:#fff; font-weight:700; line-height:1; }
+    .ragenum { font-family:'Cormorant Garamond',serif; font-size:48px; color:#fff; font-weight:700; line-height:1; }
     .ragelbl { font-size:11px; color:rgba(255,255,255,.6); margin-top:3px; }
     .rdiff { display:inline-flex; align-items:center; gap:5px; padding:5px 13px; border-radius:100px; font-size:12px; font-weight:600; margin-bottom:10px; }
     .dg { background:rgba(116,198,157,.25); color:#74C69D; }
@@ -236,7 +236,7 @@
     .hd { font-size:11px; color:var(--text-muted); margin-top:1px; }
     .h-extra { display:none; }
     .hgrid.expanded .h-extra { display:flex; }
-    .hmore-btn { display:flex; align-items:center; justify-content:center; gap:8px; margin-top:14px; padding:11px 20px; background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius-sm); font-family:'Raleway',sans-serif; font-size:13px; font-weight:600; color:var(--text-mid); cursor:pointer; transition:all .2s; width:100%; }
+    .hmore-btn { display:flex; align-items:center; justify-content:center; gap:8px; margin-top:14px; padding:11px 20px; background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius-sm); font-family:'Hanken Grotesk',sans-serif; font-size:13px; font-weight:600; color:var(--text-mid); cursor:pointer; transition:all .2s; width:100%; }
     .hmore-btn:hover { border-color:var(--primary-light); color:var(--primary); background:var(--pale); }
     .hmore-btn svg { transition:transform .25s; }
     .hmore-btn.open svg { transform:rotate(180deg); }
@@ -253,7 +253,7 @@
     .zcard:nth-child(4) .zflag{background:linear-gradient(135deg,#0369A1,#0C4A6E);}
     .zcard:nth-child(5) .zflag{background:linear-gradient(135deg,#7C3AED,#5B21B6);}
     .zbody { padding:14px; }
-    .zname { font-family:'Lora',serif; font-size:14px; font-weight:600; color:var(--primary); margin-bottom:2px; }
+    .zname { font-family:'Cormorant Garamond',serif; font-size:14px; font-weight:600; color:var(--primary); margin-bottom:2px; }
     .zcountry { font-size:11px; color:var(--text-muted); margin-bottom:9px; }
     .zlist { list-style:none; display:flex; flex-direction:column; gap:4px; }
     .zlist li { display:flex; align-items:flex-start; gap:6px; font-size:11px; color:var(--text-mid); line-height:1.4; }
@@ -270,7 +270,7 @@
     .zp-home-logo { display:flex; align-items:center; flex-shrink:0; text-decoration:none; }
     .zp-home-logo svg { width:26px; height:26px; }
     .zp-home-logo:hover { opacity:0.75; }
-    .zp-back { display:flex; align-items:center; gap:7px; background:none; border:none; font-family:'Raleway',sans-serif; font-size:13px; font-weight:700; color:var(--primary); cursor:pointer; }
+    .zp-back { display:flex; align-items:center; gap:7px; background:none; border:none; font-family:'Hanken Grotesk',sans-serif; font-size:13px; font-weight:700; color:var(--primary); cursor:pointer; }
     .zp-back:hover { opacity:.7; }
     .zp-crumb { font-size:11px; color:var(--text-muted); }
     .zp-hero { padding:60px 24px 44px; text-align:center; position:relative; overflow:hidden; }
@@ -281,11 +281,11 @@
     .zp-hero .zp-tag { font-size:12px; color:rgba(255,255,255,.75); font-weight:500; margin-bottom:28px; display:block; }
     .zp-stats { display:flex; justify-content:center; gap:32px; flex-wrap:wrap; padding-top:24px; border-top:1px solid rgba(255,255,255,.15); }
     .zp-st { text-align:center; }
-    .zp-st-n { font-family:'Lora',serif; font-size:28px; font-weight:700; color:#fff; line-height:1; }
+    .zp-st-n { font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:700; color:#fff; line-height:1; }
     .zp-st-l { font-size:10px; color:rgba(255,255,255,.6); margin-top:3px; }
     .zp-body { max-width:780px; margin:0 auto; padding:40px 24px 80px; }
     .zp-sec { margin-bottom:36px; }
-    .zp-sec h2 { font-family:'Lora',serif; font-size:20px; color:var(--primary); margin-bottom:14px; padding-bottom:9px; border-bottom:2px solid var(--border-light); display:flex; align-items:center; gap:8px; }
+    .zp-sec h2 { font-family:'Cormorant Garamond',serif; font-size:20px; color:var(--primary); margin-bottom:14px; padding-bottom:9px; border-bottom:2px solid var(--border-light); display:flex; align-items:center; gap:8px; }
     .zp-p { font-size:14px; color:var(--text-mid); line-height:1.85; margin-bottom:11px; }
     .zp-ul { list-style:none; display:flex; flex-direction:column; gap:8px; }
     .zp-ul li { display:block; position:relative; font-size:13px; color:var(--text-mid); line-height:1.6; background:var(--surface); border:1.5px solid var(--border-light); border-radius:9px; padding:10px 13px 10px 28px; padding-left:28px !important; }
@@ -294,15 +294,15 @@
     .zp-grid2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px; }
     @media(max-width:540px){ .zp-grid2 { grid-template-columns:1fr; } }
     .zp-fact { background:var(--pale); border:1.5px solid var(--accent); border-radius:var(--radius-sm); padding:16px; }
-    .zp-fact-n { font-family:'Lora',serif; font-size:30px; font-weight:700; color:var(--primary); line-height:1; margin-bottom:4px; }
+    .zp-fact-n { font-family:'Cormorant Garamond',serif; font-size:30px; font-weight:700; color:var(--primary); line-height:1; margin-bottom:4px; }
     .zp-fact-l { font-size:12px; color:var(--text-mid); line-height:1.5; }
     .zp-quote { background:linear-gradient(135deg,var(--primary) 0%,var(--primary-mid) 100%); border-radius:var(--radius); padding:26px 24px; margin:24px 0; }
-    .zp-quote p { font-family:'Lora',serif; font-style:italic; font-size:15px; color:rgba(255,255,255,.95); line-height:1.75; margin-bottom:10px; }
+    .zp-quote p { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:15px; color:rgba(255,255,255,.95); line-height:1.75; margin-bottom:10px; }
     .zp-quote cite { font-size:11px; color:rgba(255,255,255,.55); font-style:normal; }
     .zp-p9 { display:flex; flex-wrap:wrap; gap:7px; margin-top:12px; }
     .zp-p9-tag { background:var(--pale); border:1.5px solid var(--accent); border-radius:8px; padding:5px 12px; font-size:11px; font-weight:700; color:var(--primary); }
     .zp-zones-nav { display:flex; gap:8px; flex-wrap:wrap; padding-top:24px; border-top:1.5px solid var(--border-light); margin-top:36px; }
-    .zp-zones-nav button { display:flex; align-items:center; gap:6px; padding:8px 14px; background:var(--surface); border:1.5px solid var(--border); border-radius:9px; font-family:'Raleway',sans-serif; font-size:12px; font-weight:600; color:var(--text-mid); cursor:pointer; transition:all .18s; }
+    .zp-zones-nav button { display:flex; align-items:center; gap:6px; padding:8px 14px; background:var(--surface); border:1.5px solid var(--border); border-radius:9px; font-family:'Hanken Grotesk',sans-serif; font-size:12px; font-weight:600; color:var(--text-mid); cursor:pointer; transition:all .18s; }
     .zp-zones-nav button:hover { border-color:var(--primary-light); color:var(--primary); background:var(--pale); }
     .zp-src { font-size:11px; color:var(--text-muted); border-top:1px solid var(--border-light); padding-top:14px; margin-top:8px; line-height:1.7; }
     .zp-disclaimer { display:flex; gap:10px; align-items:flex-start; background:var(--bg2); border:1.5px solid var(--border); border-radius:var(--radius-sm); padding:14px 16px; margin-top:16px; }
@@ -322,7 +322,7 @@
     .bbadge-sag { background:#FEE2E2; color:#991B1B; }
     .bbadge-ara { background:#DBEAFE; color:#1E40AF; }
     .bbadge-mol { background:#FEF3C7; color:#92400E; }
-    .bcard-title { font-family:'Lora',serif; font-size:15px; color:var(--text); font-weight:700; line-height:1.4; }
+    .bcard-title { font-family:'Cormorant Garamond',serif; font-size:15px; color:var(--text); font-weight:700; line-height:1.4; }
     .bcard-excerpt { font-size:12px; color:var(--text-muted); line-height:1.65; flex:1; }
     .bcard-meta { display:flex; align-items:center; justify-content:space-between; margin-top:6px; padding-top:11px; border-top:1px solid var(--border-light); }
     .bcard-time { font-size:11px; color:var(--text-muted); display:flex; align-items:center; gap:4px; }
@@ -356,7 +356,7 @@
     .bm-full p:last-child { margin-bottom:0; }
     .bm-full strong { color:var(--text-mid); font-weight:600; }
     .bmcard.bm-open .bm-full { display:block; }
-    .bm-toggle { display:inline-flex; align-items:center; gap:5px; background:none; border:none; padding:0; font-family:'Raleway',sans-serif; font-size:12px; font-weight:600; color:var(--primary-light); cursor:pointer; margin-top:11px; }
+    .bm-toggle { display:inline-flex; align-items:center; gap:5px; background:none; border:none; padding:0; font-family:'Hanken Grotesk',sans-serif; font-size:12px; font-weight:600; color:var(--primary-light); cursor:pointer; margin-top:11px; }
     .bm-toggle svg { transition:transform .25s; }
     .bmcard.bm-open .bm-toggle svg { transform:rotate(180deg); }
     .bm-toggle:hover { color:var(--primary); }
@@ -369,7 +369,7 @@
     .pcard h3 { font-size:18px; color:var(--primary); margin-bottom:8px; display:flex; align-items:center; gap:9px; }
     .pcard p { font-size:13px; color:var(--text-mid); line-height:1.7; margin-bottom:12px; }
     .pstat { display:flex; align-items:flex-start; gap:11px; background:var(--surface); border-radius:9px; padding:12px; margin-bottom:9px; }
-    .psnum { font-family:'Lora',serif; font-size:26px; font-weight:700; color:var(--primary-light); line-height:1; flex-shrink:0; min-width:58px; }
+    .psnum { font-family:'Cormorant Garamond',serif; font-size:26px; font-weight:700; color:var(--primary-light); line-height:1; flex-shrink:0; min-width:58px; }
     .psdesc { font-size:12px; color:var(--text-mid); line-height:1.5; }
     .ptips { list-style:none; display:flex; flex-direction:column; gap:6px; margin-top:8px; }
     .ptips li { display:flex; align-items:flex-start; gap:7px; font-size:12px; color:var(--text-mid); }
@@ -378,7 +378,7 @@
     .pcard:hover { transform:translateY(-3px); box-shadow:var(--shadow); }
     .pexplore { display:flex; align-items:center; gap:5px; font-size:11px; font-weight:700; color:var(--primary-light); margin-top:12px; padding-top:10px; border-top:1px solid var(--border-light); }
     .pcard:hover .pexplore { color:var(--primary); }
-    .paradoks-btn { display:flex; align-items:center; justify-content:center; gap:8px; margin-top:20px; padding:13px 24px; background:var(--primary); color:#fff; border:none; border-radius:12px; font-family:'Raleway',sans-serif; font-size:14px; font-weight:700; cursor:pointer; width:100%; transition:all .2s; }
+    .paradoks-btn { display:flex; align-items:center; justify-content:center; gap:8px; margin-top:20px; padding:13px 24px; background:var(--primary); color:#fff; border:none; border-radius:12px; font-family:'Hanken Grotesk',sans-serif; font-size:14px; font-weight:700; cursor:pointer; width:100%; transition:all .2s; }
     .paradoks-btn:hover { background:var(--primary-mid); transform:translateY(-1px); }
 
     /* ── 4 DİREK ── */
@@ -408,7 +408,7 @@
     .scgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px; margin-top:38px; }
     .sccard { background:var(--bg); border:1.5px solid var(--border-light); border-radius:var(--radius); padding:20px; transition:all .2s; }
     .sccard:hover { transform:translateY(-3px); box-shadow:var(--shadow); background:var(--surface); }
-    .scnum { font-family:'Lora',serif; font-size:38px; font-weight:700; color:var(--primary-light); line-height:1; margin-bottom:7px; }
+    .scnum { font-family:'Cormorant Garamond',serif; font-size:38px; font-weight:700; color:var(--primary-light); line-height:1; margin-bottom:7px; }
     .scnum span { font-size:17px; }
     .sccard h4 { font-size:13px; color:var(--primary); margin-bottom:5px; }
     .sccard p { font-size:12px; color:var(--text-muted); line-height:1.6; }
@@ -425,7 +425,7 @@
 
     /* Billing toggle */
     .bill-toggle { display:inline-flex; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.15); border-radius:10px; padding:4px; margin:24px auto 0; }
-    .btoggle { padding:7px 20px; border-radius:8px; border:none; background:transparent; color:rgba(255,255,255,.65); font-family:'Raleway',sans-serif; font-size:13px; font-weight:600; cursor:pointer; transition:all .2s; }
+    .btoggle { padding:7px 20px; border-radius:8px; border:none; background:transparent; color:rgba(255,255,255,.65); font-family:'Hanken Grotesk',sans-serif; font-size:13px; font-weight:600; cursor:pointer; transition:all .2s; }
     .btoggle.on { background:#fff; color:var(--primary); }
     .bill-toggle-wrap { display:flex; justify-content:center; align-items:center; gap:10px; margin-bottom:40px; }
     .save-badge { background:var(--gold); color:var(--primary); font-size:10px; font-weight:700; padding:3px 8px; border-radius:100px; }
@@ -442,9 +442,9 @@
     .plan-badge { position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--gold); color:var(--primary); font-size:10px; font-weight:700; padding:4px 14px; border-radius:100px; white-space:nowrap; }
     .plan-name { font-size:13px; font-weight:700; color:rgba(255,255,255,.6); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; }
     .plan.featured .plan-name { color:var(--text-muted); }
-    .plan-price { font-family:'Lora',serif; font-size:44px; font-weight:700; color:#fff; line-height:1; }
+    .plan-price { font-family:'Cormorant Garamond',serif; font-size:44px; font-weight:700; color:#fff; line-height:1; }
     .plan.featured .plan-price { color:var(--primary); }
-    .plan-price sub { font-family:'Raleway',sans-serif; font-size:13px; font-weight:600; }
+    .plan-price sub { font-family:'Hanken Grotesk',sans-serif; font-size:13px; font-weight:600; }
     .plan-price-note { font-size:11px; color:rgba(255,255,255,.5); margin-top:4px; margin-bottom:20px; }
     .plan.featured .plan-price-note { color:var(--text-muted); }
     .plan-desc { font-size:13px; color:rgba(255,255,255,.7); line-height:1.5; margin-bottom:22px; }
@@ -456,7 +456,7 @@
     .plan-features li svg { flex-shrink:0; margin-top:2px; }
     .plan-features .no { opacity:.4; text-decoration:line-through; }
 
-    .plan-btn { width:100%; padding:13px; border-radius:11px; border:none; font-family:'Raleway',sans-serif; font-size:14px; font-weight:700; cursor:pointer; transition:all .2s; }
+    .plan-btn { width:100%; padding:13px; border-radius:11px; border:none; font-family:'Hanken Grotesk',sans-serif; font-size:14px; font-weight:700; cursor:pointer; transition:all .2s; }
     .plan-btn.free-btn { background:rgba(255,255,255,.12); color:#fff; border:1.5px solid rgba(255,255,255,.25); }
     .plan-btn.free-btn:hover { background:rgba(255,255,255,.2); }
     .plan-btn.pro-btn { background:linear-gradient(135deg,var(--primary),var(--primary-mid)); color:#fff; }
@@ -480,11 +480,11 @@
     .pro-section { margin-bottom:36px; }
     .pro-section-hdr { display:flex; align-items:center; gap:10px; margin-bottom:16px; justify-content:space-between; }
     .pro-section-info { flex:1; min-width:0; }
-    .pro-go-btn { flex-shrink:0; padding:9px 18px; background:linear-gradient(135deg,var(--primary),var(--primary-mid)); color:#fff; border:none; border-radius:100px; font-family:'Raleway',sans-serif; font-size:12px; font-weight:700; cursor:pointer; transition:all .2s; white-space:nowrap; }
+    .pro-go-btn { flex-shrink:0; padding:9px 18px; background:linear-gradient(135deg,var(--primary),var(--primary-mid)); color:#fff; border:none; border-radius:100px; font-family:'Hanken Grotesk',sans-serif; font-size:12px; font-weight:700; cursor:pointer; transition:all .2s; white-space:nowrap; }
     .pro-go-btn:hover { transform:translateY(-2px); box-shadow:0 5px 18px rgba(26,71,49,.35); }
     @media(max-width:480px){ .pro-go-btn { font-size:10px; padding:7px 12px; } }
     .pro-section-num { width:28px; height:28px; border-radius:50%; background:linear-gradient(135deg,var(--primary),var(--accent)); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:#fff; flex-shrink:0; }
-    .pro-section-ttl { font-family:'Lora',serif; font-size:18px; font-weight:600; color:var(--text-head); }
+    .pro-section-ttl { font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:600; color:var(--text-head); }
     .pro-section-sub { font-size:12px; color:var(--text-muted); margin-top:2px; }
     .pro-demo-card { background:var(--surface); border:1.5px solid var(--border-light); border-radius:var(--radius); overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,.06); }
     .pro-demo-topbar { padding:12px 18px; border-bottom:1px solid var(--border-light); display:flex; align-items:center; gap:8px; }
@@ -567,10 +567,10 @@
     .bm-dot-r { background:#DC2626; }
     /* Pro CTA block */
     .pro-cta-block { background:linear-gradient(135deg,var(--primary) 0%,var(--primary-mid) 100%); border-radius:20px; padding:44px 32px; text-align:center; }
-    .pro-cta-price { font-family:'Lora',serif; font-size:54px; font-weight:700; color:#fff; line-height:1; }
-    .pro-cta-price sub { font-family:'Raleway',sans-serif; font-size:16px; font-weight:500; }
+    .pro-cta-price { font-family:'Cormorant Garamond',serif; font-size:54px; font-weight:700; color:#fff; line-height:1; }
+    .pro-cta-price sub { font-family:'Hanken Grotesk',sans-serif; font-size:16px; font-weight:500; }
     .pro-cta-note { color:rgba(255,255,255,.7); font-size:13px; margin:8px 0 28px; }
-    .pro-cta-main-btn { display:inline-block; padding:16px 44px; background:#fff; color:var(--primary); border:none; border-radius:12px; font-family:'Raleway',sans-serif; font-size:16px; font-weight:700; cursor:pointer; transition:all .22s; }
+    .pro-cta-main-btn { display:inline-block; padding:16px 44px; background:#fff; color:var(--primary); border:none; border-radius:12px; font-family:'Hanken Grotesk',sans-serif; font-size:16px; font-weight:700; cursor:pointer; transition:all .22s; }
     .pro-cta-main-btn:hover { transform:translateY(-3px); box-shadow:0 10px 32px rgba(0,0,0,.3); }
     .pro-cta-perks { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:22px; }
     .pro-cta-perk { display:flex; align-items:center; gap:6px; color:rgba(255,255,255,.75); font-size:12px; }
@@ -604,7 +604,7 @@
     .fab-btn.open { background:linear-gradient(135deg,#374151,#1F2937); }
     .fab-badge { position:absolute; top:-3px; right:-3px; width:18px; height:18px; border-radius:50%; background:#EF4444; border:2px solid #fff; display:flex; align-items:center; justify-content:center; font-size:8px; font-weight:700; color:#fff; animation:fabPulse 2s infinite; }
     @keyframes fabPulse { 0%,100%{ box-shadow:0 0 0 0 rgba(239,68,68,.4); } 50%{ box-shadow:0 0 0 6px rgba(239,68,68,0); } }
-    .fab-tooltip { position:absolute; bottom:50%; right:calc(100% + 10px); transform:translateY(50%) translateX(6px); background:var(--primary); color:#fff; font-size:11px; font-weight:600; padding:6px 12px; border-radius:100px; white-space:nowrap; box-shadow:0 3px 12px rgba(0,0,0,.2); opacity:0; transition:all .18s; pointer-events:none; font-family:'Raleway',sans-serif; }
+    .fab-tooltip { position:absolute; bottom:50%; right:calc(100% + 10px); transform:translateY(50%) translateX(6px); background:var(--primary); color:#fff; font-size:11px; font-weight:600; padding:6px 12px; border-radius:100px; white-space:nowrap; box-shadow:0 3px 12px rgba(0,0,0,.2); opacity:0; transition:all .18s; pointer-events:none; font-family:'Hanken Grotesk',sans-serif; }
     .fab-wrap:not(.panel-open):hover .fab-tooltip { opacity:1; transform:translateY(50%) translateX(0); }
 
     .fab-panel { position:absolute; bottom:calc(58px + 14px); right:0; width:360px; background:var(--surface); border:1.5px solid var(--border-light); border-radius:20px; box-shadow:0 16px 56px rgba(0,0,0,.18); overflow:hidden; display:flex; flex-direction:column; max-height:520px; opacity:0; transform:translateY(12px) scale(.97); pointer-events:none; transition:opacity .22s ease, transform .25s cubic-bezier(.34,1.36,.64,1); }
@@ -618,12 +618,12 @@
     .scroll-top-btn svg { width:18px; height:18px; stroke:var(--primary); stroke-width:2.5; fill:none; transition:stroke .18s; }
     @media(max-width:420px){ .scroll-top-btn { right:76px; bottom:16px; } }
 
-    .cookie-banner { position:fixed; left:20px; right:20px; bottom:20px; z-index:9500; max-width:640px; margin:0 auto; background:var(--surface); border:1.5px solid var(--border-light); border-radius:16px; box-shadow:0 16px 56px rgba(0,0,0,.18); padding:20px 22px; display:none; flex-wrap:wrap; align-items:center; gap:14px; font-family:'Raleway',sans-serif; }
+    .cookie-banner { position:fixed; left:20px; right:20px; bottom:20px; z-index:9500; max-width:640px; margin:0 auto; background:var(--surface); border:1.5px solid var(--border-light); border-radius:16px; box-shadow:0 16px 56px rgba(0,0,0,.18); padding:20px 22px; display:none; flex-wrap:wrap; align-items:center; gap:14px; font-family:'Hanken Grotesk',sans-serif; }
     .cookie-banner.show { display:flex; }
     .cookie-banner p { flex:1 1 320px; font-size:12.5px; color:var(--text-mid); line-height:1.6; margin:0; }
     .cookie-banner a { color:var(--primary); font-weight:600; text-decoration:underline; }
     .cookie-banner-actions { display:flex; gap:10px; flex-shrink:0; }
-    .cookie-btn { border:none; border-radius:10px; padding:10px 18px; font-family:'Raleway',sans-serif; font-size:13px; font-weight:700; cursor:pointer; transition:all .18s; white-space:nowrap; }
+    .cookie-btn { border:none; border-radius:10px; padding:10px 18px; font-family:'Hanken Grotesk',sans-serif; font-size:13px; font-weight:700; cursor:pointer; transition:all .18s; white-space:nowrap; }
     .cookie-accept { background:var(--primary); color:#fff; }
     .cookie-accept:hover { background:var(--primary-mid); }
     .cookie-reject { background:var(--bg); color:var(--text-mid); border:1.5px solid var(--border-light); }
@@ -645,11 +645,11 @@
     .fab-window::-webkit-scrollbar-thumb { background:var(--border-light); border-radius:2px; }
 
     .fab-chips { padding:10px 14px; border-top:1px solid var(--border-light); background:var(--pale); display:flex; flex-wrap:wrap; gap:6px; flex-shrink:0; }
-    .fab-chip { padding:5px 10px; background:var(--surface); border:1px solid var(--border-light); border-radius:100px; font-size:10px; color:var(--text-mid); cursor:pointer; white-space:nowrap; transition:all .15s; font-family:'Raleway',sans-serif; }
+    .fab-chip { padding:5px 10px; background:var(--surface); border:1px solid var(--border-light); border-radius:100px; font-size:10px; color:var(--text-mid); cursor:pointer; white-space:nowrap; transition:all .15s; font-family:'Hanken Grotesk',sans-serif; }
     .fab-chip:hover { border-color:var(--accent); color:var(--primary); background:#F0FDF4; }
 
     .fab-input-row { padding:10px 12px; border-top:1px solid var(--border-light); display:flex; gap:8px; align-items:center; flex-shrink:0; }
-    .fab-input { flex:1; border:1.5px solid var(--border-light); border-radius:20px; padding:9px 14px; font-family:'Raleway',sans-serif; font-size:12px; outline:none; background:var(--pale); color:var(--text-mid); transition:border-color .18s; }
+    .fab-input { flex:1; border:1.5px solid var(--border-light); border-radius:20px; padding:9px 14px; font-family:'Hanken Grotesk',sans-serif; font-size:12px; outline:none; background:var(--pale); color:var(--text-mid); transition:border-color .18s; }
     .fab-input:focus { border-color:var(--accent); background:#fff; }
     .fab-send { width:36px; height:36px; border-radius:50%; background:var(--primary); border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:all .18s; }
     .fab-send:hover { background:var(--primary-mid); transform:scale(1.07); }
@@ -669,10 +669,10 @@
     .pro-ai-window::-webkit-scrollbar { width:4px; }
     .pro-ai-window::-webkit-scrollbar-thumb { background:var(--border-light); border-radius:2px; }
     .pro-ai-chips { padding:10px 16px; border-top:1px solid var(--border-light); background:var(--pale); display:flex; flex-wrap:wrap; gap:7px; }
-    .pro-ai-chip { padding:6px 12px; background:var(--surface); border:1px solid var(--border-light); border-radius:100px; font-size:11px; color:var(--text-mid); cursor:pointer; transition:all .18s; font-family:'Raleway',sans-serif; }
+    .pro-ai-chip { padding:6px 12px; background:var(--surface); border:1px solid var(--border-light); border-radius:100px; font-size:11px; color:var(--text-mid); cursor:pointer; transition:all .18s; font-family:'Hanken Grotesk',sans-serif; }
     .pro-ai-chip:hover { border-color:var(--accent); color:var(--primary); background:#F0FDF4; }
     .pro-ai-input-row { padding:12px 14px; border-top:1px solid var(--border-light); display:flex; gap:9px; align-items:center; }
-    .pro-ai-input { flex:1; border:1.5px solid var(--border-light); border-radius:24px; padding:10px 16px; font-family:'Raleway',sans-serif; font-size:13px; outline:none; background:var(--pale); color:var(--text-mid); transition:border-color .18s; }
+    .pro-ai-input { flex:1; border:1.5px solid var(--border-light); border-radius:24px; padding:10px 16px; font-family:'Hanken Grotesk',sans-serif; font-size:13px; outline:none; background:var(--pale); color:var(--text-mid); transition:border-color .18s; }
     .pro-ai-input:focus { border-color:var(--accent); background:#fff; }
     .pro-ai-send { width:40px; height:40px; border-radius:50%; background:var(--primary); border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:all .18s; }
     .pro-ai-send:hover { background:var(--primary-mid); transform:scale(1.06); }
@@ -694,7 +694,7 @@
 
     /* ── FOOTER ── */
     footer { background:var(--primary); color:rgba(255,255,255,.65); padding:44px 24px; text-align:center; }
-    .flogo { font-family:'Lora',serif; font-size:21px; color:#fff; margin-bottom:9px; }
+    .flogo { font-family:'Cormorant Garamond',serif; font-size:21px; color:#fff; margin-bottom:9px; }
     .ftxt { font-size:13px; max-width:380px; margin:0 auto 20px; }
     .flinks { display:flex; gap:18px; justify-content:center; flex-wrap:wrap; margin-bottom:22px; }
     .flinks a { color:rgba(255,255,255,.5); text-decoration:none; font-size:12px; transition:color .2s; }
@@ -709,17 +709,17 @@
     .auth-overlay.open .auth-box{transform:translateY(0);}
     .auth-close{position:absolute;top:16px;right:16px;background:none;border:none;cursor:pointer;color:var(--text-muted);padding:6px;border-radius:6px;line-height:0;}
     .auth-close:hover{background:var(--bg);}
-    .auth-logo{font-family:'Lora',serif;font-size:18px;font-weight:700;color:var(--primary);margin-bottom:18px;display:flex;align-items:center;gap:8px;}
+    .auth-logo{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:var(--primary);margin-bottom:18px;display:flex;align-items:center;gap:8px;}
     .auth-tabs{display:flex;border-bottom:2px solid var(--border-light);margin-bottom:22px;}
-    .auth-tab{flex:1;padding:9px;background:none;border:none;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;color:var(--text-muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .2s;}
+    .auth-tab{flex:1;padding:9px;background:none;border:none;font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:600;color:var(--text-muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .2s;}
     .auth-tab.active{color:var(--primary);border-bottom-color:var(--primary);}
     .auth-form{display:flex;flex-direction:column;gap:13px;}
     .auth-form.hidden{display:none;}
     .af-group{display:flex;flex-direction:column;gap:4px;}
     .af-group label{font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;}
-    .af-group input{padding:11px 13px;border:1.5px solid var(--border);border-radius:10px;font-family:'Raleway',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border .2s;}
+    .af-group input{padding:11px 13px;border:1.5px solid var(--border);border-radius:10px;font-family:'Hanken Grotesk',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border .2s;}
     .af-group input:focus{border-color:var(--primary-light);}
-    .auth-btn{background:var(--primary);color:#fff;border:none;border-radius:12px;padding:13px;font-family:'Raleway',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s;margin-top:4px;}
+    .auth-btn{background:var(--primary);color:#fff;border:none;border-radius:12px;padding:13px;font-family:'Hanken Grotesk',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s;margin-top:4px;}
     .auth-btn:hover{background:var(--primary-mid);}
     .auth-btn:disabled{opacity:.6;cursor:not-allowed;}
     .auth-msg{border-radius:8px;padding:10px 13px;font-size:13px;display:none;}
@@ -734,21 +734,21 @@
     .kvkk-overlay{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .2s;}
     .kvkk-overlay.open{opacity:1;pointer-events:all;}
     .kvkk-box{background:#fff;border-radius:16px;max-width:600px;width:100%;max-height:82vh;overflow-y:auto;padding:32px;box-shadow:0 24px 80px rgba(0,0,0,.2);}
-    .kvkk-box h3{font-family:'Lora',serif;font-size:20px;color:var(--primary);margin-bottom:14px;}
+    .kvkk-box h3{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--primary);margin-bottom:14px;}
     .kvkk-box h4{font-size:13px;font-weight:700;color:var(--text);margin:14px 0 5px;}
     .kvkk-box p,.kvkk-box li{font-size:12.5px;color:var(--text-mid);line-height:1.75;margin-bottom:6px;}
     .kvkk-box ul{padding-left:16px;margin-bottom:8px;}
-    .kvkk-close-btn{background:var(--primary);color:#fff;border:none;border-radius:10px;padding:11px 24px;font-family:'Raleway',sans-serif;font-size:14px;font-weight:700;cursor:pointer;margin-top:14px;}
+    .kvkk-close-btn{background:var(--primary);color:#fff;border:none;border-radius:10px;padding:11px 24px;font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:700;cursor:pointer;margin-top:14px;}
     /* ── NAV USER ── */
     .nav-user-wrap{position:relative;}
-    .nav-user-btn{display:flex;align-items:center;gap:7px;padding:5px 10px 5px 5px;border-radius:8px;background:var(--pale);border:1.5px solid var(--border);font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;color:var(--primary);cursor:pointer;transition:all .2s;}
+    .nav-user-btn{display:flex;align-items:center;gap:7px;padding:5px 10px 5px 5px;border-radius:8px;background:var(--pale);border:1.5px solid var(--border);font-family:'Hanken Grotesk',sans-serif;font-size:12px;font-weight:600;color:var(--primary);cursor:pointer;transition:all .2s;}
     .nav-user-btn:hover{border-color:var(--primary-light);}
     .nav-avatar{width:26px;height:26px;border-radius:50%;background:var(--primary);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-    .nav-auth-btn{padding:6px 13px;border-radius:8px;background:var(--primary);color:#fff;border:none;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;}
+    .nav-auth-btn{padding:6px 13px;border-radius:8px;background:var(--primary);color:#fff;border:none;font-family:'Hanken Grotesk',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;}
     .nav-auth-btn:hover{background:var(--primary-mid);}
     .nav-drop{position:absolute;top:46px;right:0;background:#fff;border:1.5px solid var(--border-light);border-radius:12px;min-width:160px;box-shadow:var(--shadow-lg);z-index:200;overflow:hidden;display:none;}
     .nav-drop.open{display:block;}
-    .nav-drop-item{display:flex;align-items:center;gap:8px;padding:10px 14px;font-size:13px;color:var(--text);cursor:pointer;transition:background .15s;border:none;background:none;font-family:'Raleway',sans-serif;width:100%;text-align:left;}
+    .nav-drop-item{display:flex;align-items:center;gap:8px;padding:10px 14px;font-size:13px;color:var(--text);cursor:pointer;transition:background .15s;border:none;background:none;font-family:'Hanken Grotesk',sans-serif;width:100%;text-align:left;}
     .nav-drop-item:hover{background:var(--bg);}
     .nav-drop-item.danger{color:#DC2626;}
     /* ── FORUM SECTION ── */
@@ -758,15 +758,15 @@
     .fp-card{background:var(--bg);border:1.5px solid var(--border-light);border-radius:var(--radius-sm);padding:16px;cursor:pointer;transition:all .2s;}
     .fp-card:hover{border-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow);}
     .fp-cat-badge{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--primary-light);background:var(--pale);padding:2px 8px;border-radius:5px;margin-bottom:8px;}
-    .fp-title{font-family:'Lora',serif;font-size:15px;color:var(--primary);font-weight:600;margin-bottom:5px;line-height:1.3;}
+    .fp-title{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--primary);font-weight:600;margin-bottom:5px;line-height:1.3;}
     .fp-meta{font-size:11px;color:var(--text-muted);display:flex;align-items:center;gap:8px;margin-top:8px;}
     .fp-vote-count{display:flex;align-items:center;gap:3px;font-weight:600;color:var(--primary-light);}
     .stars-wrap{background:linear-gradient(135deg,#1A4731 0%,#2D6A4F 100%);border-radius:var(--radius);padding:28px;margin-top:36px;}
-    .stars-hdr{font-family:'Lora',serif;font-size:20px;color:#fff;margin-bottom:6px;display:flex;align-items:center;gap:8px;}
+    .stars-hdr{font-family:'Cormorant Garamond',serif;font-size:20px;color:#fff;margin-bottom:6px;display:flex;align-items:center;gap:8px;}
     .stars-sub{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:20px;}
     .stars-list{display:flex;flex-direction:column;gap:10px;}
     .star-row{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.08);border-radius:10px;padding:11px 14px;}
-    .star-rank{font-family:'Lora',serif;font-size:20px;font-weight:700;color:var(--gold-light);width:26px;flex-shrink:0;text-align:center;}
+    .star-rank{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;color:var(--gold-light);width:26px;flex-shrink:0;text-align:center;}
     .star-av{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
     .star-info{flex:1;}
     .star-name{font-size:14px;font-weight:600;color:#fff;}
@@ -784,8 +784,8 @@
     .fcat.active{color:var(--primary);border-left-color:var(--primary);background:var(--pale);font-weight:700;}
     .fcat-count{font-size:10px;font-weight:700;color:var(--text-muted);background:var(--bg2);padding:2px 7px;border-radius:100px;}
     .forum-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;gap:10px;flex-wrap:wrap;}
-    .forum-bar-title{font-family:'Lora',serif;font-size:17px;color:var(--primary);font-weight:600;}
-    .new-post-btn{background:var(--primary);color:#fff;border:none;border-radius:10px;padding:9px 16px;font-family:'Raleway',sans-serif;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all .2s;}
+    .forum-bar-title{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--primary);font-weight:600;}
+    .new-post-btn{background:var(--primary);color:#fff;border:none;border-radius:10px;padding:9px 16px;font-family:'Hanken Grotesk',sans-serif;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all .2s;}
     .new-post-btn:hover{background:var(--primary-mid);}
     .f-posts{display:flex;flex-direction:column;gap:12px;}
     .fpost{background:var(--surface);border:1.5px solid var(--border-light);border-radius:var(--radius-sm);padding:14px 16px;transition:all .2s;}
@@ -795,10 +795,10 @@
     .fvote-btn{background:none;border:1.5px solid var(--border);border-radius:7px;width:32px;height:28px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .18s;color:var(--text-muted);}
     .fvote-btn:hover{border-color:var(--primary-light);color:var(--primary);background:var(--pale);}
     .fvote-btn.voted{background:var(--primary);border-color:var(--primary);color:#fff;}
-    .fvote-n{font-family:'Lora',serif;font-size:14px;font-weight:700;color:var(--primary);}
+    .fvote-n{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:700;color:var(--primary);}
     .fpost-body{flex:1;min-width:0;}
     .fpost-cat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--primary-light);background:var(--pale);padding:2px 8px;border-radius:5px;display:inline-block;margin-bottom:6px;}
-    .fpost-title{font-family:'Lora',serif;font-size:15px;color:var(--primary);font-weight:600;cursor:pointer;margin-bottom:5px;}
+    .fpost-title{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--primary);font-weight:600;cursor:pointer;margin-bottom:5px;}
     .fpost-title:hover{color:var(--primary-mid);}
     .fpost-text{font-size:13px;color:var(--text-mid);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
     .fpost-footer{display:flex;align-items:center;gap:10px;margin-top:9px;padding-top:9px;border-top:1px solid var(--border-light);}
@@ -812,15 +812,15 @@
     .np-overlay.open{opacity:1;pointer-events:all;}
     .np-box{background:#fff;border-radius:20px;width:100%;max-width:540px;padding:30px;position:relative;transform:translateY(16px);transition:transform .25s;max-height:90vh;overflow-y:auto;}
     .np-overlay.open .np-box{transform:translateY(0);}
-    .np-box h3{font-family:'Lora',serif;font-size:18px;color:var(--primary);margin-bottom:18px;}
+    .np-box h3{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--primary);margin-bottom:18px;}
     .np-form{display:flex;flex-direction:column;gap:13px;}
     .np-label{font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:4px;}
-    .np-input,.np-select,.np-textarea{width:100%;padding:10px 13px;border:1.5px solid var(--border);border-radius:10px;font-family:'Raleway',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border .2s;}
+    .np-input,.np-select,.np-textarea{width:100%;padding:10px 13px;border:1.5px solid var(--border);border-radius:10px;font-family:'Hanken Grotesk',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border .2s;}
     .np-input:focus,.np-select:focus,.np-textarea:focus{border-color:var(--primary-light);}
     .np-textarea{resize:vertical;min-height:100px;}
     .np-btns{display:flex;gap:10px;margin-top:4px;}
-    .np-cancel{flex:1;padding:10px;border:1.5px solid var(--border);border-radius:10px;background:#fff;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;color:var(--text-mid);cursor:pointer;}
-    .np-submit{flex:2;background:var(--primary);color:#fff;border:none;border-radius:10px;padding:10px;font-family:'Raleway',sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:all .2s;}
+    .np-cancel{flex:1;padding:10px;border:1.5px solid var(--border);border-radius:10px;background:#fff;font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:600;color:var(--text-mid);cursor:pointer;}
+    .np-submit{flex:2;background:var(--primary);color:#fff;border:none;border-radius:10px;padding:10px;font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:all .2s;}
     .np-submit:hover{background:var(--primary-mid);}
     .np-submit:disabled{opacity:.6;cursor:not-allowed;}
     .np-err{background:#FEF2F2;color:#DC2626;border:1px solid #FECACA;border-radius:8px;padding:9px 12px;font-size:12px;display:none;}
@@ -833,13 +833,166 @@
     .pd-close{position:absolute;top:14px;right:14px;background:none;border:none;cursor:pointer;color:var(--text-muted);padding:6px;border-radius:6px;line-height:0;}
     .pd-close:hover{background:var(--bg);}
     .pd-cat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--primary-light);background:var(--pale);padding:3px 10px;border-radius:5px;display:inline-block;margin-bottom:10px;}
-    .pd-title{font-family:'Lora',serif;font-size:21px;color:var(--primary);margin-bottom:14px;line-height:1.3;}
+    .pd-title{font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--primary);margin-bottom:14px;line-height:1.3;}
     .pd-content{font-size:14px;color:var(--text-mid);line-height:1.8;white-space:pre-wrap;}
     .pd-footer{display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:14px;border-top:1.5px solid var(--border-light);flex-wrap:wrap;}
-    .pd-vote-btn{display:flex;align-items:center;gap:7px;background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:8px 14px;cursor:pointer;font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;color:var(--text-mid);transition:all .2s;}
+    .pd-vote-btn{display:flex;align-items:center;gap:7px;background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:8px 14px;cursor:pointer;font-family:'Hanken Grotesk',sans-serif;font-size:13px;font-weight:600;color:var(--text-mid);transition:all .2s;}
     .pd-vote-btn:hover{border-color:var(--primary-light);color:var(--primary);}
     .pd-vote-btn.voted{background:var(--primary);border-color:var(--primary);color:#fff;}
     .pd-author-info{font-size:12px;color:var(--text-muted);margin-left:auto;}
+    /* ═══ PREMIUM TASARIM KATMANI (Kasım 2026) ═══ */
+    :root{
+      --bg:#EEF1EA; --bg2:#E4E9E0; --surface:#F6F8F2; --primary:#12241B; --pale:#DDE5D6;
+      --text:#12241B; --text-mid:#3F5247; --text-muted:#5F7166; --border:#CBD5CB; --border-light:#D6DED3;
+      --radius:6px; --radius-sm:4px; --shadow:none; --shadow-lg:0 14px 34px rgba(18,36,27,.10);
+      --metal:#86692A; --metal-soft:#CBB077; --leaf:#1F6B47;
+      --ev-strong:#1F6B47; --ev-mid:#86692A; --ev-weak:#A24C3C;
+      --mono:'DM Mono',ui-monospace,Consolas,monospace;
+    }
+    body{ font-family:'Hanken Grotesk','Segoe UI',system-ui,sans-serif; font-size:16px; }
+    h1,h2,h3,h4{ letter-spacing:-.005em; text-wrap:balance; }
+    section[id]{ scroll-margin-top:56px; }
+    .hlink{ color:inherit; text-decoration:none; }
+    .hlink:hover{ color:var(--metal); }
+    .zcard{ text-decoration:none; }
+    .zcard .zflag{ background:var(--primary) !important; color:var(--metal-soft); font-family:var(--mono); font-size:24px; letter-spacing:.18em; height:56px; }
+    #direkleri .stag,#uyelik .stag{ background:transparent !important; padding:0 !important; }
+    :focus-visible{ outline:2px solid var(--metal); outline-offset:3px; }
+
+    /* menü */
+    nav{ background:rgba(238,241,234,.94); border-bottom:1px solid var(--border); }
+    .nav-logo{ font-weight:500; letter-spacing:.04em; font-size:27px; color:var(--text); }
+    .nav-links a{ font-size:12.5px; font-weight:500; border-radius:999px; color:var(--text-mid); }
+    .nav-links a:hover{ background:transparent; color:var(--metal); }
+    .nav-cta{ background:var(--metal) !important; color:#fff !important; }
+    .nav-cta:hover{ background:#6E551F !important; }
+    .nav-pro{ background:transparent !important; border:1px solid var(--metal); color:var(--metal) !important; font-weight:600 !important; }
+
+    /* bölüm başlıkları */
+    .stag{ background:transparent; padding:0; border-radius:0; color:var(--text-muted); font-family:var(--mono); font-size:11.5px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; }
+    .stit{ font-weight:400; font-size:clamp(32px,4.4vw,54px); line-height:1.05; color:var(--text); margin-top:10px; }
+    .ssub{ color:var(--text-mid); font-size:16.5px; }
+    #direkleri .stag,#uyelik .stag{ color:rgba(255,255,255,.6); }
+    #direkleri .stit,#uyelik .stit{ color:#fff; }
+    #direkleri .hlink:hover,#uyelik .hlink:hover{ color:var(--metal-soft); }
+
+    /* düğmeler */
+    .btn{ border-radius:999px; font-weight:500; letter-spacing:.02em; }
+    .btn-gold{ background:var(--metal); color:#fff; }
+    .btn-gold:hover{ background:#6E551F; box-shadow:none; transform:none; }
+    .btn-w{ background:#fff; color:var(--text); }
+    .cbtn{ background:var(--text); border-radius:999px; font-weight:600; }
+
+    /* kartlar: düz, ince çizgili */
+    .zcard,.bmcard,.pcard,.sccard,.hcard,.fp-card{ border:1px solid var(--border); background:var(--surface); box-shadow:none; }
+    .zcard:hover,.bmcard:hover,.pcard:hover,.sccard:hover{ transform:none; border-color:var(--metal); box-shadow:none; }
+    .zname{ font-size:30px; font-weight:400; line-height:1.05; }
+    .zcountry{ font-size:13px; }
+    .zflag{ height:70px; font-size:38px; }
+    .scnum{ font-weight:400; font-size:50px; color:var(--metal); }
+    .sccard h4,.bmcard h4,.pcard h3{ font-weight:500; }
+    .bmcard h4{ font-size:23px; }
+    .bmcard::before{ display:none; }
+    #hesaplama{ background:var(--surface); }
+    .ig input,.qo{ border-radius:6px; }
+    .qo.on{ background:var(--text); color:#fff; border-color:var(--text); }
+
+    /* açılış */
+    .vh{ padding:96px 24px 0; background:var(--bg); }
+    .vh-in{ max-width:1120px; margin:0 auto; display:grid; grid-template-columns:1fr 440px; gap:56px; align-items:center; padding-block:40px 64px; }
+    .vh-in>*{ min-width:0; }
+    .vh .cap{ font-family:var(--mono); font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); }
+    .vh h1{ font-weight:400; font-size:clamp(38px,5.2vw,68px); line-height:1; color:var(--text); margin:14px 0 0; }
+    .vh h1 em{ font-style:italic; color:var(--metal); }
+    .vh p{ color:var(--text-mid); font-size:17.5px; max-width:44ch; margin:24px 0 22px; }
+    .vh-ticks{ list-style:none; display:grid; gap:8px; font-size:14.5px; color:var(--text-mid); }
+    .vh-ticks li{ display:grid; grid-template-columns:14px 1fr; gap:12px; align-items:baseline; }
+    .vh-ticks li::before{ content:""; width:9px; height:1px; background:var(--metal); transform:translateY(-4px); }
+    .vh-cta{ display:flex; gap:12px; flex-wrap:wrap; margin-top:26px; }
+    .vh-test{ border:1px solid var(--metal); border-radius:14px; background:var(--bg2); padding:26px 24px; }
+    .vh-test-top{ display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; padding-bottom:14px; border-bottom:1px solid var(--border); }
+    .vh-test-top h2{ font-size:28px; font-weight:400; }
+    .vh-form{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:18px 0; }
+    .vh-form label{ display:grid; gap:6px; font-size:12.5px; color:var(--text-muted); min-width:0; }
+    .vh-form input,.vh-form select{ font:inherit; font-size:15px; padding:11px 12px; border-radius:8px; border:1px solid var(--border); background:var(--bg); color:var(--text); width:100%; min-width:0; }
+    .vh-res{ display:grid; grid-template-columns:auto 1fr; gap:18px; align-items:center; padding:16px 0 4px; border-top:1px solid var(--border); }
+    .vh-res b{ font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:64px; line-height:1; font-variant-numeric:lining-nums tabular-nums; color:var(--metal); }
+    .vh-res span{ font-size:14px; color:var(--text-mid); }
+    .vh-res strong{ display:block; font-weight:600; color:var(--text); font-size:15px; }
+    .vh-test small{ display:block; font-size:12px; color:var(--text-muted); margin-top:12px; }
+    .vh-test .btn{ width:100%; justify-content:center; margin-top:14px; }
+    .vh-facts{ border-block:1px solid var(--border); }
+    .vh-facts>div{ max-width:1120px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); }
+    .vh-facts a{ display:block; padding:24px 20px 24px 0; text-decoration:none; min-width:0; }
+    .vh-facts a+a{ padding-left:24px; border-left:1px solid var(--border); }
+    .vh-facts b{ display:block; font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:36px; line-height:1.1; color:var(--text); }
+    .vh-facts span{ font-size:13.5px; color:var(--text-mid); }
+    .vh-facts a:hover b{ color:var(--metal); }
+
+    /* sağlıklı yıllar eğrisi */
+    .vc{ display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; margin:38px 0 8px; }
+    .vc>*{ min-width:0; }
+    .vc figure{ margin:0; }
+    .vc svg{ width:100%; height:auto; display:block; }
+    .vc figcaption{ font-size:13px; color:var(--text-muted); margin-top:12px; max-width:46ch; }
+    .vc-axis{ stroke:var(--border); stroke-width:1; fill:none; }
+    .vc-t{ font-family:var(--mono); font-size:10px; fill:var(--text-muted); }
+    .vc-life{ stroke:var(--text-muted); stroke-width:1.5; fill:none; }
+    .vc-now{ stroke:var(--text); stroke-width:1.5; fill:none; }
+    .vc-goal{ stroke:var(--metal); stroke-width:2; fill:none; }
+    .vc-gap{ fill:var(--metal); opacity:.12; }
+    .vc-lb{ font-family:'Hanken Grotesk',sans-serif; font-size:11.5px; }
+    .vc h3{ font-size:clamp(28px,3.4vw,40px); font-weight:400; line-height:1.08; margin-bottom:12px; }
+    .vc p{ color:var(--text-mid); max-width:46ch; }
+
+    /* araştırma kütüphanesi */
+    .vl-lead{ display:grid; grid-template-columns:1.15fr .85fr; gap:56px; margin:40px 0 44px; }
+    .vl-lead>*{ min-width:0; }
+    .vl-feature{ text-decoration:none; display:block; }
+    .vl-feature h3{ font-size:clamp(30px,3.6vw,44px); font-weight:400; line-height:1.08; margin:14px 0; color:var(--text); }
+    .vl-feature p{ color:var(--text-mid); margin:0 0 18px; max-width:52ch; }
+    .vl-more{ font-size:13.5px; color:var(--metal); letter-spacing:.03em; }
+    .vl-feature:hover h3,.vl-files a:hover h3{ color:var(--metal); }
+    .vl-files{ display:grid; align-content:start; }
+    .vl-files a{ text-decoration:none; padding:16px 0; border-top:1px solid var(--border); display:grid; gap:6px; }
+    .vl-files a:last-child{ border-bottom:1px solid var(--border); }
+    .vl-files h3{ font-size:23px; font-weight:400; line-height:1.15; color:var(--text); }
+    .ev{ font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; display:inline-flex; gap:8px; align-items:center; }
+    .ev::before{ content:""; width:7px; height:7px; border-radius:50%; background:currentColor; }
+    .ev.s3{ color:var(--ev-strong); } .ev.s2{ color:var(--ev-mid); } .ev.s1{ color:var(--ev-weak); }
+    .vl-chips{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
+    .vl-chips button{ font:inherit; font-size:13px; padding:8px 16px; border-radius:999px; border:1px solid var(--border); background:transparent; color:var(--text-mid); cursor:pointer; }
+    .vl-chips button[aria-pressed="true"]{ border-color:var(--metal); color:var(--metal); }
+    .vl-index{ list-style:none; columns:3; column-gap:40px; }
+    .vl-index li{ break-inside:avoid; border-top:1px solid var(--border); padding:11px 0; font-size:14.5px; display:grid; grid-template-columns:1fr auto; gap:10px; align-items:baseline; }
+    .vl-index li[hidden]{ display:none !important; }
+    .vl-index a{ text-decoration:none; color:var(--text); }
+    .vl-index a:hover{ color:var(--metal); }
+    .vl-index i{ font-family:var(--mono); font-style:normal; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--text-muted); }
+    .vl-index .yeni i{ color:var(--metal); }
+
+    /* üyelik ve alt bilgi */
+    #uyelik{ background:var(--primary); }
+    #uyelik::before{ display:none; }
+    .plan{ border-radius:14px; }
+    .plan.featured{ border-color:var(--metal-soft); }
+    .plan-btn.pro-btn{ background:var(--metal); }
+    footer{ background:var(--primary); }
+    .flogo{ font-weight:500; letter-spacing:.04em; }
+
+    @media(max-width:960px){
+      .vh-in,.vl-lead,.vc{ grid-template-columns:1fr; gap:32px; }
+      .vh{ padding-top:76px; }
+      .vh-facts>div{ grid-template-columns:1fr 1fr; }
+      .vh-facts a:nth-child(3){ padding-left:0; border-left:0; }
+      .vh-facts a:nth-child(n+3){ border-top:1px solid var(--border); }
+      .vl-index{ columns:2; }
+    }
+    @media(max-width:520px){
+      .vh-form{ grid-template-columns:1fr; }
+      .vl-index{ columns:1; }
+      .vh-res b{ font-size:52px; }
+    }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 </head>
@@ -857,8 +1010,8 @@
     <li><a href="#biyomarker">Hücresel Yaş</a></li>
     <li><a href="#mavi-bolgeler">Mavi Bölgeler</a></li>
     <li><a href="#paradoks">Cinsiyet</a></li>
-    <li><a href="#direkleri">4 Temel Taş</a></li>
-    <li><a href="#blog">Blog</a></li>
+    <li><a href="#direkleri">Rehberler</a></li>
+    <li><a href="#blog">Araştırma</a></li>
     <li><a href="#forum">Forum</a></li>
     <li><a href="#uyelik" class="nav-pro">Pro</a></li>
     <li><a href="#hesaplama" class="nav-cta">Başla</a></li>
@@ -966,29 +1119,45 @@
 </div>
 
 <!-- ══ HERO ══ -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="orb orb1"></div>
-  <div class="orb orb2"></div>
-  <div class="hero-inner">
-    <div class="hero-badge"><div class="pdot"></div>Longevity Bilimi · Türkçe · <a href="https://www.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">NCBI</a> Destekli</div>
-    <h1>Daha Uzun,<br><em>Daha Sağlıklı</em> Yaşayın</h1>
-    <p>16 faktörlü biyolojik yaş hesaplayıcı, günlük alışkanlık takibi ve longevity bilimini Türkçe keşfedin.</p>
-    <div class="ha">
-      <a href="#hesaplama" class="btn btn-w">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        Biyolojik Yaşını Hesapla
-      </a>
-      <a href="#uyelik" class="btn btn-gold">Pro'ya Ön Kayıt Ol — Ücretsiz</a>
+<header class="vh">
+  <div class="vh-in">
+    <div>
+      <div class="cap">Longevity · uzun ve sağlıklı yaşam bilimi</div>
+      <h1>Takvim yaşınız belli. Biyolojik yaşınız <em>kaç</em>?</h1>
+      <p>Nüfus cüzdanınızdaki yaş ile bedeninizin yaşı aynı olmayabilir. Üç dakikalık testle ölçün, sizi en çok yaşlandıran alışkanlığı görün.</p>
+      <ul class="vh-ticks">
+        <li>16 faktör: uyku, hareket, beslenme, bel çevresi, sosyal bağ ve diğerleri</li>
+        <li>Ücretsiz, üyelik gerekmez, sonuç hemen ekranda</li>
+        <li>30 gün sonra yeniden ölçün, değişimi grafikte izleyin</li>
+      </ul>
+      <div class="vh-cta">
+        <a href="#hesaplama" class="btn btn-gold">Biyolojik yaşımı ölç</a>
+        <a href="#uyelik" class="btn btn-w" style="border:1px solid var(--border);">Pro'ya ön kayıt</a>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div><div class="hs-num">16</div><div class="hs-lbl">Değerlendirilen faktör</div></div>
-      <div><div class="hs-num">%70+</div><div class="hs-lbl">Yaşam tarzı belirleyici</div></div>
-      <div><div class="hs-num">9</div><div class="hs-lbl">Bilim makalesi</div></div>
-      <div><div class="hs-num">5</div><div class="hs-lbl">Mavi Bölge</div></div>
+    <div class="vh-test">
+      <div class="vh-test-top"><h2>Hızlı ölçüm</h2><span class="cap">4 / 16 faktör · örnek</span></div>
+      <form class="vh-form" onsubmit="return false">
+        <label for="vh-yas">Yaşınız<input id="vh-yas" type="number" min="18" max="100" value="46" inputmode="numeric"></label>
+        <label for="vh-uyku">Gece uykusu<select id="vh-uyku"><option value="2">6 saatten az</option><option value="0.5" selected>6–7 saat</option><option value="-1">7–8 saat</option><option value="0">8 saatten çok</option></select></label>
+        <label for="vh-hareket">Haftalık egzersiz<select id="vh-hareket"><option value="3">Hiç</option><option value="0" selected>1–2 gün</option><option value="-1.5">3–4 gün</option><option value="-2.5">5 gün ve üzeri</option></select></label>
+        <label for="vh-sigara">Sigara<select id="vh-sigara"><option value="-1" selected>Hiç içmedim</option><option value="1">Bıraktım</option><option value="5">İçiyorum</option></select></label>
+      </form>
+      <div class="vh-res" aria-live="polite">
+        <b id="vh-sonuc">45,5</b>
+        <span><strong id="vh-fark">Takvim yaşınızdan 0,5 yıl genç</strong><span id="vh-ipucu">En büyük kazanım: uykuyu 7–8 saate çıkarmak.</span></span>
+      </div>
+      <a class="btn btn-gold" href="#hesaplama">16 faktörlü tam testi başlat</a>
+      <small>Bu kutu dört soruyla kaba bir tahmin verir. Asıl test 16 faktörlüdür ve aşağıda.</small>
     </div>
   </div>
-</section>
+</header>
+<div class="vh-facts"><div>
+  <a href="#hesaplama"><b>16 faktör</b><span>Biyolojik yaş testinde değerlendirilen ölçü</span></a>
+  <a href="#mavi-bolgeler"><b>5 Mavi Bölge</b><span>Yüz yaşını aşanların en yoğun olduğu yerler</span></a>
+  <a href="#blog"><b>38 yazı</b><span>Kaynaklı, kanıt düzeyi etiketli araştırma</span></a>
+  <a href="/en/"><b>5 dil</b><span>Türkçe, İngilizce, Almanca, İspanyolca, Fransızca</span></a>
+</div></div>
 
 <!-- ══ CALCULATOR ══ -->
 <section id="hesaplama">
@@ -1874,7 +2043,7 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
       </div>
       <div>
-        <div style="font-family:'Lora',serif;font-size:16px;color:var(--primary);margin-bottom:5px;">Araştırmanın Ana Mesajı (PMC11688636, 2024)</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--primary);margin-bottom:5px;">Araştırmanın Ana Mesajı (PMC11688636, 2024)</div>
         <p style="font-size:13px;color:var(--text-mid);line-height:1.7;">2019–2023 yılları arasında taranmış ~33.000 makaleden 140'ı incelenerek hazırlanan bu sistematik derlemeye göre biyolojik yaş artık tek bir ölçütle değil; telomer, epigenetik saat, mikrobiyom ve yapay zeka modellerinin birleşimiyle ölçülüyor. Yapay zeka algoritmaları doğrusal olmayan örüntüleri yakalayarak geleneksel modellerden daha yüksek doğruluk elde ediyor. <strong>Global nüfus içinde 60+ yaş grubu 2050'de 2,1 milyara ulaşacak</strong> — bu araştırmanın aciliyeti bu rakamla doğrudan bağlantılı.</p>
       </div>
     </div>
@@ -2013,7 +2182,7 @@
       <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Cinsiyete Özel Longevity Stratejileri</h2>
       <div class="zp-grid2" style="margin-bottom:0;">
         <div style="background:var(--pale);border:1.5px solid var(--accent);border-radius:var(--radius);padding:18px;">
-          <div style="font-family:'Lora',serif;font-size:15px;color:var(--primary);margin-bottom:12px;display:flex;align-items:center;gap:7px;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--primary);margin-bottom:12px;display:flex;align-items:center;gap:7px;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M12 12v8M9 17h6"/></svg>
             Kadınlar İçin
           </div>
@@ -2027,7 +2196,7 @@
           </ul>
         </div>
         <div style="background:var(--pale);border:1.5px solid var(--accent);border-radius:var(--radius);padding:18px;">
-          <div style="font-family:'Lora',serif;font-size:15px;color:var(--primary);margin-bottom:12px;display:flex;align-items:center;gap:7px;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--primary);margin-bottom:12px;display:flex;align-items:center;gap:7px;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="14" r="4"/><line x1="14" y1="10" x2="21" y2="3"/><polyline points="17 3 21 3 21 7"/></svg>
             Erkekler İçin
           </div>
@@ -2479,6 +2648,27 @@
     <div class="stag">Araştırma Verileri</div>
     <h2 class="stit">Bilim Ne Diyor?</h2>
     <p class="ssub">Longevity araştırmalarından dikkat çekici rakamlar.</p>
+    <div class="vc">
+      <figure>
+        <svg viewBox="0 0 520 330" role="img" aria-label="Yaşa göre sağlık eğrileri: ömür, bugünkü sağlıklı yıllar ve hedeflenen sağlıklı yıllar">
+          <path class="vc-gap" d="M40,60 C200,60 300,70 340,150 S380,262 400,270 L465,270 C455,262 440,230 420,165 C380,75 250,60 40,60Z"/>
+          <path class="vc-axis" d="M40,30V270H500"/>
+          <path class="vc-life" d="M40,60 C260,60 400,80 440,170 S470,262 480,270"/>
+          <path class="vc-now" d="M40,60 C200,60 300,70 340,150 S380,262 400,270"/>
+          <path class="vc-goal" d="M40,60 C250,60 380,75 420,165 S455,262 465,270"/>
+          <text class="vc-t" x="132" y="288" text-anchor="middle">20</text><text class="vc-t" x="224" y="288" text-anchor="middle">40</text><text class="vc-t" x="316" y="288" text-anchor="middle">60</text><text class="vc-t" x="408" y="288" text-anchor="middle">80</text><text class="vc-t" x="500" y="288" text-anchor="end">yaş</text>
+          <text class="vc-t" x="40" y="22">sağlık ve işlev</text>
+          <text class="vc-lb" x="300" y="196" text-anchor="end" fill="var(--text)">bugünkü sağlıklı yıllar</text>
+          <text class="vc-lb" x="392" y="122" fill="var(--metal)">hedef</text>
+          <text class="vc-lb" x="492" y="212" text-anchor="end" fill="var(--text-muted)">ömür</text>
+        </svg>
+        <figcaption>Şematik gösterim. Amaç ömrü uzatmaktan önce sağlıklı yılları ömre yaklaştırmak.</figcaption>
+      </figure>
+      <div>
+        <h3>Uzun yaşamak yetmez, sağlıklı yaşamak gerekir</h3>
+        <p>Gri çizgi ömrü, siyah çizgi bugün sağlıklı geçen yılları, altın çizgi hedefi gösterir. Aradaki alan, hastalıkla geçen yıllardır. Vivelong'daki her araştırma bu alanı küçültmeye çalışan bir soruya bakar.</p>
+      </div>
+    </div>
     <div class="scgrid">
       <div class="sccard"><div class="scnum">%70<span>+</span></div><h4>Yaşam tarzı belirleyici</h4><p>Uzun ömrün yalnızca %25–30'u genetikle açıklanıyor. Geri kalanı yaşam tarzı kararlarınıza bağlı.</p></div>
       <div class="sccard"><div class="scnum">10<span> yıl</span></div><h4>Egzersizin hediyesi</h4><p>Düzenli aerobik egzersiz yapanlar sedanter kişilere göre ortalama 7–10 yıl daha uzun yaşıyor.</p></div>
@@ -2494,419 +2684,71 @@
 <section id="blog">
   <div class="si">
     <div class="stag">Longevity Bilimi</div>
-    <h2 class="stit">Blog & Araştırma</h2>
-    <p class="ssub">Longevity biliminin derinliklerine inin — Nobel ödüllü keşiflerden pratik uygulamalara.</p>
-    <div class="bgrid">
-      <a class="bcard" href="/blog/senolitikler-ve-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#99F6E4,#0F766E);">🧟</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 4 Kasım 2026</span>
-          <div class="bcard-title">Senolitikler ve Uzun Yaşam: "Zombi Hücre" İlaçları Gerçekten İşe Yarıyor mu?</div>
-          <div class="bcard-excerpt">Fisetin farelerde ömür uzattı, dasatinib+kuersetin akciğer fibrozu hastalarında 6 dakika yürüme mesafesini 21,5 metre artırdı. İnsan verisi hâlâ küçük ve çoğunlukla güvenlik odaklı — fare çalışmaları ile takviye rafı arasındaki fark.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
+    <h2 class="stit">Araştırma Kütüphanesi</h2>
+    <p class="ssub">Her yazıda çalışmanın tasarımı, kaç kişide yapıldığı ve neyi göstermediği de yazılı. Renkli nokta kanıt düzeyini gösterir.</p>
+    <div class="vl-lead">
+      <a class="vl-feature" href="/blog/zona-asisi-ve-demans/">
+        <span class="ev s2">Doğal deney · üç ülke</span>
+        <h3>Zona aşısı demans riskini azaltıyor mu?</h3>
+        <p>Galler'de doğum tarihi bir hafta farkla aşı hakkı kazananlar ile kazanamayanlar yedi yıl izlendi. Avustralya ve Kanada aynı yönü gösterdi; 2026'da yayımlanan bir yeniden hesaplama ise rakamları sorguluyor.</p>
+        <span class="vl-more">Yazıyı oku →</span>
       </a>
-      <a class="bcard" href="/blog/omega-3-ve-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#A5F3FC,#0E7490);">🐟</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 1 Kasım 2026</span>
-          <div class="bcard-title">Omega-3 ve Uzun Yaşam: Balık Yağı Biyolojik Yaşınızı Gerçekten Yavaşlatır mı?</div>
-          <div class="bcard-excerpt">2025'in DO-HEALTH çalışmasında günde 1 gram omega-3, 777 kişide epigenetik yaşı 3-4 ay yavaşlattı. 2.692 kişilik bir kohortta ise en yüksek kan düzeyine sahip olanlar 2,2 yıl daha uzun yaşadı.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>7 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-      <a class="bcard" href="/blog/guc-antrenmani-ve-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#CBD5E1,#475569);">🏋️</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 31 Ekim 2026</span>
-          <div class="bcard-title">Güç Antrenmanı ve Uzun Yaşam: Haftada Kaç Dakika Yeterli?</div>
-          <div class="bcard-excerpt">147.374 kişiyi 30 yıla kadar takip eden 2026 Harvard analizi, haftada 90-119 dakika güç antrenmanının ölüm riskini %13 düşürdüğünü buldu. Ama 2022 metaanalizi farklı bir doz işaret ediyor — ikisi neden çelişmiyor?</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-      <a class="bcard" href="/blog/uyku-ve-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#93C5FD,#1E3A8A);">🌙</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 28 Ekim 2026</span>
-          <div class="bcard-title">Uyku ve Uzun Yaşam: Süre, Düzen ve Derin Uyku Ne Kadar Önemli?</div>
-          <div class="bcard-excerpt">79 kohort çalışmasını birleştiren 2025 meta-analizi, 9 saatten fazla uyuyanlarda ölüm riskinin %34 arttığını buldu. UK Biobank'ta 88.975 kişilik bir çalışma ise düzensiz uyku saatlerinin süreden bağımsız olarak riski yükselttiğini gösterdi.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-      <a class="bcard" href="/blog/bagirsak-mikrobiyomu-ve-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#A7F3D0,#047857);">🦠</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 19 Ekim 2026</span>
-          <div class="bcard-title">Bağırsak Mikrobiyomu ve Uzun Yaşam: Yüz Yaşındakilerin Bağırsağında Ne Var?</div>
-          <div class="bcard-excerpt">9.000 kişilik üç kohortu tarayan bir Nature Metabolism çalışması, mikrobiyomdaki "biricikleşme" örüntüsünün hayatta kalmayı öngördüğünü buldu. 117 yaşında ölen Maria Branyas Morera'nın bağırsağı ise onlarca yaş gençlere benziyordu.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-      <a class="bcard" href="/blog/spermidin-ve-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#BEF264,#4D7C0F);">🌾</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 16 Ekim 2026</span>
-          <div class="bcard-title">Spermidin ve Uzun Yaşam: Diyet Verisi Güçlü, Takviye Kanıtı Zayıf</div>
-          <div class="bcard-excerpt">829 kişilik bir kohortta yüksek spermidin alımı daha düşük ölüm riskiyle ilişkiliydi. Ama bir randomize çalışma, yüksek doz takviyenin kandaki spermidin düzeyini artırmadığını buldu.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-      <a class="bcard" href="/blog/soguk-maruziyeti-ve-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#7DD3FC,#0369A1);">🧊</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 13 Ekim 2026</span>
-          <div class="bcard-title">Soğuk Maruziyeti ve Uzun Yaşam: Otofaji Üzerindeki Etki Ne Kadar Gerçek?</div>
-          <div class="bcard-excerpt">Ottawa Üniversitesi'nin 2025 çalışmasında 10 genç erkekte 7 günlük soğuk su maruziyeti otofajiyi hücre düzeyinde değiştirdi. Rakamlar, mekanizma ve gerçek sınırlamalarıyla soğuk maruziyeti bilimi.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-      <a class="bcard" href="/blog/metformin-ve-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#E0E7FF,#4338CA);">🩺</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 10 Ekim 2026</span>
-          <div class="bcard-title">Metformin ve Uzun Yaşam: On Yıldır Beklenen Kanıt Neden Hâlâ Gelmedi?</div>
-          <div class="bcard-excerpt">2025'in büyük meta-analizi hayvanlarda anlamlı bir ömür faydası bulamadı, ünlü bir insan çalışması bir tekrar denemesinde çürütüldü ve soruyu kesin cevaplayacak TAME denemesi on yıldır başlayamadı.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/menopoz-hormon-tedavisi-ve-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#FCE7F3,#F9A8D4);">🌸</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 22 Ekim 2026</span>
-          <div class="bcard-title">Menopoz, Hormon Tedavisi ve Uzun Yaşam: FDA'nın Kasım 2025 Kararı Ne Değiştirdi?</div>
-          <div class="bcard-excerpt">2002'deki WHI çalışması milyonlarca kadını hormon tedavisinden uzaklaştırmıştı. FDA kara kutu uyarısını kaldırma kararı aldı. "Zamanlama hipotezi", Danimarka'nın randomize çalışması ve kalıcı risk grupları.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/vo2-max-nasil-artirilir/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#DBEAFE,#7DD3FC);">🫁</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 19 Ekim 2026</span>
-          <div class="bcard-title">VO2 Max Nasıl Artırılır? Kanıta Dayalı Antrenman Türleri ve Beklenebilecek Kazanç</div>
-          <div class="bcard-excerpt">28 kontrollü çalışmanın meta-analizine göre dayanıklılık antrenmanı VO2 max&#x27;ı ortalama 4,9, HIIT 5,5 ml/kg/dk artırıyor. HIIT ile sürekli antrenman farkı, süre ve sınırlamalar.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>7 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/vo2-max-kac-olmali/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#E0E7FF,#A5B4FC);">📊</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 19 Ekim 2026</span>
-          <div class="bcard-title">VO2 Max Kaç Olmalı? Yaş ve Cinsiyete Göre Referans Değerler</div>
-          <div class="bcard-excerpt">ABD FRIEND kayıt verisine göre 20-29 yaşta ortanca VO2 max erkeklerde 48,0, kadınlarda 37,6 ml/kg/dk; 70-79 yaşta 24,4 ve 18,3. Yaşla düşüş, yüzdelik dilimler ve ne anlama geldiği.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>6 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/telomer-nasil-uzatilir/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#D1FAE5,#6EE7B7);">🧬</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 19 Ekim 2026</span>
-          <div class="bcard-title">Telomer Nasıl Uzatılır? Egzersiz, Beslenme ve Stres Yönetimi Ne Kadar İşe Yarıyor?</div>
-          <div class="bcard-excerpt">124 kişilik randomize çalışmada dayanıklılık ve interval antrenmanı telomeraz aktivitesini 2-3 kat artırdı. Egzersiz, Akdeniz diyeti ve yaşam tarzı çalışmalarının gerçekte ne gösterdiği ve sınırları.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/sauna-faydalari-ve-zararlari/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#FFEDD5,#FDBA74);">🧖</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 19 Ekim 2026</span>
-          <div class="bcard-title">Sauna Faydaları ve Zararları: Gözlemsel Veriler Ne Diyor, Kimler Dikkat Etmeli?</div>
-          <div class="bcard-excerpt">2.315 Fin erkeğin 20 yıllık takibinde haftada 4-7 sauna seansı daha düşük ani kalp ölümü ve demans riskiyle ilişkiliydi. Faydaların gözlemsel kanıtı, riskler ve kimlerin dikkatli olması gerektiği.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>7 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/rapamisin-ve-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#FDE68A,#D97706);">💊</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 4 Ekim 2026</span>
-          <div class="bcard-title">Rapamisin ve Uzun Yaşam: İnsan Çalışmalarında Ne Bulundu?</div>
-          <div class="bcard-excerpt">Hayvanlarda kalori kısıtlamasına yakın bir etki gösteren rapamisin, 2025'in PEARL insan çalışmasında birincil hedefinde hiçbir fark vermedi — ama kadınlarda kas kütlesi ve ağrıda iyileşme bulundu.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/kreatin-ve-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#E2E8F0,#94A3B8);">💪</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 1 Ekim 2026</span>
-          <div class="bcard-title">Kreatin ve Uzun Yaşam: Kas ve Beyin İçin Kanıtlar Ne Diyor?</div>
-          <div class="bcard-excerpt">20 randomize çalışmanın meta-analizi: egzersizle birlikte kreatin, 55 yaş üstünde kas gücünü ortalama 2,1 kg daha fazla artırıyor. Beyin verisi ise henüz 20 kişilik bir pilot.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>7 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/el-kavrama-gucu-nedir/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#DBEAFE,#93C5FD);">✊</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 22 Eylül 2026</span>
-          <div class="bcard-title">El Kavrama Gücü Nedir? Tansiyondan Daha Güçlü Bir Ölüm Riski Göstergesi mi?</div>
-          <div class="bcard-excerpt">139.691 kişilik PURE çalışması, kavrama gücündeki her 5 kg düşüşün ölüm riskini tansiyondan daha güçlü öngördüğünü buldu.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>7 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/taurin-ve-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#EDE9FE,#C4B5FD);">🧪</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 20 Eylül 2026</span>
-          <div class="bcard-title">Taurin ve Uzun Yaşam: 2023'ün "Gençlik Molekülü" İddiası 2025'te Neden Sorgulandı?</div>
-          <div class="bcard-excerpt">2023'te farelerde yaşam süresini uzattığı bildirilen taurin, 2025'te iki çalışmada insanlarda yaşla düşmediği için sorgulandı. Ne biliyoruz, ne bilmiyoruz?</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>6 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/vo2-max-nedir/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#DBEAFE,#7DD3FC);">🫁</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Yeni · 15 Eylül 2026</span>
-          <div class="bcard-title">VO2 Max Nedir? Sigaradan ve Diyabetten Daha Güçlü Bir Ölüm Riski Göstergesi mi?</div>
-          <div class="bcard-excerpt">122.007 kişiyi Cleveland Clinic'te izleyen bir JAMA çalışması: düşük kardiyorespiratuar fitness, ölüm riskini sigaradan, diyabetten ve koroner arter hastalığından bile daha güçlü öngörüyor.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/sauna-ve-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#FFEDD5,#FDBA74);">🧖</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Kardiyovasküler Longevity</span>
-          <div class="bcard-title">Sauna ve Uzun Yaşam: 2.315 Kişilik 20 Yıllık Araştırma Ne Diyor?</div>
-          <div class="bcard-excerpt">Fin KIHD kohortunda haftada 4-7 kez sauna kullananlarda ani kalp ölümü riski %63, tüm nedenlere bağlı ölüm riski %40 daha düşük çıktı. Sayılar, mekanizma ve gerçek sınırlamaları.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/organ-yasi-nedir/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#FFE4E6,#FDA4AF);">🫀</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Proteomik Longevity</span>
-          <div class="bcard-title">Organ Yaşı Nedir? Kalbiniz, Böbreğiniz Neden Farklı Yaşlanır?</div>
-          <div class="bcard-excerpt">1.803 kişiyi 15 yıl izleyen yeni bir UCL-Stanford araştırması: organlarınız aynı hızda yaşlanmıyor ve bunun nedeni büyük ölçüde yaşam tarzı kararlarınız.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/telomerler-nedir/" onclick="event.preventDefault();openZone('blog1')">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#D1FAE5,#6EE7B7);">🧬</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-bio">Biyoloji</span>
-          <div class="bcard-title">Telomerler: Yaşam Sürenizin Biyolojik Saati</div>
-          <div class="bcard-excerpt">Nobel ödüllü keşif: kromozomlarınızın ucundaki bu koruyucu kapaklar her hücre bölünmesiyle kısalıyor. Peki yaşam tarzınız bu süreci tersine çevirebilir mi?</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/otofaji-nedir/" onclick="event.preventDefault();openZone('blog2')">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#FEE2E2,#FCA5A5);">♻️</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-sag">Hücre Sağlığı</span>
-          <div class="bcard-title">Otofaji: Hücrenin Öz-Temizleme Mucizesi</div>
-          <div class="bcard-excerpt">2016 Nobel'ini kazanan bu süreç hücrelerinizin kendi çöpünü toplamasını sağlıyor. Aralıklı oruç neden bu kadar güçlü? Cevap otofajide.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>7 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/epigenetik-nedir/" onclick="event.preventDefault();openZone('blog3')">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#EDE9FE,#C4B5FD);">🔬</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-gen">Genetik</span>
-          <div class="bcard-title">Epigenetik: Genleriniz Kaderiniz Değil</div>
-          <div class="bcard-excerpt">DNA'nız değişmez ama hangi genlerin açık, hangilerinin kapalı olduğunu siz belirliyorsunuz. Yaşam tarzı epigenomunuzu yıllar içinde yeniden şekillendiriyor.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/inflammaging-nedir/" onclick="event.preventDefault();openZone('blog4')">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#FEF3C7,#FDE68A);">🔥</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-mol">İmmünoloji</span>
-          <div class="bcard-title">Inflammaging: Sizi Sessizce Yaşlandıran İltihap</div>
-          <div class="bcard-excerpt">Kronik düşük yoğunluklu inflamasyon — ne ateşiniz var ne ağrınız. Ama içinizde sürekli alçak sesli bir yangın yakıyor. Alzheimer'dan kansere, hepsinin ortak paydası bu.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/yuz-yasinda-saglikli/" onclick="event.preventDefault();openZone('blog5')">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#DBEAFE,#93C5FD);">👴</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Araştırma</span>
-          <div class="bcard-title">100 Yaşında Sağlıklı: Süper Yaşlılardan Dersler</div>
-          <div class="bcard-excerpt">New England Centenarian Study 30 yıldır 100+ yaşındakileri inceliyor. Genetiği, yaşam tarzı seçimlerini ve şaşırtıcı ortak paydaları keşfediyoruz.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>7 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/nad-sirtuin-genleri/" onclick="event.preventDefault();openZone('blog6')">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#D1FAE5,#86EFAC);">⚡</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-bio">Biyokimya</span>
-          <div class="bcard-title">NAD+ ve Sirtuin Genleri: Uzun Yaşamın Moleküler Sırrı</div>
-          <div class="bcard-excerpt">Yaşla birlikte düşen NAD+ seviyeleri mitokondriyi, DNA onarımını ve sirkadyen ritmi çökertiyor. Bilim bu molekülü longevity'nin merkezine yerleştiriyor.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/alkali-beslenme/" onclick="event.preventDefault();openZone('blog7')">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#ECFDF5,#A7F3D0);">🌿</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-bio">Beslenme</span>
-          <div class="bcard-title">Alkali Beslenme: pH Dengesi ve Uzun Yaşam</div>
-          <div class="bcard-excerpt">Vücudunuzun pH'ı 7.35–7.45 arasında kalmalı. Peki hangi gıdalar bunu destekliyor, hangisi bozuyor? Ayşegül Çoruhlu'nun hücresel beslenme yaklaşımı ve bilimsel kanıtlar.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/sirkadiyen-beslenme/" onclick="event.preventDefault();openZone('blog8')">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#FEF9C3,#FDE68A);">🕐</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-mol">Kronobiyoloji</span>
-          <div class="bcard-title">Sirkadiyen Beslenme: Ne Zaman Yediğin de Önemli</div>
-          <div class="bcard-excerpt">2017 Nobel'i kazanan sirkadiyen ritim araştırmaları beslenme zamanlamasının metabolizmayı ve yaşlanmayı nasıl etkilediğini ortaya koydu. Gece yemeklerinin gizli maliyeti.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>7 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/mitokondri/" onclick="event.preventDefault();openZone('blog9')">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#EFF6FF,#BFDBFE);">⚙️</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">Hücre Biyolojisi</span>
-          <div class="bcard-title">Mitokondri: Uzun Yaşamın Enerji Merkezi</div>
-          <div class="bcard-excerpt">Her hücrenizde yüzlerce mitokondri var. Yaşlandıkça bozuluyor, sayıları azalıyor. Mitokondriyal işlev kaybı yaşlanmanın hem nedeni hem sonucu — ve tersine çevrilebilir.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/power-9-mavi-bolgeler/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#DCFCE7,#4ADE80);">🌍</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-bio">Mavi Bölgeler</span>
-          <div class="bcard-title">Power 9: Mavi Bölgelerin Ortak 9 Uzun Yaşam İlkesi</div>
-          <div class="bcard-excerpt">Dan Buettner'ın 5 Mavi Bölge'de keşfettiği ortak yaşam ilkeleri — hiçbiri spor salonu ya da özel diyet gerektirmiyor. Sırrı sürdürülebilirlikte.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/biyolojik-yasi-dusurmek/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#EDE9FE,#A78BFA);">⏳</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-gen">Pratik Rehber</span>
-          <div class="bcard-title">Biyolojik Yaşınızı Düşürmek Mümkün mü? 10 Kanıtlanmış Yöntem</div>
-          <div class="bcard-excerpt">Kronolojik yaşınızı durduramazsınız ama hücresel yaşlanma hızınızı yavaşlatmak bilimsel olarak mümkün. 10 kanıtlanmış yöntem ve nereden başlayacağınız.</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="bcard" href="/blog/glp1-ilaclari-uzun-yasam/">
-        <div class="bcard-img" style="background:linear-gradient(135deg,#E0F2FE,#7DD3FC);">💉</div>
-        <div class="bcard-body">
-          <span class="bbadge bbadge-ara">2026 Güncel</span>
-          <div class="bcard-title">Ozempic ve GLP-1 İlaçları Yaşlanmayı Yavaşlatır mı?</div>
-          <div class="bcard-excerpt">Nature Communications'ın 2026 çalışması semaglutidin epigenetik yaşı geriye çektiğini gösterdi. Peki bu kilo kaybından bağımsız gerçek bir etki mi?</div>
-          <div class="bcard-meta">
-            <span class="bcard-time"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 dk okuma</span>
-            <span class="bcard-read">Oku <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </div>
-        </div>
-      </a>
-
+      <div class="vl-files">
+        <a href="/blog/lityum-ve-alzheimer/"><span class="ev s1">İnsan dokusu + fare</span><h3>Lityum ve Alzheimer</h3></a>
+        <a href="/blog/urolitin-a-nedir/"><span class="ev s3">Randomize çalışmalar</span><h3>Ürolitin A: nar, bağırsak, mitofaji</h3></a>
+        <a href="/blog/yaslanma-dalgalari-44-ve-60-yas/"><span class="ev s2">Kohort</span><h3>44 ve 60 yaşta yaşlanma dalgası</h3></a>
+        <a href="/blog/mikroplastikler-ve-yaslanma/"><span class="ev s1">Gözlemsel</span><h3>Mikroplastikler ve yaşlanma</h3></a>
+        <a href="/blog/alkali-diyetle-kilo-verme/"><span class="ev s2">Kohort + küçük RKÇ</span><h3>Alkali diyetle kilo verme</h3></a>
+      </div>
     </div>
+    <div class="vl-chips" role="group" aria-label="Konuya göre süz">
+      <button type="button" data-k="hepsi" aria-pressed="true">Tümü · 38</button>
+      <button type="button" data-k="hucre" aria-pressed="false">Hücre ve yaşlanma · 10</button>
+      <button type="button" data-k="hareket" aria-pressed="false">Hareket · 5</button>
+      <button type="button" data-k="beslenme" aria-pressed="false">Beslenme · 5</button>
+      <button type="button" data-k="takviye" aria-pressed="false">Takviye ve ilaç · 9</button>
+      <button type="button" data-k="yasam" aria-pressed="false">Yaşam ve çevre · 9</button>
+    </div>
+    <ul class="vl-index" id="vlIndex">
+        <li data-k="hucre" class="yeni"><a href="/blog/yaslanma-dalgalari-44-ve-60-yas/">44 ve 60 yaşta yaşlanma dalgası</a><i>yeni</i></li>
+        <li data-k="hucre"><a href="/blog/telomerler-nedir/">Telomerler nedir?</a><i>hücre</i></li>
+        <li data-k="hucre"><a href="/blog/telomer-nasil-uzatilir/">Telomer nasıl uzatılır?</a><i>hücre</i></li>
+        <li data-k="hucre"><a href="/blog/otofaji-nedir/">Otofaji nedir?</a><i>hücre</i></li>
+        <li data-k="hucre"><a href="/blog/epigenetik-nedir/">Epigenetik nedir?</a><i>hücre</i></li>
+        <li data-k="hucre"><a href="/blog/inflammaging-nedir/">Inflammaging: sessiz iltihap</a><i>hücre</i></li>
+        <li data-k="hucre"><a href="/blog/mitokondri/">Mitokondri</a><i>hücre</i></li>
+        <li data-k="hucre"><a href="/blog/nad-sirtuin-genleri/">NAD+ ve sirtuin genleri</a><i>hücre</i></li>
+        <li data-k="hucre"><a href="/blog/organ-yasi-nedir/">Organ yaşı nedir?</a><i>hücre</i></li>
+        <li data-k="hucre"><a href="/blog/biyolojik-yasi-dusurmek/">Biyolojik yaşı düşürmek</a><i>hücre</i></li>
+        <li data-k="hareket"><a href="/blog/vo2-max-nedir/">VO2 max nedir?</a><i>hareket</i></li>
+        <li data-k="hareket"><a href="/blog/vo2-max-kac-olmali/">VO2 max kaç olmalı?</a><i>hareket</i></li>
+        <li data-k="hareket"><a href="/blog/vo2-max-nasil-artirilir/">VO2 max nasıl artırılır?</a><i>hareket</i></li>
+        <li data-k="hareket"><a href="/blog/el-kavrama-gucu-nedir/">El kavrama gücü</a><i>hareket</i></li>
+        <li data-k="hareket"><a href="/blog/guc-antrenmani-ve-uzun-yasam/">Güç antrenmanı ve uzun yaşam</a><i>hareket</i></li>
+        <li data-k="beslenme" class="yeni"><a href="/blog/alkali-diyetle-kilo-verme/">Alkali diyetle kilo verme</a><i>yeni</i></li>
+        <li data-k="beslenme"><a href="/blog/alkali-beslenme/">Alkali beslenme</a><i>beslenme</i></li>
+        <li data-k="beslenme"><a href="/blog/sirkadiyen-beslenme/">Sirkadiyen beslenme</a><i>beslenme</i></li>
+        <li data-k="beslenme"><a href="/blog/bagirsak-mikrobiyomu-ve-uzun-yasam/">Bağırsak mikrobiyomu</a><i>beslenme</i></li>
+        <li data-k="beslenme"><a href="/blog/omega-3-ve-uzun-yasam/">Omega-3 ve uzun yaşam</a><i>beslenme</i></li>
+        <li data-k="takviye" class="yeni"><a href="/blog/urolitin-a-nedir/">Ürolitin A nedir?</a><i>yeni</i></li>
+        <li data-k="takviye" class="yeni"><a href="/blog/lityum-ve-alzheimer/">Lityum ve Alzheimer</a><i>yeni</i></li>
+        <li data-k="takviye"><a href="/blog/kreatin-ve-uzun-yasam/">Kreatin ve uzun yaşam</a><i>takviye</i></li>
+        <li data-k="takviye"><a href="/blog/taurin-ve-uzun-yasam/">Taurin ve uzun yaşam</a><i>takviye</i></li>
+        <li data-k="takviye"><a href="/blog/spermidin-ve-uzun-yasam/">Spermidin ve uzun yaşam</a><i>takviye</i></li>
+        <li data-k="takviye"><a href="/blog/metformin-ve-uzun-yasam/">Metformin ve uzun yaşam</a><i>takviye</i></li>
+        <li data-k="takviye"><a href="/blog/rapamisin-ve-uzun-yasam/">Rapamisin ve uzun yaşam</a><i>takviye</i></li>
+        <li data-k="takviye"><a href="/blog/senolitikler-ve-uzun-yasam/">Senolitikler</a><i>takviye</i></li>
+        <li data-k="takviye"><a href="/blog/glp1-ilaclari-uzun-yasam/">GLP-1 ilaçları ve uzun yaşam</a><i>takviye</i></li>
+        <li data-k="yasam" class="yeni"><a href="/blog/zona-asisi-ve-demans/">Zona aşısı ve demans</a><i>yeni</i></li>
+        <li data-k="yasam" class="yeni"><a href="/blog/mikroplastikler-ve-yaslanma/">Mikroplastikler ve yaşlanma</a><i>yeni</i></li>
+        <li data-k="yasam"><a href="/blog/uyku-ve-uzun-yasam/">Uyku ve uzun yaşam</a><i>yaşam</i></li>
+        <li data-k="yasam"><a href="/blog/sauna-ve-uzun-yasam/">Sauna ve uzun yaşam</a><i>yaşam</i></li>
+        <li data-k="yasam"><a href="/blog/sauna-faydalari-ve-zararlari/">Saunanın faydaları ve zararları</a><i>yaşam</i></li>
+        <li data-k="yasam"><a href="/blog/soguk-maruziyeti-ve-uzun-yasam/">Soğuk maruziyeti</a><i>yaşam</i></li>
+        <li data-k="yasam"><a href="/blog/menopoz-hormon-tedavisi-ve-uzun-yasam/">Menopoz ve hormon tedavisi</a><i>yaşam</i></li>
+        <li data-k="yasam"><a href="/blog/power-9-mavi-bolgeler/">Power 9: Mavi Bölgelerin ilkeleri</a><i>yaşam</i></li>
+        <li data-k="yasam"><a href="/blog/yuz-yasinda-saglikli/">Yüz yaşında sağlıklı</a><i>yaşam</i></li>
+    </ul>
   </div>
 </section>
 
@@ -3762,7 +3604,7 @@
           <div class="rpt-header">
             <div>
               <div class="rpt-week-lbl">Genel Skor</div>
-              <div style="font-family:'Lora',serif;font-size:28px;font-weight:700;color:var(--primary);line-height:1.1;">B<span style="font-size:16px;color:var(--text-muted);">+</span></div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--primary);line-height:1.1;">B<span style="font-size:16px;color:var(--text-muted);">+</span></div>
               <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Geçen haftadan +4 puan</div>
             </div>
             <div class="rpt-score-badge">74</div>
@@ -4295,7 +4137,7 @@
     <a href="#biyomarker">Hücresel Yaş</a>
     <a href="#mavi-bolgeler">Mavi Bölgeler</a>
     <a href="#paradoks">Cinsiyet</a>
-    <a href="#direkleri">4 Temel Taş</a>
+    <a href="#direkleri">Rehberler</a>
     <a href="#forum">Forum</a>
     <a href="#uyelik">Pro Üyelik</a>
     <a href="/longevity-nedir/">Longevity Nedir?</a>
@@ -4598,7 +4440,7 @@ function _makeLinkBtn(r) {
   const action = r.zoneType === 'id'
     ? `document.getElementById('${r.zone}').classList.add('open');document.body.style.overflow='hidden';document.getElementById('${r.zone}').scrollTop=0;`
     : `openZone('${r.zone}')`;
-  return `<br><br><button onclick="${action}" style="display:inline-flex;align-items:center;gap:6px;margin-top:4px;padding:8px 14px;background:var(--primary);color:#fff;border:none;border-radius:100px;font-size:11px;font-weight:700;cursor:pointer;font-family:'Raleway',sans-serif;">${r.zoneLabel} →</button>`;
+  return `<br><br><button onclick="${action}" style="display:inline-flex;align-items:center;gap:6px;margin-top:4px;padding:8px 14px;background:var(--primary);color:#fff;border:none;border-radius:100px;font-size:11px;font-weight:700;cursor:pointer;font-family:'Hanken Grotesk',sans-serif;">${r.zoneLabel} →</button>`;
 }
 
 function _proAddMsg(text, role, r) {
@@ -5550,6 +5392,48 @@ function _initCookieConsent(){
 _initAuth();
 _loadForumPosts();
 _initCookieConsent();
+</script>
+<script>
+(function(){
+  var tr=function(n){return n.toFixed(1).replace('.',',')};
+  var ids=['vh-yas','vh-uyku','vh-hareket','vh-sigara'].map(function(i){return document.getElementById(i)});
+  if(ids.every(Boolean)){
+    var hesap=function(){
+      var yas=Math.min(100,Math.max(18,parseFloat(ids[0].value)||46));
+      var u=parseFloat(ids[1].value),h=parseFloat(ids[2].value),sg=parseFloat(ids[3].value);
+      var bio=yas+u+h+sg,fark=bio-yas;
+      document.getElementById('vh-sonuc').textContent=tr(bio);
+      document.getElementById('vh-fark').textContent=fark===0?'Takvim yaşınızla aynı':'Takvim yaşınızdan '+tr(Math.abs(fark))+' yıl '+(fark<0?'genç':'yaşlı');
+      var ip='Dört etken de iyi durumda. Kalan 12 faktör için tam testi yapın.';
+      if(sg>=5)ip='En büyük kazanım: sigarayı bırakmak.';
+      else if(h>=3)ip='En büyük kazanım: haftada en az iki gün egzersiz.';
+      else if(u>=2)ip='En büyük kazanım: uykuyu 7–8 saate çıkarmak.';
+      else if(h>=0)ip='En büyük kazanım: egzersizi haftada 3–4 güne çıkarmak.';
+      else if(u>0)ip='En büyük kazanım: uykuyu 7–8 saate çıkarmak.';
+      document.getElementById('vh-ipucu').textContent=ip;
+    };
+    ids.forEach(function(e){e.addEventListener('input',hesap);e.addEventListener('change',hesap)});
+    hesap();
+  }
+  var chips=document.querySelectorAll('.vl-chips button'),items=document.querySelectorAll('#vlIndex li');
+  chips.forEach(function(b){b.addEventListener('click',function(){
+    chips.forEach(function(c){c.setAttribute('aria-pressed',c===b?'true':'false')});
+    var k=b.getAttribute('data-k');items.forEach(function(li){li.hidden=!(k==='hepsi'||li.getAttribute('data-k')===k)});
+  })});
+  // her bölüm başlığı kendi bölümüne bağlantı olsun
+  document.querySelectorAll('section[id] h2.stit').forEach(function(h){
+    if(h.querySelector('a'))return;var sec=h.closest('section');if(!sec)return;
+    var a=document.createElement('a');a.href='#'+sec.id;a.className='hlink';
+    while(h.firstChild)a.appendChild(h.firstChild);h.appendChild(a);
+  });
+  // hücresel yaş kartlarının başlıkları ilgili yazıya gitsin
+  var harita={'Telomer Uzunluğu':'/blog/telomerler-nedir/','Epigenetik Saat':'/blog/epigenetik-nedir/','Hücresel Senesans':'/blog/senolitikler-ve-uzun-yasam/','Mitokondriyal Güç':'/blog/mitokondri/','Bağırsak Mikrobiyomu':'/blog/bagirsak-mikrobiyomu-ve-uzun-yasam/'};
+  document.querySelectorAll('.bmcard h4').forEach(function(h){
+    var u=harita[h.textContent.trim()];if(!u||h.querySelector('a'))return;
+    var a=document.createElement('a');a.href=u;a.className='hlink';
+    while(h.firstChild)a.appendChild(h.firstChild);h.appendChild(a);
+  });
+})();
 </script>
 </body>
 </html>
