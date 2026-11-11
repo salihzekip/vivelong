@@ -1,4 +1,4 @@
--- Vivelong akşam hatırlatıcısı (web push): abonelik tablosu + her akşam 20:30 (TR) zamanlayıcı
+-- Vivelong akşam hatırlatıcısı (web push): abonelik tablosu + her akşam 22:00 (TR) zamanlayıcı
 create table if not exists public.push_subscriptions (
   id uuid primary key default gen_random_uuid(),
   user_id uuid not null default auth.uid() references auth.users(id) on delete cascade,
@@ -25,10 +25,10 @@ create policy "push: kendi aboneligini siler" on public.push_subscriptions
 revoke all on public.push_subscriptions from anon;
 grant select, insert, update, delete on public.push_subscriptions to authenticated;
 
--- Her gün 17:30 UTC = 20:30 Türkiye saati. Fonksiyon günde bir kez gönderir (last_sent_on), tekrar tetiklenmesi zararsız.
+-- Her gün 19:00 UTC = 22:00 Türkiye saati. Fonksiyon günde bir kez gönderir (last_sent_on), tekrar tetiklenmesi zararsız.
 select cron.schedule(
   'vivelong-aksam-hatirlatma',
-  '30 17 * * *',
+  '0 19 * * *',
   $$
   select net.http_post(
     url := 'https://mdpynseovqlbfipbegij.supabase.co/functions/v1/aksam-hatirlatma',

@@ -1,5 +1,5 @@
 /**
- * Akşam hatırlatıcısı: her akşam 20:30'da (pg_cron, 17:30 UTC) abone üyelere telefon bildirimi gönderir.
+ * Akşam hatırlatıcısı: her akşam 22:00'de (pg_cron, 19:00 UTC) abone üyelere telefon bildirimi gönderir.
  * Idempotent: her abonelik gönderimden ÖNCE o gün için işaretlenir (last_sent_on), tekrar çağrı fazladan bildirim atmaz.
  * Gereken tek sır: VAPID_PRIVATE_KEY (Supabase > Edge Functions > Secrets). Açık anahtar aşağıda sabit.
  */

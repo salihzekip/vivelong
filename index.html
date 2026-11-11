@@ -1667,7 +1667,7 @@
       <div class="phdr"><div class="plbl">Bugünkü İlerlemeniz</div><div class="pcnt" id="pCnt">0 / 12</div></div>
       <div class="pbar"><div class="pfill" id="pFill" style="width:0%"></div></div>
     </div>
-    <div class="hpush"><span><b>Her akşam 20:30'da telefonuna hatırlatma.</b> Bildirime dokun, iki dakikada işaretle.</span><button type="button" onclick="hPushCta()">Hatırlatıcıyı aç</button></div>
+    <div class="hpush"><span><b>Her akşam 22:00'de telefonuna hatırlatma.</b> Bildirime dokun, iki dakikada işaretle.</span><button type="button" onclick="hPushCta()">Hatırlatıcıyı aç</button></div>
     <div class="hgrid" id="hGrid"></div>
     <button class="hmore-btn" id="hMoreBtn" onclick="toggleMoreHabits()">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
@@ -4027,7 +4027,7 @@
               <tr>
                 <td class="wk-num">Hf 3–4</td>
                 <td><span class="wk-badge wkb-p">Uyku</span></td>
-                <td>Ekranı 22:00'da kapat · Aynı saat yat-kalk · Yatak odası karanlık & serin (18°C)</td>
+                <td>Ekranı 22:00'de kapat · Aynı saat yat-kalk · Yatak odası karanlık & serin (18°C)</td>
                 <td style="color:#059669;font-weight:700;font-size:12px;">✓ Tamamlandı</td>
               </tr>
               <tr style="background:#FAFFF9;">
@@ -5664,8 +5664,8 @@ _initCookieConsent();
   window.renderPush = async function(){
     var el = document.getElementById('uhPush'); if(!el) return;
     var d = await durum(), sol, sag = '';
-    var bas = '<div class="uh-cap">Akşam hatırlatıcısı · 20:30</div><h4>Her akşam telefonuna bildirim</h4>';
-    if(d==='acik'){ sol = bas+'<p><span class="on">Açık.</span> Her akşam 20:30\'da bu cihaza bildirim gelir; dokununca bugünün alışkanlıkları açılır.</p>'; sag='<div class="uh-btns"><button class="uh-btn line" type="button" onclick="pushDene()">Deneme bildirimi</button><button class="uh-btn line" type="button" onclick="pushKapat(this)">Kapat</button></div>'; }
+    var bas = '<div class="uh-cap">Akşam hatırlatıcısı · 22:00</div><h4>Her akşam telefonuna bildirim</h4>';
+    if(d==='acik'){ sol = bas+'<p><span class="on">Açık.</span> Her akşam 22:00\'de bu cihaza bildirim gelir; dokununca bugünün alışkanlıkları açılır.</p>'; sag='<div class="uh-btns"><button class="uh-btn line" type="button" onclick="pushDene()">Deneme bildirimi</button><button class="uh-btn line" type="button" onclick="pushKapat(this)">Kapat</button></div>'; }
     else if(d==='kapali'){ sol = bas+'<p>Her akşam tek bir bildirim gelir; dokununca bugünün alışkanlıkları açılır, iki dakikada işaretlersin ve serin bozulmaz.</p>'; sag='<div class="uh-btns"><button class="uh-btn" type="button" onclick="pushAc(this)">Hatırlatıcıyı aç</button></div>'; }
     else if(d==='red'){ sol = bas+'<p>Bu tarayıcıda vivelong.com için bildirim izni kapalı. Tarayıcının site ayarlarından bildirimlere izin verip bu sayfayı yenileyin.</p>'; }
     else if(d==='ios-kur'){ sol = bas+'<p>iPhone\'da bildirim için Vivelong\'u ana ekrana eklemen gerekiyor:</p><ol><li>Safari\'de alttaki <b>Paylaş</b> düğmesine dokun.</li><li><b>Ana Ekrana Ekle</b>\'yi seç.</li><li>Ana ekrandaki Vivelong simgesinden aç, giriş yap ve buradan hatırlatıcıyı aç.</li></ol>'; }
@@ -5684,8 +5684,8 @@ _initCookieConsent();
       var j = sub.toJSON();
       var r = await _sb.from('push_subscriptions').upsert({ user_id:_currentUser.id, endpoint:j.endpoint, p256dh:j.keys.p256dh, auth:j.keys.auth, ua:navigator.userAgent.slice(0,200), aktif:true }, { onConflict:'endpoint' });
       if(r.error) throw r.error;
-      await renderPush(); mesaj('Hatırlatıcı açıldı. İlk bildirim bu akşam 20:30\'da gelir.');
-      reg.showNotification('Akşam hatırlatıcısı açık', { body:'Her akşam 20:30\'da bugünün alışkanlıklarını hatırlatacağız.', icon:'/assets/icons/icon-192.png', badge:'/assets/icons/badge-96.png', tag:'vivelong-kurulum', data:{ url:'/bugun/' } });
+      await renderPush(); mesaj('Hatırlatıcı açıldı. İlk bildirim bu akşam 22:00\'de gelir.');
+      reg.showNotification('Akşam hatırlatıcısı açık', { body:'Her akşam 22:00\'de bugünün alışkanlıklarını hatırlatacağız.', icon:'/assets/icons/icon-192.png', badge:'/assets/icons/badge-96.png', tag:'vivelong-kurulum', data:{ url:'/bugun/' } });
     }catch(e){ if(btn) btn.disabled=false; mesaj('Hatırlatıcı açılamadı: '+(e && e.message ? e.message : e)); }
   };
   window.pushKapat = async function(btn){
